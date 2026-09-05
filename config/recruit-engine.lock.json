@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "candidate": "HSBRSIM/hsrl2",
+  "repository": "https://github.com/Gallo13th/HSBRSIM.git",
+  "revision": "4e0525a198352557ef816bd3a53566d6ffd4c164",
+  "commit_date": "2026-09-01T13:40:27+08:00",
+  "data_patch": "36.2.2.249896",
+  "license_declaration": "MIT in pyproject.toml; no standalone LICENSE file in this revision",
+  "integration_status": "audit_only_full_game_training_blocked",
+  "vendor_source": false,
+  "required_timing_profile": "config/turn-budget.json",
+  "required_recruit_wrapper": "bg_ai.timed_recruiting.TimedRecruitEngine"
+}

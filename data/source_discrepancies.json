@@ -1,0 +1,15 @@
+[
+  {
+    "card_id": "BG32_MagicItem_894",
+    "component": "trinket",
+    "reason": "official gallery/client still show card removed by latest official patch",
+    "resolution": "excluded",
+    "source": "https://hearthstone.blizzard.com/en-us/news/24296231/3642-patch-notes"
+  },
+  {
+    "card_id": "BG36_MagicItem_372",
+    "component": "trinket",
+    "reason": "client/gallery eligibility disagreement",
+    "resolution": "unresolved; component unavailable to trainer"
+  }
+]

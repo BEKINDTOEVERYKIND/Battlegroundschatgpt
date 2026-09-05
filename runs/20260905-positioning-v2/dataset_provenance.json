@@ -1,0 +1,42 @@
+{
+  "objective": "gap_weighted_pair_average_v2",
+  "grid": {
+    "hidden": [
+      16,
+      32
+    ],
+    "tie_tolerance": [
+      0.0,
+      0.02
+    ],
+    "epochs": [
+      5,
+      10,
+      20,
+      40
+    ]
+  },
+  "seed": 17,
+  "learning_rate": 0.003,
+  "batch_size": 16,
+  "l2": 0.0001,
+  "dataset": "/workspace/scratch/297fc945f947/Battlegroundschatgpt/runs/20260905-positioning-v1/positions.jsonl.gz",
+  "dataset_sha256": "701446a79ab852c0512a67bfa56746b292ab9d6f0384c8bd90367d6269a3d1e7",
+  "selection_rule": "Maximum validation mean combat score; exact ties prefer smaller hidden layer, then earlier epoch, then smaller tie tolerance",
+  "allowed_splits": [
+    "train",
+    "validation"
+  ],
+  "test_used": false,
+  "source_sha256": {
+    "python/bg_ai/learning.py": "039833dddcce6ce6ad84b4e9d9f16971eeb96a2f1aa927a08a0225c5f0f765a6",
+    "python/bg_ai/features.py": "454c92dbf855d534ea880462df8a9d27f82a10cc147429cd2ea1a0d9016de146",
+    "scripts/train_position_candidates.py": "38d813e53e041028f6d6cf39b6cf624cbac2ad5b7b4e922649e4f19888d3aac6"
+  },
+  "legacy_objective": "within_scenario_gap_normalized_v1",
+  "legacy_note": "Original v1 checkpoint predates objective metadata and used within-scenario normalized absolute gaps; original artifacts remain unchanged",
+  "training_scenarios": 4800,
+  "validation_scenarios": 600,
+  "feature_count": 1251,
+  "feature_schema_id": "390788f220959652238ca69143f7e145106b164b2642620170050e716846537d"
+}

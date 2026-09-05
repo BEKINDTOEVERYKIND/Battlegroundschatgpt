@@ -1,0 +1,12 @@
+{
+  "policy": "neural_proposals_plus_simulation_search",
+  "scope": "audited neutral-context combat positioning",
+  "checkpoint": "runs/20260905-positioning-v2/selected_positioning.json",
+  "checkpoint_sha256": "0132751247476b07b9f9d779d04e3e9773bac6fdf39303d94c2f3fb2bf4cf3f7",
+  "ruleset_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "eligibility_report": "runs/20260905-positioning-v1/positions.jsonl.coverage.json",
+  "search_config": "config/positioning-search-v1.json",
+  "evaluation": "runs/20260905-positioning-search-v1/evaluation.json",
+  "benchmark_passed": true,
+  "full_game_ready": false
+}

@@ -1,0 +1,315 @@
+{
+  "build": 251332,
+  "button": {
+    "gold_cost": 3,
+    "max_uses_per_game": 3,
+    "max_uses_per_turn": 1,
+    "options": 3,
+    "unlock_turn": 3
+  },
+  "minion_tiers_after_turn10": {
+    "status": "inferred; verify against client logs before full-game training",
+    "value": [
+      5,
+      6
+    ]
+  },
+  "minion_tiers_by_turn": {
+    "10": [
+      5,
+      6
+    ],
+    "3": [
+      2
+    ],
+    "4": [
+      2,
+      3
+    ],
+    "5": [
+      3
+    ],
+    "6": [
+      3,
+      4
+    ],
+    "7": [
+      4
+    ],
+    "8": [
+      4,
+      5
+    ],
+    "9": [
+      4,
+      5,
+      6
+    ]
+  },
+  "offerings": [
+    {
+      "id": "BG36_MidGameEffect_000t",
+      "max_turn": 9,
+      "min_turn": 6,
+      "name": "Offensive Sacrifice"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t10",
+      "max_turn": null,
+      "min_turn": 6,
+      "name": "Echoing Voice"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t11",
+      "max_turn": null,
+      "min_turn": 5,
+      "name": "Double Vision"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t12",
+      "max_turn": null,
+      "min_turn": 10,
+      "name": "Persisting Horror"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t13",
+      "max_turn": null,
+      "min_turn": null,
+      "name": "Harpy's Talons"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t14",
+      "max_turn": 8,
+      "min_turn": 4,
+      "name": "Gilding"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t15",
+      "max_turn": null,
+      "min_turn": 5,
+      "name": "Toreth's Blessing"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t16",
+      "max_turn": null,
+      "min_turn": 5,
+      "name": "Jaws of Death"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t18",
+      "max_turn": 7,
+      "min_turn": 4,
+      "name": "Replication"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t2",
+      "max_turn": 9,
+      "min_turn": 6,
+      "name": "Defensive Sacrifice"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t21",
+      "max_turn": 8,
+      "min_turn": 5,
+      "name": "Time Turning"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t22",
+      "max_turn": null,
+      "min_turn": 8,
+      "name": "Amalgamation"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t28",
+      "max_turn": 10,
+      "min_turn": 7,
+      "name": "Battle Scars"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t28t",
+      "max_turn": 6,
+      "min_turn": 4,
+      "name": "Battle Scars"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t29",
+      "max_turn": 10,
+      "min_turn": 7,
+      "name": "Death's Embrace"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t29t",
+      "max_turn": 6,
+      "min_turn": 4,
+      "name": "Death's Embrace"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t3",
+      "max_turn": 11,
+      "min_turn": 7,
+      "name": "Charisma"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t30",
+      "max_turn": 10,
+      "min_turn": 7,
+      "name": "Spell Siphon"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t30t",
+      "max_turn": 6,
+      "min_turn": 4,
+      "name": "Spell Siphon"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t4",
+      "max_turn": 8,
+      "min_turn": 6,
+      "name": "Incubation"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t5",
+      "max_turn": 8,
+      "min_turn": 5,
+      "name": "Mystic Essence"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t50",
+      "max_turn": null,
+      "min_turn": 6,
+      "name": "Tarecgosa's Blessing"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t51",
+      "max_turn": 5,
+      "min_turn": 3,
+      "name": "Steady Growth"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t52",
+      "max_turn": 5,
+      "min_turn": 3,
+      "name": "Fresh Perspective"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t60",
+      "max_turn": null,
+      "min_turn": 12,
+      "name": "Invulnerability"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t61",
+      "max_turn": 11,
+      "min_turn": 9,
+      "name": "Golemancy"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t62",
+      "max_turn": null,
+      "min_turn": 3,
+      "name": "Sunken Persistence"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t64",
+      "max_turn": 8,
+      "min_turn": 7,
+      "name": "Dexterity"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t64t",
+      "max_turn": 10,
+      "min_turn": 9,
+      "name": "Dexterity"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t65",
+      "max_turn": 9,
+      "min_turn": 5,
+      "name": "Polarization"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t66",
+      "max_turn": 8,
+      "min_turn": 5,
+      "name": "Demonology"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t69",
+      "max_turn": null,
+      "min_turn": 9,
+      "name": "Toxicity"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t7",
+      "max_turn": 10,
+      "min_turn": 7,
+      "name": "Resistance"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t71",
+      "max_turn": 10,
+      "min_turn": 7,
+      "name": "Hostility"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t72",
+      "max_turn": null,
+      "min_turn": 11,
+      "name": "Titanic Strength"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t73",
+      "max_turn": 3,
+      "min_turn": 3,
+      "name": "Fortitude"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t74",
+      "max_turn": 6,
+      "min_turn": 3,
+      "name": "Sharpened Sword"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t75",
+      "max_turn": 6,
+      "min_turn": 3,
+      "name": "Toughened Shield"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t79",
+      "max_turn": null,
+      "min_turn": 4,
+      "name": "Furtiveness"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t80",
+      "max_turn": 5,
+      "min_turn": 3,
+      "name": "Consanguinity"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t81",
+      "max_turn": null,
+      "min_turn": 7,
+      "name": "Transcendence"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t82",
+      "max_turn": 4,
+      "min_turn": 3,
+      "name": "Affinity"
+    },
+    {
+      "id": "BG36_MidGameEffect_000t9",
+      "max_turn": null,
+      "min_turn": 7,
+      "name": "Admiration"
+    }
+  ],
+  "status": "partial",
+  "unresolved": [
+    "Joint minion/gift sampling weights, including rare gifts and minion preferences.",
+    "All cumulative eligibility and hero-exception restrictions require an executable audited implementation."
+  ],
+  "window_source": "Client numeric tags 4853 and 4854, cross-checked with Blizzard's 36.2.2 update; missing maximum means unbounded."
+}

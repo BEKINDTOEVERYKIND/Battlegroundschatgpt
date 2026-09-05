@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "attempted": 10,
+  "written": 10,
+  "rejected": 0,
+  "combats": 2560,
+  "trials": 32,
+  "candidates": 8,
+  "seed": 20260905,
+  "start": 0,
+  "engine": "1.1.750",
+  "referencePackage": "3.0.196",
+  "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "datasetSha256": "b7f25bdd7e608b2f2cf955305cde2177eb1c98bc547d20019494200156b66987",
+  "elapsedSeconds": 0.736,
+  "source": "synthetic_current_pool_combat",
+  "failures": []
+}

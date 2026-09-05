@@ -1,0 +1,171 @@
+{
+  "source_snapshot": "battlegrounds-solo-36.4.2.251332-20260905",
+  "full_game_ready": false,
+  "training_label_generation_simulations": 7680000,
+  "new_holdout_label_generation_simulations": 1280000,
+  "search_selection_simulations": 430592,
+  "experiments": {
+    "20260905-positioning-v1": {
+      "scope": "combat positioning on generated legal-pool boards; not full-game playing strength",
+      "evaluated_policy": "neural_model_only",
+      "scenario_count": 600,
+      "mean_scores": {
+        "model": 0.5081966145833333,
+        "random": 0.4891487630208333,
+        "attack": 0.5129646809895834,
+        "health": 0.5091560872395834,
+        "taunt_last": 0.5135294596354166
+      },
+      "paired_model_minus_baseline": {
+        "random": {
+          "mean": 0.0190478515625,
+          "scenarios": 600,
+          "ci95": [
+            0.012189798990885417,
+            0.026376973470052086
+          ]
+        },
+        "attack": {
+          "mean": -0.00476806640625,
+          "scenarios": 600,
+          "ci95": [
+            -0.008756612141927083,
+            -0.0006192626953125006
+          ]
+        },
+        "health": {
+          "mean": -0.00095947265625,
+          "scenarios": 600,
+          "ci95": [
+            -0.0051717325846354165,
+            0.003193868001302076
+          ]
+        },
+        "taunt_last": {
+          "mean": -0.005332845052083333,
+          "scenarios": 600,
+          "ci95": [
+            -0.00933935546875,
+            -0.0013215942382812501
+          ]
+        }
+      },
+      "benchmark_gate": {
+        "eligible_final_test": true,
+        "passes": false,
+        "rule": "At least 30 final test scenarios and positive lower 95% paired CI against every predeclared baseline",
+        "status": "no_clear_advantage"
+      },
+      "fresh_combat_simulations": 2119680,
+      "report_sha256": "26469e480e48514f230d1b4242310ff976e14c33647d2a94b5e09778e3983ef2"
+    },
+    "20260905-positioning-v2": {
+      "scope": "combat positioning on generated legal-pool boards; not full-game playing strength",
+      "evaluated_policy": "neural_model_only",
+      "scenario_count": 1000,
+      "mean_scores": {
+        "model": 0.5322236328125,
+        "random": 0.50562890625,
+        "attack": 0.53347509765625,
+        "health": 0.5259677734375,
+        "taunt_last": 0.53469287109375
+      },
+      "paired_model_minus_baseline": {
+        "random": {
+          "mean": 0.0265947265625,
+          "scenarios": 1000,
+          "ci95": [
+            0.0219951171875,
+            0.03117974853515625
+          ]
+        },
+        "attack": {
+          "mean": -0.00125146484375,
+          "scenarios": 1000,
+          "ci95": [
+            -0.0041435791015625,
+            0.0015744140624999973
+          ]
+        },
+        "health": {
+          "mean": 0.006255859375,
+          "scenarios": 1000,
+          "ci95": [
+            0.0032938598632812504,
+            0.00937940673828125
+          ]
+        },
+        "taunt_last": {
+          "mean": -0.00246923828125,
+          "scenarios": 1000,
+          "ci95": [
+            -0.00529495849609375,
+            0.0002797973632812498
+          ]
+        }
+      },
+      "benchmark_gate": {
+        "eligible_final_test": true,
+        "passes": false,
+        "rule": "At least 30 final test scenarios and positive lower 95% paired CI against every predeclared baseline",
+        "status": "no_clear_advantage"
+      },
+      "fresh_combat_simulations": 3476480,
+      "report_sha256": "d8c2cf56de236ac679f62bf5a03c22c79187cc9b1c66d9210c4e26f8517b4355"
+    },
+    "20260905-positioning-search-v1": {
+      "scope": "combat positioning on generated legal-pool boards; not full-game playing strength",
+      "evaluated_policy": "neural_proposals_plus_simulation_search",
+      "scenario_count": 1000,
+      "mean_scores": {
+        "model": 0.54560009765625,
+        "random": 0.50562890625,
+        "attack": 0.53347509765625,
+        "health": 0.5259677734375,
+        "taunt_last": 0.53469287109375
+      },
+      "paired_model_minus_baseline": {
+        "random": {
+          "mean": 0.03997119140625,
+          "scenarios": 1000,
+          "ci95": [
+            0.03555982666015625,
+            0.04448203125
+          ]
+        },
+        "attack": {
+          "mean": 0.012125,
+          "scenarios": 1000,
+          "ci95": [
+            0.0092079345703125,
+            0.01533399658203125
+          ]
+        },
+        "health": {
+          "mean": 0.01963232421875,
+          "scenarios": 1000,
+          "ci95": [
+            0.01631590576171875,
+            0.023124218749999995
+          ]
+        },
+        "taunt_last": {
+          "mean": 0.0109072265625,
+          "scenarios": 1000,
+          "ci95": [
+            0.00814739990234375,
+            0.0139692626953125
+          ]
+        }
+      },
+      "benchmark_gate": {
+        "eligible_final_test": true,
+        "passes": true,
+        "rule": "At least 30 final test scenarios and positive lower 95% paired CI against every predeclared baseline",
+        "status": "benchmark_advantage"
+      },
+      "fresh_combat_simulations": 3447808,
+      "report_sha256": "3ddf0ad005d90fbcc1e575d8150f8bf4d359c935f1e15824440258e7f729765a"
+    }
+  }
+}

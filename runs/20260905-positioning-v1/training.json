@@ -1,0 +1,5485 @@
+{
+  "scope": "combat board positioning only; no recruiting or full-game policy",
+  "checkpoint": "/workspace/scratch/297fc945f947/Battlegroundschatgpt/runs/20260905-positioning-v1/positioning.json",
+  "feature_count": 1251,
+  "warm_start": null,
+  "training_scenarios": 4800,
+  "pairwise_loss": [
+    0.585481996474574,
+    0.5477474826433201,
+    0.5267919467095905,
+    0.5048519355866561,
+    0.4892008864956646,
+    0.46378602623765397,
+    0.4485456708143803,
+    0.42387955011886547,
+    0.3981126113592759,
+    0.3769016867240672,
+    0.35623689180209367,
+    0.3344265093009662,
+    0.3218170219973814,
+    0.30535963869387667,
+    0.2960375101129339,
+    0.2807758788427592,
+    0.2712690842086569,
+    0.2622585795518815,
+    0.25148607897011427,
+    0.24251481821979337,
+    0.23375179248962782,
+    0.2319778110607773,
+    0.22674513542431768,
+    0.22175014290498626,
+    0.21791434725419004,
+    0.2151171676990746,
+    0.207134108923359,
+    0.1971088668807172,
+    0.1995205360696909,
+    0.20352977603040445,
+    0.20092634549483324,
+    0.1941872192453223,
+    0.18542296983104023,
+    0.18693597191984665,
+    0.1877880494226532,
+    0.1886372183754934,
+    0.1824190912579812,
+    0.17623546326687733,
+    0.17507362643289331,
+    0.176428053515021
+  ],
+  "validation": {
+    "split": "validation",
+    "held_out": true,
+    "scenario_count": 600,
+    "score_definition": "higher-is-better labels supplied by the dataset",
+    "mean_selected_score": 0.53134765625,
+    "mean_baseline_score": 0.5110026041666667,
+    "mean_random_score": 0.5115,
+    "mean_best_observed_score": 0.5706380208333334,
+    "mean_regret_to_best_observed": 0.039290364583333334,
+    "paired_vs_baseline": {
+      "mean": 0.020345052083333332,
+      "scenarios": 600,
+      "ci95": [
+        0.014192220052083333,
+        0.026530598958333325
+      ]
+    },
+    "paired_vs_uniform_candidate": {
+      "mean": 0.019847656249999998,
+      "scenarios": 600,
+      "ci95": [
+        0.015445247395833334,
+        0.024336100260416667
+      ]
+    },
+    "bootstrap": {
+      "unit": "scenario",
+      "samples": 5000,
+      "seed": 17,
+      "method": "paired percentile bootstrap",
+      "limitations": "Does not include simulator label error, opponent distribution shift, or full-game EV"
+    },
+    "scenarios": [
+      {
+        "scenario_id": "position-20260905-8",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.66796875,
+        "baseline_score": 0.75,
+        "random_score": 0.682421875,
+        "best_observed_score": 0.8203125
+      },
+      {
+        "scenario_id": "position-20260905-18",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.3515625,
+        "baseline_score": 0.30078125,
+        "random_score": 0.32109375,
+        "best_observed_score": 0.4453125
+      },
+      {
+        "scenario_id": "position-20260905-28",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.000390625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-38",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.80078125,
+        "baseline_score": 0.89453125,
+        "random_score": 0.9171875,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-48",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.8203125,
+        "baseline_score": 0.6328125,
+        "random_score": 0.6265625,
+        "best_observed_score": 0.8203125
+      },
+      {
+        "scenario_id": "position-20260905-58",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.0,
+        "random_score": 0.0015625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-68",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-78",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.00390625,
+        "random_score": 0.01015625,
+        "best_observed_score": 0.04296875
+      },
+      {
+        "scenario_id": "position-20260905-88",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.765625,
+        "baseline_score": 0.73046875,
+        "random_score": 0.765625,
+        "best_observed_score": 0.80859375
+      },
+      {
+        "scenario_id": "position-20260905-98",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0703125,
+        "random_score": 0.024609375,
+        "best_observed_score": 0.11328125
+      },
+      {
+        "scenario_id": "position-20260905-108",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-118",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-128",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.9609375,
+        "baseline_score": 0.9609375,
+        "random_score": 0.80390625,
+        "best_observed_score": 0.9609375
+      },
+      {
+        "scenario_id": "position-20260905-138",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.27734375,
+        "baseline_score": 0.19140625,
+        "random_score": 0.191015625,
+        "best_observed_score": 0.27734375
+      },
+      {
+        "scenario_id": "position-20260905-148",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.0,
+        "random_score": 0.006640625,
+        "best_observed_score": 0.03515625
+      },
+      {
+        "scenario_id": "position-20260905-158",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-168",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.796875,
+        "baseline_score": 0.69140625,
+        "random_score": 0.73671875,
+        "best_observed_score": 0.80078125
+      },
+      {
+        "scenario_id": "position-20260905-178",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.81640625,
+        "baseline_score": 0.66015625,
+        "random_score": 0.71328125,
+        "best_observed_score": 0.81640625
+      },
+      {
+        "scenario_id": "position-20260905-188",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-198",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 0.99609375,
+        "random_score": 0.99296875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-208",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.72265625,
+        "baseline_score": 0.98046875,
+        "random_score": 0.8828125,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-218",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.34375,
+        "baseline_score": 0.3515625,
+        "random_score": 0.289453125,
+        "best_observed_score": 0.3515625
+      },
+      {
+        "scenario_id": "position-20260905-228",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.0625,
+        "baseline_score": 0.00390625,
+        "random_score": 0.030859375,
+        "best_observed_score": 0.0625
+      },
+      {
+        "scenario_id": "position-20260905-238",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-248",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.875,
+        "baseline_score": 0.83984375,
+        "random_score": 0.855859375,
+        "best_observed_score": 0.91796875
+      },
+      {
+        "scenario_id": "position-20260905-258",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.8203125,
+        "baseline_score": 0.7109375,
+        "random_score": 0.759375,
+        "best_observed_score": 0.8203125
+      },
+      {
+        "scenario_id": "position-20260905-268",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.000390625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-278",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.015625,
+        "baseline_score": 0.01171875,
+        "random_score": 0.0109375,
+        "best_observed_score": 0.0234375
+      },
+      {
+        "scenario_id": "position-20260905-288",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.984375,
+        "random_score": 0.975390625,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-298",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.46484375,
+        "baseline_score": 0.51953125,
+        "random_score": 0.450390625,
+        "best_observed_score": 0.51953125
+      },
+      {
+        "scenario_id": "position-20260905-308",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-318",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.78515625,
+        "baseline_score": 0.796875,
+        "random_score": 0.825390625,
+        "best_observed_score": 0.89453125
+      },
+      {
+        "scenario_id": "position-20260905-328",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.33203125,
+        "baseline_score": 0.33984375,
+        "random_score": 0.334375,
+        "best_observed_score": 0.4765625
+      },
+      {
+        "scenario_id": "position-20260905-338",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.41796875,
+        "baseline_score": 0.47265625,
+        "random_score": 0.426953125,
+        "best_observed_score": 0.47265625
+      },
+      {
+        "scenario_id": "position-20260905-348",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.86328125,
+        "baseline_score": 0.8671875,
+        "random_score": 0.885546875,
+        "best_observed_score": 0.94921875
+      },
+      {
+        "scenario_id": "position-20260905-358",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.52734375,
+        "baseline_score": 0.48828125,
+        "random_score": 0.553125,
+        "best_observed_score": 0.640625
+      },
+      {
+        "scenario_id": "position-20260905-368",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-378",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-388",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.73046875,
+        "baseline_score": 0.73046875,
+        "random_score": 0.74140625,
+        "best_observed_score": 0.8125
+      },
+      {
+        "scenario_id": "position-20260905-398",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.9609375,
+        "baseline_score": 0.9765625,
+        "random_score": 0.96640625,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-408",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.89453125,
+        "baseline_score": 0.8046875,
+        "random_score": 0.862109375,
+        "best_observed_score": 0.91015625
+      },
+      {
+        "scenario_id": "position-20260905-418",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.51953125,
+        "baseline_score": 0.51171875,
+        "random_score": 0.41484375,
+        "best_observed_score": 0.5390625
+      },
+      {
+        "scenario_id": "position-20260905-428",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-438",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.86328125,
+        "baseline_score": 0.90234375,
+        "random_score": 0.901953125,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-448",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.84765625,
+        "baseline_score": 0.91015625,
+        "random_score": 0.78515625,
+        "best_observed_score": 0.91015625
+      },
+      {
+        "scenario_id": "position-20260905-458",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.002734375,
+        "best_observed_score": 0.0078125
+      },
+      {
+        "scenario_id": "position-20260905-468",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.93359375,
+        "baseline_score": 0.953125,
+        "random_score": 0.969140625,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-478",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.66796875,
+        "baseline_score": 0.59765625,
+        "random_score": 0.6359375,
+        "best_observed_score": 0.7265625
+      },
+      {
+        "scenario_id": "position-20260905-488",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.5703125,
+        "baseline_score": 0.58984375,
+        "random_score": 0.41796875,
+        "best_observed_score": 0.58984375
+      },
+      {
+        "scenario_id": "position-20260905-498",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.4609375,
+        "baseline_score": 0.3515625,
+        "random_score": 0.373828125,
+        "best_observed_score": 0.47265625
+      },
+      {
+        "scenario_id": "position-20260905-508",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.08984375,
+        "baseline_score": 0.18359375,
+        "random_score": 0.091015625,
+        "best_observed_score": 0.18359375
+      },
+      {
+        "scenario_id": "position-20260905-518",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-528",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.375,
+        "baseline_score": 0.33203125,
+        "random_score": 0.35859375,
+        "best_observed_score": 0.41796875
+      },
+      {
+        "scenario_id": "position-20260905-538",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.94921875,
+        "baseline_score": 0.93359375,
+        "random_score": 0.94921875,
+        "best_observed_score": 0.9765625
+      },
+      {
+        "scenario_id": "position-20260905-548",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.01171875,
+        "random_score": 0.009765625,
+        "best_observed_score": 0.02734375
+      },
+      {
+        "scenario_id": "position-20260905-558",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-568",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.53125,
+        "baseline_score": 0.56640625,
+        "random_score": 0.51953125,
+        "best_observed_score": 0.64453125
+      },
+      {
+        "scenario_id": "position-20260905-578",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.875,
+        "baseline_score": 0.79296875,
+        "random_score": 0.787890625,
+        "best_observed_score": 0.875
+      },
+      {
+        "scenario_id": "position-20260905-588",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.05859375,
+        "baseline_score": 0.05859375,
+        "random_score": 0.092578125,
+        "best_observed_score": 0.171875
+      },
+      {
+        "scenario_id": "position-20260905-598",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.08984375,
+        "baseline_score": 0.10546875,
+        "random_score": 0.100390625,
+        "best_observed_score": 0.125
+      },
+      {
+        "scenario_id": "position-20260905-608",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.28515625,
+        "baseline_score": 0.12890625,
+        "random_score": 0.187890625,
+        "best_observed_score": 0.328125
+      },
+      {
+        "scenario_id": "position-20260905-618",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.875,
+        "baseline_score": 0.8828125,
+        "random_score": 0.87265625,
+        "best_observed_score": 0.9296875
+      },
+      {
+        "scenario_id": "position-20260905-628",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.36328125,
+        "baseline_score": 0.36328125,
+        "random_score": 0.48515625,
+        "best_observed_score": 0.64453125
+      },
+      {
+        "scenario_id": "position-20260905-638",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.140625,
+        "baseline_score": 0.0859375,
+        "random_score": 0.095703125,
+        "best_observed_score": 0.140625
+      },
+      {
+        "scenario_id": "position-20260905-648",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.109375,
+        "baseline_score": 0.109375,
+        "random_score": 0.0953125,
+        "best_observed_score": 0.1328125
+      },
+      {
+        "scenario_id": "position-20260905-658",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.13671875,
+        "baseline_score": 0.14453125,
+        "random_score": 0.14609375,
+        "best_observed_score": 0.19140625
+      },
+      {
+        "scenario_id": "position-20260905-668",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.39453125,
+        "baseline_score": 0.37109375,
+        "random_score": 0.334375,
+        "best_observed_score": 0.4296875
+      },
+      {
+        "scenario_id": "position-20260905-678",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-688",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 1.0,
+        "random_score": 0.9953125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-698",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.23046875,
+        "baseline_score": 0.23828125,
+        "random_score": 0.204296875,
+        "best_observed_score": 0.25
+      },
+      {
+        "scenario_id": "position-20260905-708",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.9609375,
+        "baseline_score": 0.8359375,
+        "random_score": 0.917578125,
+        "best_observed_score": 0.9765625
+      },
+      {
+        "scenario_id": "position-20260905-718",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.48828125,
+        "baseline_score": 0.4921875,
+        "random_score": 0.502734375,
+        "best_observed_score": 0.60546875
+      },
+      {
+        "scenario_id": "position-20260905-728",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.999609375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-738",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.57421875,
+        "baseline_score": 0.44921875,
+        "random_score": 0.441796875,
+        "best_observed_score": 0.59375
+      },
+      {
+        "scenario_id": "position-20260905-748",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.95703125,
+        "random_score": 0.967578125,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-758",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.000390625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-768",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.8359375,
+        "baseline_score": 0.8125,
+        "random_score": 0.856640625,
+        "best_observed_score": 0.94140625
+      },
+      {
+        "scenario_id": "position-20260905-778",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-788",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.09765625,
+        "baseline_score": 0.12890625,
+        "random_score": 0.10234375,
+        "best_observed_score": 0.12890625
+      },
+      {
+        "scenario_id": "position-20260905-798",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-808",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.02734375,
+        "baseline_score": 0.0234375,
+        "random_score": 0.015625,
+        "best_observed_score": 0.03125
+      },
+      {
+        "scenario_id": "position-20260905-818",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.4921875,
+        "baseline_score": 0.2890625,
+        "random_score": 0.353515625,
+        "best_observed_score": 0.4921875
+      },
+      {
+        "scenario_id": "position-20260905-828",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 0.9921875,
+        "random_score": 0.998828125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-838",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.45703125,
+        "baseline_score": 0.85546875,
+        "random_score": 0.55859375,
+        "best_observed_score": 0.85546875
+      },
+      {
+        "scenario_id": "position-20260905-848",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.921875,
+        "baseline_score": 0.90234375,
+        "random_score": 0.88671875,
+        "best_observed_score": 0.9609375
+      },
+      {
+        "scenario_id": "position-20260905-858",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.6328125,
+        "baseline_score": 0.66796875,
+        "random_score": 0.644140625,
+        "best_observed_score": 0.6953125
+      },
+      {
+        "scenario_id": "position-20260905-868",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.98046875,
+        "random_score": 0.940234375,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-878",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9609375,
+        "baseline_score": 0.97265625,
+        "random_score": 0.946875,
+        "best_observed_score": 0.97265625
+      },
+      {
+        "scenario_id": "position-20260905-888",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.9765625,
+        "baseline_score": 0.9765625,
+        "random_score": 0.958984375,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-898",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-908",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.08203125,
+        "baseline_score": 0.1015625,
+        "random_score": 0.101953125,
+        "best_observed_score": 0.20703125
+      },
+      {
+        "scenario_id": "position-20260905-918",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.125,
+        "baseline_score": 0.203125,
+        "random_score": 0.153125,
+        "best_observed_score": 0.2421875
+      },
+      {
+        "scenario_id": "position-20260905-928",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.98046875,
+        "baseline_score": 0.9296875,
+        "random_score": 0.951953125,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-938",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.92578125,
+        "baseline_score": 0.9296875,
+        "random_score": 0.9015625,
+        "best_observed_score": 0.9453125
+      },
+      {
+        "scenario_id": "position-20260905-948",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.109375,
+        "baseline_score": 0.109375,
+        "random_score": 0.123828125,
+        "best_observed_score": 0.19140625
+      },
+      {
+        "scenario_id": "position-20260905-958",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.97265625,
+        "random_score": 0.958203125,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-968",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.734375,
+        "baseline_score": 0.6484375,
+        "random_score": 0.566796875,
+        "best_observed_score": 0.734375
+      },
+      {
+        "scenario_id": "position-20260905-978",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.81640625,
+        "baseline_score": 0.88671875,
+        "random_score": 0.78046875,
+        "best_observed_score": 0.88671875
+      },
+      {
+        "scenario_id": "position-20260905-988",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0234375,
+        "baseline_score": 0.00390625,
+        "random_score": 0.018359375,
+        "best_observed_score": 0.03515625
+      },
+      {
+        "scenario_id": "position-20260905-998",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.17578125,
+        "baseline_score": 0.1640625,
+        "random_score": 0.176953125,
+        "best_observed_score": 0.2265625
+      },
+      {
+        "scenario_id": "position-20260905-1008",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.87890625,
+        "baseline_score": 0.765625,
+        "random_score": 0.79609375,
+        "best_observed_score": 0.87890625
+      },
+      {
+        "scenario_id": "position-20260905-1018",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1028",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.12109375,
+        "baseline_score": 0.1875,
+        "random_score": 0.134765625,
+        "best_observed_score": 0.1875
+      },
+      {
+        "scenario_id": "position-20260905-1038",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1048",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.21484375,
+        "baseline_score": 0.21484375,
+        "random_score": 0.29296875,
+        "best_observed_score": 0.375
+      },
+      {
+        "scenario_id": "position-20260905-1058",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.70703125,
+        "baseline_score": 0.48046875,
+        "random_score": 0.5921875,
+        "best_observed_score": 0.70703125
+      },
+      {
+        "scenario_id": "position-20260905-1068",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.984375,
+        "random_score": 0.978125,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-1078",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1088",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.390625,
+        "baseline_score": 0.37890625,
+        "random_score": 0.35625,
+        "best_observed_score": 0.3984375
+      },
+      {
+        "scenario_id": "position-20260905-1098",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.078125,
+        "baseline_score": 0.078125,
+        "random_score": 0.07734375,
+        "best_observed_score": 0.09375
+      },
+      {
+        "scenario_id": "position-20260905-1108",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.92578125,
+        "baseline_score": 0.8515625,
+        "random_score": 0.868359375,
+        "best_observed_score": 0.92578125
+      },
+      {
+        "scenario_id": "position-20260905-1118",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.90234375,
+        "baseline_score": 0.88671875,
+        "random_score": 0.90859375,
+        "best_observed_score": 0.95703125
+      },
+      {
+        "scenario_id": "position-20260905-1128",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.45703125,
+        "baseline_score": 0.1953125,
+        "random_score": 0.3484375,
+        "best_observed_score": 0.51953125
+      },
+      {
+        "scenario_id": "position-20260905-1138",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.01171875,
+        "baseline_score": 0.05078125,
+        "random_score": 0.0390625,
+        "best_observed_score": 0.1015625
+      },
+      {
+        "scenario_id": "position-20260905-1148",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.19140625,
+        "baseline_score": 0.1953125,
+        "random_score": 0.231640625,
+        "best_observed_score": 0.30859375
+      },
+      {
+        "scenario_id": "position-20260905-1158",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1168",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.734375,
+        "baseline_score": 0.734375,
+        "random_score": 0.684765625,
+        "best_observed_score": 0.77734375
+      },
+      {
+        "scenario_id": "position-20260905-1178",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.92578125,
+        "baseline_score": 0.95703125,
+        "random_score": 0.909765625,
+        "best_observed_score": 0.95703125
+      },
+      {
+        "scenario_id": "position-20260905-1188",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.01171875,
+        "baseline_score": 0.01953125,
+        "random_score": 0.011328125,
+        "best_observed_score": 0.01953125
+      },
+      {
+        "scenario_id": "position-20260905-1198",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1208",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1218",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.98046875,
+        "baseline_score": 0.984375,
+        "random_score": 0.988671875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1228",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.3203125,
+        "baseline_score": 0.29296875,
+        "random_score": 0.195703125,
+        "best_observed_score": 0.3203125
+      },
+      {
+        "scenario_id": "position-20260905-1238",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.91015625,
+        "baseline_score": 0.91796875,
+        "random_score": 0.90859375,
+        "best_observed_score": 0.9375
+      },
+      {
+        "scenario_id": "position-20260905-1248",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.98828125,
+        "random_score": 0.989453125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1258",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.7109375,
+        "baseline_score": 0.58203125,
+        "random_score": 0.694921875,
+        "best_observed_score": 0.8515625
+      },
+      {
+        "scenario_id": "position-20260905-1268",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.109375,
+        "baseline_score": 0.1640625,
+        "random_score": 0.142578125,
+        "best_observed_score": 0.19921875
+      },
+      {
+        "scenario_id": "position-20260905-1278",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.828125,
+        "baseline_score": 0.73046875,
+        "random_score": 0.84296875,
+        "best_observed_score": 0.90625
+      },
+      {
+        "scenario_id": "position-20260905-1288",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.953125,
+        "baseline_score": 0.85546875,
+        "random_score": 0.8796875,
+        "best_observed_score": 0.953125
+      },
+      {
+        "scenario_id": "position-20260905-1298",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.96875,
+        "baseline_score": 0.984375,
+        "random_score": 0.9609375,
+        "best_observed_score": 0.984375
+      },
+      {
+        "scenario_id": "position-20260905-1308",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.96484375,
+        "baseline_score": 0.953125,
+        "random_score": 0.9546875,
+        "best_observed_score": 0.96875
+      },
+      {
+        "scenario_id": "position-20260905-1318",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1328",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.76953125,
+        "baseline_score": 0.73046875,
+        "random_score": 0.68125,
+        "best_observed_score": 0.80859375
+      },
+      {
+        "scenario_id": "position-20260905-1338",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.9140625,
+        "baseline_score": 0.89453125,
+        "random_score": 0.88125,
+        "best_observed_score": 0.95703125
+      },
+      {
+        "scenario_id": "position-20260905-1348",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.06640625,
+        "baseline_score": 0.01171875,
+        "random_score": 0.030859375,
+        "best_observed_score": 0.08203125
+      },
+      {
+        "scenario_id": "position-20260905-1358",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.6875,
+        "baseline_score": 0.625,
+        "random_score": 0.6640625,
+        "best_observed_score": 0.69140625
+      },
+      {
+        "scenario_id": "position-20260905-1368",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.34765625,
+        "baseline_score": 0.578125,
+        "random_score": 0.36171875,
+        "best_observed_score": 0.578125
+      },
+      {
+        "scenario_id": "position-20260905-1378",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.828125,
+        "baseline_score": 0.796875,
+        "random_score": 0.790625,
+        "best_observed_score": 0.85546875
+      },
+      {
+        "scenario_id": "position-20260905-1388",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.828125,
+        "baseline_score": 0.80078125,
+        "random_score": 0.809375,
+        "best_observed_score": 0.875
+      },
+      {
+        "scenario_id": "position-20260905-1398",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1408",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.37109375,
+        "baseline_score": 0.33984375,
+        "random_score": 0.349609375,
+        "best_observed_score": 0.390625
+      },
+      {
+        "scenario_id": "position-20260905-1418",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1428",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.55078125,
+        "baseline_score": 0.2421875,
+        "random_score": 0.341015625,
+        "best_observed_score": 0.55078125
+      },
+      {
+        "scenario_id": "position-20260905-1438",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.8125,
+        "baseline_score": 0.640625,
+        "random_score": 0.667578125,
+        "best_observed_score": 0.8125
+      },
+      {
+        "scenario_id": "position-20260905-1448",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.6484375,
+        "baseline_score": 0.4921875,
+        "random_score": 0.613671875,
+        "best_observed_score": 0.6875
+      },
+      {
+        "scenario_id": "position-20260905-1458",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.5078125,
+        "baseline_score": 0.66015625,
+        "random_score": 0.65234375,
+        "best_observed_score": 0.72265625
+      },
+      {
+        "scenario_id": "position-20260905-1468",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1478",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.984375,
+        "baseline_score": 0.94140625,
+        "random_score": 0.955078125,
+        "best_observed_score": 0.984375
+      },
+      {
+        "scenario_id": "position-20260905-1488",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.53515625,
+        "baseline_score": 0.46484375,
+        "random_score": 0.37578125,
+        "best_observed_score": 0.53515625
+      },
+      {
+        "scenario_id": "position-20260905-1498",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.41796875,
+        "baseline_score": 0.3515625,
+        "random_score": 0.349609375,
+        "best_observed_score": 0.41796875
+      },
+      {
+        "scenario_id": "position-20260905-1508",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1518",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 0.98828125,
+        "random_score": 0.990234375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1528",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1538",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.68359375,
+        "baseline_score": 0.921875,
+        "random_score": 0.85234375,
+        "best_observed_score": 0.94921875
+      },
+      {
+        "scenario_id": "position-20260905-1548",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1558",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0078125,
+        "baseline_score": 0.00390625,
+        "random_score": 0.003125,
+        "best_observed_score": 0.0078125
+      },
+      {
+        "scenario_id": "position-20260905-1568",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.01171875,
+        "baseline_score": 0.00390625,
+        "random_score": 0.009375,
+        "best_observed_score": 0.01953125
+      },
+      {
+        "scenario_id": "position-20260905-1578",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.94921875,
+        "baseline_score": 0.98828125,
+        "random_score": 0.987890625,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1588",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.14453125,
+        "baseline_score": 0.15625,
+        "random_score": 0.139453125,
+        "best_observed_score": 0.2421875
+      },
+      {
+        "scenario_id": "position-20260905-1598",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.796875,
+        "baseline_score": 0.796875,
+        "random_score": 0.810546875,
+        "best_observed_score": 0.9140625
+      },
+      {
+        "scenario_id": "position-20260905-1608",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.99921875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1618",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.9375,
+        "baseline_score": 0.91796875,
+        "random_score": 0.91015625,
+        "best_observed_score": 0.9375
+      },
+      {
+        "scenario_id": "position-20260905-1628",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1638",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0234375,
+        "random_score": 0.026953125,
+        "best_observed_score": 0.0546875
+      },
+      {
+        "scenario_id": "position-20260905-1648",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.94921875,
+        "baseline_score": 0.984375,
+        "random_score": 0.96640625,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1658",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.890625,
+        "baseline_score": 0.87109375,
+        "random_score": 0.8625,
+        "best_observed_score": 0.9453125
+      },
+      {
+        "scenario_id": "position-20260905-1668",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.58984375,
+        "baseline_score": 0.58984375,
+        "random_score": 0.559765625,
+        "best_observed_score": 0.6015625
+      },
+      {
+        "scenario_id": "position-20260905-1678",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.0,
+        "random_score": 0.0015625,
+        "best_observed_score": 0.0078125
+      },
+      {
+        "scenario_id": "position-20260905-1688",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.09375,
+        "baseline_score": 0.02734375,
+        "random_score": 0.132421875,
+        "best_observed_score": 0.20703125
+      },
+      {
+        "scenario_id": "position-20260905-1698",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.6640625,
+        "baseline_score": 0.4609375,
+        "random_score": 0.498828125,
+        "best_observed_score": 0.7109375
+      },
+      {
+        "scenario_id": "position-20260905-1708",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 0.99609375,
+        "random_score": 0.998828125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1718",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1728",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1738",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.8671875,
+        "baseline_score": 0.83203125,
+        "random_score": 0.811328125,
+        "best_observed_score": 0.8671875
+      },
+      {
+        "scenario_id": "position-20260905-1748",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1758",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.1171875,
+        "baseline_score": 0.1953125,
+        "random_score": 0.158203125,
+        "best_observed_score": 0.1953125
+      },
+      {
+        "scenario_id": "position-20260905-1768",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.37890625,
+        "baseline_score": 0.29296875,
+        "random_score": 0.315625,
+        "best_observed_score": 0.42578125
+      },
+      {
+        "scenario_id": "position-20260905-1778",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.58984375,
+        "baseline_score": 0.51171875,
+        "random_score": 0.556640625,
+        "best_observed_score": 0.59375
+      },
+      {
+        "scenario_id": "position-20260905-1788",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.87890625,
+        "baseline_score": 0.9140625,
+        "random_score": 0.919921875,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-1798",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.20703125,
+        "baseline_score": 0.12109375,
+        "random_score": 0.133984375,
+        "best_observed_score": 0.20703125
+      },
+      {
+        "scenario_id": "position-20260905-1808",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.40234375,
+        "baseline_score": 0.51953125,
+        "random_score": 0.446875,
+        "best_observed_score": 0.51953125
+      },
+      {
+        "scenario_id": "position-20260905-1818",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.69921875,
+        "baseline_score": 0.546875,
+        "random_score": 0.620703125,
+        "best_observed_score": 0.69921875
+      },
+      {
+        "scenario_id": "position-20260905-1828",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.83203125,
+        "baseline_score": 0.84375,
+        "random_score": 0.74296875,
+        "best_observed_score": 0.84375
+      },
+      {
+        "scenario_id": "position-20260905-1838",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.12890625,
+        "baseline_score": 0.07421875,
+        "random_score": 0.08046875,
+        "best_observed_score": 0.1484375
+      },
+      {
+        "scenario_id": "position-20260905-1848",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1858",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1868",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.328125,
+        "baseline_score": 0.24609375,
+        "random_score": 0.2578125,
+        "best_observed_score": 0.34765625
+      },
+      {
+        "scenario_id": "position-20260905-1878",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9375,
+        "baseline_score": 0.92578125,
+        "random_score": 0.93359375,
+        "best_observed_score": 0.95703125
+      },
+      {
+        "scenario_id": "position-20260905-1888",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.4765625,
+        "baseline_score": 0.4375,
+        "random_score": 0.459375,
+        "best_observed_score": 0.515625
+      },
+      {
+        "scenario_id": "position-20260905-1898",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.19921875,
+        "baseline_score": 0.19921875,
+        "random_score": 0.20234375,
+        "best_observed_score": 0.265625
+      },
+      {
+        "scenario_id": "position-20260905-1908",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.8046875,
+        "baseline_score": 0.76953125,
+        "random_score": 0.7703125,
+        "best_observed_score": 0.8671875
+      },
+      {
+        "scenario_id": "position-20260905-1918",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1928",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.91796875,
+        "baseline_score": 0.77734375,
+        "random_score": 0.851953125,
+        "best_observed_score": 0.91796875
+      },
+      {
+        "scenario_id": "position-20260905-1938",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 0.9921875,
+        "random_score": 0.95625,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-1948",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.5625,
+        "baseline_score": 0.390625,
+        "random_score": 0.507421875,
+        "best_observed_score": 0.66796875
+      },
+      {
+        "scenario_id": "position-20260905-1958",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-1968",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0625,
+        "baseline_score": 0.04296875,
+        "random_score": 0.055078125,
+        "best_observed_score": 0.0859375
+      },
+      {
+        "scenario_id": "position-20260905-1978",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.046875,
+        "baseline_score": 0.00390625,
+        "random_score": 0.025,
+        "best_observed_score": 0.0546875
+      },
+      {
+        "scenario_id": "position-20260905-1988",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.6796875,
+        "baseline_score": 0.796875,
+        "random_score": 0.73359375,
+        "best_observed_score": 0.8671875
+      },
+      {
+        "scenario_id": "position-20260905-1998",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.57421875,
+        "baseline_score": 0.7421875,
+        "random_score": 0.65390625,
+        "best_observed_score": 0.765625
+      },
+      {
+        "scenario_id": "position-20260905-2008",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.23828125,
+        "baseline_score": 0.265625,
+        "random_score": 0.2796875,
+        "best_observed_score": 0.39453125
+      },
+      {
+        "scenario_id": "position-20260905-2018",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2028",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2038",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.546875,
+        "baseline_score": 0.6015625,
+        "random_score": 0.57109375,
+        "best_observed_score": 0.6484375
+      },
+      {
+        "scenario_id": "position-20260905-2048",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.64453125,
+        "baseline_score": 0.578125,
+        "random_score": 0.632421875,
+        "best_observed_score": 0.6875
+      },
+      {
+        "scenario_id": "position-20260905-2058",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.609375,
+        "baseline_score": 0.484375,
+        "random_score": 0.547265625,
+        "best_observed_score": 0.625
+      },
+      {
+        "scenario_id": "position-20260905-2068",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.998828125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2078",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.703125,
+        "baseline_score": 0.671875,
+        "random_score": 0.5578125,
+        "best_observed_score": 0.7265625
+      },
+      {
+        "scenario_id": "position-20260905-2088",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.38671875,
+        "baseline_score": 0.3203125,
+        "random_score": 0.338671875,
+        "best_observed_score": 0.38671875
+      },
+      {
+        "scenario_id": "position-20260905-2098",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2108",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2118",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.8203125,
+        "baseline_score": 0.84375,
+        "random_score": 0.8609375,
+        "best_observed_score": 0.92578125
+      },
+      {
+        "scenario_id": "position-20260905-2128",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.0,
+        "random_score": 0.000390625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-2138",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.12890625,
+        "baseline_score": 0.0,
+        "random_score": 0.05,
+        "best_observed_score": 0.12890625
+      },
+      {
+        "scenario_id": "position-20260905-2148",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2158",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.99609375,
+        "random_score": 0.99609375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2168",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.33984375,
+        "baseline_score": 0.26953125,
+        "random_score": 0.271875,
+        "best_observed_score": 0.42578125
+      },
+      {
+        "scenario_id": "position-20260905-2178",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.53125,
+        "baseline_score": 0.53125,
+        "random_score": 0.534765625,
+        "best_observed_score": 0.59765625
+      },
+      {
+        "scenario_id": "position-20260905-2188",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2198",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.00390625,
+        "random_score": 0.003515625,
+        "best_observed_score": 0.01171875
+      },
+      {
+        "scenario_id": "position-20260905-2208",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.546875,
+        "baseline_score": 0.546875,
+        "random_score": 0.541796875,
+        "best_observed_score": 0.6328125
+      },
+      {
+        "scenario_id": "position-20260905-2218",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.96875,
+        "baseline_score": 0.9375,
+        "random_score": 0.971875,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-2228",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2238",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.0078125,
+        "baseline_score": 0.0078125,
+        "random_score": 0.009765625,
+        "best_observed_score": 0.0234375
+      },
+      {
+        "scenario_id": "position-20260905-2248",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9765625,
+        "baseline_score": 1.0,
+        "random_score": 0.98671875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2258",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.20703125,
+        "baseline_score": 0.0,
+        "random_score": 0.088671875,
+        "best_observed_score": 0.20703125
+      },
+      {
+        "scenario_id": "position-20260905-2268",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.998828125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2278",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.55859375,
+        "baseline_score": 0.48828125,
+        "random_score": 0.533203125,
+        "best_observed_score": 0.6796875
+      },
+      {
+        "scenario_id": "position-20260905-2288",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.69921875,
+        "baseline_score": 0.66015625,
+        "random_score": 0.655859375,
+        "best_observed_score": 0.71875
+      },
+      {
+        "scenario_id": "position-20260905-2298",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.359375,
+        "baseline_score": 0.015625,
+        "random_score": 0.1890625,
+        "best_observed_score": 0.4296875
+      },
+      {
+        "scenario_id": "position-20260905-2308",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2318",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2328",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0078125,
+        "baseline_score": 0.0546875,
+        "random_score": 0.15625,
+        "best_observed_score": 0.609375
+      },
+      {
+        "scenario_id": "position-20260905-2338",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.86328125,
+        "baseline_score": 0.79296875,
+        "random_score": 0.752734375,
+        "best_observed_score": 0.93359375
+      },
+      {
+        "scenario_id": "position-20260905-2348",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.0234375,
+        "baseline_score": 0.0078125,
+        "random_score": 0.036328125,
+        "best_observed_score": 0.08203125
+      },
+      {
+        "scenario_id": "position-20260905-2358",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2368",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.08984375,
+        "baseline_score": 0.05859375,
+        "random_score": 0.128515625,
+        "best_observed_score": 0.26171875
+      },
+      {
+        "scenario_id": "position-20260905-2378",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.41796875,
+        "baseline_score": 0.578125,
+        "random_score": 0.369140625,
+        "best_observed_score": 0.578125
+      },
+      {
+        "scenario_id": "position-20260905-2388",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.984375,
+        "random_score": 0.989453125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2398",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2408",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.69921875,
+        "baseline_score": 0.56640625,
+        "random_score": 0.66796875,
+        "best_observed_score": 0.7578125
+      },
+      {
+        "scenario_id": "position-20260905-2418",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.46875,
+        "baseline_score": 0.44921875,
+        "random_score": 0.451953125,
+        "best_observed_score": 0.52734375
+      },
+      {
+        "scenario_id": "position-20260905-2428",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.24609375,
+        "baseline_score": 0.26171875,
+        "random_score": 0.187109375,
+        "best_observed_score": 0.26171875
+      },
+      {
+        "scenario_id": "position-20260905-2438",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.02734375,
+        "baseline_score": 0.03515625,
+        "random_score": 0.041015625,
+        "best_observed_score": 0.078125
+      },
+      {
+        "scenario_id": "position-20260905-2448",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.8515625,
+        "baseline_score": 0.86328125,
+        "random_score": 0.859765625,
+        "best_observed_score": 0.87890625
+      },
+      {
+        "scenario_id": "position-20260905-2458",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2468",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.24609375,
+        "baseline_score": 0.1640625,
+        "random_score": 0.174609375,
+        "best_observed_score": 0.24609375
+      },
+      {
+        "scenario_id": "position-20260905-2478",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 0.99609375,
+        "random_score": 0.998828125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2488",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.96796875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2498",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.8984375,
+        "baseline_score": 0.85546875,
+        "random_score": 0.88203125,
+        "best_observed_score": 0.921875
+      },
+      {
+        "scenario_id": "position-20260905-2508",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.96875,
+        "baseline_score": 0.9375,
+        "random_score": 0.94375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2518",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2528",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.00390625,
+        "best_observed_score": 0.01953125
+      },
+      {
+        "scenario_id": "position-20260905-2538",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.31640625,
+        "baseline_score": 0.33203125,
+        "random_score": 0.304296875,
+        "best_observed_score": 0.37109375
+      },
+      {
+        "scenario_id": "position-20260905-2548",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2558",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.046875,
+        "baseline_score": 0.046875,
+        "random_score": 0.0140625,
+        "best_observed_score": 0.046875
+      },
+      {
+        "scenario_id": "position-20260905-2568",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2578",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.62890625,
+        "baseline_score": 0.421875,
+        "random_score": 0.480859375,
+        "best_observed_score": 0.62890625
+      },
+      {
+        "scenario_id": "position-20260905-2588",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0046875,
+        "best_observed_score": 0.015625
+      },
+      {
+        "scenario_id": "position-20260905-2598",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.36328125,
+        "baseline_score": 0.44921875,
+        "random_score": 0.38828125,
+        "best_observed_score": 0.44921875
+      },
+      {
+        "scenario_id": "position-20260905-2608",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.15234375,
+        "baseline_score": 0.06640625,
+        "random_score": 0.094140625,
+        "best_observed_score": 0.15234375
+      },
+      {
+        "scenario_id": "position-20260905-2618",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.46875,
+        "baseline_score": 0.3046875,
+        "random_score": 0.363671875,
+        "best_observed_score": 0.46875
+      },
+      {
+        "scenario_id": "position-20260905-2628",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.2109375,
+        "baseline_score": 0.14453125,
+        "random_score": 0.326171875,
+        "best_observed_score": 0.6640625
+      },
+      {
+        "scenario_id": "position-20260905-2638",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.00390625,
+        "random_score": 0.009375,
+        "best_observed_score": 0.0390625
+      },
+      {
+        "scenario_id": "position-20260905-2648",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.30078125,
+        "baseline_score": 0.45703125,
+        "random_score": 0.3859375,
+        "best_observed_score": 0.46875
+      },
+      {
+        "scenario_id": "position-20260905-2658",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.6171875,
+        "baseline_score": 0.5859375,
+        "random_score": 0.540234375,
+        "best_observed_score": 0.640625
+      },
+      {
+        "scenario_id": "position-20260905-2668",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2678",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2688",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.05078125,
+        "baseline_score": 0.03515625,
+        "random_score": 0.0421875,
+        "best_observed_score": 0.06640625
+      },
+      {
+        "scenario_id": "position-20260905-2698",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.2890625,
+        "baseline_score": 0.2109375,
+        "random_score": 0.2328125,
+        "best_observed_score": 0.296875
+      },
+      {
+        "scenario_id": "position-20260905-2708",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.875,
+        "baseline_score": 0.89453125,
+        "random_score": 0.8609375,
+        "best_observed_score": 0.94140625
+      },
+      {
+        "scenario_id": "position-20260905-2718",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2728",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.11328125,
+        "baseline_score": 0.0,
+        "random_score": 0.031640625,
+        "best_observed_score": 0.11328125
+      },
+      {
+        "scenario_id": "position-20260905-2738",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.21875,
+        "baseline_score": 0.16796875,
+        "random_score": 0.180859375,
+        "best_observed_score": 0.2265625
+      },
+      {
+        "scenario_id": "position-20260905-2748",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.09375,
+        "baseline_score": 0.0625,
+        "random_score": 0.083203125,
+        "best_observed_score": 0.13671875
+      },
+      {
+        "scenario_id": "position-20260905-2758",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.00078125,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-2768",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2778",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.625,
+        "baseline_score": 0.2734375,
+        "random_score": 0.386328125,
+        "best_observed_score": 0.625
+      },
+      {
+        "scenario_id": "position-20260905-2788",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.6953125,
+        "baseline_score": 0.6328125,
+        "random_score": 0.6046875,
+        "best_observed_score": 0.6953125
+      },
+      {
+        "scenario_id": "position-20260905-2798",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.19140625,
+        "baseline_score": 0.0078125,
+        "random_score": 0.105078125,
+        "best_observed_score": 0.19140625
+      },
+      {
+        "scenario_id": "position-20260905-2808",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 1.0,
+        "random_score": 0.996484375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2818",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.01328125,
+        "best_observed_score": 0.0390625
+      },
+      {
+        "scenario_id": "position-20260905-2828",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.66796875,
+        "baseline_score": 0.6953125,
+        "random_score": 0.6734375,
+        "best_observed_score": 0.734375
+      },
+      {
+        "scenario_id": "position-20260905-2838",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.000390625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-2848",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.375,
+        "baseline_score": 0.58984375,
+        "random_score": 0.428125,
+        "best_observed_score": 0.609375
+      },
+      {
+        "scenario_id": "position-20260905-2858",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0703125,
+        "baseline_score": 0.05859375,
+        "random_score": 0.0578125,
+        "best_observed_score": 0.09765625
+      },
+      {
+        "scenario_id": "position-20260905-2868",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.0234375,
+        "random_score": 0.016015625,
+        "best_observed_score": 0.02734375
+      },
+      {
+        "scenario_id": "position-20260905-2878",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.21484375,
+        "baseline_score": 0.1484375,
+        "random_score": 0.13984375,
+        "best_observed_score": 0.21484375
+      },
+      {
+        "scenario_id": "position-20260905-2888",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.6484375,
+        "baseline_score": 0.484375,
+        "random_score": 0.47265625,
+        "best_observed_score": 0.6484375
+      },
+      {
+        "scenario_id": "position-20260905-2898",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.08203125,
+        "baseline_score": 0.046875,
+        "random_score": 0.107421875,
+        "best_observed_score": 0.234375
+      },
+      {
+        "scenario_id": "position-20260905-2908",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.9296875,
+        "baseline_score": 0.90625,
+        "random_score": 0.93515625,
+        "best_observed_score": 0.96875
+      },
+      {
+        "scenario_id": "position-20260905-2918",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.984375,
+        "baseline_score": 0.95703125,
+        "random_score": 0.9578125,
+        "best_observed_score": 0.98828125
+      },
+      {
+        "scenario_id": "position-20260905-2928",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2938",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.44921875,
+        "baseline_score": 0.5,
+        "random_score": 0.400390625,
+        "best_observed_score": 0.5
+      },
+      {
+        "scenario_id": "position-20260905-2948",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.952734375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2958",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.95703125,
+        "baseline_score": 0.9921875,
+        "random_score": 0.9921875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-2968",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.0,
+        "random_score": 0.001953125,
+        "best_observed_score": 0.0078125
+      },
+      {
+        "scenario_id": "position-20260905-2978",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.42578125,
+        "baseline_score": 0.35546875,
+        "random_score": 0.435546875,
+        "best_observed_score": 0.53125
+      },
+      {
+        "scenario_id": "position-20260905-2988",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-2998",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3008",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.9296875,
+        "baseline_score": 0.9296875,
+        "random_score": 0.910546875,
+        "best_observed_score": 0.96875
+      },
+      {
+        "scenario_id": "position-20260905-3018",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.10546875,
+        "baseline_score": 0.05078125,
+        "random_score": 0.066796875,
+        "best_observed_score": 0.109375
+      },
+      {
+        "scenario_id": "position-20260905-3028",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.39453125,
+        "baseline_score": 0.453125,
+        "random_score": 0.395703125,
+        "best_observed_score": 0.453125
+      },
+      {
+        "scenario_id": "position-20260905-3038",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.84375,
+        "random_score": 0.937890625,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-3048",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.94140625,
+        "baseline_score": 0.9609375,
+        "random_score": 0.940625,
+        "best_observed_score": 0.984375
+      },
+      {
+        "scenario_id": "position-20260905-3058",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3068",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.984375,
+        "baseline_score": 0.9609375,
+        "random_score": 0.963671875,
+        "best_observed_score": 0.984375
+      },
+      {
+        "scenario_id": "position-20260905-3078",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.86328125,
+        "baseline_score": 0.91796875,
+        "random_score": 0.907421875,
+        "best_observed_score": 0.97265625
+      },
+      {
+        "scenario_id": "position-20260905-3088",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.125,
+        "baseline_score": 0.09765625,
+        "random_score": 0.115625,
+        "best_observed_score": 0.1484375
+      },
+      {
+        "scenario_id": "position-20260905-3098",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0390625,
+        "baseline_score": 0.0,
+        "random_score": 0.013671875,
+        "best_observed_score": 0.0390625
+      },
+      {
+        "scenario_id": "position-20260905-3108",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3118",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3128",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.83203125,
+        "baseline_score": 0.72265625,
+        "random_score": 0.742578125,
+        "best_observed_score": 0.83203125
+      },
+      {
+        "scenario_id": "position-20260905-3138",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.27734375,
+        "baseline_score": 0.1953125,
+        "random_score": 0.233203125,
+        "best_observed_score": 0.27734375
+      },
+      {
+        "scenario_id": "position-20260905-3148",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.68359375,
+        "baseline_score": 0.56640625,
+        "random_score": 0.631640625,
+        "best_observed_score": 0.8515625
+      },
+      {
+        "scenario_id": "position-20260905-3158",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.44140625,
+        "baseline_score": 0.02734375,
+        "random_score": 0.10859375,
+        "best_observed_score": 0.44140625
+      },
+      {
+        "scenario_id": "position-20260905-3168",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.8515625,
+        "baseline_score": 0.80078125,
+        "random_score": 0.87734375,
+        "best_observed_score": 0.984375
+      },
+      {
+        "scenario_id": "position-20260905-3178",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.640625,
+        "baseline_score": 0.640625,
+        "random_score": 0.6,
+        "best_observed_score": 0.74609375
+      },
+      {
+        "scenario_id": "position-20260905-3188",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.94140625,
+        "baseline_score": 0.9140625,
+        "random_score": 0.89453125,
+        "best_observed_score": 0.94140625
+      },
+      {
+        "scenario_id": "position-20260905-3198",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.046875,
+        "baseline_score": 0.046875,
+        "random_score": 0.075390625,
+        "best_observed_score": 0.109375
+      },
+      {
+        "scenario_id": "position-20260905-3208",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.08984375,
+        "baseline_score": 0.0546875,
+        "random_score": 0.067578125,
+        "best_observed_score": 0.09375
+      },
+      {
+        "scenario_id": "position-20260905-3218",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.1328125,
+        "baseline_score": 0.140625,
+        "random_score": 0.164453125,
+        "best_observed_score": 0.21875
+      },
+      {
+        "scenario_id": "position-20260905-3228",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.95703125,
+        "baseline_score": 0.95703125,
+        "random_score": 0.838671875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3238",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.00390625,
+        "random_score": 0.00078125,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-3248",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3258",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.9453125,
+        "baseline_score": 0.98828125,
+        "random_score": 0.96484375,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-3268",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3278",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.86328125,
+        "baseline_score": 0.8671875,
+        "random_score": 0.853515625,
+        "best_observed_score": 0.90234375
+      },
+      {
+        "scenario_id": "position-20260905-3288",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3298",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3308",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.69140625,
+        "baseline_score": 0.69140625,
+        "random_score": 0.637890625,
+        "best_observed_score": 0.92578125
+      },
+      {
+        "scenario_id": "position-20260905-3318",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3328",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.4375,
+        "baseline_score": 0.41796875,
+        "random_score": 0.371875,
+        "best_observed_score": 0.453125
+      },
+      {
+        "scenario_id": "position-20260905-3338",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3348",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.98046875,
+        "baseline_score": 0.9921875,
+        "random_score": 0.9859375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3358",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0078125,
+        "baseline_score": 0.0,
+        "random_score": 0.0015625,
+        "best_observed_score": 0.0078125
+      },
+      {
+        "scenario_id": "position-20260905-3368",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.03515625,
+        "baseline_score": 0.00390625,
+        "random_score": 0.008984375,
+        "best_observed_score": 0.03515625
+      },
+      {
+        "scenario_id": "position-20260905-3378",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3388",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9140625,
+        "baseline_score": 0.89453125,
+        "random_score": 0.898046875,
+        "best_observed_score": 0.97265625
+      },
+      {
+        "scenario_id": "position-20260905-3398",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.55859375,
+        "baseline_score": 0.453125,
+        "random_score": 0.4796875,
+        "best_observed_score": 0.59375
+      },
+      {
+        "scenario_id": "position-20260905-3408",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3418",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.31640625,
+        "baseline_score": 0.40625,
+        "random_score": 0.37109375,
+        "best_observed_score": 0.43359375
+      },
+      {
+        "scenario_id": "position-20260905-3428",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3438",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.703125,
+        "baseline_score": 0.78515625,
+        "random_score": 0.723828125,
+        "best_observed_score": 0.80859375
+      },
+      {
+        "scenario_id": "position-20260905-3448",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.03125,
+        "baseline_score": 0.03125,
+        "random_score": 0.03203125,
+        "best_observed_score": 0.05859375
+      },
+      {
+        "scenario_id": "position-20260905-3458",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3468",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3478",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.03125,
+        "baseline_score": 0.01171875,
+        "random_score": 0.027734375,
+        "best_observed_score": 0.04296875
+      },
+      {
+        "scenario_id": "position-20260905-3488",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.03515625,
+        "baseline_score": 0.0234375,
+        "random_score": 0.03046875,
+        "best_observed_score": 0.0546875
+      },
+      {
+        "scenario_id": "position-20260905-3498",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.12890625,
+        "baseline_score": 0.1328125,
+        "random_score": 0.124609375,
+        "best_observed_score": 0.1796875
+      },
+      {
+        "scenario_id": "position-20260905-3508",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.1171875,
+        "baseline_score": 0.1484375,
+        "random_score": 0.16953125,
+        "best_observed_score": 0.2578125
+      },
+      {
+        "scenario_id": "position-20260905-3518",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.8828125,
+        "baseline_score": 0.74609375,
+        "random_score": 0.7765625,
+        "best_observed_score": 0.921875
+      },
+      {
+        "scenario_id": "position-20260905-3528",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.078125,
+        "baseline_score": 0.0234375,
+        "random_score": 0.033203125,
+        "best_observed_score": 0.078125
+      },
+      {
+        "scenario_id": "position-20260905-3538",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.984375,
+        "baseline_score": 0.9921875,
+        "random_score": 0.98515625,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3548",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.8984375,
+        "baseline_score": 0.9765625,
+        "random_score": 0.944921875,
+        "best_observed_score": 0.9765625
+      },
+      {
+        "scenario_id": "position-20260905-3558",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.0,
+        "random_score": 0.00390625,
+        "best_observed_score": 0.01171875
+      },
+      {
+        "scenario_id": "position-20260905-3568",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.50390625,
+        "random_score": 0.65625,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-3578",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.9765625,
+        "random_score": 0.962890625,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-3588",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.4609375,
+        "baseline_score": 0.43359375,
+        "random_score": 0.45859375,
+        "best_observed_score": 0.53125
+      },
+      {
+        "scenario_id": "position-20260905-3598",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3608",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3618",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.999609375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3628",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.203125,
+        "baseline_score": 0.203125,
+        "random_score": 0.3390625,
+        "best_observed_score": 0.44921875
+      },
+      {
+        "scenario_id": "position-20260905-3638",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.000390625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-3648",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.22265625,
+        "baseline_score": 0.2421875,
+        "random_score": 0.268359375,
+        "best_observed_score": 0.5546875
+      },
+      {
+        "scenario_id": "position-20260905-3658",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.015625,
+        "baseline_score": 0.015625,
+        "random_score": 0.015625,
+        "best_observed_score": 0.0390625
+      },
+      {
+        "scenario_id": "position-20260905-3668",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3678",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9921875,
+        "baseline_score": 0.97265625,
+        "random_score": 0.98359375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3688",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.02734375,
+        "baseline_score": 0.01171875,
+        "random_score": 0.020703125,
+        "best_observed_score": 0.03515625
+      },
+      {
+        "scenario_id": "position-20260905-3698",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.73046875,
+        "baseline_score": 0.68359375,
+        "random_score": 0.63984375,
+        "best_observed_score": 0.7734375
+      },
+      {
+        "scenario_id": "position-20260905-3708",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.81640625,
+        "baseline_score": 0.83984375,
+        "random_score": 0.7625,
+        "best_observed_score": 0.86328125
+      },
+      {
+        "scenario_id": "position-20260905-3718",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.6953125,
+        "baseline_score": 0.6875,
+        "random_score": 0.71015625,
+        "best_observed_score": 0.765625
+      },
+      {
+        "scenario_id": "position-20260905-3728",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3738",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3748",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.40234375,
+        "baseline_score": 0.421875,
+        "random_score": 0.41953125,
+        "best_observed_score": 0.484375
+      },
+      {
+        "scenario_id": "position-20260905-3758",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.16015625,
+        "baseline_score": 0.1328125,
+        "random_score": 0.11875,
+        "best_observed_score": 0.20703125
+      },
+      {
+        "scenario_id": "position-20260905-3768",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.977734375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3778",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.6015625,
+        "baseline_score": 0.6015625,
+        "random_score": 0.56171875,
+        "best_observed_score": 0.640625
+      },
+      {
+        "scenario_id": "position-20260905-3788",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.03125,
+        "baseline_score": 0.01953125,
+        "random_score": 0.023828125,
+        "best_observed_score": 0.06640625
+      },
+      {
+        "scenario_id": "position-20260905-3798",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.28515625,
+        "baseline_score": 0.265625,
+        "random_score": 0.25078125,
+        "best_observed_score": 0.33203125
+      },
+      {
+        "scenario_id": "position-20260905-3808",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.000390625,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-3818",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.046875,
+        "baseline_score": 0.015625,
+        "random_score": 0.029296875,
+        "best_observed_score": 0.046875
+      },
+      {
+        "scenario_id": "position-20260905-3828",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.1953125,
+        "baseline_score": 0.17578125,
+        "random_score": 0.155078125,
+        "best_observed_score": 0.1953125
+      },
+      {
+        "scenario_id": "position-20260905-3838",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.984375,
+        "baseline_score": 0.98046875,
+        "random_score": 0.975,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-3848",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.98828125,
+        "baseline_score": 0.94140625,
+        "random_score": 0.95859375,
+        "best_observed_score": 0.98828125
+      },
+      {
+        "scenario_id": "position-20260905-3858",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.58203125,
+        "baseline_score": 0.5859375,
+        "random_score": 0.4546875,
+        "best_observed_score": 0.60546875
+      },
+      {
+        "scenario_id": "position-20260905-3868",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.9765625,
+        "baseline_score": 0.9765625,
+        "random_score": 0.976953125,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-3878",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.01953125,
+        "random_score": 0.003125,
+        "best_observed_score": 0.01953125
+      },
+      {
+        "scenario_id": "position-20260905-3888",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.00078125,
+        "best_observed_score": 0.00390625
+      },
+      {
+        "scenario_id": "position-20260905-3898",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.96875,
+        "baseline_score": 0.97265625,
+        "random_score": 0.98046875,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-3908",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 1.0,
+        "random_score": 0.997265625,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3918",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.0234375,
+        "baseline_score": 0.1015625,
+        "random_score": 0.072265625,
+        "best_observed_score": 0.109375
+      },
+      {
+        "scenario_id": "position-20260905-3928",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 0.98828125,
+        "random_score": 0.966796875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3938",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-3948",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.66796875,
+        "baseline_score": 0.640625,
+        "random_score": 0.578515625,
+        "best_observed_score": 0.7109375
+      },
+      {
+        "scenario_id": "position-20260905-3958",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3968",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-3978",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.66796875,
+        "baseline_score": 0.57421875,
+        "random_score": 0.64921875,
+        "best_observed_score": 0.7265625
+      },
+      {
+        "scenario_id": "position-20260905-3988",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.86328125,
+        "baseline_score": 0.59765625,
+        "random_score": 0.701953125,
+        "best_observed_score": 0.86328125
+      },
+      {
+        "scenario_id": "position-20260905-3998",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4008",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.859375,
+        "baseline_score": 0.66796875,
+        "random_score": 0.733984375,
+        "best_observed_score": 0.859375
+      },
+      {
+        "scenario_id": "position-20260905-4018",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4028",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4038",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.1640625,
+        "baseline_score": 0.0390625,
+        "random_score": 0.05625,
+        "best_observed_score": 0.1640625
+      },
+      {
+        "scenario_id": "position-20260905-4048",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.16015625,
+        "baseline_score": 0.2265625,
+        "random_score": 0.190625,
+        "best_observed_score": 0.2265625
+      },
+      {
+        "scenario_id": "position-20260905-4058",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.36328125,
+        "baseline_score": 0.36328125,
+        "random_score": 0.28203125,
+        "best_observed_score": 0.453125
+      },
+      {
+        "scenario_id": "position-20260905-4068",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.0234375,
+        "baseline_score": 0.00390625,
+        "random_score": 0.017578125,
+        "best_observed_score": 0.03515625
+      },
+      {
+        "scenario_id": "position-20260905-4078",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.87109375,
+        "baseline_score": 0.859375,
+        "random_score": 0.86484375,
+        "best_observed_score": 0.9375
+      },
+      {
+        "scenario_id": "position-20260905-4088",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.97265625,
+        "baseline_score": 0.86328125,
+        "random_score": 0.933984375,
+        "best_observed_score": 0.97265625
+      },
+      {
+        "scenario_id": "position-20260905-4098",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.6953125,
+        "baseline_score": 0.7578125,
+        "random_score": 0.684765625,
+        "best_observed_score": 0.77734375
+      },
+      {
+        "scenario_id": "position-20260905-4108",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.61328125,
+        "baseline_score": 0.46484375,
+        "random_score": 0.50234375,
+        "best_observed_score": 0.64453125
+      },
+      {
+        "scenario_id": "position-20260905-4118",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.453125,
+        "baseline_score": 0.26953125,
+        "random_score": 0.331640625,
+        "best_observed_score": 0.46875
+      },
+      {
+        "scenario_id": "position-20260905-4128",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.9140625,
+        "baseline_score": 0.953125,
+        "random_score": 0.9125,
+        "best_observed_score": 0.95703125
+      },
+      {
+        "scenario_id": "position-20260905-4138",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.65625,
+        "baseline_score": 0.859375,
+        "random_score": 0.72109375,
+        "best_observed_score": 0.859375
+      },
+      {
+        "scenario_id": "position-20260905-4148",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.98828125,
+        "baseline_score": 0.98828125,
+        "random_score": 0.98671875,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-4158",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.921875,
+        "baseline_score": 0.84765625,
+        "random_score": 0.86484375,
+        "best_observed_score": 0.94921875
+      },
+      {
+        "scenario_id": "position-20260905-4168",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.61328125,
+        "baseline_score": 0.84375,
+        "random_score": 0.665234375,
+        "best_observed_score": 0.84765625
+      },
+      {
+        "scenario_id": "position-20260905-4178",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.0078125,
+        "baseline_score": 0.0078125,
+        "random_score": 0.019921875,
+        "best_observed_score": 0.0703125
+      },
+      {
+        "scenario_id": "position-20260905-4188",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.96875,
+        "baseline_score": 0.91015625,
+        "random_score": 0.90078125,
+        "best_observed_score": 0.96875
+      },
+      {
+        "scenario_id": "position-20260905-4198",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.79296875,
+        "baseline_score": 0.765625,
+        "random_score": 0.759375,
+        "best_observed_score": 0.8046875
+      },
+      {
+        "scenario_id": "position-20260905-4208",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.82421875,
+        "baseline_score": 0.82421875,
+        "random_score": 0.82109375,
+        "best_observed_score": 0.9375
+      },
+      {
+        "scenario_id": "position-20260905-4218",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.43359375,
+        "baseline_score": 0.37890625,
+        "random_score": 0.3890625,
+        "best_observed_score": 0.4375
+      },
+      {
+        "scenario_id": "position-20260905-4228",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.99609375,
+        "random_score": 0.993359375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4238",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4248",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.96875,
+        "baseline_score": 0.91796875,
+        "random_score": 0.90703125,
+        "best_observed_score": 0.96875
+      },
+      {
+        "scenario_id": "position-20260905-4258",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.7421875,
+        "baseline_score": 0.66015625,
+        "random_score": 0.63203125,
+        "best_observed_score": 0.7421875
+      },
+      {
+        "scenario_id": "position-20260905-4268",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.625,
+        "baseline_score": 0.54296875,
+        "random_score": 0.601171875,
+        "best_observed_score": 0.671875
+      },
+      {
+        "scenario_id": "position-20260905-4278",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4288",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.96484375,
+        "baseline_score": 0.89453125,
+        "random_score": 0.9234375,
+        "best_observed_score": 0.96875
+      },
+      {
+        "scenario_id": "position-20260905-4298",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.99609375,
+        "random_score": 0.97265625,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-4308",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.8984375,
+        "baseline_score": 0.734375,
+        "random_score": 0.804296875,
+        "best_observed_score": 0.8984375
+      },
+      {
+        "scenario_id": "position-20260905-4318",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4328",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.83203125,
+        "baseline_score": 0.76953125,
+        "random_score": 0.775390625,
+        "best_observed_score": 0.84375
+      },
+      {
+        "scenario_id": "position-20260905-4338",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.59375,
+        "baseline_score": 0.5625,
+        "random_score": 0.67890625,
+        "best_observed_score": 0.85546875
+      },
+      {
+        "scenario_id": "position-20260905-4348",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.77734375,
+        "baseline_score": 0.69140625,
+        "random_score": 0.730859375,
+        "best_observed_score": 0.83984375
+      },
+      {
+        "scenario_id": "position-20260905-4358",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.44140625,
+        "baseline_score": 0.3984375,
+        "random_score": 0.399609375,
+        "best_observed_score": 0.4453125
+      },
+      {
+        "scenario_id": "position-20260905-4368",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.5078125,
+        "baseline_score": 0.5390625,
+        "random_score": 0.516015625,
+        "best_observed_score": 0.5859375
+      },
+      {
+        "scenario_id": "position-20260905-4378",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4388",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.2109375,
+        "baseline_score": 0.23828125,
+        "random_score": 0.1796875,
+        "best_observed_score": 0.23828125
+      },
+      {
+        "scenario_id": "position-20260905-4398",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.203125,
+        "baseline_score": 0.23828125,
+        "random_score": 0.228125,
+        "best_observed_score": 0.265625
+      },
+      {
+        "scenario_id": "position-20260905-4408",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.2265625,
+        "baseline_score": 0.0703125,
+        "random_score": 0.09921875,
+        "best_observed_score": 0.2265625
+      },
+      {
+        "scenario_id": "position-20260905-4418",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4428",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.83984375,
+        "baseline_score": 0.8828125,
+        "random_score": 0.866796875,
+        "best_observed_score": 0.90625
+      },
+      {
+        "scenario_id": "position-20260905-4438",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.6640625,
+        "baseline_score": 0.66015625,
+        "random_score": 0.584765625,
+        "best_observed_score": 0.703125
+      },
+      {
+        "scenario_id": "position-20260905-4448",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.44140625,
+        "baseline_score": 0.3828125,
+        "random_score": 0.39921875,
+        "best_observed_score": 0.515625
+      },
+      {
+        "scenario_id": "position-20260905-4458",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.25390625,
+        "baseline_score": 0.10546875,
+        "random_score": 0.19453125,
+        "best_observed_score": 0.2890625
+      },
+      {
+        "scenario_id": "position-20260905-4468",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.98046875,
+        "baseline_score": 0.9609375,
+        "random_score": 0.960546875,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-4478",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.09765625,
+        "baseline_score": 0.45703125,
+        "random_score": 0.262109375,
+        "best_observed_score": 0.546875
+      },
+      {
+        "scenario_id": "position-20260905-4488",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.8125,
+        "baseline_score": 0.78125,
+        "random_score": 0.882421875,
+        "best_observed_score": 0.96875
+      },
+      {
+        "scenario_id": "position-20260905-4498",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4508",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4518",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4528",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 1.0,
+        "random_score": 0.996875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4538",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4548",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4558",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.0703125,
+        "baseline_score": 0.04296875,
+        "random_score": 0.046484375,
+        "best_observed_score": 0.0703125
+      },
+      {
+        "scenario_id": "position-20260905-4568",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.6328125,
+        "baseline_score": 0.578125,
+        "random_score": 0.56484375,
+        "best_observed_score": 0.6328125
+      },
+      {
+        "scenario_id": "position-20260905-4578",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.03125,
+        "baseline_score": 0.01953125,
+        "random_score": 0.025390625,
+        "best_observed_score": 0.04296875
+      },
+      {
+        "scenario_id": "position-20260905-4588",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.01171875,
+        "baseline_score": 0.00390625,
+        "random_score": 0.0140625,
+        "best_observed_score": 0.02734375
+      },
+      {
+        "scenario_id": "position-20260905-4598",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.984375,
+        "baseline_score": 0.99609375,
+        "random_score": 0.990625,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4608",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0078125,
+        "baseline_score": 0.00390625,
+        "random_score": 0.006640625,
+        "best_observed_score": 0.0234375
+      },
+      {
+        "scenario_id": "position-20260905-4618",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.4375,
+        "baseline_score": 0.19921875,
+        "random_score": 0.253125,
+        "best_observed_score": 0.46875
+      },
+      {
+        "scenario_id": "position-20260905-4628",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.80078125,
+        "baseline_score": 0.84375,
+        "random_score": 0.82890625,
+        "best_observed_score": 0.921875
+      },
+      {
+        "scenario_id": "position-20260905-4638",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.98046875,
+        "baseline_score": 0.9765625,
+        "random_score": 0.96796875,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-4648",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.01953125,
+        "baseline_score": 0.03515625,
+        "random_score": 0.016015625,
+        "best_observed_score": 0.03515625
+      },
+      {
+        "scenario_id": "position-20260905-4658",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4668",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.97265625,
+        "baseline_score": 0.9765625,
+        "random_score": 0.973046875,
+        "best_observed_score": 0.98828125
+      },
+      {
+        "scenario_id": "position-20260905-4678",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.87109375,
+        "baseline_score": 0.90234375,
+        "random_score": 0.916796875,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-4688",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.21484375,
+        "baseline_score": 0.24609375,
+        "random_score": 0.203125,
+        "best_observed_score": 0.265625
+      },
+      {
+        "scenario_id": "position-20260905-4698",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.82421875,
+        "baseline_score": 0.66015625,
+        "random_score": 0.748046875,
+        "best_observed_score": 0.82421875
+      },
+      {
+        "scenario_id": "position-20260905-4708",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.55078125,
+        "baseline_score": 0.07421875,
+        "random_score": 0.245703125,
+        "best_observed_score": 0.578125
+      },
+      {
+        "scenario_id": "position-20260905-4718",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.26171875,
+        "baseline_score": 0.22265625,
+        "random_score": 0.22109375,
+        "best_observed_score": 0.26171875
+      },
+      {
+        "scenario_id": "position-20260905-4728",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.203125,
+        "baseline_score": 0.17578125,
+        "random_score": 0.159375,
+        "best_observed_score": 0.203125
+      },
+      {
+        "scenario_id": "position-20260905-4738",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.2734375,
+        "baseline_score": 0.26953125,
+        "random_score": 0.26796875,
+        "best_observed_score": 0.36328125
+      },
+      {
+        "scenario_id": "position-20260905-4748",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.953125,
+        "baseline_score": 0.953125,
+        "random_score": 0.957421875,
+        "best_observed_score": 0.98828125
+      },
+      {
+        "scenario_id": "position-20260905-4758",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.94921875,
+        "baseline_score": 0.98828125,
+        "random_score": 0.967578125,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-4768",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.296875,
+        "baseline_score": 0.296875,
+        "random_score": 0.25234375,
+        "best_observed_score": 0.31640625
+      },
+      {
+        "scenario_id": "position-20260905-4778",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.015625,
+        "baseline_score": 0.0234375,
+        "random_score": 0.014453125,
+        "best_observed_score": 0.0234375
+      },
+      {
+        "scenario_id": "position-20260905-4788",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.5,
+        "baseline_score": 0.4765625,
+        "random_score": 0.496875,
+        "best_observed_score": 0.5703125
+      },
+      {
+        "scenario_id": "position-20260905-4798",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.17578125,
+        "baseline_score": 0.1875,
+        "random_score": 0.13984375,
+        "best_observed_score": 0.1875
+      },
+      {
+        "scenario_id": "position-20260905-4808",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.29296875,
+        "baseline_score": 0.22265625,
+        "random_score": 0.266015625,
+        "best_observed_score": 0.40625
+      },
+      {
+        "scenario_id": "position-20260905-4818",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.57421875,
+        "baseline_score": 0.453125,
+        "random_score": 0.349609375,
+        "best_observed_score": 0.57421875
+      },
+      {
+        "scenario_id": "position-20260905-4828",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.69921875,
+        "baseline_score": 0.58203125,
+        "random_score": 0.559375,
+        "best_observed_score": 0.69921875
+      },
+      {
+        "scenario_id": "position-20260905-4838",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.14453125,
+        "baseline_score": 0.1015625,
+        "random_score": 0.069140625,
+        "best_observed_score": 0.14453125
+      },
+      {
+        "scenario_id": "position-20260905-4848",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.69921875,
+        "baseline_score": 0.62890625,
+        "random_score": 0.672265625,
+        "best_observed_score": 0.84765625
+      },
+      {
+        "scenario_id": "position-20260905-4858",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.69921875,
+        "baseline_score": 0.609375,
+        "random_score": 0.66171875,
+        "best_observed_score": 0.71484375
+      },
+      {
+        "scenario_id": "position-20260905-4868",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.28125,
+        "baseline_score": 0.265625,
+        "random_score": 0.21484375,
+        "best_observed_score": 0.28125
+      },
+      {
+        "scenario_id": "position-20260905-4878",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4888",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.26953125,
+        "baseline_score": 0.1015625,
+        "random_score": 0.238671875,
+        "best_observed_score": 0.33203125
+      },
+      {
+        "scenario_id": "position-20260905-4898",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4908",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.38671875,
+        "baseline_score": 0.3359375,
+        "random_score": 0.344921875,
+        "best_observed_score": 0.38671875
+      },
+      {
+        "scenario_id": "position-20260905-4918",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.5546875,
+        "baseline_score": 0.47265625,
+        "random_score": 0.491796875,
+        "best_observed_score": 0.5546875
+      },
+      {
+        "scenario_id": "position-20260905-4928",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.56640625,
+        "baseline_score": 0.54296875,
+        "random_score": 0.5953125,
+        "best_observed_score": 0.7265625
+      },
+      {
+        "scenario_id": "position-20260905-4938",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.99921875,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-4948",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.12109375,
+        "baseline_score": 0.14453125,
+        "random_score": 0.13359375,
+        "best_observed_score": 0.19140625
+      },
+      {
+        "scenario_id": "position-20260905-4958",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4968",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.95703125,
+        "baseline_score": 0.8046875,
+        "random_score": 0.8796875,
+        "best_observed_score": 0.95703125
+      },
+      {
+        "scenario_id": "position-20260905-4978",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.80859375,
+        "baseline_score": 0.83203125,
+        "random_score": 0.816015625,
+        "best_observed_score": 0.84765625
+      },
+      {
+        "scenario_id": "position-20260905-4988",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-4998",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5008",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5018",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5028",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.921875,
+        "baseline_score": 0.921875,
+        "random_score": 0.927734375,
+        "best_observed_score": 0.9765625
+      },
+      {
+        "scenario_id": "position-20260905-5038",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5048",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.88671875,
+        "baseline_score": 0.796875,
+        "random_score": 0.76796875,
+        "best_observed_score": 0.88671875
+      },
+      {
+        "scenario_id": "position-20260905-5058",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.03125,
+        "baseline_score": 0.02734375,
+        "random_score": 0.035546875,
+        "best_observed_score": 0.0703125
+      },
+      {
+        "scenario_id": "position-20260905-5068",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9140625,
+        "baseline_score": 0.91015625,
+        "random_score": 0.898046875,
+        "best_observed_score": 0.9375
+      },
+      {
+        "scenario_id": "position-20260905-5078",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.9296875,
+        "baseline_score": 0.90625,
+        "random_score": 0.916015625,
+        "best_observed_score": 0.96484375
+      },
+      {
+        "scenario_id": "position-20260905-5088",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5098",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.9140625,
+        "baseline_score": 0.93359375,
+        "random_score": 0.9265625,
+        "best_observed_score": 0.98046875
+      },
+      {
+        "scenario_id": "position-20260905-5108",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.203125,
+        "baseline_score": 0.23046875,
+        "random_score": 0.230078125,
+        "best_observed_score": 0.359375
+      },
+      {
+        "scenario_id": "position-20260905-5118",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.42578125,
+        "baseline_score": 0.37890625,
+        "random_score": 0.4984375,
+        "best_observed_score": 0.609375
+      },
+      {
+        "scenario_id": "position-20260905-5128",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.41796875,
+        "baseline_score": 0.41796875,
+        "random_score": 0.30390625,
+        "best_observed_score": 0.41796875
+      },
+      {
+        "scenario_id": "position-20260905-5138",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5148",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.171875,
+        "baseline_score": 0.171875,
+        "random_score": 0.156640625,
+        "best_observed_score": 0.22265625
+      },
+      {
+        "scenario_id": "position-20260905-5158",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.25,
+        "baseline_score": 0.234375,
+        "random_score": 0.196484375,
+        "best_observed_score": 0.32421875
+      },
+      {
+        "scenario_id": "position-20260905-5168",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.0390625,
+        "baseline_score": 0.0546875,
+        "random_score": 0.0515625,
+        "best_observed_score": 0.09375
+      },
+      {
+        "scenario_id": "position-20260905-5178",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5188",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.140625,
+        "baseline_score": 0.1015625,
+        "random_score": 0.064453125,
+        "best_observed_score": 0.140625
+      },
+      {
+        "scenario_id": "position-20260905-5198",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.85546875,
+        "baseline_score": 0.55859375,
+        "random_score": 0.6890625,
+        "best_observed_score": 0.85546875
+      },
+      {
+        "scenario_id": "position-20260905-5208",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5218",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5228",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.98828125,
+        "baseline_score": 1.0,
+        "random_score": 0.99453125,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5238",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.09765625,
+        "baseline_score": 0.0703125,
+        "random_score": 0.098828125,
+        "best_observed_score": 0.12109375
+      },
+      {
+        "scenario_id": "position-20260905-5248",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.37890625,
+        "baseline_score": 0.2890625,
+        "random_score": 0.37734375,
+        "best_observed_score": 0.4609375
+      },
+      {
+        "scenario_id": "position-20260905-5258",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.46484375,
+        "baseline_score": 0.3828125,
+        "random_score": 0.39921875,
+        "best_observed_score": 0.46484375
+      },
+      {
+        "scenario_id": "position-20260905-5268",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.2109375,
+        "baseline_score": 0.09765625,
+        "random_score": 0.091796875,
+        "best_observed_score": 0.2109375
+      },
+      {
+        "scenario_id": "position-20260905-5278",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.82421875,
+        "baseline_score": 0.75,
+        "random_score": 0.81484375,
+        "best_observed_score": 0.91015625
+      },
+      {
+        "scenario_id": "position-20260905-5288",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5298",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.1328125,
+        "random_score": 0.02734375,
+        "best_observed_score": 0.1328125
+      },
+      {
+        "scenario_id": "position-20260905-5308",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.6171875,
+        "baseline_score": 0.4296875,
+        "random_score": 0.516796875,
+        "best_observed_score": 0.6953125
+      },
+      {
+        "scenario_id": "position-20260905-5318",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.9765625,
+        "baseline_score": 0.98046875,
+        "random_score": 0.9671875,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-5328",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.21875,
+        "baseline_score": 0.25390625,
+        "random_score": 0.183203125,
+        "best_observed_score": 0.25390625
+      },
+      {
+        "scenario_id": "position-20260905-5338",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.9765625,
+        "baseline_score": 0.984375,
+        "random_score": 0.98203125,
+        "best_observed_score": 0.9921875
+      },
+      {
+        "scenario_id": "position-20260905-5348",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.109375,
+        "baseline_score": 0.08984375,
+        "random_score": 0.094140625,
+        "best_observed_score": 0.1171875
+      },
+      {
+        "scenario_id": "position-20260905-5358",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.96875,
+        "baseline_score": 0.921875,
+        "random_score": 0.910546875,
+        "best_observed_score": 0.98828125
+      },
+      {
+        "scenario_id": "position-20260905-5368",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.00390625,
+        "baseline_score": 0.00390625,
+        "random_score": 0.00703125,
+        "best_observed_score": 0.01953125
+      },
+      {
+        "scenario_id": "position-20260905-5378",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.9140625,
+        "baseline_score": 0.91015625,
+        "random_score": 0.9109375,
+        "best_observed_score": 0.953125
+      },
+      {
+        "scenario_id": "position-20260905-5388",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.5234375,
+        "baseline_score": 0.41796875,
+        "random_score": 0.392578125,
+        "best_observed_score": 0.640625
+      },
+      {
+        "scenario_id": "position-20260905-5398",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.99609375,
+        "random_score": 0.992578125,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-5408",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.95703125,
+        "baseline_score": 0.95703125,
+        "random_score": 0.9671875,
+        "best_observed_score": 0.98828125
+      },
+      {
+        "scenario_id": "position-20260905-5418",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5428",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.015625,
+        "baseline_score": 0.00390625,
+        "random_score": 0.01484375,
+        "best_observed_score": 0.03125
+      },
+      {
+        "scenario_id": "position-20260905-5438",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.0234375,
+        "baseline_score": 0.09375,
+        "random_score": 0.06875,
+        "best_observed_score": 0.13671875
+      },
+      {
+        "scenario_id": "position-20260905-5448",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5458",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.375,
+        "baseline_score": 0.30859375,
+        "random_score": 0.375390625,
+        "best_observed_score": 0.44921875
+      },
+      {
+        "scenario_id": "position-20260905-5468",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.59375,
+        "baseline_score": 0.5625,
+        "random_score": 0.541015625,
+        "best_observed_score": 0.6640625
+      },
+      {
+        "scenario_id": "position-20260905-5478",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.8125,
+        "baseline_score": 0.8046875,
+        "random_score": 0.80546875,
+        "best_observed_score": 0.86328125
+      },
+      {
+        "scenario_id": "position-20260905-5488",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.453125,
+        "baseline_score": 0.296875,
+        "random_score": 0.329296875,
+        "best_observed_score": 0.453125
+      },
+      {
+        "scenario_id": "position-20260905-5498",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.140625,
+        "baseline_score": 0.16015625,
+        "random_score": 0.094140625,
+        "best_observed_score": 0.16015625
+      },
+      {
+        "scenario_id": "position-20260905-5508",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5518",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.76171875,
+        "baseline_score": 0.5859375,
+        "random_score": 0.609375,
+        "best_observed_score": 0.76171875
+      },
+      {
+        "scenario_id": "position-20260905-5528",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.91015625,
+        "baseline_score": 0.91015625,
+        "random_score": 0.903125,
+        "best_observed_score": 0.9375
+      },
+      {
+        "scenario_id": "position-20260905-5538",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.7421875,
+        "baseline_score": 0.7890625,
+        "random_score": 0.805859375,
+        "best_observed_score": 0.8515625
+      },
+      {
+        "scenario_id": "position-20260905-5548",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.85546875,
+        "baseline_score": 0.91015625,
+        "random_score": 0.924609375,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-5558",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.1484375,
+        "baseline_score": 0.1015625,
+        "random_score": 0.205859375,
+        "best_observed_score": 0.34375
+      },
+      {
+        "scenario_id": "position-20260905-5568",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.85546875,
+        "baseline_score": 0.74609375,
+        "random_score": 0.7859375,
+        "best_observed_score": 0.85546875
+      },
+      {
+        "scenario_id": "position-20260905-5578",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.09375,
+        "baseline_score": 0.125,
+        "random_score": 0.1328125,
+        "best_observed_score": 0.1953125
+      },
+      {
+        "scenario_id": "position-20260905-5588",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.90234375,
+        "baseline_score": 0.90234375,
+        "random_score": 0.782421875,
+        "best_observed_score": 0.921875
+      },
+      {
+        "scenario_id": "position-20260905-5598",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.8828125,
+        "baseline_score": 0.94921875,
+        "random_score": 0.9140625,
+        "best_observed_score": 0.97265625
+      },
+      {
+        "scenario_id": "position-20260905-5608",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.96484375,
+        "baseline_score": 0.95703125,
+        "random_score": 0.936328125,
+        "best_observed_score": 0.97265625
+      },
+      {
+        "scenario_id": "position-20260905-5618",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5628",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.79296875,
+        "baseline_score": 0.828125,
+        "random_score": 0.8078125,
+        "best_observed_score": 0.875
+      },
+      {
+        "scenario_id": "position-20260905-5638",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.99609375,
+        "baseline_score": 0.99609375,
+        "random_score": 0.974609375,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-5648",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0,
+        "best_observed_score": 0.0
+      },
+      {
+        "scenario_id": "position-20260905-5658",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.53125,
+        "baseline_score": 0.5,
+        "random_score": 0.412109375,
+        "best_observed_score": 0.53125
+      },
+      {
+        "scenario_id": "position-20260905-5668",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.10546875,
+        "baseline_score": 0.10546875,
+        "random_score": 0.081640625,
+        "best_observed_score": 0.10546875
+      },
+      {
+        "scenario_id": "position-20260905-5678",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.421875,
+        "baseline_score": 0.27734375,
+        "random_score": 0.186328125,
+        "best_observed_score": 0.5
+      },
+      {
+        "scenario_id": "position-20260905-5688",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.06640625,
+        "baseline_score": 0.04296875,
+        "random_score": 0.0484375,
+        "best_observed_score": 0.078125
+      },
+      {
+        "scenario_id": "position-20260905-5698",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5708",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5718",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.7265625,
+        "baseline_score": 0.5234375,
+        "random_score": 0.615234375,
+        "best_observed_score": 0.734375
+      },
+      {
+        "scenario_id": "position-20260905-5728",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.5390625,
+        "baseline_score": 0.44140625,
+        "random_score": 0.47265625,
+        "best_observed_score": 0.546875
+      },
+      {
+        "scenario_id": "position-20260905-5738",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.94921875,
+        "baseline_score": 0.94921875,
+        "random_score": 0.9328125,
+        "best_observed_score": 0.98828125
+      },
+      {
+        "scenario_id": "position-20260905-5748",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.13671875,
+        "baseline_score": 0.140625,
+        "random_score": 0.12109375,
+        "best_observed_score": 0.28515625
+      },
+      {
+        "scenario_id": "position-20260905-5758",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.36328125,
+        "baseline_score": 0.546875,
+        "random_score": 0.50234375,
+        "best_observed_score": 0.7734375
+      },
+      {
+        "scenario_id": "position-20260905-5768",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5778",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.921875,
+        "baseline_score": 0.73046875,
+        "random_score": 0.78984375,
+        "best_observed_score": 0.921875
+      },
+      {
+        "scenario_id": "position-20260905-5788",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.890625,
+        "baseline_score": 0.91015625,
+        "random_score": 0.86796875,
+        "best_observed_score": 0.91015625
+      },
+      {
+        "scenario_id": "position-20260905-5798",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.984375,
+        "baseline_score": 0.98828125,
+        "random_score": 0.978515625,
+        "best_observed_score": 0.99609375
+      },
+      {
+        "scenario_id": "position-20260905-5808",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.21484375,
+        "baseline_score": 0.15625,
+        "random_score": 0.174609375,
+        "best_observed_score": 0.26171875
+      },
+      {
+        "scenario_id": "position-20260905-5818",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.0,
+        "baseline_score": 0.0,
+        "random_score": 0.0015625,
+        "best_observed_score": 0.0078125
+      },
+      {
+        "scenario_id": "position-20260905-5828",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 0.1015625,
+        "baseline_score": 0.13671875,
+        "random_score": 0.0703125,
+        "best_observed_score": 0.13671875
+      },
+      {
+        "scenario_id": "position-20260905-5838",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.1484375,
+        "baseline_score": 0.15625,
+        "random_score": 0.13046875,
+        "best_observed_score": 0.16796875
+      },
+      {
+        "scenario_id": "position-20260905-5848",
+        "chosen_candidate": 0,
+        "candidate_count": 10,
+        "chosen_score": 0.3203125,
+        "baseline_score": 0.3203125,
+        "random_score": 0.2828125,
+        "best_observed_score": 0.33203125
+      },
+      {
+        "scenario_id": "position-20260905-5858",
+        "chosen_candidate": 8,
+        "candidate_count": 10,
+        "chosen_score": 0.13671875,
+        "baseline_score": 0.22265625,
+        "random_score": 0.18828125,
+        "best_observed_score": 0.3203125
+      },
+      {
+        "scenario_id": "position-20260905-5868",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 1.0,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5878",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.46875,
+        "baseline_score": 0.44140625,
+        "random_score": 0.412109375,
+        "best_observed_score": 0.46875
+      },
+      {
+        "scenario_id": "position-20260905-5888",
+        "chosen_candidate": 3,
+        "candidate_count": 10,
+        "chosen_score": 0.10546875,
+        "baseline_score": 0.1328125,
+        "random_score": 0.117578125,
+        "best_observed_score": 0.13671875
+      },
+      {
+        "scenario_id": "position-20260905-5898",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.7421875,
+        "baseline_score": 0.65625,
+        "random_score": 0.703515625,
+        "best_observed_score": 0.76953125
+      },
+      {
+        "scenario_id": "position-20260905-5908",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.2421875,
+        "baseline_score": 0.25390625,
+        "random_score": 0.338671875,
+        "best_observed_score": 0.5234375
+      },
+      {
+        "scenario_id": "position-20260905-5918",
+        "chosen_candidate": 6,
+        "candidate_count": 10,
+        "chosen_score": 0.55859375,
+        "baseline_score": 0.48828125,
+        "random_score": 0.501953125,
+        "best_observed_score": 0.60546875
+      },
+      {
+        "scenario_id": "position-20260905-5928",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.98828125,
+        "baseline_score": 1.0,
+        "random_score": 0.980859375,
+        "best_observed_score": 1.0
+      },
+      {
+        "scenario_id": "position-20260905-5938",
+        "chosen_candidate": 1,
+        "candidate_count": 10,
+        "chosen_score": 0.82421875,
+        "baseline_score": 0.703125,
+        "random_score": 0.75234375,
+        "best_observed_score": 0.828125
+      },
+      {
+        "scenario_id": "position-20260905-5948",
+        "chosen_candidate": 4,
+        "candidate_count": 10,
+        "chosen_score": 0.9609375,
+        "baseline_score": 0.9140625,
+        "random_score": 0.93046875,
+        "best_observed_score": 0.97265625
+      },
+      {
+        "scenario_id": "position-20260905-5958",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.4921875,
+        "baseline_score": 0.38671875,
+        "random_score": 0.4390625,
+        "best_observed_score": 0.5234375
+      },
+      {
+        "scenario_id": "position-20260905-5968",
+        "chosen_candidate": 7,
+        "candidate_count": 10,
+        "chosen_score": 0.62890625,
+        "baseline_score": 0.625,
+        "random_score": 0.609375,
+        "best_observed_score": 0.6953125
+      },
+      {
+        "scenario_id": "position-20260905-5978",
+        "chosen_candidate": 5,
+        "candidate_count": 10,
+        "chosen_score": 0.55859375,
+        "baseline_score": 0.64453125,
+        "random_score": 0.601953125,
+        "best_observed_score": 0.76953125
+      },
+      {
+        "scenario_id": "position-20260905-5988",
+        "chosen_candidate": 9,
+        "candidate_count": 10,
+        "chosen_score": 0.13671875,
+        "baseline_score": 0.01953125,
+        "random_score": 0.06875,
+        "best_observed_score": 0.13671875
+      },
+      {
+        "scenario_id": "position-20260905-5998",
+        "chosen_candidate": 2,
+        "candidate_count": 10,
+        "chosen_score": 1.0,
+        "baseline_score": 1.0,
+        "random_score": 0.999609375,
+        "best_observed_score": 1.0
+      }
+    ]
+  }
+}

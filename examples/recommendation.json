@@ -1,0 +1,229 @@
+{
+  "scope": "Experimental positioning only, conditioned on the supplied opponent and supported combat context",
+  "ruleset_id": "battlegrounds-solo-36.4.2.251332-20260905",
+  "candidates_ranked": 10,
+  "indices": [
+    1,
+    2,
+    4,
+    3,
+    0
+  ],
+  "order": [
+    {
+      "cardId": "BG26_802",
+      "entityId": 11,
+      "name": "Banana Slamma",
+      "text": "[x]After you summon a\nBeast in combat,\ndouble its Attack.",
+      "attack": 30,
+      "health": 27,
+      "tavernTier": 4,
+      "races": [
+        "BEAST"
+      ],
+      "golden": false,
+      "taunt": false,
+      "divineShield": false,
+      "venomous": false,
+      "poisonous": false,
+      "reborn": false,
+      "windfury": false,
+      "cleave": false,
+      "deathrattle": false,
+      "avenge": false,
+      "frenzy": false,
+      "enchantments": []
+    },
+    {
+      "cardId": "BG27_084",
+      "entityId": 12,
+      "name": "Sprightly Scarab",
+      "text": "[x]<b>Choose One -</b> Give a Beast\n+1/+1 and <b>Reborn</b>; or\n+{2} Attack and <b>Windfury</b>.",
+      "scriptDataNum1": 1,
+      "scriptDataNum2": 1,
+      "attack": 16,
+      "health": 10,
+      "tavernTier": 3,
+      "races": [
+        "BEAST"
+      ],
+      "golden": false,
+      "taunt": false,
+      "divineShield": false,
+      "venomous": false,
+      "poisonous": false,
+      "reborn": false,
+      "windfury": false,
+      "cleave": false,
+      "deathrattle": false,
+      "avenge": false,
+      "frenzy": false,
+      "enchantments": []
+    },
+    {
+      "cardId": "BG32_236",
+      "entityId": 14,
+      "name": "Aureate Laureate",
+      "text": "<b>Divine Shield</b>\nThis minion is always Golden, but doesn't give a Triple Reward.",
+      "attack": 14,
+      "health": 16,
+      "tavernTier": 1,
+      "races": [
+        "PIRATE"
+      ],
+      "golden": true,
+      "taunt": false,
+      "divineShield": true,
+      "venomous": false,
+      "poisonous": false,
+      "reborn": false,
+      "windfury": false,
+      "cleave": false,
+      "deathrattle": false,
+      "avenge": false,
+      "frenzy": false,
+      "enchantments": []
+    },
+    {
+      "cardId": "BG36_211",
+      "entityId": 13,
+      "name": "Cage Gnawer",
+      "text": "Whenever a friendly Beast attacks, give your Beasts +2/+1.",
+      "scriptDataNum1": 2,
+      "scriptDataNum2": 1,
+      "attack": 12,
+      "health": 8,
+      "tavernTier": 4,
+      "races": [
+        "BEAST"
+      ],
+      "golden": false,
+      "taunt": false,
+      "divineShield": false,
+      "venomous": false,
+      "poisonous": false,
+      "reborn": false,
+      "windfury": false,
+      "cleave": false,
+      "deathrattle": false,
+      "avenge": false,
+      "frenzy": false,
+      "enchantments": []
+    },
+    {
+      "cardId": "BG31_803",
+      "entityId": 10,
+      "name": "Buzzing Vermin",
+      "text": "[x]<b>Taunt</b>\n<b>Deathrattle:</b> Summon a\n2/2 Beetle.",
+      "scriptDataNum1": 2,
+      "scriptDataNum2": 2,
+      "attack": 14,
+      "health": 15,
+      "tavernTier": 1,
+      "races": [
+        "BEAST"
+      ],
+      "golden": false,
+      "taunt": true,
+      "divineShield": false,
+      "venomous": false,
+      "poisonous": false,
+      "reborn": false,
+      "windfury": false,
+      "cleave": false,
+      "deathrattle": true,
+      "avenge": false,
+      "frenzy": false,
+      "enchantments": []
+    }
+  ],
+  "policy": "neural_proposals_plus_simulation_search",
+  "actions": [
+    {
+      "kind": "move",
+      "original_index": 0,
+      "from_index": 0,
+      "to_index": 4,
+      "estimated_ms": 1000,
+      "entity_id": 10
+    },
+    {
+      "kind": "move",
+      "original_index": 3,
+      "from_index": 2,
+      "to_index": 3,
+      "estimated_ms": 1000,
+      "entity_id": 13
+    }
+  ],
+  "action_indexing": "Zero-based current slots; to_index is the insertion slot after removing the minion.",
+  "timing": {
+    "mode": "offline_advisory",
+    "timer_source": "input.recruitTimeRemainingMs",
+    "before_actions": {
+      "profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+      "actions_per_second": 1.0,
+      "initial_available_ms": 7000,
+      "reserve_ms": 5000,
+      "action_limit": 2,
+      "actions_used": 0,
+      "remaining_actions": 2,
+      "remaining_ms": 2000,
+      "charged_ms": 0
+    },
+    "after_actions": {
+      "profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+      "actions_per_second": 1.0,
+      "initial_available_ms": 7000,
+      "reserve_ms": 5000,
+      "action_limit": 2,
+      "actions_used": 2,
+      "remaining_actions": 0,
+      "remaining_ms": 0,
+      "charged_ms": 2000
+    },
+    "max_feasible_drags": 2,
+    "inference_elapsed_included": false,
+    "unavailable_heuristics": [],
+    "note": "Drags fit the supplied timer. Inference/search elapsed time is not included; recheck the live timer before execution."
+  },
+  "note": "Search estimates select the order; they are not an independent estimate of its playing strength.",
+  "search_outcomes": [
+    {
+      "candidateIndex": 3,
+      "score": 0.5,
+      "simulations": {
+        "won": 44,
+        "tied": 40,
+        "lost": 44,
+        "n": 128,
+        "meanNetDamage": -1.0546875,
+        "seed": 4247038531
+      }
+    },
+    {
+      "candidateIndex": 4,
+      "score": 0.3515625,
+      "simulations": {
+        "won": 22,
+        "tied": 46,
+        "lost": 60,
+        "n": 128,
+        "meanNetDamage": -3.3203125,
+        "seed": 4247038531
+      }
+    },
+    {
+      "candidateIndex": 1,
+      "score": 0.44921875,
+      "simulations": {
+        "won": 39,
+        "tied": 37,
+        "lost": 52,
+        "n": 128,
+        "meanNetDamage": -1.3515625,
+        "seed": 4247038531
+      }
+    }
+  ]
+}

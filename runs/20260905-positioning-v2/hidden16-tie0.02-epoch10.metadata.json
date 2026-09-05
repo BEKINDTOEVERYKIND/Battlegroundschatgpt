@@ -1,0 +1,65 @@
+{
+  "candidate": "hidden16-tie0.02-epoch10",
+  "hidden": 16,
+  "tie_tolerance": 0.02,
+  "epochs": 10,
+  "seed": 17,
+  "objective": "gap_weighted_pair_average_v2",
+  "checkpoint": "/workspace/scratch/297fc945f947/Battlegroundschatgpt/runs/20260905-positioning-v2/hidden16-tie0.02-epoch10.json",
+  "checkpoint_sha256": "b1df278691532deb3129273bfe12d8b2af0bd3856c3c0ba84cb9244d7519d739",
+  "validation_mean_score": 0.5360416666666666,
+  "validation_mean_scores": {
+    "model": 0.5360416666666666,
+    "random": 0.5110026041666667,
+    "attack": 0.5393229166666667,
+    "health": 0.53138671875,
+    "taunt_last": 0.539296875
+  },
+  "paired_model_minus_baseline": {
+    "random": {
+      "mean": 0.0250390625,
+      "scenarios": 600,
+      "ci95": [
+        0.018794921875,
+        0.031217936197916664
+      ]
+    },
+    "attack": {
+      "mean": -0.00328125,
+      "scenarios": 600,
+      "ci95": [
+        -0.007057291666666667,
+        0.0003256835937499991
+      ]
+    },
+    "health": {
+      "mean": 0.004654947916666667,
+      "scenarios": 600,
+      "ci95": [
+        0.0006248372395833334,
+        0.008776041666666666
+      ]
+    },
+    "taunt_last": {
+      "mean": -0.0032552083333333335,
+      "scenarios": 600,
+      "ci95": [
+        -0.006914225260416667,
+        0.00033203125
+      ]
+    }
+  },
+  "loss_history": [
+    0.023775052842451867,
+    0.021583034657186594,
+    0.020850858888898018,
+    0.020600324744114478,
+    0.020138544507423257,
+    0.019723057971453992,
+    0.019536960310549713,
+    0.01919554285027485,
+    0.018860563620354803,
+    0.018842481869376
+  ],
+  "test_used": false
+}

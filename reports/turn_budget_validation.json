@@ -1,0 +1,27 @@
+{
+  "scope": "Turn-budget infrastructure and offline positioning inference; no new full-game training or benchmark strength claim",
+  "timing_profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+  "actions_per_second": 1.0,
+  "reserve_ms": 5000,
+  "time_source": "Required adapter-supplied actual remaining player recruit time; no guessed round table",
+  "calibration": "Unmeasured command timing assumptions; per-action extra delays in config",
+  "tests": {
+    "python": 59,
+    "node": 8,
+    "new_timing_and_position_tests": 31,
+    "all_passed": true
+  },
+  "verified_behaviors": [
+    "Finite repeatable economic loops",
+    "Independent interleaved-player clocks",
+    "No time refunds on repeated observations or new plans",
+    "Search forks preserve spent time and are independent",
+    "Missing timer and unvalidated timeout behavior block recruit adapter",
+    "Unaffordable pending choice invokes engine timeout",
+    "Orders filtered before neural scoring or search",
+    "Executable minimum-drag positioning actions"
+  ],
+  "full_game_timing_adapter_ready": false,
+  "existing_models_retrained_for_timing": false,
+  "live_inference_latency_validated": false
+}

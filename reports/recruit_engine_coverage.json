@@ -1,0 +1,2656 @@
+{
+  "schema_version": 1,
+  "engine": "HSBRSIM/hsrl2",
+  "engine_url": "https://github.com/Gallo13th/HSBRSIM.git",
+  "engine_revision": "4e0525a198352557ef816bd3a53566d6ffd4c164",
+  "upstream_patch": "36.2.2.249896",
+  "current_patch": "36.4.2",
+  "current_build": 251332,
+  "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+  "full_game_ready": false,
+  "ruleset_digest_format": "canonical_json_utf8_sort_keys_no_extra_whitespace",
+  "conformance_validated": false,
+  "categories": {
+    "minions": {
+      "required": 246,
+      "missing_definitions": [],
+      "missing_handlers": [
+        {
+          "id": "BG33_319",
+          "name": "Rimescale Priestess",
+          "handler_id": "BG33_319",
+          "deferred": false
+        }
+      ],
+      "numeric_differences": [
+        {
+          "id": "BG23_017",
+          "name": "Sanguine Champion",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 3,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG26_152",
+          "name": "Utility Drone",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 6,
+              "current": 5
+            }
+          ]
+        },
+        {
+          "id": "BG26_174",
+          "name": "Soul Rewinder",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 1,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG26_523",
+          "name": "Tichondrius",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 3,
+              "current": 4
+            },
+            {
+              "field": "health",
+              "upstream": 3,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG26_524",
+          "name": "Malchezaar, Prince of Dance",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 2,
+              "current": 4
+            },
+            {
+              "field": "health",
+              "upstream": 1,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG30_123",
+          "name": "Fearless Foodie",
+          "changes": [
+            {
+              "field": "techLevel",
+              "upstream": 4,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG32_324",
+          "name": "Drustfallen Butcher",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 9,
+              "current": 7
+            }
+          ]
+        },
+        {
+          "id": "BG32_822",
+          "name": "Fire-forged Evoker",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 5,
+              "current": 6
+            }
+          ]
+        },
+        {
+          "id": "BG32_846",
+          "name": "Unleashed Mana Surge",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 5,
+              "current": 9
+            }
+          ]
+        },
+        {
+          "id": "BG32_873",
+          "name": "Ashen Corruptor",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 5,
+              "current": 6
+            }
+          ]
+        },
+        {
+          "id": "BG33_155",
+          "name": "Devout Hellcaller",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 2,
+              "current": 4
+            },
+            {
+              "field": "health",
+              "upstream": 2,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG33_430",
+          "name": "Prodigious Tusker",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 1,
+              "current": 2
+            },
+            {
+              "field": "health",
+              "upstream": 3,
+              "current": 5
+            }
+          ]
+        },
+        {
+          "id": "BG33_885",
+          "name": "Sanguine Refiner",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 2,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG34_692",
+          "name": "Forsaken Weaver",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 10,
+              "current": 8
+            }
+          ]
+        },
+        {
+          "id": "BG35_602",
+          "name": "Lurking Leviathan",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 8,
+              "current": 9
+            }
+          ]
+        },
+        {
+          "id": "BG36_202",
+          "name": "Tasty Lobster",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 1,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG36_210",
+          "name": "Hoarding Hyena",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 5,
+              "current": 4
+            },
+            {
+              "field": "techLevel",
+              "upstream": 5,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG36_242",
+          "name": "Bronze Timewalker",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 2,
+              "current": 4
+            },
+            {
+              "field": "health",
+              "upstream": 9,
+              "current": 5
+            }
+          ]
+        },
+        {
+          "id": "BG36_508",
+          "name": "Cagey Conjurer",
+          "changes": [
+            {
+              "field": "techLevel",
+              "upstream": 3,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG36_509",
+          "name": "Private Investigator",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 2,
+              "current": 5
+            },
+            {
+              "field": "health",
+              "upstream": 4,
+              "current": 6
+            }
+          ]
+        },
+        {
+          "id": "BG36_733",
+          "name": "Eredar Escapist",
+          "changes": [
+            {
+              "field": "health",
+              "upstream": 6,
+              "current": 8
+            }
+          ]
+        },
+        {
+          "id": "BGS_018",
+          "name": "Goldrinn, the Great Wolf",
+          "changes": [
+            {
+              "field": "attack",
+              "upstream": 8,
+              "current": 7
+            },
+            {
+              "field": "health",
+              "upstream": 8,
+              "current": 7
+            },
+            {
+              "field": "techLevel",
+              "upstream": 6,
+              "current": 5
+            }
+          ]
+        }
+      ],
+      "pool_status": "active"
+    },
+    "heroes": {
+      "required": 116,
+      "missing_definitions": [],
+      "missing_handlers": [
+        {
+          "id": "BG20_HERO_202",
+          "name": "Master Nguyen",
+          "handler_id": "BG20_HERO_202p",
+          "deferred": false
+        },
+        {
+          "id": "BG20_HERO_242",
+          "name": "Guff Runetotem",
+          "handler_id": "BG20_HERO_242p",
+          "deferred": false
+        },
+        {
+          "id": "BG20_HERO_283",
+          "name": "Galewing",
+          "handler_id": "BG20_HERO_283p",
+          "deferred": false
+        },
+        {
+          "id": "BG21_HERO_000",
+          "name": "Cariel Roame",
+          "handler_id": "BG21_HERO_000p",
+          "deferred": false
+        },
+        {
+          "id": "BG22_HERO_000",
+          "name": "Tavish Stormpike",
+          "handler_id": "BG22_HERO_000p_Alt",
+          "deferred": false
+        },
+        {
+          "id": "BG22_HERO_004",
+          "name": "Varden Dawngrasp",
+          "handler_id": "BG22_HERO_004p",
+          "deferred": false
+        },
+        {
+          "id": "BG24_HERO_100",
+          "name": "Sire Denathrius",
+          "handler_id": "BG24_HERO_100p",
+          "deferred": false
+        },
+        {
+          "id": "BG25_HERO_100",
+          "name": "Professor Putricide",
+          "handler_id": "BG25_HERO_100p",
+          "deferred": false
+        },
+        {
+          "id": "BG30_HERO_304",
+          "name": "Marin the Manager",
+          "handler_id": "BG30_HERO_304p",
+          "deferred": false
+        },
+        {
+          "id": "BG31_HERO_801",
+          "name": "Jim Raynor",
+          "handler_id": "BG31_HERO_801p",
+          "deferred": false
+        },
+        {
+          "id": "BG31_HERO_811",
+          "name": "Kerrigan, Queen of Blades",
+          "handler_id": "BG31_HERO_811p",
+          "deferred": false
+        },
+        {
+          "id": "BG32_HERO_002",
+          "name": "Buttons",
+          "handler_id": "BG32_HERO_002p",
+          "deferred": false
+        },
+        {
+          "id": "BG33_HERO_001",
+          "name": "Loh, the Living Legend",
+          "handler_id": "BG33_HERO_001p_ALT",
+          "deferred": false
+        },
+        {
+          "id": "BG34_HERO_000",
+          "name": "Murozond, Unbounded",
+          "handler_id": "BG34_HERO_000p",
+          "deferred": false
+        },
+        {
+          "id": "BG34_HERO_004",
+          "name": "Morchie",
+          "handler_id": "BG34_HERO_004p",
+          "deferred": false
+        },
+        {
+          "id": "BG35_HERO_001",
+          "name": "Genn, Worgen King",
+          "handler_id": "BG35_HERO_001p",
+          "deferred": false
+        },
+        {
+          "id": "TB_BaconShop_HERO_21",
+          "name": "The Great Akazamzarak",
+          "handler_id": "TB_BaconShop_HP_020",
+          "deferred": false
+        },
+        {
+          "id": "TB_BaconShop_HERO_40",
+          "name": "Sir Finley Mrrgglton",
+          "handler_id": "TB_BaconShop_HP_057",
+          "deferred": false
+        },
+        {
+          "id": "TB_BaconShop_HERO_90",
+          "name": "Silas Darkmoon",
+          "handler_id": "TB_BaconShop_HP_101",
+          "deferred": false
+        },
+        {
+          "id": "TB_BaconShop_HERO_91",
+          "name": "Zephrys, the Great",
+          "handler_id": "TB_BaconShop_HP_102",
+          "deferred": false
+        },
+        {
+          "id": "TB_BaconShop_HERO_94",
+          "name": "Tickatus",
+          "handler_id": "TB_BaconShop_HP_106",
+          "deferred": false
+        }
+      ],
+      "numeric_differences": [
+        {
+          "id": "BG20_HERO_101",
+          "name": "Xyrella",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 12,
+              "current": 14
+            }
+          ]
+        },
+        {
+          "id": "BG20_HERO_280",
+          "name": "Kurtrus Ashfallen",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 14,
+              "current": 16
+            }
+          ]
+        },
+        {
+          "id": "BG21_HERO_000",
+          "name": "Cariel Roame",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 14,
+              "current": 10
+            }
+          ]
+        },
+        {
+          "id": "BG21_HERO_010",
+          "name": "Scabbs Cutterbutter",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 15,
+              "current": 18
+            }
+          ]
+        },
+        {
+          "id": "BG21_HERO_030",
+          "name": "Sneed",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 20,
+              "current": 15
+            }
+          ]
+        },
+        {
+          "id": "BG22_HERO_003",
+          "name": "Vanndar Stormpike",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 12,
+              "current": 10
+            }
+          ]
+        },
+        {
+          "id": "BG23_HERO_305",
+          "name": "Heistbaron Togwaggle",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 14,
+              "current": 16
+            }
+          ]
+        },
+        {
+          "id": "BG25_HERO_105",
+          "name": "E.T.C., Band Manager",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 14,
+              "current": 16
+            }
+          ]
+        },
+        {
+          "id": "BG26_HERO_101",
+          "name": "Cap'n Hoggarr",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 12,
+              "current": 14
+            }
+          ]
+        },
+        {
+          "id": "BG26_HERO_102",
+          "name": "Inge, the Iron Hymn",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 17,
+              "current": 10
+            }
+          ]
+        },
+        {
+          "id": "BG28_HERO_400",
+          "name": "Snake Eyes",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 5,
+              "current": 8
+            }
+          ]
+        },
+        {
+          "id": "BG31_HERO_005",
+          "name": "Zerek, Master Cloner",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 18,
+              "current": 12
+            }
+          ]
+        },
+        {
+          "id": "BG32_HERO_001",
+          "name": "Forest Lord Cenarius",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 16,
+              "current": 13
+            }
+          ]
+        },
+        {
+          "id": "BG33_HERO_001",
+          "name": "Loh, the Living Legend",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 17,
+              "current": 19
+            }
+          ]
+        },
+        {
+          "id": "BG34_HERO_001",
+          "name": "Time Twister Chromie",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 12,
+              "current": 14
+            }
+          ]
+        },
+        {
+          "id": "BG36_HERO_101",
+          "name": "Tras'tath, Soul Parasite",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 10,
+              "current": 15
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_12",
+          "name": "The Rat King",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 12,
+              "current": 14
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_18",
+          "name": "Patches the Pirate",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 18,
+              "current": 19
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_27",
+          "name": "Sindragosa",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 7,
+              "current": 10
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_28",
+          "name": "Infinite Toki",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 10,
+              "current": 15
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_36",
+          "name": "Dancin' Deryl",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 16,
+              "current": 18
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_41",
+          "name": "Reno Jackson",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 16,
+              "current": 12
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_56",
+          "name": "Alexstrasza",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 10,
+              "current": 8
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_60",
+          "name": "Kael'thas Sunstrider",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 16,
+              "current": 18
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_62",
+          "name": "Maiev Shadowsong",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 17,
+              "current": 18
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_90",
+          "name": "Silas Darkmoon",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 14,
+              "current": 16
+            }
+          ]
+        },
+        {
+          "id": "TB_BaconShop_HERO_92",
+          "name": "Y'Shaarj",
+          "changes": [
+            {
+              "field": "armor",
+              "upstream": 18,
+              "current": 20
+            }
+          ]
+        }
+      ],
+      "pool_status": "active"
+    },
+    "spells": {
+      "required": 71,
+      "missing_definitions": [],
+      "missing_handlers": [
+        {
+          "id": "EBG_Spell_037",
+          "name": "Unmasked Identity",
+          "handler_id": "EBG_Spell_037",
+          "deferred": false
+        }
+      ],
+      "numeric_differences": [
+        {
+          "id": "BG28_845",
+          "name": "Natural Blessing",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 4,
+              "current": 2
+            }
+          ]
+        }
+      ],
+      "pool_status": "active"
+    },
+    "dark_gifts": {
+      "required": 43,
+      "missing_definitions": [],
+      "missing_handlers": [
+        {
+          "id": "BG36_MidGameEffect_000t65",
+          "name": "Polarization",
+          "handler_id": "BG36_MidGameEffect_000t65",
+          "deferred": true
+        }
+      ],
+      "numeric_differences": [],
+      "pool_status": "active"
+    },
+    "candidate_trinkets": {
+      "required": 228,
+      "missing_definitions": [],
+      "missing_handlers": [
+        {
+          "id": "BG30_MagicItem_301",
+          "name": "Eternal Portrait",
+          "handler_id": "BG30_MagicItem_301",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_303",
+          "name": "Automaton Portrait",
+          "handler_id": "BG30_MagicItem_303",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_410",
+          "name": "Quilligraphy Set",
+          "handler_id": "BG30_MagicItem_410",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_411",
+          "name": "Hoggy Bank",
+          "handler_id": "BG30_MagicItem_411",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_416",
+          "name": "Token of the Old Gods",
+          "handler_id": "BG30_MagicItem_416",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_420",
+          "name": "Book of Medivh",
+          "handler_id": "BG30_MagicItem_420",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_422",
+          "name": "Lorewalker Scroll",
+          "handler_id": "BG30_MagicItem_422",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_423",
+          "name": "Innkeeper's Stein",
+          "handler_id": "BG30_MagicItem_423",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_425",
+          "name": "Azeroth Model Globe",
+          "handler_id": "BG30_MagicItem_425",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_426",
+          "name": "Colorful Compass",
+          "handler_id": "BG30_MagicItem_426",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_430",
+          "name": "Rockin' Music Box",
+          "handler_id": "BG30_MagicItem_430",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_434",
+          "name": "Replica Cathedral",
+          "handler_id": "BG30_MagicItem_434",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_435",
+          "name": "Goldenizer Supply",
+          "handler_id": "BG30_MagicItem_435",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_437",
+          "name": "Staff of the Scourge",
+          "handler_id": "BG30_MagicItem_437",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_544",
+          "name": "Nomi Sticker",
+          "handler_id": "BG30_MagicItem_544",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_547",
+          "name": "Comfy Coffin",
+          "handler_id": "BG30_MagicItem_547",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_700",
+          "name": "Deathly Phylactery",
+          "handler_id": "BG30_MagicItem_700",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_703",
+          "name": "Mystery Cube",
+          "handler_id": "BG30_MagicItem_703",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_705",
+          "name": "Bartend-o-Tron's Oilcan",
+          "handler_id": "BG30_MagicItem_705",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_706",
+          "name": "Reflective Pendant",
+          "handler_id": "BG30_MagicItem_706",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_707",
+          "name": "Tickatus Sticker",
+          "handler_id": "BG30_MagicItem_707",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_713",
+          "name": "Bleeding Heart",
+          "handler_id": "BG30_MagicItem_713",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_804",
+          "name": "Ancient Wishbone",
+          "handler_id": "BG30_MagicItem_804",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_821",
+          "name": "Fish Portrait",
+          "handler_id": "BG30_MagicItem_821",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_841",
+          "name": "Glowing Gauntlet",
+          "handler_id": "BG30_MagicItem_841",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_847",
+          "name": "Goblin Wallet",
+          "handler_id": "BG30_MagicItem_847",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_868",
+          "name": "Rewinder Portrait",
+          "handler_id": "BG30_MagicItem_868",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_888",
+          "name": "Souvenir Stand",
+          "handler_id": "BG30_MagicItem_888",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_891",
+          "name": "Trip Vouchers",
+          "handler_id": "BG30_MagicItem_891",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_900",
+          "name": "Dragonwing Glider",
+          "handler_id": "BG30_MagicItem_900",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_902",
+          "name": "Holy Mallet",
+          "handler_id": "BG30_MagicItem_902",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_914",
+          "name": "Nerglish Phrasebook",
+          "handler_id": "BG30_MagicItem_914",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_917",
+          "name": "Rusty Trident",
+          "handler_id": "BG30_MagicItem_917",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_924",
+          "name": "Booty Bay Brew",
+          "handler_id": "BG30_MagicItem_924",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_931",
+          "name": "Lucky Tabby",
+          "handler_id": "BG30_MagicItem_931",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_962",
+          "name": "Training Certificate",
+          "handler_id": "BG30_MagicItem_962",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_973",
+          "name": "Minion Bait",
+          "handler_id": "BG30_MagicItem_973",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_981",
+          "name": "The Eye of Dalaran",
+          "handler_id": "BG30_MagicItem_981",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_988",
+          "name": "Great Boar Sticker",
+          "handler_id": "BG30_MagicItem_988",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_994",
+          "name": "Yogg-Tastic Pastry",
+          "handler_id": "BG30_MagicItem_994",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_998",
+          "name": "Bob-blehead",
+          "handler_id": "BG30_MagicItem_998",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_170",
+          "name": "Spell-powered Wrench",
+          "handler_id": "BG32_MagicItem_170",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_271",
+          "name": "Ornate Clock",
+          "handler_id": "BG32_MagicItem_271",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_276",
+          "name": "Enigmatic Headstone",
+          "handler_id": "BG32_MagicItem_276",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_278",
+          "name": "Reusable Batteries",
+          "handler_id": "BG32_MagicItem_278",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_300",
+          "name": "Putricide Sticker",
+          "handler_id": "BG32_MagicItem_300",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_350",
+          "name": "Splinter of Aurum",
+          "handler_id": "BG32_MagicItem_350",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_360",
+          "name": "Baleful Incense",
+          "handler_id": "BG32_MagicItem_360",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_361",
+          "name": "Portable Factory",
+          "handler_id": "BG32_MagicItem_361",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_400",
+          "name": "Shrine of Evolution",
+          "handler_id": "BG32_MagicItem_400",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_416",
+          "name": "War Drum",
+          "handler_id": "BG32_MagicItem_416",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_428",
+          "name": "Worn Treasure Map",
+          "handler_id": "BG32_MagicItem_428",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_808",
+          "name": "Bloodbound Earrings",
+          "handler_id": "BG32_MagicItem_808",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_817",
+          "name": "Rendle Sticker",
+          "handler_id": "BG32_MagicItem_817",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_821",
+          "name": "Pilgrimp Sticker",
+          "handler_id": "BG32_MagicItem_821",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_822",
+          "name": "Bazaar Sticker",
+          "handler_id": "BG32_MagicItem_822",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_831",
+          "name": "Sellemental Portrait",
+          "handler_id": "BG32_MagicItem_831",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_858",
+          "name": "Explorer's Binoculars",
+          "handler_id": "BG32_MagicItem_858",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_860",
+          "name": "Beetle Band",
+          "handler_id": "BG32_MagicItem_860",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_893",
+          "name": "Bluegill Flippers",
+          "handler_id": "BG32_MagicItem_893",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_930",
+          "name": "Archaic Scroll",
+          "handler_id": "BG32_MagicItem_930",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_931",
+          "name": "Azsharan Statuette",
+          "handler_id": "BG32_MagicItem_931",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_951",
+          "name": "Gold Pendant",
+          "handler_id": "BG32_MagicItem_951",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_957",
+          "name": "Grifter Portrait",
+          "handler_id": "BG32_MagicItem_957",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_150",
+          "name": "Cursed Crystal",
+          "handler_id": "BG35_MagicItem_150",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_152",
+          "name": "Demonic Tapestry",
+          "handler_id": "BG35_MagicItem_152",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_301",
+          "name": "Scraper Sticker",
+          "handler_id": "BG35_MagicItem_301",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_302",
+          "name": "Stormcoil Sticker",
+          "handler_id": "BG35_MagicItem_302",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_305",
+          "name": "Conch Portrait",
+          "handler_id": "BG35_MagicItem_305",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_306",
+          "name": "Jailer Sticker",
+          "handler_id": "BG35_MagicItem_306",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_434",
+          "name": "Jewelry Box",
+          "handler_id": "BG35_MagicItem_434",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_801",
+          "name": "Sous Chef Sticker",
+          "handler_id": "BG35_MagicItem_801",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_814",
+          "name": "Stuffed Coin Purse",
+          "handler_id": "BG35_MagicItem_814",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_815",
+          "name": "Magician's Top Hat",
+          "handler_id": "BG35_MagicItem_815",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_816",
+          "name": "Orb of the Unknown",
+          "handler_id": "BG35_MagicItem_816",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_817",
+          "name": "Lens Case",
+          "handler_id": "BG35_MagicItem_817",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_818",
+          "name": "Mysterious Orb",
+          "handler_id": "BG35_MagicItem_818",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_821",
+          "name": "Kaleidoscope",
+          "handler_id": "BG35_MagicItem_821",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_823",
+          "name": "Timeworn Candelabra",
+          "handler_id": "BG35_MagicItem_823",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_840",
+          "name": "Chromatic Tear",
+          "handler_id": "BG35_MagicItem_840",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_850",
+          "name": "Pocket Cyclone",
+          "handler_id": "BG35_MagicItem_850",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_851",
+          "name": "Water Wheel",
+          "handler_id": "BG35_MagicItem_851",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_871",
+          "name": "Mama Bear Sticker",
+          "handler_id": "BG35_MagicItem_871",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_872",
+          "name": "Ophidian Staff",
+          "handler_id": "BG35_MagicItem_872",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_890",
+          "name": "Sunken Anchor",
+          "handler_id": "BG35_MagicItem_890",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_920",
+          "name": "Bubble Crown",
+          "handler_id": "BG35_MagicItem_920",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_931",
+          "name": "Transcribing Typewriter",
+          "handler_id": "BG35_MagicItem_931",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_200",
+          "name": "Herding Horn",
+          "handler_id": "BG36_MagicItem_200",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_201",
+          "name": "Lionfish Portrait",
+          "handler_id": "BG36_MagicItem_201",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_202",
+          "name": "Warcry Totem",
+          "handler_id": "BG36_MagicItem_202",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_203",
+          "name": "Dragon Skull",
+          "handler_id": "BG36_MagicItem_203",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_206",
+          "name": "Ominous Stone",
+          "handler_id": "BG36_MagicItem_206",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_208",
+          "name": "Floating Candle Set",
+          "handler_id": "BG36_MagicItem_208",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_211",
+          "name": "Lovely Locket",
+          "handler_id": "BG36_MagicItem_211",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_220",
+          "name": "Glowing Crystal",
+          "handler_id": "BG36_MagicItem_220",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_300",
+          "name": "Frigid Blossom",
+          "handler_id": "BG36_MagicItem_300",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_301",
+          "name": "Lockbox Portrait",
+          "handler_id": "BG36_MagicItem_301",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_302",
+          "name": "Gold Mallet",
+          "handler_id": "BG36_MagicItem_302",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_303",
+          "name": "Glass of Perspective",
+          "handler_id": "BG36_MagicItem_303",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_305",
+          "name": "Rune of Transmutation",
+          "handler_id": "BG36_MagicItem_305",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_307",
+          "name": "Wand of Divination",
+          "handler_id": "BG36_MagicItem_307",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_390",
+          "name": "Baller Portrait",
+          "handler_id": "BG36_MagicItem_390",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_800",
+          "name": "Demonic Bloodletter",
+          "handler_id": "BG36_MagicItem_800",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_801",
+          "name": "Consuming Claw",
+          "handler_id": "BG36_MagicItem_801",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_810",
+          "name": "Inductive Gyroblade",
+          "handler_id": "BG36_MagicItem_810",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_811",
+          "name": "Defensive Shell",
+          "handler_id": "BG36_MagicItem_811",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_812",
+          "name": "Emergency Gearblade",
+          "handler_id": "BG36_MagicItem_812",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_820",
+          "name": "Flighty Portrait",
+          "handler_id": "BG36_MagicItem_820",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_310",
+          "name": "Rivendare Portrait",
+          "handler_id": "BG30_MagicItem_310",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_403",
+          "name": "Ironforge Anvil",
+          "handler_id": "BG30_MagicItem_403",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_406",
+          "name": "Butcher's Sickle",
+          "handler_id": "BG30_MagicItem_406",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_410t2",
+          "name": "Quilligraphy Set",
+          "handler_id": "BG30_MagicItem_410t2",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_418",
+          "name": "Bronzebeard Portrait",
+          "handler_id": "BG30_MagicItem_418",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_420t",
+          "name": "Book of Medivh",
+          "handler_id": "BG30_MagicItem_420t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_422t",
+          "name": "Lorewalker Scroll",
+          "handler_id": "BG30_MagicItem_422t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_426t",
+          "name": "Colorful Compass",
+          "handler_id": "BG30_MagicItem_426t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_439",
+          "name": "Designer Eyepatch",
+          "handler_id": "BG30_MagicItem_439",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_442",
+          "name": "Blood Golem Sticker",
+          "handler_id": "BG30_MagicItem_442",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_540",
+          "name": "Slamma Sticker",
+          "handler_id": "BG30_MagicItem_540",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_541",
+          "name": "Nether Pendant",
+          "handler_id": "BG30_MagicItem_541",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_544t",
+          "name": "Nomi Sticker",
+          "handler_id": "BG30_MagicItem_544t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_545",
+          "name": "Fridge Magnet",
+          "handler_id": "BG30_MagicItem_545",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_546",
+          "name": "Jar o' Gems",
+          "handler_id": "BG30_MagicItem_546",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_547t",
+          "name": "Comfy Coffin",
+          "handler_id": "BG30_MagicItem_547t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_555",
+          "name": "Surprise Portrait",
+          "handler_id": "BG30_MagicItem_555",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_701",
+          "name": "The Eye of Sargeras",
+          "handler_id": "BG30_MagicItem_701",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_801",
+          "name": "Sinstone Sticker",
+          "handler_id": "BG30_MagicItem_801",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_876",
+          "name": "Manipulator Portrait",
+          "handler_id": "BG30_MagicItem_876",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_879t",
+          "name": "Dalaran Cheese Wheel",
+          "handler_id": "BG30_MagicItem_879t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_886",
+          "name": "Reinforced Shield",
+          "handler_id": "BG30_MagicItem_886",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_914t",
+          "name": "Nerglish Phrasebook",
+          "handler_id": "BG30_MagicItem_914t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_919",
+          "name": "Nazjatar Postcard",
+          "handler_id": "BG30_MagicItem_919",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_920",
+          "name": "Spitescale Sushi Roll",
+          "handler_id": "BG30_MagicItem_920",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_924t",
+          "name": "Booty Bay Brew",
+          "handler_id": "BG30_MagicItem_924t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_942",
+          "name": "Mecha-Jaraxxus Sticker",
+          "handler_id": "BG30_MagicItem_942",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_951",
+          "name": "Lava Lamp",
+          "handler_id": "BG30_MagicItem_951",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_952",
+          "name": "Jarred Frostling",
+          "handler_id": "BG30_MagicItem_952",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_988t",
+          "name": "Great Boar Sticker",
+          "handler_id": "BG30_MagicItem_988t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_989t",
+          "name": "Artisanal Urn",
+          "handler_id": "BG30_MagicItem_989t",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_993",
+          "name": "Pagle's Fishing Rod",
+          "handler_id": "BG30_MagicItem_993",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_995",
+          "name": "Bronze Timepiece",
+          "handler_id": "BG30_MagicItem_995",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_996",
+          "name": "Bob's Tip Jar",
+          "handler_id": "BG30_MagicItem_996",
+          "deferred": false
+        },
+        {
+          "id": "BG30_MagicItem_999",
+          "name": "Fancy Spellbook",
+          "handler_id": "BG30_MagicItem_999",
+          "deferred": false
+        },
+        {
+          "id": "BG31_MagicItem_903",
+          "name": "Wisdomball Supply",
+          "handler_id": "BG31_MagicItem_903",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_172",
+          "name": "Boom's Monster Portrait",
+          "handler_id": "BG32_MagicItem_172",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_200",
+          "name": "All-Purpose Kibble",
+          "handler_id": "BG32_MagicItem_200",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_205",
+          "name": "Maw Caster Portrait",
+          "handler_id": "BG32_MagicItem_205",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_232",
+          "name": "Shark Cannon",
+          "handler_id": "BG32_MagicItem_232",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_270t",
+          "name": "Wicked Tome",
+          "handler_id": "BG32_MagicItem_270t",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_283",
+          "name": "Czarina Portrait",
+          "handler_id": "BG32_MagicItem_283",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_284",
+          "name": "Aggem Sticker",
+          "handler_id": "BG32_MagicItem_284",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_301",
+          "name": "Bassgill Portrait",
+          "handler_id": "BG32_MagicItem_301",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_306",
+          "name": "Herald Sticker",
+          "handler_id": "BG32_MagicItem_306",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_361t",
+          "name": "Portable Factory",
+          "handler_id": "BG32_MagicItem_361t",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_362t",
+          "name": "Innkeeper's Hearth",
+          "handler_id": "BG32_MagicItem_362t",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_363",
+          "name": "Faerie Dragon Scale",
+          "handler_id": "BG32_MagicItem_363",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_364",
+          "name": "Poet Portrait",
+          "handler_id": "BG32_MagicItem_364",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_366",
+          "name": "Guiding Candle",
+          "handler_id": "BG32_MagicItem_366",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_367",
+          "name": "Ghastly Sticker",
+          "handler_id": "BG32_MagicItem_367",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_801t",
+          "name": "Heart of the Forest",
+          "handler_id": "BG32_MagicItem_801t",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_807",
+          "name": "Curator Sticker",
+          "handler_id": "BG32_MagicItem_807",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_808t",
+          "name": "Bloodbound Earrings",
+          "handler_id": "BG32_MagicItem_808t",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_860t",
+          "name": "Beetle Band",
+          "handler_id": "BG32_MagicItem_860t",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_888",
+          "name": "Recycling Sticker",
+          "handler_id": "BG32_MagicItem_888",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_901",
+          "name": "Gold-plated Compass",
+          "handler_id": "BG32_MagicItem_901",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_920",
+          "name": "Thaumaturgist Portrait",
+          "handler_id": "BG32_MagicItem_920",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_922",
+          "name": "Charming Panpipes",
+          "handler_id": "BG32_MagicItem_922",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_926",
+          "name": "Morgl Portrait",
+          "handler_id": "BG32_MagicItem_926",
+          "deferred": false
+        },
+        {
+          "id": "BG32_MagicItem_998",
+          "name": "Behemoth Portrait",
+          "handler_id": "BG32_MagicItem_998",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_154",
+          "name": "Ur'zul Sticker",
+          "handler_id": "BG35_MagicItem_154",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_156",
+          "name": "Flaming Portrait",
+          "handler_id": "BG35_MagicItem_156",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_300t",
+          "name": "Copper Coil",
+          "handler_id": "BG35_MagicItem_300t",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_309",
+          "name": "Errgl Sticker",
+          "handler_id": "BG35_MagicItem_309",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_700",
+          "name": "Wildfeather Duster",
+          "handler_id": "BG35_MagicItem_700",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_701",
+          "name": "Fang Anklet",
+          "handler_id": "BG35_MagicItem_701",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_710",
+          "name": "Miniature Ship",
+          "handler_id": "BG35_MagicItem_710",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_711",
+          "name": "Protective Ring",
+          "handler_id": "BG35_MagicItem_711",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_712",
+          "name": "Privateer Portrait",
+          "handler_id": "BG35_MagicItem_712",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_713",
+          "name": "Trusty Crowbar",
+          "handler_id": "BG35_MagicItem_713",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_732",
+          "name": "Soul Fermenter",
+          "handler_id": "BG35_MagicItem_732",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_733",
+          "name": "Jailer Sticker",
+          "handler_id": "BG35_MagicItem_733",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_740",
+          "name": "Sky Golem Portrait",
+          "handler_id": "BG35_MagicItem_740",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_741",
+          "name": "Beatboxer Portrait",
+          "handler_id": "BG35_MagicItem_741",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_742",
+          "name": "Accord-o-Tron Portrait",
+          "handler_id": "BG35_MagicItem_742",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_743",
+          "name": "Electrode Attractor",
+          "handler_id": "BG35_MagicItem_743",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_750",
+          "name": "Magicfin Sticker",
+          "handler_id": "BG35_MagicItem_750",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_752",
+          "name": "Young Murk-Eye Sticker",
+          "handler_id": "BG35_MagicItem_752",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_753",
+          "name": "Murky Sticker",
+          "handler_id": "BG35_MagicItem_753",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_754",
+          "name": "Dramaloc Sticker",
+          "handler_id": "BG35_MagicItem_754",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_755",
+          "name": "Chillmere Mosaic",
+          "handler_id": "BG35_MagicItem_755",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_812",
+          "name": "Corrupted Tome",
+          "handler_id": "BG35_MagicItem_812",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_816t",
+          "name": "Orb of the Unknown",
+          "handler_id": "BG35_MagicItem_816t",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_820",
+          "name": "Safety Patch",
+          "handler_id": "BG35_MagicItem_820",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_821t",
+          "name": "Kaleidoscope",
+          "handler_id": "BG35_MagicItem_821t",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_823t",
+          "name": "Timeworn Candelabra",
+          "handler_id": "BG35_MagicItem_823t",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_840t",
+          "name": "Chromatic Tear",
+          "handler_id": "BG35_MagicItem_840t",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_850t",
+          "name": "Pocket Cyclone",
+          "handler_id": "BG35_MagicItem_850t",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_861",
+          "name": "Baller Portrait",
+          "handler_id": "BG35_MagicItem_861",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_862",
+          "name": "Upstart Embers",
+          "handler_id": "BG35_MagicItem_862",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_863",
+          "name": "Avalanche Sticker",
+          "handler_id": "BG35_MagicItem_863",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_923",
+          "name": "Bewitched Ribbon",
+          "handler_id": "BG35_MagicItem_923",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_924",
+          "name": "Groundbreaker Portrait",
+          "handler_id": "BG35_MagicItem_924",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_930",
+          "name": "Warband Whistle",
+          "handler_id": "BG35_MagicItem_930",
+          "deferred": false
+        },
+        {
+          "id": "BG35_MagicItem_931t",
+          "name": "Transcribing Typewriter",
+          "handler_id": "BG35_MagicItem_931t",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_204",
+          "name": "Plaguerunner Portrait",
+          "handler_id": "BG36_MagicItem_204",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_212",
+          "name": "Wolfhead Flail",
+          "handler_id": "BG36_MagicItem_212",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_213",
+          "name": "Lightfeather Sticker",
+          "handler_id": "BG36_MagicItem_213",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_214",
+          "name": "Insurrectionist's Blade",
+          "handler_id": "BG36_MagicItem_214",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_215",
+          "name": "Dragon's Eye",
+          "handler_id": "BG36_MagicItem_215",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_216",
+          "name": "Eternal Portrait",
+          "handler_id": "BG36_MagicItem_216",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_217",
+          "name": "Funeral Wreath",
+          "handler_id": "BG36_MagicItem_217",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_302t",
+          "name": "Gold Mallet",
+          "handler_id": "BG36_MagicItem_302t",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_303t",
+          "name": "Glass of Perspective",
+          "handler_id": "BG36_MagicItem_303t",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_308",
+          "name": "Trailblazer Sticker",
+          "handler_id": "BG36_MagicItem_308",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_309",
+          "name": "Wax Lance",
+          "handler_id": "BG36_MagicItem_309",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_361",
+          "name": "Myrmidon Sticker",
+          "handler_id": "BG36_MagicItem_361",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_362",
+          "name": "Cyclist Portrait",
+          "handler_id": "BG36_MagicItem_362",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_363",
+          "name": "Escapee Portrait",
+          "handler_id": "BG36_MagicItem_363",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_370",
+          "name": "Maldraxxus Dagger",
+          "handler_id": "BG36_MagicItem_370",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_371",
+          "name": "Honeycomb Ring",
+          "handler_id": "BG36_MagicItem_371",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_373",
+          "name": "Multilayered Shield",
+          "handler_id": "BG36_MagicItem_373",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_380",
+          "name": "Amplifying Essence",
+          "handler_id": "BG36_MagicItem_380",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_810t",
+          "name": "Inductive Gyroblade",
+          "handler_id": "BG36_MagicItem_810t",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_830",
+          "name": "Bloodfury Shield",
+          "handler_id": "BG36_MagicItem_830",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_831",
+          "name": "Felsteel Cleaver",
+          "handler_id": "BG36_MagicItem_831",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_840",
+          "name": "Secret Schematic",
+          "handler_id": "BG36_MagicItem_840",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_841",
+          "name": "Assembler Portrait",
+          "handler_id": "BG36_MagicItem_841",
+          "deferred": false
+        },
+        {
+          "id": "BG36_MagicItem_850",
+          "name": "Cookie's Stirring Rod",
+          "handler_id": "BG36_MagicItem_850",
+          "deferred": false
+        }
+      ],
+      "numeric_differences": [
+        {
+          "id": "BG30_MagicItem_547",
+          "name": "Comfy Coffin",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_713",
+          "name": "Bleeding Heart",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_821",
+          "name": "Fish Portrait",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_300",
+          "name": "Putricide Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_350",
+          "name": "Splinter of Aurum",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_416",
+          "name": "War Drum",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_821",
+          "name": "Pilgrimp Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_831",
+          "name": "Sellemental Portrait",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 5,
+              "current": 6
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_301",
+          "name": "Scraper Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 4,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_302",
+          "name": "Stormcoil Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_306",
+          "name": "Jailer Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 4,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_840",
+          "name": "Chromatic Tear",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_872",
+          "name": "Ophidian Staff",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 5,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_200",
+          "name": "Herding Horn",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 1,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_202",
+          "name": "Warcry Totem",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_203",
+          "name": "Dragon Skull",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_206",
+          "name": "Ominous Stone",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_208",
+          "name": "Floating Candle Set",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_307",
+          "name": "Wand of Divination",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_800",
+          "name": "Demonic Bloodletter",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_403",
+          "name": "Ironforge Anvil",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 4,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_410t2",
+          "name": "Quilligraphy Set",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_545",
+          "name": "Fridge Magnet",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 4,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_886",
+          "name": "Reinforced Shield",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 1
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_919",
+          "name": "Nazjatar Postcard",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 7,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG30_MagicItem_993",
+          "name": "Pagle's Fishing Rod",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 4,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_200",
+          "name": "All-Purpose Kibble",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_301",
+          "name": "Bassgill Portrait",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 1,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_306",
+          "name": "Herald Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_367",
+          "name": "Ghastly Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG32_MagicItem_888",
+          "name": "Recycling Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 5
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_712",
+          "name": "Privateer Portrait",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 5,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_733",
+          "name": "Jailer Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 4,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_754",
+          "name": "Dramaloc Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 5,
+              "current": 6
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_861",
+          "name": "Baller Portrait",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 6,
+              "current": 5
+            }
+          ]
+        },
+        {
+          "id": "BG35_MagicItem_924",
+          "name": "Groundbreaker Portrait",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 5,
+              "current": 6
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_212",
+          "name": "Wolfhead Flail",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 5,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_214",
+          "name": "Insurrectionist's Blade",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 3,
+              "current": 2
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_361",
+          "name": "Myrmidon Sticker",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 1,
+              "current": 3
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_363",
+          "name": "Escapee Portrait",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 6,
+              "current": 7
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_371",
+          "name": "Honeycomb Ring",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 1,
+              "current": 4
+            }
+          ]
+        },
+        {
+          "id": "BG36_MagicItem_373",
+          "name": "Multilayered Shield",
+          "changes": [
+            {
+              "field": "cost",
+              "upstream": 2,
+              "current": 4
+            }
+          ]
+        }
+      ],
+      "pool_status": "unverified_candidate"
+    }
+  },
+  "blockers": [
+    "ruleset_component_blocked:trinket",
+    "patch_mismatch",
+    "minions:missing_handlers:1",
+    "minions:numeric_differences:22",
+    "heroes:missing_handlers:21",
+    "heroes:numeric_differences:27",
+    "spells:missing_handlers:1",
+    "spells:numeric_differences:1",
+    "dark_gifts:missing_handlers:1",
+    "candidate_trinkets:missing_handlers:228",
+    "candidate_trinkets:numeric_differences:42",
+    "missing_trinket_offer_and_purchase_system",
+    "dark_gift_offering_probabilities_unverified",
+    "generated_cards_and_golden_dependency_closure_unvalidated",
+    "current_patch_behavioral_conformance_unvalidated",
+    "actual_player_recruit_window_unvalidated",
+    "pending_choice_timeout_behavior_unvalidated",
+    "timed_recruit_adapter_not_integrated"
+  ],
+  "scope": "Static presence and numeric metadata audit; not behavioral validation",
+  "ruleset_file_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "turn_timing": {
+    "actual_player_window_validated": false,
+    "pending_choice_timeout_validated": false,
+    "required_wrapper": "bg_ai.timed_recruiting.TimedRecruitEngine"
+  }
+}

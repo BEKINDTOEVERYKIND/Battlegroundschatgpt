@@ -1,0 +1,19 @@
+{
+  "policy": "neural_proposals_plus_simulation_search",
+  "declared_before_fresh_v2_test": true,
+  "candidate_model": "runs/20260905-positioning-v2/selected_positioning.json",
+  "model_selection": "training and validation only; 16 loss-correction candidates",
+  "neural_proposals": 3,
+  "mandatory_heuristic_proposals": ["attack", "taunt_last"],
+  "search_trials_per_candidate": 128,
+  "search_seed": 1592602770,
+  "fresh_evaluation_seed": 982451653,
+  "fresh_evaluation_trials_per_candidate": 1024,
+  "holdout": "1000 new scenarios from generator seed 20260906, all test",
+  "selection_rule": "highest independent search score; ties keep proposal order",
+  "limitations": [
+    "Search receives a fully specified supported opposing combat board",
+    "This evaluates a combined learned-and-search policy, not neural strength alone",
+    "No recruiting, seasonal-choice, placement or human-MMR claim"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "battlegroundschatgpt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Rotation-aware offline Battlegrounds AI research",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "generate:positions": "node scripts/generate_positions.mjs"
+  },
+  "dependencies": {
+    "@firestone-hs/simulate-bgs-battle": "1.1.750",
+    "@firestone-hs/reference-data": "3.0.196"
+  },
+  "overrides": {"@firestone-hs/reference-data": "3.0.196"},
+  "engines": {"node": ">=22"}
+}

@@ -1,0 +1,110 @@
+{
+  "archive": "candidate_checkpoints.tar.gz",
+  "sha256": "5077ff1c57213cfe7897bcd4b0ab933245daa1170aa23485806577131c916f8b",
+  "bytes": 15900806,
+  "members": [
+    {
+      "member": "hidden16-tie0-epoch05.json",
+      "sha256": "e6bcacf1a323734d5f9bdc1a96740bb21e05e552090b66e66470f8eaae411d03",
+      "bytes": 4071917
+    },
+    {
+      "member": "hidden16-tie0-epoch10.json",
+      "sha256": "4bb411bdc18f7cbd0aed0df8b9c7c2b5a487310cb2af254598b6a2bc048812a8",
+      "bytes": 4072949
+    },
+    {
+      "member": "hidden16-tie0-epoch20.json",
+      "sha256": "c29b012c3dee3cd2a45df2c3d9bd36339ef8293c6b620ed330af7b36cb6395b5",
+      "bytes": 4077387
+    },
+    {
+      "member": "hidden16-tie0-epoch40.json",
+      "sha256": "82f77e453dce30e7ada971f9a59f3987ead0c948c9653326239cf0ffa10d8e97",
+      "bytes": 4078029
+    },
+    {
+      "member": "hidden16-tie0.02-epoch05.json",
+      "sha256": "18f0a8d55956039cccf67661e1f31386df2a03ce859a5116dde1e920cd0176eb",
+      "bytes": 4071713
+    },
+    {
+      "member": "hidden16-tie0.02-epoch10.json",
+      "sha256": "b1df278691532deb3129273bfe12d8b2af0bd3856c3c0ba84cb9244d7519d739",
+      "bytes": 4072212
+    },
+    {
+      "member": "hidden16-tie0.02-epoch20.json",
+      "sha256": "1dc412dfc9171e123e432b72e622240f68b85049544306411214911bc18ea17a",
+      "bytes": 4077565
+    },
+    {
+      "member": "hidden16-tie0.02-epoch40.json",
+      "sha256": "eb154ab86b087fbbce0af3cae188679bab50afbbe1910f478d440f997a97c2fd",
+      "bytes": 4078089
+    },
+    {
+      "member": "hidden32-tie0-epoch05.json",
+      "sha256": "b707180bc47dd3f85ef22db4f9c5163d6d2fb83d19acd411679766f74546c323",
+      "bytes": 5469374
+    },
+    {
+      "member": "hidden32-tie0-epoch10.json",
+      "sha256": "84649e3598f7d334d2c90167b1f4e82cc303d00401a9b423edabd8c4539d2296",
+      "bytes": 5471987
+    },
+    {
+      "member": "hidden32-tie0-epoch20.json",
+      "sha256": "6141f6b746f84670521a35308f36fd37be1f92040ddfa8e61afb3dec3c706c98",
+      "bytes": 5478656
+    },
+    {
+      "member": "hidden32-tie0-epoch40.json",
+      "sha256": "2e7959ba2dfa6a7096bb6f75c6901e3b64be52d646a68dc9189670f29ea7640d",
+      "bytes": 5485201
+    },
+    {
+      "member": "hidden32-tie0.02-epoch05.json",
+      "sha256": "d46b0e1a9c146d03d6365378e6901c9cd2aeef26181ced7ce2c193e5beb7fbad",
+      "bytes": 5468895
+    },
+    {
+      "member": "hidden32-tie0.02-epoch10.json",
+      "sha256": "97282404251b6b9e7c7f59cd3a832957fef985422c5094da47db5d782cbcbafa",
+      "bytes": 5467435
+    },
+    {
+      "member": "hidden32-tie0.02-epoch20.json",
+      "sha256": "696f8129bdc738812a6ce07bb78cbfd8d859e327c611ce84a8b4ff9134d2ae97",
+      "bytes": 5479290
+    },
+    {
+      "member": "hidden32-tie0.02-epoch40.json",
+      "sha256": "0132751247476b07b9f9d779d04e3e9773bac6fdf39303d94c2f3fb2bf4cf3f7",
+      "bytes": 5482429
+    }
+  ],
+  "parts": [
+    {
+      "file": "candidate_checkpoints.tar.gz.part-000",
+      "sha256": "0565f3cfc4a6b922810ebb439739ae0db693b7371115bd832aa8213faa9803ed",
+      "bytes": 4000002
+    },
+    {
+      "file": "candidate_checkpoints.tar.gz.part-001",
+      "sha256": "a0b80673476329ac5ac3465fd4539cbf7f99b3a35f86a1de0fa8a30bfa858ebd",
+      "bytes": 4000002
+    },
+    {
+      "file": "candidate_checkpoints.tar.gz.part-002",
+      "sha256": "483167b0d6755927d1467a3d316541a81c0e695c61785c0a547cfee4c9a9809e",
+      "bytes": 4000002
+    },
+    {
+      "file": "candidate_checkpoints.tar.gz.part-003",
+      "sha256": "95e3b5f06f97d9efe878222b78f4c325a31ef723a2e064286517ebda7fd77009",
+      "bytes": 3900800
+    }
+  ],
+  "restore_command": "python scripts/restore_candidates.py"
+}

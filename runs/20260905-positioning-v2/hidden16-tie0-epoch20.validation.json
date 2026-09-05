@@ -1,0 +1,2448 @@
+{
+  "split": "validation",
+  "scenario_count": 600,
+  "mean_scores": {
+    "model": 0.5320247395833333,
+    "random": 0.5110026041666667,
+    "attack": 0.5393229166666667,
+    "health": 0.53138671875,
+    "taunt_last": 0.539296875
+  },
+  "paired_model_minus_baseline": {
+    "random": {
+      "mean": 0.021022135416666667,
+      "scenarios": 600,
+      "ci95": [
+        0.014921712239583333,
+        0.02694026692708333
+      ]
+    },
+    "attack": {
+      "mean": -0.007298177083333334,
+      "scenarios": 600,
+      "ci95": [
+        -0.011452311197916667,
+        -0.0032485351562500007
+      ]
+    },
+    "health": {
+      "mean": 0.0006380208333333333,
+      "scenarios": 600,
+      "ci95": [
+        -0.003457194010416667,
+        0.004863444010416666
+      ]
+    },
+    "taunt_last": {
+      "mean": -0.007272135416666666,
+      "scenarios": 600,
+      "ci95": [
+        -0.011777669270833334,
+        -0.00302018229166667
+      ]
+    }
+  },
+  "selected_candidates": [
+    {
+      "scenario_id": "position-20260905-8",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-18",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-28",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-38",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-48",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-58",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-68",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-78",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-88",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-98",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-108",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-118",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-128",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-138",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-148",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-158",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-168",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-178",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-188",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-198",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-208",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-218",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-228",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-238",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-248",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-258",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-268",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-278",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-288",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-298",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-308",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-318",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-328",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-338",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-348",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-358",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-368",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-378",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-388",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-398",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-408",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-418",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-428",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-438",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-448",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-458",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-468",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-478",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-488",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-498",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-508",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-518",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-528",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-538",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-548",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-558",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-568",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-578",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-588",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-598",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-608",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-618",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-628",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-638",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-648",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-658",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-668",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-678",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-688",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-698",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-708",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-718",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-728",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-738",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-748",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-758",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-768",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-778",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-788",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-798",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-808",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-818",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-828",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-838",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-848",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-858",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-868",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-878",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-888",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-898",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-908",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-918",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-928",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-938",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-948",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-958",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-968",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-978",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-988",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-998",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1008",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1018",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-1028",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-1038",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1048",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-1058",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1068",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-1078",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-1088",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1098",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-1108",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1118",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1128",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1138",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-1148",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1158",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-1168",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-1178",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1188",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1198",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1208",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1218",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1228",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1238",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1248",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-1258",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1268",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1278",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-1288",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1298",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-1308",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1318",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-1328",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1338",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1348",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1358",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1368",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-1378",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1388",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-1398",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-1408",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1418",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1428",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1438",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1448",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-1458",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-1468",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1478",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1488",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-1498",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1508",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1518",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1528",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1538",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1548",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-1558",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1568",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1578",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1588",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1598",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1608",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-1618",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-1628",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1638",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1648",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1658",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1668",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1678",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-1688",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-1698",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1708",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1718",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1728",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1738",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1748",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-1758",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1768",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1778",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1788",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1798",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1808",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-1818",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1828",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-1838",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1848",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-1858",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1868",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-1878",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-1888",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1898",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1908",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1918",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1928",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-1938",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1948",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-1958",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-1968",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-1978",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-1988",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-1998",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2008",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2018",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2028",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2038",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-2048",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2058",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2068",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2078",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2088",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2098",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2108",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-2118",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-2128",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2138",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2148",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2158",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2168",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2178",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2188",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2198",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2208",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2218",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2228",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2238",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2248",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2258",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2268",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2278",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2288",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2298",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2308",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2318",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2328",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2338",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2348",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2358",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2368",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2378",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2388",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-2398",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-2408",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2418",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-2428",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2438",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2448",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2458",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2468",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2478",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2488",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2498",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2508",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2518",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-2528",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2538",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-2548",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2558",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-2568",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-2578",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2588",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2598",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2608",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2618",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-2628",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2638",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-2648",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2658",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2668",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2678",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2688",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2698",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2708",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2718",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2728",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2738",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2748",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2758",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2768",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2778",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-2788",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2798",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2808",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-2818",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2828",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-2838",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2848",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-2858",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2868",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-2878",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-2888",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2898",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2908",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2918",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2928",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2938",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-2948",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2958",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-2968",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-2978",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-2988",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-2998",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3008",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3018",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-3028",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3038",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3048",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3058",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-3068",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-3078",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-3088",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3098",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3108",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-3118",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3128",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3138",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3148",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3158",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3168",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3178",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3188",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3198",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3208",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3218",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-3228",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3238",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3248",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3258",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3268",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3278",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3288",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-3298",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-3308",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3318",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-3328",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3338",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3348",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-3358",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-3368",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3378",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3388",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-3398",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3408",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3418",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-3428",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3438",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3448",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3458",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3468",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3478",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3488",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3498",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3508",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-3518",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-3528",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3538",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3548",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3558",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3568",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3578",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-3588",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3598",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-3608",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3618",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-3628",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-3638",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3648",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-3658",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3668",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3678",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3688",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3698",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3708",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3718",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3728",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3738",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3748",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3758",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3768",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-3778",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3788",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3798",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3808",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-3818",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3828",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3838",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3848",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3858",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3868",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3878",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-3888",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3898",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3908",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-3918",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-3928",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3938",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-3948",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-3958",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-3968",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-3978",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-3988",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-3998",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-4008",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4018",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4028",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-4038",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4048",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4058",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4068",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4078",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-4088",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4098",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4108",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4118",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4128",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4138",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4148",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-4158",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4168",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-4178",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-4188",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4198",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4208",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4218",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4228",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-4238",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4248",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4258",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4268",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-4278",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4288",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-4298",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-4308",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-4318",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4328",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4338",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4348",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4358",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4368",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4378",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4388",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4398",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4408",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-4418",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4428",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4438",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4448",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4458",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4468",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4478",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4488",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4498",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4508",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4518",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4528",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4538",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4548",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4558",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4568",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4578",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-4588",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4598",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-4608",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4618",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4628",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-4638",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4648",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4658",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4668",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4678",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4688",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4698",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4708",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-4718",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-4728",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4738",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-4748",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4758",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4768",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4778",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4788",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4798",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-4808",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4818",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4828",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4838",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4848",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4858",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4868",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4878",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-4888",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-4898",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-4908",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4918",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4928",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-4938",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4948",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-4958",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-4968",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-4978",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-4988",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-4998",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5008",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5018",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5028",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-5038",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5048",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5058",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5068",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-5078",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5088",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5098",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5108",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5118",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5128",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5138",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5148",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-5158",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-5168",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5178",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-5188",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5198",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5208",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5218",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5228",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5238",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-5248",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5258",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5268",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5278",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5288",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5298",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5308",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5318",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5328",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5338",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5348",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5358",
+      "candidate_index": 2
+    },
+    {
+      "scenario_id": "position-20260905-5368",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5378",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5388",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5398",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5408",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5418",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5428",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5438",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5448",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5458",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5468",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5478",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5488",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5498",
+      "candidate_index": 5
+    },
+    {
+      "scenario_id": "position-20260905-5508",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5518",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5528",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5538",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5548",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-5558",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5568",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5578",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5588",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5598",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5608",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5618",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5628",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5638",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5648",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5658",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5668",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5678",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5688",
+      "candidate_index": 8
+    },
+    {
+      "scenario_id": "position-20260905-5698",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5708",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5718",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5728",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5738",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5748",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5758",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5768",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5778",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-5788",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-5798",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5808",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-5818",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5828",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-5838",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5848",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-5858",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-5868",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5878",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5888",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5898",
+      "candidate_index": 4
+    },
+    {
+      "scenario_id": "position-20260905-5908",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5918",
+      "candidate_index": 6
+    },
+    {
+      "scenario_id": "position-20260905-5928",
+      "candidate_index": 0
+    },
+    {
+      "scenario_id": "position-20260905-5938",
+      "candidate_index": 1
+    },
+    {
+      "scenario_id": "position-20260905-5948",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5958",
+      "candidate_index": 7
+    },
+    {
+      "scenario_id": "position-20260905-5968",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5978",
+      "candidate_index": 9
+    },
+    {
+      "scenario_id": "position-20260905-5988",
+      "candidate_index": 3
+    },
+    {
+      "scenario_id": "position-20260905-5998",
+      "candidate_index": 0
+    }
+  ],
+  "limitations": "Validation selects among candidates; its score/CI is not a final held-out strength claim"
+}

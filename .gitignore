@@ -1,0 +1,16 @@
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+research/
+data/downloads/
+runs/tmp/
+runs/smoke*
+runs/**/positions.jsonl
+runs/**/positions-*.jsonl
+runs/**/hidden*-epoch??.json
+runs/**/candidate_archives/
+runs/**/candidate_checkpoints.tar.gz
+*.log
+.DS_Store
