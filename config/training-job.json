@@ -1,0 +1,15 @@
+{
+  "experiment": "20260905-corrected-positioning-transfer-v1",
+  "adapter_version": "firestone-combat-v2-tribes",
+  "scenarios": 8000,
+  "candidates": 12,
+  "label_trials": 128,
+  "evaluation_trials": 1024,
+  "epochs": 40,
+  "hidden": 32,
+  "seed": 202609057,
+  "model_seed": 17,
+  "workers": 4,
+  "warm_start": "runs/20260905-positioning-v2/selected_positioning.json",
+  "warm_start_sha256": "0132751247476b07b9f9d779d04e3e9773bac6fdf39303d94c2f3fb2bf4cf3f7"
+}

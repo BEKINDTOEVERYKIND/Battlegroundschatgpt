@@ -7,7 +7,7 @@ import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import { gunzipSync, createGunzip } from 'node:zlib';
-import { FirestoneCombat, ENGINE_VERSION, sha256 } from '../simulator/firestone.mjs';
+import { FirestoneCombat, adapterVersionForMetadata, ENGINE_VERSION, sha256 } from '../simulator/firestone.mjs';
 import { parseArgs } from './generate_positions.mjs';
 
 export const SEARCH_POLICY = 'neural_proposals_plus_simulation_search';
@@ -22,6 +22,9 @@ export function refineScenario(engine, scenario, proposal, inputIndex, proposalH
 } = {}) {
   if (!Number.isInteger(trials) || trials < 1 || !Number.isInteger(seed) || !Number.isInteger(evaluationSeed)) throw new Error('Invalid search trials/seeds');
   if (scenario.scenario_id !== proposal.scenario_id || scenario.split !== proposal.split) throw new Error('Proposal/scenario identity mismatch');
+  const adapterVersion = adapterVersionForMetadata(scenario.metadata);
+  engine.assertMetadata?.(scenario.metadata);
+  if (proposal.provenance.adapter_version != null && proposal.provenance.adapter_version !== adapterVersion) throw new Error('Proposal adapter differs from dataset generation');
   if (scenario.metadata.cardsSha256 !== engine.cardsHash || scenario.metadata.rulesetSha256 !== engine.rulesetHash ||
       proposal.provenance.cards_sha256 !== engine.cardsHash || proposal.provenance.ruleset_sha256 !== engine.rulesetHash) {
     throw new Error('Search snapshot differs from proposal or scenario');
@@ -54,6 +57,8 @@ export function refineScenario(engine, scenario, proposal, inputIndex, proposalH
     policy: SEARCH_POLICY,
     selections: { ...proposal.selections, model: chosen.candidateIndex },
     provenance: { ...proposal.provenance,
+      adapter_version: adapterVersion,
+      dataset_schema_version: scenario.metadata.datasetSchemaVersion ?? 1,
       evaluated_policy: SEARCH_POLICY,
       selection_rule: 'Top 3 neural proposals union attack and taunt-last; maximize independent 128-trial combat score; neural rank breaks ties',
       search_top_k: SEARCH_TOP_K, search_trials: trials, search_seed: searchSeed, search_base_seed: seed,
@@ -105,7 +110,7 @@ async function main() {
     } finally { fs.rmSync(temporary, { recursive: true, force: true }); }
     return;
   }
-  const engine = FirestoneCombat.fromFiles(args.cards, args.ruleset);
+  const engines = new Map();
   const inputStream = fs.createReadStream(args.input);
   const lines = createInterface({ input: args.input.endsWith('.gz') ? inputStream.pipe(createGunzip()) : inputStream, crlfDelay: Infinity });
   const fd = fs.openSync(out, 'wx');
@@ -116,6 +121,10 @@ async function main() {
       if (++index % shards !== shard) continue;
       const scenario = JSON.parse(line), proposal = proposals.get(scenario.scenario_id);
       if (!proposal) continue;
+      const adapterVersion = adapterVersionForMetadata(scenario.metadata);
+      if (args['adapter-version'] && args['adapter-version'] !== adapterVersion) throw new Error('Requested adapter differs from dataset generation');
+      if (!engines.has(adapterVersion)) engines.set(adapterVersion, FirestoneCombat.fromFiles(args.cards, args.ruleset, { adapterVersion }));
+      const engine = engines.get(adapterVersion);
       fs.writeSync(fd, JSON.stringify(refineScenario(engine, scenario, proposal, index, proposalHash, { trials, seed, evaluationSeed })) + '\n');
       if (++count % 25 === 0) process.stderr.write(`Search shard ${shard + 1}/${shards}: ${count} scenarios\n`);
     }

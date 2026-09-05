@@ -12,6 +12,7 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "python"))
 from bg_ai.features import feature_schema_id
 from bg_ai.learning import Ranker, jsonl_lines, load_dataset
+from bg_ai.positioning_versions import adapter_version_for_metadata
 
 
 def sha256(path):
@@ -63,6 +64,8 @@ def freeze_selections(data_path, checkpoint_path, split="test"):
                            "selections": chosen,
                            "ranked_candidates": ranks,
                            "provenance": {**provenance,
+                               "adapter_version": adapter_version_for_metadata(source["metadata"]),
+                               "dataset_schema_version": source["metadata"].get("datasetSchemaVersion", 1),
                                "label_combat_seed": source["metadata"]["combatSeed"],
                                "cards_sha256": source["metadata"]["cardsSha256"],
                                "ruleset_sha256": source["metadata"]["rulesetSha256"]}})

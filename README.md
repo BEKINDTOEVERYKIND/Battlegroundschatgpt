@@ -3,17 +3,33 @@
 Goal: a strong current-patch **Solo Battlegrounds** player whose learned
 representations remain useful after rotations.
 
-**Current implementation: an offline combat-positioning trainer.** It reuses
-Firestone's maintained combat engine and learns how to rank minion orders.
-Recruiting, hero choice, seasonal choices, and full eight-player self-play are
-not trained yet. The recruit-engine audit identifies the concrete missing work;
-missing effects are never silently treated as no-ops.
+**Current implementation: trained offline positioning and early-recruitment
+components.** Firestone supplies combat simulation; a pinned HSBRSIM/hsrl2 bridge
+executes finite-budget recruit commands against a rebuilt current-card database.
+The recruitment model chooses a first action followed by a fixed heuristic;
+it is not yet a complete eight-player self-play agent. Unsupported transitions
+stop the affected rollout instead of becoming silent no-ops.
 
-**Measured first result:** the learned-proposal + simulation-search policy gains
-**1.09 percentage points of combat score** over the strongest tested heuristic
-on 1,000 new synthetic scenarios (95% interval: 0.81–1.40 points). The neural
-model alone did not clearly beat attack sorting. See the
-[full results, failed attempts, and limitations](reports/results.md).
+**Corrected positioning result:** the learned-proposal + simulation-search policy
+gains **1.07 percentage points of combat score** over the strongest tested
+heuristic on 1,000 frozen synthetic scenarios (95% interval: 0.79–1.37 points).
+The neural model alone does not establish an advantage. A Mech alias bug meant
+the old data covered 123 distinct minions, not all 138 nominally eligible minions.
+Corrected adapter semantics are versioned separately; 3,651,584 fresh combats
+confirmed the restricted hybrid result without retraining or changing choices.
+See the [corrected audit](docs/positioning-corrected-audit.md),
+[original results](reports/results.md), and [coverage correction](docs/tribe-normalization.md).
+
+The completed recruitment v3 model beat a raw-stat baseline but **did not
+demonstrate an improvement over the practical heuristic**: +0.227 percentage
+points, 95% interval −0.340 to +0.886, on 469 retained first-action test states.
+Its 10,000 generation attempts yielded 2,659 train, 669 validation, and 469 test
+states, with 4,197,760 label and independent evaluation combats.
+The broader opening-pool transfer test of the frozen v2 model also found no
+clear advantage on 600 retained states. All 22 minions reached candidate combat
+boards. See
+[recruitment results](docs/recruit-curriculum.md) and
+[transfer results and action-selection limitations](docs/opening-transfer.md).
 
 ## Current ruleset
 
@@ -24,9 +40,13 @@ hero-generated exceptions still require separate handlers.
 
 - Official Solo pool: 246 minions, of which 234 are ordinary shop candidates and
   12 require special Tier 7 acquisition; 116 heroes; 71 Tavern spells; 43 Dark Gifts.
-- Current positioning curriculum: **138 eligible minions**, with explicit
+- Corrected positioning curriculum: **138 eligible minions**, with explicit
   exclusions for unaudited history, hand, seasonal, and random-generation effects.
   It uses Patchwerk and no combat-affecting seasonal effects.
+- The separate opening bridge offers all **22 current Tier-1 minions and eight
+  Tier-1 spells**, filtered to the lobby's five tribes. All have tested play paths;
+  explicit contextual and later-turn limits still apply. The completed v2
+  recruitment model was trained on a smaller pool, with five minions observed.
 - Source data and engine correctness have separate gates. An unresolved Trinket
   source discrepancy and incomplete recruitment mechanics block full-game training.
 - Tokens, goldens, and other reference definitions are retained for correct
@@ -44,6 +64,7 @@ Requires Node 22+ and Python 3.12 with NumPy. No GPU is required for this stage.
 ```bash
 npm ci --ignore-scripts
 python -m pip install -r requirements.txt
+python scripts/prepare_recruit_engine.py
 python scripts/sync_ruleset.py --check
 python scripts/check_live_ruleset.py
 PYTHONPATH=python OPENBLAS_NUM_THREADS=1 python -m unittest discover -s tests -v
@@ -103,6 +124,19 @@ placement. Evaluation has fresh random streams and uses the scenario as its
 statistical unit. The benchmark uses synthetic current-card snapshots, not a
 sample of human games.
 
+Inspect a trained recruitment recommendation on a saved visible state:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scripts/recommend_recruit.py \
+  --input examples/recruit-observation-v2.json \
+  --checkpoint runs/20260905-recruit-v2/selected_model.json
+```
+
+It reports one legal first action, its execution cost, and the remaining budget.
+It checks the exact feature schema and current fixture scope. It does not execute
+actions or provide a complete turn plan. See [recruitment training](docs/recruit-curriculum.md)
+for the training command and archived comparisons.
+
 ## Transfer after a rotation
 
 The 1,251-feature representation shares stats, tribes, keywords, effect text,
@@ -129,16 +163,30 @@ infinite economy loops cannot create unlimited decisions. The adapter must
 supply actual player-specific remaining time and validated timeout behavior.
 See [turn budgets and current implementation scope](docs/turn-budgets.md).
 
-The best recruitment scaffold found is HSBRSIM's `hsrl2`, pinned externally in
-`config/recruit-engine.lock.json`. Its existing tests pass, but it does not yet
-implement the current Trinket system and has missing/deferred active effects and
-outdated balance values. The machine-readable
-[coverage report](reports/recruit_engine_coverage.json) enumerates the gaps.
+HSBRSIM's `hsrl2` is pinned externally in `config/recruit-engine.lock.json`.
+The bridge now replaces its stale database with current definitions and adds
+tested current effects, explicit triple rewards, corrected Battlecry dispatch,
+Galewing transitions, and 39 Trinket IDs. These modules cover different scopes
+and are not collectively a full-game certification. The original
+[engine audit](reports/recruit_engine_coverage.json) records the unmodified
+upstream baseline; the extension documents describe the subsequent repairs:
+
+- [Current database](docs/current-recruit-data.md) and [opening pool](docs/opening-pool.md)
+- [Triple rules](docs/core-recruit-rules.md) and [Battlecries](docs/battlecry-migration.md)
+- [Current effects](docs/current-effect-extensions.md), [hero powers](docs/hero-power-extensions.md), and [Trinkets](docs/trinket-integration.md)
+
+The [bounded GitHub training workflow](docs/training-job.md) declares a corrected
+8,000-scenario positioning experiment comparing scratch and warm starts. It
+saves all outputs as Actions artifacts, checks live sources, and stops within
+a fixed runtime. It does not automatically promote a model.
 
 The next milestone is a validated current-ruleset recruit bridge with complete
 legal actions and persistent combat effects, followed by masked actor-critic
 self-play and independent placement evaluation. See the
-[training design](docs/training-design.md). No human MMR or full-game strength is
+[training design](docs/training-design.md) and the
+[recruitment objective audit](docs/recruit-objective-audit.md). The next learning
+objective must value across-turn economy: the same-combat target cannot teach
+the value of a frozen shop or a Tavern upgrade. No human MMR or full-game strength is
 claimed from a positioning benchmark.
 
 Third-party packages and game-data provenance are described in

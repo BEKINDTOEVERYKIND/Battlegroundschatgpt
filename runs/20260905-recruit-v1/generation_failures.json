@@ -1,0 +1,3297 @@
+[
+  {
+    "index": 1,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 7,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 11,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 13,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 29,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 39,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 43,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 45,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 56,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 57,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 59,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 63,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 65,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 73,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 79,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 81,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 83,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 87,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 91,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 95,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 97,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 99,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 101,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 107,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 109,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 110,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 111,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 113,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 127,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 139,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 151,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 160,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 163,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 165,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 169,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 175,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 177,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 184,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 185,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 195,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 209,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 217,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 218,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 223,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 229,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 237,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 239,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 240,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 243,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 251,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 253,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 255,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 261,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 265,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 268,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 272,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 289,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 295,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 296,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 297,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 301,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 304,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 307,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 312,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 315,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 319,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 324,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 331,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 333,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 335,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 337,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 341,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 343,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 347,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 350,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 356,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 369,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 372,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 373,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 380,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 388,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 389,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 390,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 395,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 397,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 399,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 409,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 419,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 422,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 427,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 428,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 432,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 436,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 439,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 440,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 441,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 455,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 456,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 461,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 463,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 467,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 468,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 470,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 478,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 479,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 480,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 483,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 485,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 489,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 493,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 502,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 507,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 510,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 511,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 512,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 513,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 517,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 521,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 522,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 543,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 545,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 556,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 560,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 565,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 569,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 571,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 572,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 576,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 580,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 581,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 582,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 584,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 585,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 587,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 588,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 595,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 596,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 606,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 607,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 615,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 616,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 620,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 623,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 632,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 633,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 643,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 645,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 646,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 647,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 651,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 654,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 655,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 661,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 665,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 668,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 669,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 672,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 674,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 677,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 683,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 686,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 688,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 691,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 692,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 695,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 700,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 703,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 706,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 711,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 714,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 726,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 731,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 735,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 739,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 746,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 748,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 757,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 762,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 763,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 767,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 770,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 771,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 773,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 774,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 776,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 777,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 782,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 785,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 789,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 794,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 799,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 802,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 804,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 807,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 817,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 818,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 819,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 826,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 827,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 833,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 837,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 840,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 842,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 845,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 849,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 853,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 854,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 855,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 857,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 862,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 863,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 864,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 868,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 870,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 871,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 872,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 873,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 875,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 879,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 881,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 882,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 883,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 884,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 888,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 889,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 890,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 894,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 895,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 899,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 903,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 907,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 908,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 909,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 910,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 912,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 924,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 925,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 926,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 932,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 935,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 938,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 943,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 944,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 947,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 954,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 958,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 960,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 961,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 962,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 963,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 964,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 965,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 967,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 971,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 972,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 974,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 979,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 981,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 983,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 984,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 987,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 989,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 992,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 994,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 996,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 998,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 999,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1003,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1007,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1013,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1014,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1020,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1021,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1024,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1025,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1027,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1028,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1042,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1044,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1047,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1049,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1052,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1053,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1054,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1055,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1058,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1067,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1073,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1075,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1078,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1079,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1083,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1087,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1088,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1089,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1094,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1095,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1104,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1105,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1107,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1110,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1111,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1113,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1119,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1120,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1123,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1129,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1130,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1138,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1149,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1150,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1151,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1155,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1156,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1157,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1159,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1161,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1168,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1169,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1171,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1172,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1176,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1178,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1180,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1182,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1183,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1186,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1187,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1190,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1194,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1196,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1202,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1203,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1208,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1220,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1221,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1229,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1230,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1233,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1236,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1240,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1245,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1246,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1249,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1251,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1254,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1257,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1259,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1262,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1265,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1266,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1268,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1270,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1275,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1277,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1278,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1281,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1283,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1284,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1285,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1288,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1290,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1295,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1296,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1300,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1304,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1306,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1307,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1311,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1312,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1313,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1316,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1317,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1318,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1319,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1324,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1330,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1331,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1332,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1336,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1337,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1340,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1342,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1344,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1346,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1347,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1349,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1350,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1357,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1360,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1361,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1368,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1369,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1374,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1378,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1379,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1383,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1384,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1387,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1388,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1392,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1394,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1395,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1396,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1397,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1398,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1399,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1405,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1408,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1416,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1417,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1418,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1422,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1423,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1428,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1429,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1434,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1435,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1437,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1443,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1446,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1447,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1448,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1450,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1452,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1456,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1458,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1459,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1460,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1461,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1466,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1468,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1469,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1470,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1473,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1474,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1475,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1477,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1481,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1483,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1484,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1485,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1486,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1488,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1489,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1490,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1491,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1492,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1496,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1497,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1503,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1505,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1507,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1508,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1509,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1516,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1519,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1521,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1522,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1523,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1525,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1527,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1529,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1533,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1534,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1535,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1538,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1540,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1547,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1548,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1554,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1556,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1560,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1561,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1566,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1567,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1570,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1571,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1574,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1577,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1580,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1582,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1583,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1586,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1588,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1590,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1591,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1592,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1595,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1600,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1601,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1603,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1605,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1607,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1608,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1610,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1612,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1617,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1618,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1619,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1620,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1625,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1627,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1630,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1634,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1635,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1636,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1647,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1648,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1653,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1656,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1660,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1661,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1665,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1667,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1668,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1671,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1676,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1677,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1679,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1681,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1682,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1683,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1685,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1686,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1688,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1689,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1690,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1691,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1694,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1695,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1697,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1698,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1699,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1700,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1701,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1702,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1706,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1708,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1711,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1716,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1717,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1718,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1720,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1721,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1725,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1728,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1729,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1731,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1735,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1736,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1738,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1740,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1742,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1743,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1744,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1746,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1751,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1753,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1754,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1755,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1758,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1759,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1761,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1762,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1763,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1766,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1768,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1769,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1770,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1773,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1775,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1778,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1779,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1782,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1783,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1786,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1789,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1790,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1792,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1793,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1801,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1802,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1804,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1807,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1808,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1810,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1811,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1813,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1815,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1818,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1822,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1825,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1826,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1827,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1829,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1833,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1836,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1842,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1845,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1846,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1847,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1848,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1850,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1851,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1852,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1858,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1861,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1862,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1863,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1867,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1872,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1880,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1887,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1889,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1894,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1897,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1898,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1903,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1904,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1906,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1907,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1909,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1911,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1914,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1919,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1924,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1926,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1928,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1932,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1934,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1935,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1943,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1944,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1945,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1950,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1951,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1954,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1956,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1957,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1958,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1963,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1965,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1966,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1974,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1975,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1977,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1979,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1983,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1984,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1985,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 1987,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1988,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1989,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1990,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1995,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1996,
+    "stage": "recruit_rollout",
+    "error": "ValueError: Duplicate visible candidate state excluded before split leakage"
+  },
+  {
+    "index": 1997,
+    "stage": "recruit_rollout",
+    "error": "RuntimeError: Scenario has fewer than two legal candidates"
+  },
+  {
+    "index": 1999,
+    "stage": "recruit_rollout",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  }
+]

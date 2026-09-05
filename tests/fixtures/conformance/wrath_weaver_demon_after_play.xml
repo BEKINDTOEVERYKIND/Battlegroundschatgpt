@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HSReplayExcerpt buildNumber="231720">
+      <FullEntity ts="24:05:33.515397" id="1831" cardID="BGS_004">
+        <Tag tag="50" value="16" />
+        <Tag tag="202" value="4" />
+        <Tag tag="1196" value="1" />
+        <Tag tag="479" value="1" />
+        <Tag tag="47" value="1" />
+        <Tag tag="45" value="4" />
+        <Tag tag="2" value="2" />
+        <Tag tag="3" value="1" />
+        <Tag tag="32" value="1" />
+        <Tag tag="43" value="1" />
+        <Tag tag="49" value="1" />
+        <Tag tag="53" value="1831" />
+        <Tag tag="200" value="15" />
+        <Tag tag="201" value="3" />
+        <Tag tag="263" value="2" />
+        <Tag tag="313" value="71" />
+        <Tag tag="1037" value="8" />
+        <Tag tag="1254" value="71" />
+        <Tag tag="1284" value="57980" />
+        <Tag tag="-1" value="59679" />
+        <Tag tag="1440" value="1" />
+        <Tag tag="1456" value="1" />
+        <Tag tag="1458" value="1" />
+        <Tag tag="1556" value="1" />
+        <Tag tag="-1" value="1" />
+        <Tag tag="2840" value="1" />
+        <Tag tag="3085" value="4" />
+      </FullEntity>
+      <FullEntity ts="24:05:33.515397" id="1833" cardID="BGS_004">
+        <Tag tag="50" value="16" />
+        <Tag tag="202" value="4" />
+        <Tag tag="1196" value="1" />
+        <Tag tag="479" value="1" />
+        <Tag tag="47" value="1" />
+        <Tag tag="45" value="4" />
+        <Tag tag="2" value="2" />
+        <Tag tag="3" value="1" />
+        <Tag tag="32" value="1" />
+        <Tag tag="43" value="1" />
+        <Tag tag="49" value="1" />
+        <Tag tag="53" value="1833" />
+        <Tag tag="200" value="15" />
+        <Tag tag="201" value="3" />
+        <Tag tag="263" value="3" />
+        <Tag tag="313" value="71" />
+        <Tag tag="1037" value="8" />
+        <Tag tag="1254" value="71" />
+        <Tag tag="1284" value="57980" />
+        <Tag tag="-1" value="59679" />
+        <Tag tag="1440" value="1" />
+        <Tag tag="1456" value="1" />
+        <Tag tag="1458" value="1" />
+        <Tag tag="1556" value="1" />
+        <Tag tag="-1" value="1" />
+        <Tag tag="2840" value="1" />
+        <Tag tag="3085" value="4" />
+      </FullEntity>
+    <Block ts="24:05:56.613797" entity="1831" index="0" effectIndex="0" type="7" subOption="-1" triggerKeyword="-1">
+      <TagChange ts="24:05:56.613797" entity="23" tag="269" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="23" tag="317" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="261" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="3557" value="9" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="1068" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="1068" value="0" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="1037" value="0" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="263" value="0" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="1556" value="0" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="1556" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="49" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="263" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="271" value="0" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="1196" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="1831" tag="43" value="1" defChange="" />
+      <Block ts="24:05:56.613797" entity="1831" index="0" effectIndex="0" type="3" subOption="-1" triggerKeyword="-1" />
+      <Block ts="24:05:56.613797" entity="71" index="0" effectIndex="40" type="5" subOption="-1" triggerKeyword="0" />
+      <Block ts="24:05:56.613797" entity="1894" index="0" effectIndex="0" type="5" subOption="-1" triggerKeyword="0">
+        <TagChange ts="24:05:56.613797" entity="1894" tag="1068" value="5" defChange="" />
+        <TagChange ts="24:05:56.613797" entity="1894" tag="1068" value="0" defChange="" />
+        <TagChange ts="24:05:56.613797" entity="1894" tag="49" value="5" defChange="" />
+        <TagChange ts="24:05:56.613797" entity="1894" tag="1234" value="1831" defChange="" />
+        <HideEntity ts="24:05:56.613797" entity="1894" zone="5" />
+      </Block>
+      <Block ts="24:05:56.613797" entity="71" index="0" effectIndex="9" type="5" subOption="-1" triggerKeyword="0">
+        <TagChange ts="24:05:56.613797" entity="1831" tag="271" value="3" defChange="" />
+        <TagChange ts="24:05:56.613797" entity="1831" tag="43" value="0" defChange="" />
+      </Block>
+      <Block ts="24:05:56.613797" entity="71" index="0" effectIndex="7" type="5" subOption="-1" triggerKeyword="0">
+        <TagChange ts="24:05:56.613797" entity="23" tag="3673" value="1" defChange="" />
+        <TagChange ts="24:05:56.613797" entity="23" tag="4500" value="1" defChange="" />
+      </Block>
+      <Block ts="24:05:56.613797" entity="1828" index="0" effectIndex="0" type="5" subOption="-1" triggerKeyword="0" />
+      <Block ts="24:05:56.613797" entity="1828" index="0" type="5" subOption="-1" triggerKeyword="0" />
+      <TagChange ts="24:05:56.613797" entity="23" tag="266" value="1" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="22" tag="1323" value="9" defChange="" />
+      <TagChange ts="24:05:56.613797" entity="23" tag="358" value="2" defChange="" />
+    </Block>
+    <Block ts="24:05:59.715027" entity="1833" index="0" effectIndex="0" type="7" subOption="-1" triggerKeyword="-1">
+      <TagChange ts="24:05:59.715027" entity="23" tag="269" value="2" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="23" tag="317" value="2" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="261" value="1" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="3557" value="9" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="1068" value="1" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="1068" value="0" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="1037" value="0" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="263" value="0" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="1556" value="0" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="1556" value="1" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="49" value="1" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="263" value="2" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="271" value="0" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="1196" value="1" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1833" tag="43" value="1" defChange="" />
+      <Block ts="24:05:59.715027" entity="1833" index="0" effectIndex="0" type="3" subOption="-1" triggerKeyword="-1" />
+      <Block ts="24:05:59.715027" entity="71" index="0" effectIndex="40" type="5" subOption="-1" triggerKeyword="0" />
+      <Block ts="24:05:59.715027" entity="1897" index="0" effectIndex="0" type="5" subOption="-1" triggerKeyword="0">
+        <TagChange ts="24:05:59.715027" entity="1897" tag="1068" value="5" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1897" tag="1068" value="0" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1897" tag="49" value="5" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1897" tag="1234" value="1833" defChange="" />
+        <HideEntity ts="24:05:59.715027" entity="1897" zone="5" />
+      </Block>
+      <Block ts="24:05:59.715027" entity="71" index="0" effectIndex="9" type="5" subOption="-1" triggerKeyword="0">
+        <TagChange ts="24:05:59.715027" entity="1833" tag="271" value="3" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1833" tag="43" value="0" defChange="" />
+      </Block>
+      <Block ts="24:05:59.715027" entity="71" index="0" effectIndex="7" type="5" subOption="-1" triggerKeyword="0">
+        <TagChange ts="24:05:59.715027" entity="23" tag="3673" value="2" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="23" tag="4500" value="2" defChange="" />
+      </Block>
+      <Block ts="24:05:59.715027" entity="1831" index="0" effectIndex="0" type="5" subOption="-1" triggerKeyword="32">
+        <MetaData ts="24:05:59.715027" data="0" entity="0" info="1" meta="0">
+          <Info ts="24:05:59.715027" index="0" id="93" entity="93" />
+        </MetaData>
+        <MetaData ts="24:05:59.715027" data="0" entity="0" info="1" meta="0">
+          <Info ts="24:05:59.715027" index="0" id="93" entity="93" />
+        </MetaData>
+        <TagChange ts="24:05:59.715027" entity="93" tag="2187" value="1831" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="318" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="1173" value="93" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="2187" value="0" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="318" value="0" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="1173" value="0" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="318" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="318" value="0" defChange="" />
+        <MetaData ts="24:05:59.715027" data="1" entity="0" info="1" meta="1">
+          <Info ts="24:05:59.715027" index="0" id="93" entity="93" />
+        </MetaData>
+        <TagChange ts="24:05:59.715027" entity="93" tag="292" value="5" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="23" tag="3143" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="93" tag="18" value="1831" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="23" tag="464" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="23" tag="1853" value="11" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="23" tag="4453" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="23" tag="3110" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="23" tag="3687" value="1" defChange="" />
+        <Block ts="24:05:59.715027" entity="71" index="0" effectIndex="20" type="5" subOption="-1" triggerKeyword="0" />
+        <FullEntity ts="24:05:59.715027" id="1900">
+          <Tag tag="49" value="6" />
+          <Tag tag="50" value="8" />
+          <Tag tag="53" value="1900" />
+        </FullEntity>
+        <ShowEntity ts="24:05:59.715027" cardID="BGS_004e" entity="1900">
+          <Tag tag="50" value="8" />
+          <Tag tag="202" value="6" />
+          <Tag tag="40" value="1831" />
+          <Tag tag="49" value="6" />
+          <Tag tag="53" value="1900" />
+          <Tag tag="199" value="12" />
+          <Tag tag="313" value="1831" />
+          <Tag tag="1037" value="8" />
+          <Tag tag="1068" value="0" />
+          <Tag tag="1284" value="59670" />
+          <Tag tag="1556" value="1" />
+          <Tag tag="3528" value="1" />
+        </ShowEntity>
+        <TagChange ts="24:05:59.715027" entity="1900" tag="1068" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1900" tag="1068" value="0" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1900" tag="49" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1831" tag="18" value="1831" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1831" tag="3977" value="1900" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1900" tag="2" value="2" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1900" tag="3" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1900" tag="4348" value="2" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1900" tag="4349" value="1" defChange="" />
+        <TagChange ts="24:05:59.715027" entity="1900" tag="3676" value="1" defChange="" />
+      </Block>
+      <TagChange ts="24:05:59.715027" entity="1900" tag="3676" value="0" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1831" tag="479" value="3" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1831" tag="3085" value="5" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1831" tag="45" value="5" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="1831" tag="47" value="3" defChange="" />
+      <Block ts="24:05:59.715027" entity="1828" index="0" effectIndex="0" type="5" subOption="-1" triggerKeyword="0" />
+      <Block ts="24:05:59.715027" entity="1828" index="0" type="5" subOption="-1" triggerKeyword="0" />
+      <TagChange ts="24:05:59.715027" entity="22" tag="1323" value="11" defChange="" />
+      <TagChange ts="24:05:59.715027" entity="23" tag="358" value="4" defChange="" />
+    </Block>
+</HSReplayExcerpt>

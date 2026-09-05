@@ -1,0 +1,119 @@
+{
+  "scope": "experimental first action in the restricted current early-turn recruit fixture",
+  "full_game_policy": false,
+  "action_executed": false,
+  "feature_version": "recruit-visible-action-v2-choice-zone",
+  "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+  "checkpoint_sha256": "b0ae096c38f3c2c04a4c8f70157b305b54f701adcf5bc15d3eccb96adacf787a",
+  "chosen_action": {
+    "kind": "buy",
+    "entity_id": "entity-1",
+    "target_id": null,
+    "position": null,
+    "choice_index": null,
+    "card_name": "Crackling Cyclone"
+  },
+  "practical_heuristic_action": {
+    "kind": "buy",
+    "entity_id": "entity-2",
+    "target_id": null,
+    "position": null,
+    "choice_index": null,
+    "card_name": "Suspicious Prisonguard"
+  },
+  "remaining_budget_before_action": {
+    "profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+    "actions_per_second": 1.0,
+    "initial_available_ms": 45000,
+    "reserve_ms": 5000,
+    "action_limit": 40,
+    "actions_used": 0,
+    "remaining_actions": 40,
+    "remaining_ms": 40000,
+    "charged_ms": 0
+  },
+  "chosen_action_cost_ms": 1250,
+  "candidate_rank_values": [
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-1",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Crackling Cyclone"
+      },
+      "value": 4.6680070861377
+    },
+    {
+      "action": {
+        "kind": "freeze",
+        "entity_id": null,
+        "target_id": null,
+        "position": null,
+        "choice_index": null
+      },
+      "value": 3.4317465650890746
+    },
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-2",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Suspicious Prisonguard"
+      },
+      "value": 2.628235293432521
+    },
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-0",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Southsea Busker"
+      },
+      "value": -1.387401212316707
+    },
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-3",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Tavern Dish Banana"
+      },
+      "value": -4.4130798408123635
+    },
+    {
+      "action": {
+        "kind": "refresh",
+        "entity_id": null,
+        "target_id": null,
+        "position": null,
+        "choice_index": null
+      },
+      "value": -5.972172628183229
+    },
+    {
+      "action": {
+        "kind": "end_turn",
+        "entity_id": null,
+        "target_id": null,
+        "position": null,
+        "choice_index": null
+      },
+      "value": -7.868965880932973
+    }
+  ],
+  "value_definition": "Uncalibrated relative ranking values; not win probabilities or full-game EV",
+  "limitations": [
+    "A fixed heuristic follows the first learned action in the benchmark",
+    "Seven-card fixture scope; broader pool and full-game strength require separate evaluation",
+    "Consult the run results before treating this experimental checkpoint as stronger than the practical heuristic"
+  ],
+  "current_sources_checked": true
+}

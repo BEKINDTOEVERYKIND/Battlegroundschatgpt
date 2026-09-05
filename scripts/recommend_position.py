@@ -19,6 +19,7 @@ from bg_ai.features import BOARD_FEATURE_NAMES, encode_board
 from bg_ai.learning import Ranker
 from bg_ai.provenance import file_sha256, load_snapshot
 from bg_ai.position_actions import affordable_orders, drag_plan
+from bg_ai.positioning_versions import adapter_version_for_metadata
 from bg_ai.turn_budget import TimingProfile, TurnBudget
 
 
@@ -56,6 +57,7 @@ def main():
     if not 1 <= len(board) <= 7:
         parser.error("Require one to seven friendly minions")
     metadata = row.get("metadata", {})
+    adapter_version = adapter_version_for_metadata(metadata)
     if metadata.get("source") != "synthetic_current_pool_combat":
         parser.error("This initial CLI requires a saved supported combat scenario with explicit scope metadata")
     if metadata.get("rulesetSha256") != file_sha256(ROOT / "data/ruleset.json"):
@@ -96,14 +98,16 @@ def main():
                     "selections": {"model": chosen, "random": 0,
                                    **heuristic_indices},
                     "provenance": {"cards_sha256": metadata["cardsSha256"],
+                                   "adapter_version": adapter_version,
                                    "ruleset_sha256": metadata["rulesetSha256"],
                                    "label_combat_seed": metadata["combatSeed"],
                                    "checkpoint_sha256": file_sha256(args.checkpoint)}}
         js = """import fs from 'node:fs';
-import {FirestoneCombat,sha256} from './simulator/firestone.mjs';
+import {FirestoneCombat,sha256,adapterVersionForMetadata} from './simulator/firestone.mjs';
 import {refineScenario} from './scripts/refine_positions.mjs';
 const bytes=fs.readFileSync(process.argv[1]); const x=JSON.parse(bytes);
-console.log(JSON.stringify(refineScenario(FirestoneCombat.fromFiles(),x.scenario,x.proposal,0,sha256(bytes))));"""
+const engine=FirestoneCombat.fromFiles(undefined,undefined,{adapterVersion:adapterVersionForMetadata(x.scenario.metadata)});
+console.log(JSON.stringify(refineScenario(engine,x.scenario,x.proposal,0,sha256(bytes))));"""
         with tempfile.TemporaryDirectory(prefix="bg-recommend-") as temporary:
             path = Path(temporary) / "input.json"
             path.write_text(json.dumps({"scenario": scenario, "proposal": proposal}))
@@ -119,6 +123,7 @@ console.log(JSON.stringify(refineScenario(FirestoneCombat.fromFiles(),x.scenario
     result = {
         "scope": "Experimental positioning only, conditioned on the supplied opponent and supported combat context",
         "ruleset_id": snapshot["ruleset_id"], "candidates_ranked": len(orders),
+        "adapter_version": adapter_version,
         "indices": list(order), "order": [board[i] for i in order],
         "policy": ("keep_current_order" if len(orders) == 1 else
                    "neural_model_only" if args.pure_model else "neural_proposals_plus_simulation_search"),

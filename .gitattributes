@@ -1,0 +1,2 @@
+# Preserve exact source bytes in the audited replay excerpt, including CRLF.
+tests/fixtures/conformance/*.xml -text whitespace=cr-at-eol

@@ -1,0 +1,140 @@
+[
+  {
+    "index": 48,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Off-board Scarlet threshold conformance is unverified"
+  },
+  {
+    "index": 116,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 139,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 146,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 147,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 182,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 215,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "ValueError: Visible decision state duplicates source or earlier holdout state"
+  },
+  {
+    "index": 313,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 332,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 342,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 365,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 368,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Off-board Scarlet threshold conformance is unverified"
+  },
+  {
+    "index": 373,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "ValueError: Visible decision state duplicates source or earlier holdout state"
+  },
+  {
+    "index": 487,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 493,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "ValueError: Visible decision state duplicates source or earlier holdout state"
+  },
+  {
+    "index": 494,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 503,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 536,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 542,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 572,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  },
+  {
+    "index": 575,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified"
+  },
+  {
+    "index": 577,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "ValueError: Visible decision state duplicates source or earlier holdout state"
+  },
+  {
+    "index": 616,
+    "split": "test",
+    "stage": "recruit_transition_or_inclusion",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout"
+  }
+]

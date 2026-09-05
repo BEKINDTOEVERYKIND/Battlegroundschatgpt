@@ -9,7 +9,8 @@
   notices when redistributing dependencies.
   https://www.npmjs.com/package/@firestone-hs/reference-data
 - **HSBRSIM**: Gallo13th/HSBRSIM, pinned in
-  `config/recruit-engine.lock.json`. Inspected as an external checkout only.
+  `config/recruit-engine.lock.json`. Used from a verified external checkout for
+  current-data construction, explicit recruitment fixtures, and effect tests.
   `pyproject.toml` declares MIT; the inspected revision has no standalone license
   file. No source from it is vendored here.
   https://github.com/Gallo13th/HSBRSIM

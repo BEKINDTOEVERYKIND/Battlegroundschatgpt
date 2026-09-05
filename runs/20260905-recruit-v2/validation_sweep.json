@@ -1,0 +1,44 @@
+[
+  {
+    "hidden": 16,
+    "epochs": 10,
+    "validation_mean": 0.4807091346153846,
+    "validation_baseline": 0.47943209134615383,
+    "checkpoint": "model-h16-e10.json"
+  },
+  {
+    "hidden": 16,
+    "epochs": 20,
+    "validation_mean": 0.47920673076923076,
+    "validation_baseline": 0.47943209134615383,
+    "checkpoint": "model-h16-e20.json"
+  },
+  {
+    "hidden": 16,
+    "epochs": 40,
+    "validation_mean": 0.48135516826923075,
+    "validation_baseline": 0.47943209134615383,
+    "checkpoint": "model-h16-e40.json"
+  },
+  {
+    "hidden": 32,
+    "epochs": 10,
+    "validation_mean": 0.4800631009615385,
+    "validation_baseline": 0.47943209134615383,
+    "checkpoint": "model-h32-e10.json"
+  },
+  {
+    "hidden": 32,
+    "epochs": 20,
+    "validation_mean": 0.48206129807692305,
+    "validation_baseline": 0.47943209134615383,
+    "checkpoint": "model-h32-e20.json"
+  },
+  {
+    "hidden": 32,
+    "epochs": 40,
+    "validation_mean": 0.48102463942307694,
+    "validation_baseline": 0.47943209134615383,
+    "checkpoint": "model-h32-e40.json"
+  }
+]

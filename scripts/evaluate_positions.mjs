@@ -7,7 +7,7 @@ import { spawn } from 'node:child_process';
 import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import { gunzipSync, createGunzip } from 'node:zlib';
-import { FirestoneCombat, ENGINE_VERSION, sha256 } from '../simulator/firestone.mjs';
+import { FirestoneCombat, adapterVersionForMetadata, ENGINE_VERSION, sha256 } from '../simulator/firestone.mjs';
 import { parseArgs } from './generate_positions.mjs';
 
 const args = parseArgs(process.argv.slice(2));
@@ -54,7 +54,7 @@ if (workers > 1 && shards === 1) {
       selectionsSha256: sha256(selectionBytes), output: out }) + '\n');
   } finally { fs.rmSync(temporary, { recursive: true, force: true }); }
 } else {
-const engine = FirestoneCombat.fromFiles(args.cards, args.ruleset);
+const engines = new Map();
 const inputStream = fs.createReadStream(args.input);
 const lines = createInterface({ input: args.input.endsWith('.gz') ? inputStream.pipe(createGunzip()) : inputStream, crlfDelay: Infinity });
 const fd = fs.openSync(out, 'w');
@@ -66,6 +66,10 @@ try {
     if (index % shards !== shard) continue;
     const scenario = JSON.parse(line);
     if (!selected.has(scenario.scenario_id)) continue;
+    const adapterVersion = adapterVersionForMetadata(scenario.metadata);
+    if (args['adapter-version'] && args['adapter-version'] !== adapterVersion) throw new Error('Requested adapter differs from dataset generation');
+    if (!engines.has(adapterVersion)) engines.set(adapterVersion, FirestoneCombat.fromFiles(args.cards, args.ruleset, { adapterVersion }));
+    const engine = engines.get(adapterVersion);
     if (scenario.metadata.cardsSha256 !== engine.cardsHash || scenario.metadata.rulesetSha256 !== engine.rulesetHash) {
       throw new Error('Ruleset/card snapshot differs from generation');
     }
@@ -73,6 +77,7 @@ try {
     const combatSeed = (seed + Math.imul(index + 1, 2654435761)) >>> 0;
     if (combatSeed === scenario.metadata.combatSeed) throw new Error('Evaluation seed must differ from label seed');
     const provenance = frozenRows.get(scenario.scenario_id).provenance;
+    if (provenance?.adapter_version != null && provenance.adapter_version !== adapterVersion) throw new Error('Selection adapter differs from dataset generation');
     if (provenance?.search_seed != null && combatSeed === provenance.search_seed) throw new Error('Evaluation seed must differ from search seed');
     const cached = new Map();
     const scores = {};
@@ -85,7 +90,7 @@ try {
       scores[name] = { candidateIndex, ...cached.get(candidateIndex) };
     }
     fs.writeSync(fd, JSON.stringify({ scenario_id: scenario.scenario_id, split: scenario.split, scores,
-      metadata: { trials, combatSeed, inputIndex: index, engine: ENGINE_VERSION,
+      metadata: { ...engine.versionMetadata(), trials, combatSeed, inputIndex: index, engine: ENGINE_VERSION,
         evaluatedPolicy: provenance?.evaluated_policy ?? 'neural_model_only', selectionsSha256: sha256(selectionBytes),
         cardsSha256: engine.cardsHash, rulesetSha256: engine.rulesetHash } }) + '\n');
     if (++count % 25 === 0) process.stderr.write(`Fresh evaluation shard ${shard + 1}/${shards}: ${count} scenarios\n`);

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "format": "provenance-deduplicated-jsonl-gzip",
+  "rows": 1341,
+  "original_compressed_file": "scenarios.jsonl.gz",
+  "original_compressed_sha256": "ce8bdeec6f190b02578cfbd4e93e412414120dcb82aa2c38afe4fa20364bdd1b",
+  "original_uncompressed_sha256": "b6485e81505a78439e5267ff450c07dfcff6f16ac61fa7039a5794fdfe29a16c",
+  "original_uncompressed_bytes": 204451083,
+  "compact_file": "scenarios.compact.jsonl.gz",
+  "compact_sha256": "dffdb0f52bcaf89850f262e10059ab8391e7dcf9bd97ad8b3ade98ac231e3456",
+  "compact_bytes": 2198975,
+  "registry_file": "scenario_provenance.json",
+  "registry_sha256": "429764b570b91965d0ff045439820190b9510f53da6734e639c7a421194f2988",
+  "restoration": "Original JSONL bytes verified; gzip container header is regenerated deterministically"
+}

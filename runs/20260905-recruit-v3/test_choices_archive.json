@@ -1,0 +1,9 @@
+{
+  "format": "gzip-jsonl",
+  "compressed_file": "test_choices.jsonl.gz",
+  "compressed_sha256": "67107a54f1272da03f584882922582682519722230bf2780f7e7513589581992",
+  "uncompressed_file": "test_choices.jsonl",
+  "uncompressed_sha256": "dd236c34d76d6e58dda385ccfd40e914660ea3c7654a3f5bdcd48665cad87ffd",
+  "uncompressed_bytes": 106932,
+  "compressed_bytes": 2685
+}

@@ -1,0 +1,947 @@
+{
+  "audit": "corrected_adapter_rescore_of_published_frozen_legacy_orders",
+  "scope": "Frozen legacy synthetic positioning boards and choices rescored with corrected canonical-MECH semantics; not new current-complete training or full-game strength",
+  "protocol": {
+    "audit": "corrected_adapter_rescore_of_published_frozen_legacy_orders",
+    "frozen_before_audit": true,
+    "training_or_selection_performed": false,
+    "adapter": {
+      "adapterVersion": "firestone-combat-v2-tribes",
+      "datasetSchemaVersion": 2
+    },
+    "engine": "1.1.750",
+    "referencePackage": "3.0.196",
+    "source_dataset_adapter": "legacy-v1",
+    "source_dataset_schema": 1,
+    "entity_changes": "none",
+    "lobby_correction": "MECHANICAL -> MECH",
+    "expected_raw_input_sha256": {
+      "dataset": "f65da09ca38cc1c11c76f9d3df9f308193134bd9e3a2f45d1a0725b5b76146e7",
+      "hybrid": "e2aa136aa9ff9f5af86bebfa5aa0f5b65d9f95bda6f9ff2f3fd450bc535c5b0c",
+      "model": "71520d633e3b4841e328cb30f93fc187362249815fc113c758d6a70a4f29357b"
+    },
+    "input_files": {
+      "dataset": "runs/20260905-holdout-v2/positions.jsonl.gz",
+      "hybrid": "runs/20260905-positioning-search-v1/frozen_selections.jsonl",
+      "model": "runs/20260905-positioning-v2/frozen_selections.jsonl"
+    },
+    "adapter_source_sha256": "b9a1ec0c56bbcc2f957a654ee41ae5cd5acc2342558d5a254702deba34dc580d",
+    "evaluator_source_sha256": "8593e4a48b22e41b5e98bf10041f658149014a44b01ee144ca40ae604ef2e512",
+    "cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+    "ruleset_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+    "scenarios": 1000,
+    "trials_per_distinct_order": 1024,
+    "base_seed": 32452843,
+    "scenario_seed_formula": "(32452843 + imul(globalInputIndex + 1, 2654435761)) >>> 0",
+    "seed_shared_across_compared_orders": true,
+    "policies": [
+      "hybrid",
+      "model"
+    ],
+    "baselines": [
+      "random",
+      "attack",
+      "health",
+      "taunt_last"
+    ],
+    "bootstrap": {
+      "samples": 10000,
+      "seed": 20260909,
+      "method": "paired percentile",
+      "unit": "scenario",
+      "confidence": 0.95
+    },
+    "promotion": "none; audit whether the previous restricted benchmark claim survives"
+  },
+  "raw_evaluation_sha256": "e4dc9a6f38170a9e8e51c218506a669458a2806b87eda005b1cba193e8073f6f",
+  "actual_combat_simulations": 3651584,
+  "policy_order_evaluations": 6000,
+  "all_1000_frozen_scenarios_and_choices_verified": true,
+  "legacy_published_evaluation_audit": {
+    "hybrid": {
+      "raw_evaluation_sha256": "a90088bb978436583963a2254353b7f7674f159becd2706dd84b714d6a2603ef",
+      "frozen_actions_verified": 1000,
+      "original_paired_confidence_intervals_reproduced": true,
+      "published_mean_scores": {
+        "model": 0.54560009765625,
+        "random": 0.50562890625,
+        "attack": 0.53347509765625,
+        "health": 0.5259677734375,
+        "taunt_last": 0.53469287109375
+      },
+      "published_paired_comparisons": {
+        "random": {
+          "mean": 0.03997119140625,
+          "scenarios": 1000,
+          "ci95": [
+            0.03555982666015625,
+            0.04448203125
+          ]
+        },
+        "attack": {
+          "mean": 0.012125,
+          "scenarios": 1000,
+          "ci95": [
+            0.0092079345703125,
+            0.01533399658203125
+          ]
+        },
+        "health": {
+          "mean": 0.01963232421875,
+          "scenarios": 1000,
+          "ci95": [
+            0.01631590576171875,
+            0.023124218749999995
+          ]
+        },
+        "taunt_last": {
+          "mean": 0.0109072265625,
+          "scenarios": 1000,
+          "ci95": [
+            0.00814739990234375,
+            0.0139692626953125
+          ]
+        }
+      }
+    },
+    "model": {
+      "raw_evaluation_sha256": "801cea752aab10d46dc329056a5cc3dc28341ebc252439b187a509c9e2c96d1f",
+      "frozen_actions_verified": 1000,
+      "original_paired_confidence_intervals_reproduced": true,
+      "published_mean_scores": {
+        "model": 0.5322236328125,
+        "random": 0.50562890625,
+        "attack": 0.53347509765625,
+        "health": 0.5259677734375,
+        "taunt_last": 0.53469287109375
+      },
+      "published_paired_comparisons": {
+        "random": {
+          "mean": 0.0265947265625,
+          "scenarios": 1000,
+          "ci95": [
+            0.0219951171875,
+            0.03117974853515625
+          ]
+        },
+        "attack": {
+          "mean": -0.00125146484375,
+          "scenarios": 1000,
+          "ci95": [
+            -0.0041435791015625,
+            0.0015744140624999973
+          ]
+        },
+        "health": {
+          "mean": 0.006255859375,
+          "scenarios": 1000,
+          "ci95": [
+            0.0032938598632812504,
+            0.00937940673828125
+          ]
+        },
+        "taunt_last": {
+          "mean": -0.00246923828125,
+          "scenarios": 1000,
+          "ci95": [
+            -0.00529495849609375,
+            0.0002797973632812498
+          ]
+        }
+      }
+    }
+  },
+  "coverage": {
+    "declared_active_minions": 246,
+    "nominal_positioning_eligible_minions": 138,
+    "coverage_manifest_sha256": "4e60b620e14d7919d6e85123f8f427654b55401a9ac00567abeca220dcd6cba5",
+    "datasets": {
+      "legacy_training_dataset": {
+        "file": "runs/20260905-positioning-v1/positions.jsonl.gz",
+        "raw_dataset_sha256": "1023db7b2a1fef5744ded6f8ce816eb0921c9d92580a3017b08f226228059fc0",
+        "scenarios": 6000,
+        "splits": {
+          "train": 4800,
+          "validation": 600,
+          "test": 600
+        },
+        "legacy_mechanical_lobbies": 3008,
+        "observed_minions": 123,
+        "observed_minion_ids": [
+          "BG21_004",
+          "BG21_015",
+          "BG22_202",
+          "BG23_002",
+          "BG23_318",
+          "BG23_357",
+          "BG24_004",
+          "BG24_715",
+          "BG25_001",
+          "BG25_008",
+          "BG25_010",
+          "BG25_013",
+          "BG25_016",
+          "BG25_022",
+          "BG26_135",
+          "BG26_174",
+          "BG26_175",
+          "BG26_523",
+          "BG26_524",
+          "BG26_802",
+          "BG26_805",
+          "BG26_963",
+          "BG26_ICC_901",
+          "BG27_002",
+          "BG27_005",
+          "BG27_080",
+          "BG27_084",
+          "BG28_300",
+          "BG28_303",
+          "BG28_309",
+          "BG28_550",
+          "BG28_595",
+          "BG28_633",
+          "BG29_816",
+          "BG29_888",
+          "BG30_125",
+          "BG31_326",
+          "BG31_327",
+          "BG31_330",
+          "BG31_803",
+          "BG31_816",
+          "BG31_818",
+          "BG31_843",
+          "BG32_111",
+          "BG32_235",
+          "BG32_236",
+          "BG32_324",
+          "BG32_820",
+          "BG32_837",
+          "BG32_846",
+          "BG32_873",
+          "BG33_140",
+          "BG33_155",
+          "BG33_318",
+          "BG33_821",
+          "BG33_822",
+          "BG33_823",
+          "BG33_825",
+          "BG33_891",
+          "BG33_893",
+          "BG34_500",
+          "BG34_604",
+          "BG34_633",
+          "BG34_684",
+          "BG34_858",
+          "BG34_925",
+          "BG35_142",
+          "BG35_143",
+          "BG35_150",
+          "BG35_155",
+          "BG35_604",
+          "BG35_883",
+          "BG36_180",
+          "BG36_181",
+          "BG36_200",
+          "BG36_201",
+          "BG36_207",
+          "BG36_208",
+          "BG36_210",
+          "BG36_211",
+          "BG36_240",
+          "BG36_241",
+          "BG36_242",
+          "BG36_245",
+          "BG36_331",
+          "BG36_332",
+          "BG36_342",
+          "BG36_343",
+          "BG36_345",
+          "BG36_346",
+          "BG36_352",
+          "BG36_354",
+          "BG36_356",
+          "BG36_503",
+          "BG36_507",
+          "BG36_508",
+          "BG36_509",
+          "BG36_511",
+          "BG36_514",
+          "BG36_515",
+          "BG36_523",
+          "BG36_620",
+          "BG36_621",
+          "BG36_622",
+          "BG36_640",
+          "BG36_701",
+          "BG36_731",
+          "BG36_760",
+          "BG36_764",
+          "BG36_921",
+          "BGS_004",
+          "BGS_012",
+          "BGS_018",
+          "BGS_041",
+          "BGS_115",
+          "BGS_116",
+          "BGS_119",
+          "BGS_123",
+          "BGS_126",
+          "BGS_127",
+          "BGS_131",
+          "BG_DEEP_015",
+          "BG_LOE_077"
+        ],
+        "missing_nominal_minions": [
+          {
+            "id": "BG26_146",
+            "name": "Lullabot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG26_147",
+            "name": "Accord-o-Tron",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG26_148",
+            "name": "Scrap Scraper",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG26_152",
+            "name": "Utility Drone",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG28_741",
+            "name": "Charging Czarina",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG29_503",
+            "name": "Clunker Junker",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG31_177",
+            "name": "Mechagnome Interpreter",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG32_170",
+            "name": "Metallic Hunter",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG32_172",
+            "name": "Auto Assembler",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG35_341",
+            "name": "Enchanted Sentinel",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG36_506",
+            "name": "Drone Duplicator",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG36_853",
+            "name": "Glambot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG36_854",
+            "name": "Rescue Bot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BGS_071",
+            "name": "Deflect-o-Bot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG_BOT_911",
+            "name": "Annoy-o-Module",
+            "races": [
+              "MECH"
+            ]
+          }
+        ]
+      },
+      "frozen_test": {
+        "file": "runs/20260905-holdout-v2/positions.jsonl.gz",
+        "raw_dataset_sha256": "f65da09ca38cc1c11c76f9d3df9f308193134bd9e3a2f45d1a0725b5b76146e7",
+        "scenarios": 1000,
+        "splits": {
+          "test": 1000
+        },
+        "legacy_mechanical_lobbies": 492,
+        "observed_minions": 123,
+        "observed_minion_ids": [
+          "BG21_004",
+          "BG21_015",
+          "BG22_202",
+          "BG23_002",
+          "BG23_318",
+          "BG23_357",
+          "BG24_004",
+          "BG24_715",
+          "BG25_001",
+          "BG25_008",
+          "BG25_010",
+          "BG25_013",
+          "BG25_016",
+          "BG25_022",
+          "BG26_135",
+          "BG26_174",
+          "BG26_175",
+          "BG26_523",
+          "BG26_524",
+          "BG26_802",
+          "BG26_805",
+          "BG26_963",
+          "BG26_ICC_901",
+          "BG27_002",
+          "BG27_005",
+          "BG27_080",
+          "BG27_084",
+          "BG28_300",
+          "BG28_303",
+          "BG28_309",
+          "BG28_550",
+          "BG28_595",
+          "BG28_633",
+          "BG29_816",
+          "BG29_888",
+          "BG30_125",
+          "BG31_326",
+          "BG31_327",
+          "BG31_330",
+          "BG31_803",
+          "BG31_816",
+          "BG31_818",
+          "BG31_843",
+          "BG32_111",
+          "BG32_235",
+          "BG32_236",
+          "BG32_324",
+          "BG32_820",
+          "BG32_837",
+          "BG32_846",
+          "BG32_873",
+          "BG33_140",
+          "BG33_155",
+          "BG33_318",
+          "BG33_821",
+          "BG33_822",
+          "BG33_823",
+          "BG33_825",
+          "BG33_891",
+          "BG33_893",
+          "BG34_500",
+          "BG34_604",
+          "BG34_633",
+          "BG34_684",
+          "BG34_858",
+          "BG34_925",
+          "BG35_142",
+          "BG35_143",
+          "BG35_150",
+          "BG35_155",
+          "BG35_604",
+          "BG35_883",
+          "BG36_180",
+          "BG36_181",
+          "BG36_200",
+          "BG36_201",
+          "BG36_207",
+          "BG36_208",
+          "BG36_210",
+          "BG36_211",
+          "BG36_240",
+          "BG36_241",
+          "BG36_242",
+          "BG36_245",
+          "BG36_331",
+          "BG36_332",
+          "BG36_342",
+          "BG36_343",
+          "BG36_345",
+          "BG36_346",
+          "BG36_352",
+          "BG36_354",
+          "BG36_356",
+          "BG36_503",
+          "BG36_507",
+          "BG36_508",
+          "BG36_509",
+          "BG36_511",
+          "BG36_514",
+          "BG36_515",
+          "BG36_523",
+          "BG36_620",
+          "BG36_621",
+          "BG36_622",
+          "BG36_640",
+          "BG36_701",
+          "BG36_731",
+          "BG36_760",
+          "BG36_764",
+          "BG36_921",
+          "BGS_004",
+          "BGS_012",
+          "BGS_018",
+          "BGS_041",
+          "BGS_115",
+          "BGS_116",
+          "BGS_119",
+          "BGS_123",
+          "BGS_126",
+          "BGS_127",
+          "BGS_131",
+          "BG_DEEP_015",
+          "BG_LOE_077"
+        ],
+        "missing_nominal_minions": [
+          {
+            "id": "BG26_146",
+            "name": "Lullabot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG26_147",
+            "name": "Accord-o-Tron",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG26_148",
+            "name": "Scrap Scraper",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG26_152",
+            "name": "Utility Drone",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG28_741",
+            "name": "Charging Czarina",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG29_503",
+            "name": "Clunker Junker",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG31_177",
+            "name": "Mechagnome Interpreter",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG32_170",
+            "name": "Metallic Hunter",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG32_172",
+            "name": "Auto Assembler",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG35_341",
+            "name": "Enchanted Sentinel",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG36_506",
+            "name": "Drone Duplicator",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG36_853",
+            "name": "Glambot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG36_854",
+            "name": "Rescue Bot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BGS_071",
+            "name": "Deflect-o-Bot",
+            "races": [
+              "MECH"
+            ]
+          },
+          {
+            "id": "BG_BOT_911",
+            "name": "Annoy-o-Module",
+            "races": [
+              "MECH"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "results": {
+    "scenario_count": 1000,
+    "mean_scores": {
+      "hybrid": 0.54530029296875,
+      "model": 0.5318291015625,
+      "random": 0.50556005859375,
+      "attack": 0.5334599609375,
+      "health": 0.525935546875,
+      "taunt_last": 0.534640625
+    },
+    "paired_comparisons": {
+      "hybrid_minus_random": {
+        "mean": 0.039740234375,
+        "ci95": [
+          0.03536861572265625,
+          0.044217797851562504
+        ],
+        "scenarios": 1000
+      },
+      "hybrid_minus_attack": {
+        "mean": 0.01184033203125,
+        "ci95": [
+          0.008831042480468749,
+          0.01505228271484375
+        ],
+        "scenarios": 1000
+      },
+      "hybrid_minus_health": {
+        "mean": 0.01936474609375,
+        "ci95": [
+          0.01613699951171875,
+          0.022784289550781246
+        ],
+        "scenarios": 1000
+      },
+      "hybrid_minus_taunt_last": {
+        "mean": 0.01065966796875,
+        "ci95": [
+          0.007871557617187499,
+          0.0136924072265625
+        ],
+        "scenarios": 1000
+      },
+      "model_minus_random": {
+        "mean": 0.02626904296875,
+        "ci95": [
+          0.0218137939453125,
+          0.030898583984375
+        ],
+        "scenarios": 1000
+      },
+      "model_minus_attack": {
+        "mean": -0.001630859375,
+        "ci95": [
+          -0.00448834228515625,
+          0.0012485717773437495
+        ],
+        "scenarios": 1000
+      },
+      "model_minus_health": {
+        "mean": 0.0058935546875,
+        "ci95": [
+          0.0028715332031250002,
+          0.009010278320312499
+        ],
+        "scenarios": 1000
+      },
+      "model_minus_taunt_last": {
+        "mean": -0.0028115234375,
+        "ci95": [
+          -0.005575695800781251,
+          -4.429931640625195e-05
+        ],
+        "scenarios": 1000
+      },
+      "hybrid_minus_model": {
+        "mean": 0.01347119140625,
+        "ci95": [
+          0.010690893554687499,
+          0.016472375488281246
+        ],
+        "scenarios": 1000
+      }
+    },
+    "beats_every_predeclared_baseline": {
+      "hybrid": true,
+      "model": false
+    }
+  },
+  "diagnostics_not_policy_selection": {
+    "legacy_mechanical_lobbies": {
+      "scenario_count": 492,
+      "mean_scores": {
+        "hybrid": 0.5533615980691057,
+        "model": 0.5399447805513211,
+        "random": 0.5135091145833334,
+        "attack": 0.5414006923272358,
+        "health": 0.5305195630081301,
+        "taunt_last": 0.5412319772611789
+      },
+      "paired_comparisons": {
+        "hybrid_minus_random": {
+          "mean": 0.03985248348577236,
+          "ci95": [
+            0.03384813758415905,
+            0.045996962136369404
+          ],
+          "scenarios": 492
+        },
+        "hybrid_minus_attack": {
+          "mean": 0.011960905741869919,
+          "ci95": [
+            0.007643760122903963,
+            0.017009580038427338
+          ],
+          "scenarios": 492
+        },
+        "hybrid_minus_health": {
+          "mean": 0.02284203506097561,
+          "ci95": [
+            0.017544282742632113,
+            0.0285882965336001
+          ],
+          "scenarios": 492
+        },
+        "hybrid_minus_taunt_last": {
+          "mean": 0.012129620807926829,
+          "ci95": [
+            0.007767815318534045,
+            0.017193132105881605
+          ],
+          "scenarios": 492
+        },
+        "model_minus_random": {
+          "mean": 0.026435665967987805,
+          "ci95": [
+            0.020014519420096546,
+            0.032980272246570116
+          ],
+          "scenarios": 492
+        },
+        "model_minus_attack": {
+          "mean": -0.0014559117759146342,
+          "ci95": [
+            -0.005208333333333333,
+            0.0023014719893292685
+          ],
+          "scenarios": 492
+        },
+        "model_minus_health": {
+          "mean": 0.009425217543191058,
+          "ci95": [
+            0.00473962799320376,
+            0.014437270745998472
+          ],
+          "scenarios": 492
+        },
+        "model_minus_taunt_last": {
+          "mean": -0.0012871967098577236,
+          "ci95": [
+            -0.00494640319327998,
+            0.0024275368791285565
+          ],
+          "scenarios": 492
+        },
+        "hybrid_minus_model": {
+          "mean": 0.013416817517784552,
+          "ci95": [
+            0.009470869855182926,
+            0.017992072376778454
+          ],
+          "scenarios": 492
+        }
+      },
+      "beats_every_predeclared_baseline": {
+        "hybrid": true,
+        "model": false
+      }
+    },
+    "other_lobbies": {
+      "scenario_count": 508,
+      "mean_scores": {
+        "hybrid": 0.5374928872416339,
+        "model": 0.5239690345103346,
+        "random": 0.49786136657234253,
+        "attack": 0.5257693313238189,
+        "health": 0.5214959092027559,
+        "taunt_last": 0.5282568743848425
+      },
+      "paired_comparisons": {
+        "hybrid_minus_random": {
+          "mean": 0.03963152066929134,
+          "ci95": [
+            0.03327615092119832,
+            0.04621767059085875
+          ],
+          "scenarios": 508
+        },
+        "hybrid_minus_attack": {
+          "mean": 0.011723555917814961,
+          "ci95": [
+            0.007868224617064467,
+            0.01590085968257874
+          ],
+          "scenarios": 508
+        },
+        "hybrid_minus_health": {
+          "mean": 0.01599697803887795,
+          "ci95": [
+            0.012425195889210138,
+            0.0198879211906373
+          ],
+          "scenarios": 508
+        },
+        "hybrid_minus_taunt_last": {
+          "mean": 0.00923601285679134,
+          "ci95": [
+            0.005982406496062992,
+            0.012724196066067913
+          ],
+          "scenarios": 508
+        },
+        "model_minus_random": {
+          "mean": 0.026107667937992126,
+          "ci95": [
+            0.020055984136626476,
+            0.0323851577878937
+          ],
+          "scenarios": 508
+        },
+        "model_minus_attack": {
+          "mean": -0.001800296813484252,
+          "ci95": [
+            -0.006117140402005413,
+            0.002480958953617124
+          ],
+          "scenarios": 508
+        },
+        "model_minus_health": {
+          "mean": 0.0024731253075787403,
+          "ci95": [
+            -0.001371681033156988,
+            0.006256367841104823
+          ],
+          "scenarios": 508
+        },
+        "model_minus_taunt_last": {
+          "mean": -0.004287839874507874,
+          "ci95": [
+            -0.008551650159940945,
+            -0.00022575798935777733
+          ],
+          "scenarios": 508
+        },
+        "hybrid_minus_model": {
+          "mean": 0.013523852731299213,
+          "ci95": [
+            0.009917347825418307,
+            0.017601481760580705
+          ],
+          "scenarios": 508
+        }
+      },
+      "beats_every_predeclared_baseline": {
+        "hybrid": true,
+        "model": false
+      }
+    }
+  },
+  "claim_assessment": {
+    "previous_hybrid_advantage_over_best_heuristic": {
+      "mean": 0.0109072265625,
+      "scenarios": 1000,
+      "ci95": [
+        0.00814739990234375,
+        0.0139692626953125
+      ]
+    },
+    "corrected_best_heuristic_by_mean": "taunt_last",
+    "corrected_hybrid_advantage_over_best_heuristic": {
+      "mean": 0.01065966796875,
+      "ci95": [
+        0.007871557617187499,
+        0.0136924072265625
+      ],
+      "scenarios": 1000
+    },
+    "restricted_hybrid_advantage_survives": true,
+    "neural_model_alone_beats_every_baseline": false,
+    "old_138_observed_card_coverage_claim_supported": false,
+    "promotion_or_retraining_performed": false
+  },
+  "limitations": [
+    "Frozen legacy boards contain 123 of the nominal 138 positioning minions; 15 pure Mechs were never sampled. Rescoring cannot restore absent boards.",
+    "Only the lobby alias and corrected adapter interpretation change. All own and opponent entities and every policy permutation remain frozen.",
+    "The hybrid includes original legacy simulation search. This audit tests its frozen decisions; it does not test a newly optimized corrected-search policy.",
+    "Paired scenario bootstrap quantifies this synthetic sample; it does not establish ranked-player representativeness or full-game value.",
+    "Independent fresh RNG and adapter semantics both differ from the original evaluation, so score changes cannot be attributed quantitatively to the adapter alone.",
+    "The test has now been inspected for an audit and must not be reused for model selection or a fresh promotion claim."
+  ]
+}

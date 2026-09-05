@@ -3,7 +3,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { FirestoneCombat, makeEntity, sha256 } from '../simulator/firestone.mjs';
+import { FirestoneCombat, FirestoneCombatV2, CURRENT_ADAPTER_VERSION, LEGACY_ADAPTER_VERSION,
+  adapterVersionForMetadata, normalizeTribes, makeEntity, sha256 } from '../simulator/firestone.mjs';
+import { buildScenario, scoreScenario } from '../scripts/generate_positions.mjs';
 
 const tribes = ['BEAST', 'DEMON', 'DRAGON', 'MECHANICAL', 'MURLOC'];
 const definitions = [
@@ -90,4 +92,58 @@ test('current real Deathrattle combat executes and preserves input', { skip: !fs
   assert.equal(result.simulations.won, 16);
   assert.equal(result.simulations.meanNetDamage, 5);
   assert.equal(JSON.stringify([minion, opponent]), snapshot);
+});
+
+test('V2 normalizes actual current Mechs in definitions, entities, and five-tribe lobbies', () => {
+  const bytes = fs.readFileSync('data/reference_cards.json');
+  const sim = FirestoneCombatV2.fromFiles();
+  const hero = [...sim.heroIds].find(id => /Patchwerk/i.test(sim.reference.get(id).name ?? ''));
+  const validTribes = ['MECH', 'BEAST', 'DEMON', 'DRAGON', 'PIRATE'];
+  const card = sim.reference.get('BG26_146'); // Current Lullabot, single-tribe Mech.
+  assert.deepEqual(card.races, ['MECH']);
+  assert.deepEqual(sim.cards.getCard(card.id).races, ['MECH']);
+  const board = [makeEntity({ ...card, races: ['MECHANICAL'] }, 10, 0, { adapterVersion: CURRENT_ADAPTER_VERSION })];
+  assert.deepEqual(board[0].races, ['MECH']);
+  const input = { board, opponent: [makeEntity(card, 100)], validTribes, heroId: hero, trials: 8, seed: 171 };
+  const before = JSON.stringify(input);
+  const result = sim.evaluate(input);
+  assert.equal(result.simulations.n, 8);
+  assert.deepEqual(sim.evaluate({ ...input, validTribes: ['MECHANICAL', ...validTribes.slice(1)] }), result);
+  assert.equal(JSON.stringify(input), before);
+  assert.throws(() => sim.evaluate({ ...input, validTribes: ['MECH', 'MECHANICAL', 'DEMON', 'DRAGON', 'PIRATE'] }), /five distinct/);
+  assert.throws(() => sim.evaluate({ ...input, validTribes: ['NAGA', ...validTribes.slice(1)] }), /tribe absent/);
+  // Duals are eligible when either tribe is present; neither is rejected.
+  for (const id of ['BG_DEEP_015', 'BG36_764']) {
+    const dual = makeEntity(sim.reference.get(id), 11);
+    sim.validateBoard([dual], validTribes);
+    sim.validateBoard([dual], [sim.reference.get(id).races[1], ...validTribes.slice(1)]);
+    assert.throws(() => sim.validateBoard([dual], ['NAGA', ...validTribes.slice(1)]), /tribe absent/);
+  }
+  assert.deepEqual(normalizeTribes(['MECHANICAL', 'MECH', 'UNDEAD']), ['MECH', 'UNDEAD']);
+  assert.throws(() => normalizeTribes(['NONEXISTENT']), /Unknown/);
+  assert.equal(sha256(fs.readFileSync('data/reference_cards.json')), sha256(bytes));
+});
+
+test('dataset versions retain legacy reproduction and prevent silently reusing old labels', () => {
+  const legacy = FirestoneCombat.fromFiles();
+  const current = FirestoneCombatV2.fromFiles();
+  assert.equal(legacy.adapterVersion, LEGACY_ADAPTER_VERSION);
+  assert.equal(adapterVersionForMetadata({}), LEGACY_ADAPTER_VERSION);
+  assert.throws(() => adapterVersionForMetadata({ adapterVersion: CURRENT_ADAPTER_VERSION }), /schema version/);
+  assert.throws(() => adapterVersionForMetadata({ adapterVersion: 'unknown' }), /Unsupported/);
+  assert.throws(() => current.assertMetadata({}), /differs/);
+  const old = buildScenario(legacy, 0, 20260905, 5);
+  assert.equal(old.metadata.adapterVersion, LEGACY_ADAPTER_VERSION);
+  assert.throws(() => scoreScenario(current, old, 1), /differs/);
+  const newIds = new Set(), oldIds = new Set();
+  for (let i = 0; i < 200; i++) {
+    for (const [engine, ids] of [[legacy, oldIds], [current, newIds]]) {
+      const scenario = buildScenario(engine, i, 20260905, 5);
+      assert.equal(scenario.metadata.adapterVersion, engine.adapterVersion);
+      engine.validateBoard(scenario.candidates[0].board, scenario.metadata.validTribes);
+      for (const card of [...scenario.candidates[0].board, ...scenario.opponent]) ids.add(card.cardId);
+    }
+  }
+  assert.ok(newIds.has('BG26_146'), 'Corrected sampler must draw a single-tribe Mech');
+  assert.ok(!oldIds.has('BG26_146'), 'Legacy sampler semantics must remain reproducible');
 });

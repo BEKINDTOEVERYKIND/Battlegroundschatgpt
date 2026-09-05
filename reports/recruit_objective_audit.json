@@ -1,0 +1,1003 @@
+{
+  "scope": "Read-only completed recruit-v2 train/validation objective and command-cost audit; no training or test-driven policy selection",
+  "source_sha256": {
+    "runs/20260905-recruit-v2/selected_model.json": "b0ae096c38f3c2c04a4c8f70157b305b54f701adcf5bc15d3eccb96adacf787a",
+    "runs/20260905-recruit-v2/scenarios.compact.jsonl.gz": "24b8cbecac35a6339e93f0903235d999ce2a67b4e32c43bb60d4bd2ca92bd42a",
+    "runs/20260905-recruit-v2/scenario_provenance.json": "429764b570b91965d0ff045439820190b9510f53da6734e639c7a421194f2988",
+    "runs/20260905-recruit-v2/scenario_archive.json": "b372fba61491bfa70fabd5e1ded2adba0f1ef690ea65dc4559d0250dd367668c",
+    "runs/20260905-recruit-v2/labels.jsonl.gz": "ee10df06b92f6ab9b23f8d7d4df3a5d4c5f4490ff7f338d042cb8edbf15d526b",
+    "runs/20260905-recruit-v2/results.json": "e3e23564567398ddf17e477258a11a55560e8a4b18865f12a58d168648d7e335",
+    "reports/opening_transfer_results.json": "d5596fb86cbff9a8ad94b692b3a8a7b7d2b4d32624939a2e2f154aabdc9bf969",
+    "scripts/train_recruit_curriculum.py": "cbca493d4f612bb475fbcb74952cc91b53df6142e55abee979db9dace8958e34",
+    "python/bg_ai/learning.py": "039833dddcce6ce6ad84b4e9d9f16971eeb96a2f1aa927a08a0225c5f0f765a6",
+    "python/bg_ai/timed_recruiting.py": "41fb3a102f4f0a1636c600af655b6d41dfc8a332e0b0de1b6e00b6fe53ab9159",
+    "python/bg_ai/hsbrsim_opening.py": "74488b2c3a69b501f4f0d3b939e82b304acea5fbb2bf99c4b52be0b7b19e4327",
+    "python/bg_ai/recruit_features.py": "ee6b9754f41e97a1a69e74da3af29202c122a0744e9510212ddf0f7bf2f54224",
+    "config/turn-budget.json": "8ab8c74c1e160db9481e6ddb76f3a2acf765d8bc294c5e98b48bbacea94f6dbf",
+    "scripts/audit_recruit_objective.py": "d7543ff723c1ce9feea4a6ad0d337bdd40f2058abaebf00be5523c0d2d39416f"
+  },
+  "analyzed_splits": [
+    "train",
+    "validation"
+  ],
+  "heldout_individual_rows_analyzed": false,
+  "frozen_model": {
+    "training_objective": "gap_weighted_pair_average_v2",
+    "tie_tolerance": 0.02,
+    "feature_version": "recruit-visible-action-v2-choice-zone",
+    "training_scenarios": 820
+  },
+  "diagnostics": {
+    "train": {
+      "counts": {
+        "scenarios": 820,
+        "candidates": 4524,
+        "legal_actions": 4943,
+        "scenarios_with_shortlist_omissions": 278,
+        "prediction_top_exact_ties": 44,
+        "prediction_top_ties_within_1e_12": 50,
+        "unique_label_board_groups": 2858,
+        "duplicate_candidate_board_rows": 1666,
+        "scenarios_with_duplicate_board_groups": 820,
+        "scenarios_all_identical_label_board": 1,
+        "scenarios_all_equal_scores": 48,
+        "scenarios_all_pairs_discarded_at_0_02": 48,
+        "all_pairs": 12205,
+        "exact_score_tie_pairs": 4932,
+        "pairs_discarded_at_0_02": 4961,
+        "identical_label_board_pairs": 2176,
+        "selected_has_cheaper_identical_label_board": 489
+      },
+      "legal_action_kinds": {
+        "buy": 1163,
+        "refresh": 486,
+        "freeze": 819,
+        "end_turn": 819,
+        "sell": 730,
+        "activate": 116,
+        "move": 282,
+        "play": 390,
+        "upgrade": 114,
+        "cast_spell": 20,
+        "choose": 4
+      },
+      "shortlisted_action_kinds": {
+        "buy": 1163,
+        "refresh": 486,
+        "freeze": 819,
+        "end_turn": 819,
+        "sell": 730,
+        "activate": 116,
+        "play": 253,
+        "upgrade": 114,
+        "cast_spell": 20,
+        "choose": 4
+      },
+      "omitted_legal_action_kinds": {
+        "move": 282,
+        "play": 137
+      },
+      "selected_action_kinds": {
+        "buy": 198,
+        "freeze": 461,
+        "play": 128,
+        "activate": 25,
+        "cast_spell": 6,
+        "refresh": 1,
+        "choose": 1
+      },
+      "terminal_label_group_size_counts": {
+        "3": 246,
+        "1": 1607,
+        "2": 924,
+        "4": 74,
+        "5": 7
+      },
+      "freeze": {
+        "available": 819,
+        "same_label_board_as_practical": 819,
+        "same_score_as_practical": 819,
+        "same_recorded_terminal_as_practical": 819,
+        "score_lower_than_practical": 0,
+        "score_higher_than_practical": 0,
+        "label_at_scenario_max": 746,
+        "within_0_02_of_scenario_max": 749,
+        "root_already_frozen": 0,
+        "same_board_costlier_than_practical": 819,
+        "selected": 461,
+        "selected_same_board_as_practical": 461,
+        "selected_has_cheaper_identical_label_board": 461,
+        "selected_label_below_scenario_max": 12
+      },
+      "top_prediction_margin": {
+        "count": 820,
+        "min": 0.0,
+        "mean": 2.1800590430756026,
+        "median": 0.8825184084573345,
+        "p95": 8.053535646568056,
+        "max": 9.540839343899755
+      },
+      "selected_freeze_top_prediction_margin": {
+        "count": 461,
+        "min": 0.001860345257858942,
+        "mean": 3.364015692083936,
+        "median": 1.5915362197749992,
+        "p95": 8.387870031411259,
+        "max": 9.540839343899755
+      },
+      "selected_extra_ms_over_cheapest_same_combat_projection": {
+        "count": 489,
+        "min": 1000.0,
+        "mean": 1104.80572597137,
+        "median": 1000.0,
+        "p95": 2750.0,
+        "max": 2750.0
+      },
+      "selected_extra_commands_over_cheapest_same_combat_projection": {
+        "count": 489,
+        "min": 1.0,
+        "mean": 1.0613496932515338,
+        "median": 1.0,
+        "p95": 2.0,
+        "max": 2.0
+      },
+      "freeze_extra_ms_over_practical_when_same_combat_projection": {
+        "count": 819,
+        "min": 1000.0,
+        "mean": 1000.0,
+        "median": 1000.0,
+        "p95": 1000.0,
+        "max": 1000.0
+      },
+      "freeze_extra_commands_over_practical_when_same_combat_projection": {
+        "count": 819,
+        "min": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "action_pair_label_signal": {
+        "buy": {
+          "negative_pairs": 1121,
+          "negative_gap_weight": 18.357595486111194,
+          "positive_pairs": 3601,
+          "positive_gap_weight": 66.31163504464341
+        },
+        "refresh": {
+          "negative_pairs": 1524,
+          "negative_gap_weight": 33.455161830357575,
+          "positive_pairs": 198,
+          "positive_gap_weight": 3.667193700396821
+        },
+        "freeze": {
+          "negative_pairs": 98,
+          "negative_gap_weight": 0.9664248511904755,
+          "positive_pairs": 2053,
+          "positive_gap_weight": 94.73269159226142
+        },
+        "end_turn": {
+          "negative_pairs": 1897,
+          "negative_gap_weight": 78.34734312996025,
+          "positive_pairs": 244,
+          "positive_gap_weight": 34.45924479166673
+        },
+        "sell": {
+          "negative_pairs": 2043,
+          "negative_gap_weight": 107.27871713789634,
+          "positive_pairs": 37,
+          "positive_gap_weight": 0.670287698412698
+        },
+        "activate": {
+          "positive_pairs": 539,
+          "positive_gap_weight": 11.517578124999996,
+          "negative_pairs": 50,
+          "negative_gap_weight": 0.40076264880952395
+        },
+        "play": {
+          "positive_pairs": 512,
+          "positive_gap_weight": 32.89817708333337,
+          "negative_pairs": 12,
+          "negative_gap_weight": 0.16015625
+        },
+        "upgrade": {
+          "negative_pairs": 496,
+          "negative_gap_weight": 7.8429904513889035
+        },
+        "cast_spell": {
+          "positive_pairs": 57,
+          "positive_gap_weight": 2.55234375
+        },
+        "choose": {
+          "negative_pairs": 3,
+          "negative_gap_weight": 0.21875,
+          "positive_pairs": 3,
+          "positive_gap_weight": 0.21875
+        }
+      },
+      "first_qualifying_examples": [
+        {
+          "scenario_id": "recruit-202609051-2",
+          "split": "train",
+          "turn": 1,
+          "remaining_ms": 37250,
+          "freeze_candidate": 1,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 7.154220253860057,
+          "practical_ranking_value": 1.362398887267859,
+          "top_rank_margin": 5.791821366592198,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 1000,
+          "practical_cost_ms": 0,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-3",
+          "split": "train",
+          "turn": 2,
+          "remaining_ms": 12250,
+          "freeze_candidate": 3,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 8.272717087874234,
+          "practical_ranking_value": 7.288182562756956,
+          "top_rank_margin": 0.9845345251172786,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 4500,
+          "practical_cost_ms": 3500,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "activate",
+              "entity_id": "entity-34",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "choose",
+              "entity_id": null,
+              "target_id": "entity-2",
+              "position": null,
+              "choice_index": 0
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "activate",
+              "entity_id": "entity-34",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "choose",
+              "entity_id": null,
+              "target_id": "entity-2",
+              "position": null,
+              "choice_index": 0
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-5",
+          "split": "train",
+          "turn": 2,
+          "remaining_ms": 6250,
+          "freeze_candidate": 3,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 7.516787551399254,
+          "practical_ranking_value": 5.6475445107413424,
+          "top_rank_margin": 1.8692430406579117,
+          "combat_label": 0.4140625,
+          "freeze_cost_ms": 4500,
+          "practical_cost_ms": 3500,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "activate",
+              "entity_id": "entity-32",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "choose",
+              "entity_id": null,
+              "target_id": "entity-1",
+              "position": null,
+              "choice_index": 0
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "activate",
+              "entity_id": "entity-32",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "choose",
+              "entity_id": null,
+              "target_id": "entity-1",
+              "position": null,
+              "choice_index": 0
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-10",
+          "split": "train",
+          "turn": 1,
+          "remaining_ms": 6250,
+          "freeze_candidate": 1,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 11.395120615796332,
+          "practical_ranking_value": 6.604435263512949,
+          "top_rank_margin": 4.790685352283383,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 1000,
+          "practical_cost_ms": 0,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-12",
+          "split": "train",
+          "turn": 1,
+          "remaining_ms": 6250,
+          "freeze_candidate": 1,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 9.668961899766614,
+          "practical_ranking_value": 2.110245099858684,
+          "top_rank_margin": 7.5587167999079306,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 1000,
+          "practical_cost_ms": 0,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        }
+      ]
+    },
+    "validation": {
+      "counts": {
+        "scenarios": 260,
+        "candidates": 1411,
+        "legal_actions": 1549,
+        "scenarios_with_shortlist_omissions": 85,
+        "prediction_top_exact_ties": 8,
+        "prediction_top_ties_within_1e_12": 13,
+        "unique_label_board_groups": 874,
+        "duplicate_candidate_board_rows": 537,
+        "scenarios_with_duplicate_board_groups": 260,
+        "scenarios_all_identical_label_board": 2,
+        "scenarios_all_equal_scores": 29,
+        "scenarios_all_pairs_discarded_at_0_02": 30,
+        "all_pairs": 3756,
+        "exact_score_tie_pairs": 1632,
+        "pairs_discarded_at_0_02": 1646,
+        "identical_label_board_pairs": 719,
+        "selected_has_cheaper_identical_label_board": 164
+      },
+      "legal_action_kinds": {
+        "sell": 234,
+        "freeze": 259,
+        "end_turn": 259,
+        "buy": 366,
+        "refresh": 148,
+        "upgrade": 35,
+        "play": 100,
+        "cast_spell": 11,
+        "move": 106,
+        "activate": 28,
+        "choose": 3
+      },
+      "shortlisted_action_kinds": {
+        "end_turn": 259,
+        "freeze": 259,
+        "sell": 234,
+        "buy": 366,
+        "refresh": 148,
+        "upgrade": 35,
+        "play": 68,
+        "cast_spell": 11,
+        "activate": 28,
+        "choose": 3
+      },
+      "omitted_legal_action_kinds": {
+        "play": 32,
+        "move": 106
+      },
+      "selected_action_kinds": {
+        "freeze": 146,
+        "buy": 64,
+        "play": 36,
+        "cast_spell": 4,
+        "activate": 9,
+        "choose": 1
+      },
+      "terminal_label_group_size_counts": {
+        "2": 287,
+        "1": 480,
+        "4": 30,
+        "3": 74,
+        "5": 3
+      },
+      "freeze": {
+        "available": 259,
+        "same_label_board_as_practical": 259,
+        "same_score_as_practical": 259,
+        "same_recorded_terminal_as_practical": 259,
+        "score_lower_than_practical": 0,
+        "score_higher_than_practical": 0,
+        "label_at_scenario_max": 243,
+        "within_0_02_of_scenario_max": 244,
+        "root_already_frozen": 0,
+        "same_board_costlier_than_practical": 259,
+        "selected": 146,
+        "selected_same_board_as_practical": 146,
+        "selected_has_cheaper_identical_label_board": 146,
+        "selected_label_below_scenario_max": 6
+      },
+      "top_prediction_margin": {
+        "count": 260,
+        "min": 0.0,
+        "mean": 2.257283895908886,
+        "median": 0.9210370947827138,
+        "p95": 7.995982044185212,
+        "max": 8.898272694421909
+      },
+      "selected_freeze_top_prediction_margin": {
+        "count": 146,
+        "min": 0.02954451421953941,
+        "mean": 3.4995776333394577,
+        "median": 2.268778955617962,
+        "p95": 8.557663727366695,
+        "max": 8.898272694421909
+      },
+      "selected_extra_ms_over_cheapest_same_combat_projection": {
+        "count": 164,
+        "min": 1000.0,
+        "mean": 1189.0243902439024,
+        "median": 1000.0,
+        "p95": 2750.0,
+        "max": 2750.0
+      },
+      "selected_extra_commands_over_cheapest_same_combat_projection": {
+        "count": 164,
+        "min": 1.0,
+        "mean": 1.1097560975609757,
+        "median": 1.0,
+        "p95": 2.0,
+        "max": 2.0
+      },
+      "freeze_extra_ms_over_practical_when_same_combat_projection": {
+        "count": 259,
+        "min": 1000.0,
+        "mean": 1000.0,
+        "median": 1000.0,
+        "p95": 1000.0,
+        "max": 1000.0
+      },
+      "freeze_extra_commands_over_practical_when_same_combat_projection": {
+        "count": 259,
+        "min": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "action_pair_label_signal": {
+        "end_turn": {
+          "positive_pairs": 75,
+          "positive_gap_weight": 11.026860119047615,
+          "negative_pairs": 559,
+          "negative_gap_weight": 23.430050223214455
+        },
+        "sell": {
+          "negative_pairs": 576,
+          "negative_gap_weight": 32.745284598214454,
+          "positive_pairs": 11,
+          "positive_gap_weight": 0.274702380952381
+        },
+        "freeze": {
+          "positive_pairs": 611,
+          "positive_gap_weight": 28.89068700396848,
+          "negative_pairs": 18,
+          "negative_gap_weight": 0.13544146825396824
+        },
+        "buy": {
+          "positive_pairs": 1088,
+          "positive_gap_weight": 20.16999937996056,
+          "negative_pairs": 355,
+          "negative_gap_weight": 5.6965432787698385
+        },
+        "refresh": {
+          "negative_pairs": 447,
+          "negative_gap_weight": 9.983286830357141,
+          "positive_pairs": 49,
+          "positive_gap_weight": 0.9532924107142856
+        },
+        "upgrade": {
+          "negative_pairs": 144,
+          "negative_gap_weight": 2.049153645833331
+        },
+        "play": {
+          "positive_pairs": 125,
+          "positive_gap_weight": 9.098697916666666,
+          "negative_pairs": 1,
+          "negative_gap_weight": 0.003125
+        },
+        "cast_spell": {
+          "positive_pairs": 28,
+          "positive_gap_weight": 0.7713169642857144
+        },
+        "activate": {
+          "positive_pairs": 123,
+          "positive_gap_weight": 2.9139229910714253,
+          "negative_pairs": 10,
+          "negative_gap_weight": 0.05659412202380952
+        }
+      },
+      "first_qualifying_examples": [
+        {
+          "scenario_id": "recruit-202609051-6",
+          "split": "validation",
+          "turn": 1,
+          "remaining_ms": 22250,
+          "freeze_candidate": 1,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 8.833491669953936,
+          "practical_ranking_value": 2.0629886935662247,
+          "top_rank_margin": 6.770502976387712,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 1000,
+          "practical_cost_ms": 0,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-16",
+          "split": "validation",
+          "turn": 1,
+          "remaining_ms": 2250,
+          "freeze_candidate": 1,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 9.139464322347214,
+          "practical_ranking_value": 1.8494306752329486,
+          "top_rank_margin": 7.2900336471142655,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 1000,
+          "practical_cost_ms": 0,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-17",
+          "split": "validation",
+          "turn": 2,
+          "remaining_ms": 40000,
+          "freeze_candidate": 2,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 3.0249203130461644,
+          "practical_ranking_value": 2.894507350103641,
+          "top_rank_margin": 0.13041296294252325,
+          "combat_label": 0.484375,
+          "freeze_cost_ms": 7250,
+          "practical_cost_ms": 6250,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "buy",
+              "entity_id": "entity-32",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "play",
+              "entity_id": "entity-32",
+              "target_id": null,
+              "position": 0,
+              "choice_index": null
+            },
+            {
+              "kind": "activate",
+              "entity_id": "entity-0",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "choose",
+              "entity_id": null,
+              "target_id": "entity-32",
+              "position": null,
+              "choice_index": 0
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "buy",
+              "entity_id": "entity-32",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "play",
+              "entity_id": "entity-32",
+              "target_id": null,
+              "position": 0,
+              "choice_index": null
+            },
+            {
+              "kind": "activate",
+              "entity_id": "entity-0",
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "choose",
+              "entity_id": null,
+              "target_id": "entity-32",
+              "position": null,
+              "choice_index": 0
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-26",
+          "split": "validation",
+          "turn": 1,
+          "remaining_ms": 22250,
+          "freeze_candidate": 1,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 8.9188104302213,
+          "practical_ranking_value": 5.066369384735016,
+          "top_rank_margin": 3.852441045486283,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 1000,
+          "practical_cost_ms": 0,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        },
+        {
+          "scenario_id": "recruit-202609051-36",
+          "split": "validation",
+          "turn": 1,
+          "remaining_ms": 38750,
+          "freeze_candidate": 1,
+          "practical_candidate": 0,
+          "freeze_ranking_value": 2.156507809742286,
+          "practical_ranking_value": 2.052348925977271,
+          "top_rank_margin": 0.10415888376501492,
+          "combat_label": 0.5,
+          "freeze_cost_ms": 2500,
+          "practical_cost_ms": 1500,
+          "freeze_commands": [
+            {
+              "kind": "freeze",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            },
+            {
+              "kind": "play",
+              "entity_id": "entity-0",
+              "target_id": null,
+              "position": 0,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "practical_commands": [
+            {
+              "kind": "play",
+              "entity_id": "entity-0",
+              "target_id": null,
+              "position": 0,
+              "choice_index": null
+            },
+            {
+              "kind": "end_turn",
+              "entity_id": null,
+              "target_id": null,
+              "position": null,
+              "choice_index": null
+            }
+          ],
+          "same_combat_projection": true,
+          "same_recorded_terminal": true
+        }
+      ]
+    }
+  },
+  "previously_published_transfer_aggregate_only": {
+    "test_states": 600,
+    "selected_model_action_counts": {
+      "freeze": 496,
+      "play": 49,
+      "buy": 49,
+      "choose": 6
+    },
+    "scores": {
+      "model": 0.5114127604166666,
+      "practical_heuristic": 0.5143400065104167,
+      "raw_stats": 0.510595703125
+    },
+    "paired_model_minus_baseline": {
+      "practical_heuristic": {
+        "mean_delta": -0.00292724609375,
+        "ci95": [
+          -0.012066385904947916,
+          0.005771484375
+        ]
+      },
+      "raw_stats": {
+        "mean_delta": 0.0008170572916666667,
+        "ci95": [
+          -0.010153828938802085,
+          0.011523091634114576
+        ]
+      }
+    },
+    "passes_opening_transfer_benchmark": false,
+    "model_sha256": "b0ae096c38f3c2c04a4c8f70157b305b54f701adcf5bc15d3eccb96adacf787a"
+  },
+  "limitations": [
+    "Equal label-board projections are not equivalent complete game states: frozen shops, economy, hand, counters, future effects and RNG can differ.",
+    "Same score can occur for different boards, especially deterministic early combats; score ties alone do not establish state equivalence.",
+    "Predictions on training and previously used validation data describe an existing model, not an unbiased improvement estimate.",
+    "The existing v2 shortlist omits some legal movement/insertion actions; this audit does not justify further pruning.",
+    "The fixed continuation policy provides all decisions after the selected first command; useful first-command labels do not establish recurrent neural control."
+  ],
+  "recommended_priority": {
+    "first": "Implement and verify actual combat-to-next-recruit transition, then learn a declared two-turn opening objective that observes frozen-shop, hand and next-turn income consequences. More same-turn labels cannot supply missing future value.",
+    "second": "Generate per-decision labels with complete affordable legal actions and whole-game splits, using fixed continuation initially and separately evaluated policy iteration for autonomous whole-turn control.",
+    "optional_bounded_ablation": "The cost-aware same-combat auxiliary loss below can test execution efficiency while the transition is built. It is not a substitute for economic value and must not classify Freeze as globally dominated."
+  },
+  "minimal_next_experiment": {
+    "status": "proposal_only_requires_separate_preregistration_and_root_coordination",
+    "factor_changed": "Add auxiliary command-efficiency pair loss only within verified identical complete combat inputs; keep the existing combat loss unchanged",
+    "keep_fixed": [
+      "visible feature schema and all existing candidate actions including freeze/upgrade/end",
+      "training/validation split",
+      "continuation and opponent policies",
+      "simulation budget and engine snapshot",
+      "optimizer/architecture budget and evaluation seeds across compared arms"
+    ],
+    "primary": "Keep the present combat-gap loss and its 0.02 resolution unchanged in this first ablation. Duplicate-group reweighting is a distinct possible later experiment, not a simultaneous change.",
+    "secondary": "For verified same-combat-input pairs with different paid continuation milliseconds, add a separately normalized logistic preference for the cheaper continuation. Proposed preregistration: lambda=0.01, each auxiliary pair weighted by min(1, absolute time difference / root usable remaining time). Do not apply the combat tie_tolerance to this cost loss. These are proposed settings, not fitted or evaluated settings.",
+    "deployment": "Retain all candidate commands. Use the same ordinary argmax of root-visible observation/action scores; no terminal snapshot, future shop, continuation trace, RNG, realized cost, or oracle equivalence-class lookup at inference.",
+    "validation": "Matched control and auxiliary-loss ablation at equal compute on train only; compare validation combat score and charged milliseconds separately. Before running, freeze a combat non-inferiority margin (proposed 0.25 percentage points), efficiency acceptance rule, and checkpoint choice; use an entirely new heldout set after choices are frozen. A claim of stronger combat still requires a positive paired lower confidence bound against the practical baseline. Reduced freeze frequency alone never passes.",
+    "scope": "Same-turn first-action command efficiency only. This explicit preference under a truncated target does not establish that freezing is inferior over later turns. Existing shortlist omissions remain disclosed; a new broader benchmark should enumerate every affordable legal command and legal placement, not remove economic actions.",
+    "next_horizon": "First implement verified combat-to-recruitment persistence: current opening snapshots explicitly report next-turn state unavailable and combat changes unapplied. Then generate complete-current-opening two-turn trajectories carrying frozen shop, hand, economy, exact deferred income, combat damage and engine RNG. Expose active lobby tribes and exact deferred income through a versioned public feature schema. Average multiple hidden futures consistent with visible state, shared in distribution across candidate arms and independently replicated. Label a declared cumulative two-combat target with separate cost; later upgrades remain horizon-truncated. Train recurrent neural control only in a separately trained policy-iteration experiment using per-decision labels and whole-game splits."
+  },
+  "audited_sources_unchanged": true
+}

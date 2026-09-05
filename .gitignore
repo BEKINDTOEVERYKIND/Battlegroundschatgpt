@@ -14,3 +14,19 @@ runs/**/candidate_archives/
 runs/**/candidate_checkpoints.tar.gz
 *.log
 .DS_Store
+
+# Recruit traces are preserved by verified compact/gzip archives and sidecars.
+runs/20260905-recruit-v1/scenarios.jsonl.gz
+runs/20260905-recruit-v2/scenarios.jsonl.gz
+runs/20260905-recruit-v1/labels.jsonl
+runs/20260905-recruit-v2/labels.jsonl
+runs/20260905-recruit-v1/test_choices.jsonl
+runs/20260905-recruit-v2/test_choices.jsonl
+runs/20260905-recruit-v1/fresh_evaluation.jsonl
+runs/20260905-recruit-v2/fresh_evaluation.jsonl
+
+runs/20260905-recruit-v3/scenarios.jsonl.gz
+runs/20260905-recruit-v3/scenarios.compact.jsonl.gz
+runs/20260905-recruit-v3/labels.jsonl
+runs/20260905-recruit-v3/test_choices.jsonl
+runs/20260905-recruit-v3/fresh_evaluation.jsonl

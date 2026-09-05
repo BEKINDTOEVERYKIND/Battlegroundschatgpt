@@ -1,0 +1,131 @@
+{
+  "scope": "restricted-current-pool first recruit action, fixed heuristic continuation, turns 1-2",
+  "full_game_ready": false,
+  "current_snapshot_verified": true,
+  "attempted_new_scenarios": 600,
+  "generated_scenarios_including_reencoded_base": 1407,
+  "splits": {
+    "train": 820,
+    "validation": 260,
+    "test": 327
+  },
+  "generation_failures": 273,
+  "combat_label_failures": 0,
+  "root_action_kind_counts": {
+    "buy": 1972,
+    "refresh": 834,
+    "freeze": 1405,
+    "end_turn": 1405,
+    "sell": 1265,
+    "activate": 184,
+    "play": 426,
+    "upgrade": 187,
+    "cast_spell": 40,
+    "choose": 7
+  },
+  "executed_command_kind_counts": {
+    "buy": 3914,
+    "play": 3729,
+    "end_turn": 7507,
+    "refresh": 835,
+    "freeze": 1405,
+    "cast_spell": 2228,
+    "choose": 3258,
+    "sell": 1267,
+    "activate": 1296,
+    "upgrade": 187
+  },
+  "label_combats": 620288,
+  "fresh_evaluation_combats": 1468416,
+  "test_scenarios": 327,
+  "score_definition": "P(win)+0.5P(tie), same-turn combat only",
+  "scores": {
+    "model": 0.4885978115443425,
+    "practical_heuristic": 0.4839718319954128,
+    "raw_stats": 0.3881664217794342,
+    "end_if_legal": 0.11926605504587157,
+    "random": 0.283897469896789
+  },
+  "paired_model_minus_baseline": {
+    "practical_heuristic": {
+      "mean_delta": 0.0046259795489296636,
+      "ci95": [
+        -0.002902249677465596,
+        0.01317618367139717
+      ]
+    },
+    "raw_stats": {
+      "mean_delta": 0.10043138976490826,
+      "ci95": [
+        0.07673970727016438,
+        0.12483033346473622
+      ]
+    },
+    "end_if_legal": {
+      "mean_delta": 0.36933175649847094,
+      "ci95": [
+        0.3359154564160455,
+        0.401716637101013
+      ]
+    },
+    "random": {
+      "mean_delta": 0.20470034164755352,
+      "ci95": [
+        0.17456931951213686,
+        0.23589886306622707
+      ]
+    }
+  },
+  "passes_curriculum_benchmark": false,
+  "bootstrap": {
+    "unit": "scenario",
+    "samples": 10000,
+    "seed": 86028121,
+    "limitations": "Does not cover engine model error, restricted pool distribution shift, or longer-horizon economy"
+  },
+  "selected_checkpoint": "selected_model.json",
+  "checkpoint_sha256": "b0ae096c38f3c2c04a4c8f70157b305b54f701adcf5bc15d3eccb96adacf787a",
+  "test_choices_sha256": "3c78b49a3e0825b37755359f1a1fb04b706f70d9b2c0ddfd4f492209f59b38f7",
+  "scenario_archive_sha256": "d246d22da53166e85745862a8c8002d1fde850de9b984f34bad727d3d42903a7",
+  "elapsed_seconds": 160.56372570991516,
+  "limitations": [
+    "Seven current minions and three Tavern spells only, fixed five tribes, Patchwerk",
+    "Curriculum timer windows supplied explicitly, not verified client turn durations",
+    "Single learned first action followed by fixed heuristic; not an autonomous full-turn neural policy",
+    "Same-turn combat objective gives no fair valuation of tavern leveling or saved economic value",
+    "One fixed heuristic opponent per scenario; full-lobby placements and MMR unmeasured",
+    "Unsupported recruit transitions are recorded failures and never assigned scores",
+    "Reported intervals condition on all shortlisted branches being supported; they do not measure performance on every sampled early-turn state"
+  ],
+  "generation_failure_reasons": {
+    "ValueError: Duplicate visible candidate state excluded before split leakage": 155,
+    "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout": 71,
+    "RuntimeError: Scenario has fewer than two legal candidates": 47
+  },
+  "generation_failures_by_split": {
+    "test": 273
+  },
+  "inclusion_scope": "Conditional on every shortlisted counterfactual transition and combat being supported; failures excluded before frozen model choices",
+  "reencoded_base": "runs/20260905-recruit-v1",
+  "observed_card_counts": {
+    "BG26_135": 911,
+    "BG20_100": 786,
+    "BG28_503": 473,
+    "BGS_119": 1096,
+    "BG28_897": 484,
+    "BG36_345": 1097,
+    "BG25_001": 1007,
+    "BG28_810": 450,
+    "BG20_GEM": 8
+  },
+  "selected_test_first_action_counts": {
+    "buy": 77,
+    "freeze": 174,
+    "play": 61,
+    "activate": 10,
+    "cast_spell": 5
+  },
+  "max_observed_actions_used": 10,
+  "timing_trace_budget_violations": 0,
+  "distinct_visible_state_fingerprints": 1407
+}

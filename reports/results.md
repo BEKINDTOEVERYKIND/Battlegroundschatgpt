@@ -1,12 +1,19 @@
 # First positioning experiments — 5 September 2026
 
+Historical report for the legacy adapter. The later
+[corrected-engine audit](../docs/positioning-corrected-audit.md) retains the exact
+test boards and decisions and finds +1.066 percentage points against the strongest
+heuristic (95% interval +0.787 to +1.369). The legacy sampler actually included
+123 distinct minions; a Mech alias mismatch excluded 15 of the 138 nominally
+eligible cards. Its archived datasets and results remain unchanged for reproduction.
+
 **The combined learned-proposal and simulation-search policy beats all four
 declared heuristics on 1,000 new synthetic combat scenarios. The neural model
 alone does not clearly beat attack sorting. A full-game player is not ready.**
 
 The current source snapshot is Solo patch 36.4.2.251332. Firestone 1.1.750
-resolves the combats using frozen reference data. The curriculum covers 138
-screened current minions in five-tribe lobbies, with explicit exclusions for
+resolves the combats using frozen reference data. The curriculum nominally screens
+138 current minions, of which 123 were sampled, in five-tribe lobbies, with explicit exclusions for
 unaudited history, hand, seasonal, and generation effects.
 
 ## Fresh final benchmark

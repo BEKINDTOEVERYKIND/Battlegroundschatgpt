@@ -1,0 +1,12 @@
+{
+  "status": "labels_complete_training_failed_before_first_epoch",
+  "saved_scenarios": 1341,
+  "label_combats": 592384,
+  "error": "Integer-valued score arrays could not be normalized by floating-point pairwise loss; corrected by requiring float64 in subsequent trainer",
+  "recovery": "Reencode original train/validation traces with reviewed v2 features; preserve labels and generate independent new holdout seeds",
+  "generation_failure_reasons": {
+    "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout": 181,
+    "RuntimeError: Scenario has fewer than two legal candidates": 145,
+    "ValueError: Duplicate visible candidate state excluded before split leakage": 333
+  }
+}

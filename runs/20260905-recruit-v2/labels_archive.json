@@ -1,0 +1,9 @@
+{
+  "format": "gzip-jsonl",
+  "compressed_file": "labels.jsonl.gz",
+  "compressed_sha256": "ee10df06b92f6ab9b23f8d7d4df3a5d4c5f4490ff7f338d042cb8edbf15d526b",
+  "uncompressed_file": "labels.jsonl",
+  "uncompressed_sha256": "16ce6fd5d97fa6162c7b1071dd9c44540b4e933cd74c6de03fcc50e1bbbd52fd",
+  "uncompressed_bytes": 1193201,
+  "compressed_bytes": 68746
+}

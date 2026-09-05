@@ -89,6 +89,14 @@ class TurnBudgetTests(unittest.TestCase):
                              {"buy": 0, "sell": 0, "choose": 2000}
                              if extra is None else extra)
 
+    def test_snapshot_exposes_full_known_command_costs(self):
+        budget = TurnBudget(self.profile(rate=2, extra={"buy": 250, "choose": 2000}), 60000)
+        snapshot = budget.snapshot()
+        self.assertEqual(snapshot["action_cost_ms"], {"buy": 750, "choose": 2500})
+        snapshot["action_cost_ms"]["buy"] = 0
+        self.assertEqual(budget.snapshot()["action_cost_ms"]["buy"], 750)
+        self.assertEqual(budget.charge("buy"), 750)
+
     def test_exact_boundary_includes_last_affordable_action(self):
         budget = TurnBudget(self.profile(reserve=250), 1750)
         self.assertEqual(budget.action_limit, 3)

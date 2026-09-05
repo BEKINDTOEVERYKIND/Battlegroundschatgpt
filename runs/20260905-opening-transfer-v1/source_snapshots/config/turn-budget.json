@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "profile_id": "reasonable-60apm-v1",
+  "actions_per_second": 1.0,
+  "reserve_ms": 5000,
+  "extra_ms": {
+    "buy": 250,
+    "play": 500,
+    "sell": 250,
+    "refresh": 500,
+    "freeze": 0,
+    "upgrade": 500,
+    "hero_power": 500,
+    "cast_spell": 500,
+    "choose": 1000,
+    "buy_trinket": 1000,
+    "activate": 500,
+    "move": 0
+  },
+  "calibration": "Explicit training assumptions, not measured client animation timings. One action is a complete game command, not a mouse click. Engine adapters must supply actual available recruit time; no round-duration table is assumed."
+}

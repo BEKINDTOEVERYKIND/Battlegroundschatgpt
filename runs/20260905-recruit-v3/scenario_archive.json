@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "format": "provenance-deduplicated-jsonl-gzip",
+  "rows": 3797,
+  "original_compressed_file": "scenarios.jsonl.gz",
+  "original_compressed_sha256": "7832e5d70478c03b93d15a2c0b41015c9bfa8f3ddb6f20036ae9109ee0cd82ea",
+  "original_uncompressed_sha256": "64684e184592ea9f070de683b38e9b7b2eab6a9b2ed0512da3264567857aabec",
+  "original_uncompressed_bytes": 258635775,
+  "compact_file": "scenarios.compact.jsonl.gz",
+  "compact_sha256": "9613d65118181e02c81e5d3b5e86d71defcf0205d57c1b79eb6d3d385b485ddb",
+  "compact_bytes": 8055085,
+  "registry_file": "scenario_provenance.json",
+  "registry_sha256": "429764b570b91965d0ff045439820190b9510f53da6734e639c7a421194f2988",
+  "restoration": "Original JSONL bytes verified; gzip container header is regenerated deterministically",
+  "compact_parts": [
+    {
+      "file": "scenarios.compact.jsonl.gz.part-000",
+      "bytes": 4000000,
+      "sha256": "156b4f3579db7a6ecd9acd5dd93eeb325079ae11d7c000cc6965ec7762321d79"
+    },
+    {
+      "file": "scenarios.compact.jsonl.gz.part-001",
+      "bytes": 4000000,
+      "sha256": "2b7edabb3de89b59bfbbe9dca0fa75251bda340b4110400079a59d0b235f1188"
+    },
+    {
+      "file": "scenarios.compact.jsonl.gz.part-002",
+      "bytes": 55085,
+      "sha256": "b754916f56da7efc6f2f6866a02365399120d4c93840ebff4e97eaacfe5f5e4e"
+    }
+  ]
+}

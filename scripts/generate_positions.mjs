@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import { FirestoneCombat, TRIBES, ENGINE_VERSION, REFERENCE_VERSION, seeded, shuffle, makeEntity, sha256 } from '../simulator/firestone.mjs';
+import { FirestoneCombat, CURRENT_ADAPTER_VERSION, ENGINE_VERSION, REFERENCE_VERSION, seeded, shuffle, makeEntity, sha256 } from '../simulator/firestone.mjs';
 
 export function parseArgs(argv) {
   const options = {};
@@ -14,7 +14,7 @@ export function parseArgs(argv) {
 
 export function buildScenario(engine, index, seed, candidates = 10) {
   const rng = seeded((seed + Math.imul(index + 1, 2654435761)) >>> 0);
-  const validTribes = shuffle(TRIBES, rng).slice(0, 5);
+  const validTribes = shuffle(engine.validTribeNames, rng).slice(0, 5);
   const tier = 2 + Math.floor(rng.next() * 5);
   const available = [...engine.shopMinionIds].filter(id => !engine.positioningEligibility(id)).map(id => engine.reference.get(id)).filter(c => c.techLevel <= tier)
     .filter(c => !c.races?.length || c.races.includes('ALL') || c.races.some(r => validTribes.includes(r)));
@@ -29,7 +29,7 @@ export function buildScenario(engine, index, seed, candidates = 10) {
       const legalTribal = tribal.filter(c => picked.filter(p => p.cardId === c.id).length < 2);
       const pool = rng.next() < 0.7 && legalTribal.length ? legalTribal : legal;
       const card = pool[Math.floor(rng.next() * pool.length)];
-      const entity = makeEntity(card, offset + i, Math.floor(rng.next() * tier * tier));
+      const entity = makeEntity(card, offset + i, Math.floor(rng.next() * tier * tier), { adapterVersion: engine.adapterVersion });
       // Independent attack/health buffs create varied positional tradeoffs.
       entity.attack += Math.floor(rng.next() * tier * 2);
       entity.health += Math.floor(rng.next() * tier * 2);
@@ -60,7 +60,7 @@ export function buildScenario(engine, index, seed, candidates = 10) {
   return {
     scenario_id: `position-${seed}-${index}`, split, opponent,
     candidates: orders.map(order => ({ board: order })),
-    metadata: { source: 'synthetic_current_pool_combat', validTribes, heroId: hero.id,
+    metadata: { ...engine.versionMetadata(), source: 'synthetic_current_pool_combat', validTribes, heroId: hero.id,
       turn: 4 + tier * 2, tavernTier: tier, combatSeed: baseSeed,
       scope: 'positioning; no trinkets, gifts, quests, hand effects, or combat hero powers',
       engine: ENGINE_VERSION, referencePackage: REFERENCE_VERSION,
@@ -69,6 +69,7 @@ export function buildScenario(engine, index, seed, candidates = 10) {
 }
 
 export function scoreScenario(engine, scenario, trials) {
+  engine.assertMetadata(scenario.metadata);
   for (const candidate of scenario.candidates) {
     Object.assign(candidate, engine.evaluate({ board: candidate.board, opponent: scenario.opponent,
       ...scenario.metadata, trials, seed: scenario.metadata.combatSeed }));
@@ -86,7 +87,7 @@ if (process.argv[1] && import.meta.url === new URL(`file://${path.resolve(proces
     throw new Error('Invalid count/start/seed/trials/candidates');
   }
   const output = args.out ?? 'runs/positions.jsonl';
-  const engine = FirestoneCombat.fromFiles(args.cards, args.ruleset);
+  const engine = FirestoneCombat.fromFiles(args.cards, args.ruleset, { adapterVersion: args['adapter-version'] ?? CURRENT_ADAPTER_VERSION });
   fs.mkdirSync(path.dirname(output), { recursive: true });
   fs.writeFileSync(output + '.coverage.json', JSON.stringify(engine.supportReport(), null, 2) + '\n');
   const fd = fs.openSync(output, 'w');
@@ -114,7 +115,7 @@ if (process.argv[1] && import.meta.url === new URL(`file://${path.resolve(proces
       }
     }
   } finally { fs.closeSync(fd); }
-  const summary = { schemaVersion: 1, attempted: count, written, rejected: failures.length, combats, trials, candidates,
+  const summary = { schemaVersion: engine.datasetSchemaVersion, ...engine.versionMetadata(), attempted: count, written, rejected: failures.length, combats, trials, candidates,
     seed, start, split, engine: ENGINE_VERSION, referencePackage: REFERENCE_VERSION,
     cardsSha256: engine.cardsHash, rulesetSha256: engine.rulesetHash,
     datasetSha256: sha256(fs.readFileSync(output)), elapsedSeconds: (Date.now() - startTime) / 1000,

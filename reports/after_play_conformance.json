@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "evidence_status": "observed_in_public_post_demon_type_change_replay",
+  "retrieved_at": "2026-09-05",
+  "card_id": "BGS_004",
+  "observed_build": 231720,
+  "current_training_build": 251332,
+  "behavior": "After-play triggers exclude the entity being played, while existing copies react to a newly played copy.",
+  "source": {
+    "public_post_url": "https://us.forums.blizzard.com/en/hearthstone/t/bgs-i-did-my-best-as-far-as-i-think-i-could-have-but/155406",
+    "public_replay_url": "https://replays.firestoneapp.com/?reviewId=4df7e210-6f1d-4b85-8946-f952d161fa31",
+    "raw_zip_url": "https://xml.firestoneapp.com/hearthstone/replay-logged-in/2025/12/15/4df7e210-6f1d-4b85-8946-f952d161fa31.xml.zip",
+    "published_date": "2025-12-15",
+    "full_zip_sha256": "c51cf85fa26be9bf7d9ab2777520aa8d884766d58c0df2ac6c6d9ef5e06b3ec5",
+    "uncompressed_xml_sha256": "dfa83680b7c6cfffc7b76477a6bc3d33e0635440a41c7077537466f87dfd8b11",
+    "official_type_change_url": "https://hearthstone.blizzard.com/en-sg/news/24244423/34-2-patch-notes-battlegrounds-arena-and-gameplay-updates"
+  },
+  "excerpt": {
+    "path": "tests/fixtures/conformance/wrath_weaver_demon_after_play.xml",
+    "sha256": "fbbf6d8c14deb8d0ee6b3f06cbee9db2e23aaa8bccd1e128dddb18c9c05026ba",
+    "bytes": 13351,
+    "content": "Two exact FullEntity definitions and two exact PLAY blocks, wrapped in HSReplayExcerpt; no player names or account identifiers; not a complete replay."
+  },
+  "tag_interpretation": {
+    "200": "CARDRACE;15=DEMON",
+    "47": "ATK",
+    "45": "HEALTH",
+    "292": "ARMOR",
+    "49": "ZONE;1=PLAY,3=HAND",
+    "Block.type=7": "PLAY",
+    "Block.type=5": "TRIGGER"
+  },
+  "observations": [
+    {
+      "timestamp": "24:05:56.613797",
+      "played_entity": 1831,
+      "card_type": "DEMON",
+      "stats_before": [
+        1,
+        4
+      ],
+      "stats_after": [
+        1,
+        4
+      ],
+      "own_trigger_count": 0,
+      "hero_armor_before": 6,
+      "hero_armor_after": 6
+    },
+    {
+      "timestamp": "24:05:59.715027",
+      "played_entity": 1833,
+      "card_type": "DEMON",
+      "stats_before": [
+        1,
+        4
+      ],
+      "stats_after": [
+        1,
+        4
+      ],
+      "own_trigger_count": 0,
+      "existing_weaver_entity": 1831,
+      "existing_stats_before": [
+        1,
+        4
+      ],
+      "existing_stats_after": [
+        3,
+        5
+      ],
+      "existing_trigger_count": 1,
+      "created_enchantment": "BGS_004e",
+      "hero_armor_before": 6,
+      "hero_armor_after": 5
+    }
+  ],
+  "limits": [
+    "Observed replay is build231720, after Weaver became a Demon, not build251332.",
+    "Carry forward only the identity exclusion. Current training must read build251332 stats and effect parameters (1/3, +2/+2); historical 1/4 and +2/+1 are evidence values, never a training pool.",
+    "No golden-play evidence in this excerpt.",
+    "Evidence does not establish all after-play scripts or all timing/battlecry interactions."
+  ],
+  "independent_molten_rock": {
+    "status": "independent_engine_corroboration_not_direct_current_game_observation",
+    "source_commit": "05dba5d0c2c58b1c2f6a6011f5896e8d1b8f3617",
+    "implementation_url": "https://github.com/JDBumgardner/stone_ground_hearth_battles/blob/05dba5d0c2c58b1c2f6a6011f5896e8d1b8f3617/hearthstone/simulator/core/card_pool.py#L1909-L1920",
+    "test_url": "https://github.com/JDBumgardner/stone_ground_hearth_battles/blob/05dba5d0c2c58b1c2f6a6011f5896e8d1b8f3617/tests/test_tavern.py#L2378-L2393",
+    "behavior": "Molten Rock implementation explicitly excludes event.card == self; test plays Rock then Cyclone and expects Rock health exactly base+1, not base+2."
+  }
+}

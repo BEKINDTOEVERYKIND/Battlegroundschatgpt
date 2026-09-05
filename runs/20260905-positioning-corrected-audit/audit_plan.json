@@ -1,0 +1,52 @@
+{
+  "audit": "corrected_adapter_rescore_of_published_frozen_legacy_orders",
+  "frozen_before_audit": true,
+  "training_or_selection_performed": false,
+  "adapter": {
+    "adapterVersion": "firestone-combat-v2-tribes",
+    "datasetSchemaVersion": 2
+  },
+  "engine": "1.1.750",
+  "referencePackage": "3.0.196",
+  "source_dataset_adapter": "legacy-v1",
+  "source_dataset_schema": 1,
+  "entity_changes": "none",
+  "lobby_correction": "MECHANICAL -> MECH",
+  "expected_raw_input_sha256": {
+    "dataset": "f65da09ca38cc1c11c76f9d3df9f308193134bd9e3a2f45d1a0725b5b76146e7",
+    "hybrid": "e2aa136aa9ff9f5af86bebfa5aa0f5b65d9f95bda6f9ff2f3fd450bc535c5b0c",
+    "model": "71520d633e3b4841e328cb30f93fc187362249815fc113c758d6a70a4f29357b"
+  },
+  "input_files": {
+    "dataset": "runs/20260905-holdout-v2/positions.jsonl.gz",
+    "hybrid": "runs/20260905-positioning-search-v1/frozen_selections.jsonl",
+    "model": "runs/20260905-positioning-v2/frozen_selections.jsonl"
+  },
+  "adapter_source_sha256": "b9a1ec0c56bbcc2f957a654ee41ae5cd5acc2342558d5a254702deba34dc580d",
+  "evaluator_source_sha256": "8593e4a48b22e41b5e98bf10041f658149014a44b01ee144ca40ae604ef2e512",
+  "cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "ruleset_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "scenarios": 1000,
+  "trials_per_distinct_order": 1024,
+  "base_seed": 32452843,
+  "scenario_seed_formula": "(32452843 + imul(globalInputIndex + 1, 2654435761)) >>> 0",
+  "seed_shared_across_compared_orders": true,
+  "policies": [
+    "hybrid",
+    "model"
+  ],
+  "baselines": [
+    "random",
+    "attack",
+    "health",
+    "taunt_last"
+  ],
+  "bootstrap": {
+    "samples": 10000,
+    "seed": 20260909,
+    "method": "paired percentile",
+    "unit": "scenario",
+    "confidence": 0.95
+  },
+  "promotion": "none; audit whether the previous restricted benchmark claim survives"
+}
