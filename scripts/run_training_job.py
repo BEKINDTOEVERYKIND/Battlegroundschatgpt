@@ -118,6 +118,13 @@ def main() -> int:
             record_path.write_text(json.dumps(record, indent=2) + "\n")
         comparison = compare(out)
         (out / "comparison.json").write_text(json.dumps(comparison, indent=2) + "\n")
+        # Keep the compact result available in Actions logs even if the artifact
+        # download cannot be materialized by a reviewing client.
+        print("TRAINING_COMPARISON " + json.dumps(comparison, allow_nan=False), flush=True)
+        if summary_path := os.environ.get("GITHUB_STEP_SUMMARY"):
+            with open(summary_path, "a", encoding="utf-8") as summary:
+                summary.write("## Completed positioning experiment\n\n```json\n" +
+                              json.dumps(comparison, indent=2, allow_nan=False) + "\n```\n")
         record["status"] = "completed"
     except BaseException as error:
         record.update(status="failed", error=f"{type(error).__name__}: {error}")

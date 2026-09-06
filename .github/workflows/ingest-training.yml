@@ -1,0 +1,62 @@
+name: Preserve completed training results
+on:
+  push:
+    branches: [main]
+    paths: [config/result-ingest-job.json]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: battlegrounds-training-result-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify successful source run and declared artifact
+        id: source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          python scripts/ingest_training_artifact.py prepare
+          --state-dir "$RUNNER_TEMP/training-ingest-state"
+      - name: Retrieve original ZIP without extracting its paths
+        uses: actions/download-artifact@v8
+        with:
+          artifact-ids: ${{ steps.source.outputs.artifact_id }}
+          run-id: ${{ steps.source.outputs.run_id }}
+          repository: ${{ github.repository }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/training-ingest-download
+          skip-decompress: true
+          digest-mismatch: error
+      - name: Verify checksums and preserve all experiment evidence
+        run: >-
+          python scripts/ingest_training_artifact.py ingest
+          --state-dir "$RUNNER_TEMP/training-ingest-state"
+          --download-dir "$RUNNER_TEMP/training-ingest-download"
+      - name: Commit completed results with a normal fast-forward push
+        env:
+          INGEST_DESTINATION: ${{ steps.source.outputs.destination }}
+        run: |
+          git add -- "$INGEST_DESTINATION"
+          if git diff --cached --quiet; then
+            echo "Identical completed results are already preserved."
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Preserve verified positioning scratch and warm-start results'
+          git push origin HEAD:main

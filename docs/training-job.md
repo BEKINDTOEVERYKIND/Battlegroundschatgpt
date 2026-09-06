@@ -29,6 +29,21 @@ completed results intended for long-term use should be reviewed and committed
 to the repository before that retention expires. The workflow itself does not
 purchase compute, change account settings, send messages, or write commits.
 
+Run [33969375049](https://github.com/BEKINDTOEVERYKIND/Battlegroundschatgpt/actions/runs/33969375049)
+completed successfully on 5 September 2026 at 14:22:02 UTC, after about 46 minutes.
+Its 48-file artifact is `training-33969375049-1` (ID `9971076392`), with ZIP SHA256
+`b30e74f5378355d18aae5975ab1f8fd2c6d80c84f43f7f5e22bd2707161908b6`.
+Completion alone is not a positive strength or transfer result.
+
+A separate, explicitly configured **Preserve completed training results** job
+can verify and commit that finished artifact. It checks the source run, commit,
+artifact identity, ZIP digest, and paths before preserving the evidence. This job
+has read access to Actions and write access to repository contents; its push is
+an ordinary fast-forward and never reruns the training. Its exact source and
+destination are declared in `config/result-ingest-job.json`.
+Future training runs also print their compact comparison to the job log and
+GitHub step summary, so inspecting scores does not depend on downloading a ZIP.
+
 To inspect the exact commands locally:
 
 ```bash
