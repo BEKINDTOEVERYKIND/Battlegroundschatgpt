@@ -1,0 +1,97 @@
+{
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "full_game_ready": false,
+  "policy_promoted": false,
+  "training_trajectory_attempts": 10,
+  "accepted_training_trajectories": 7,
+  "trajectory_splits": {
+    "train": 5,
+    "validation": 2
+  },
+  "decision_splits": {
+    "train": 38,
+    "validation": 12
+  },
+  "generation_failures": 3,
+  "generation_failure_reasons": {
+    "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout": 3
+  },
+  "available_pool": {
+    "minions": 22,
+    "spells": 8
+  },
+  "accepted_own_observation_coverage": {
+    "minions": [
+      "BG20_100",
+      "BG23_000",
+      "BG25_013",
+      "BG28_300",
+      "BG29_611",
+      "BG29_888",
+      "BG31_330",
+      "BG31_803",
+      "BG32_236",
+      "BG32_330",
+      "BG33_140",
+      "BG33_886",
+      "BG35_814",
+      "BG36_200",
+      "BG36_345",
+      "BG36_921",
+      "BGS_004",
+      "BGS_119",
+      "BGS_127"
+    ],
+    "spells": [
+      "BG28_503",
+      "BG28_504",
+      "BG28_512",
+      "BG28_810",
+      "BG28_897",
+      "BG28_966",
+      "BG33_101"
+    ]
+  },
+  "evaluation_episodes": 2,
+  "evaluation_attempts": 2,
+  "evaluation_failures": [],
+  "objective": "mean of first and second sampled combat scores: win1, tie0.5, loss0",
+  "scores": {
+    "model": 0.125,
+    "practical_heuristic": 0.375
+  },
+  "paired_model_minus_practical": {
+    "mean_delta": -0.25,
+    "ci95": [
+      -0.5,
+      0.0
+    ]
+  },
+  "bootstrap": {
+    "unit": "complete paired episode, averaging samples first",
+    "samples": 10000,
+    "seed": 86028121
+  },
+  "generation_sampled_combats_including_rejections": 1772,
+  "evaluation_sampled_combats_including_rejections": 32,
+  "timing_budget_violations": 0,
+  "model_action_counts": {
+    "buy": 3,
+    "play": 1,
+    "freeze": 61,
+    "cast_spell": 1,
+    "choose": 1
+  },
+  "checkpoint_sha256": "94b1060cd5174f872b3f8cf1313d2bacc8fe64af0adbe4fcfd7cd58600456b6b",
+  "elapsed_seconds": 48.13464832305908,
+  "limitations": [
+    "Small noisy engineering pilot, no measured full-game strength or MMR",
+    "Only two turns; no valuation beyond second combat, including second-turn tier upgrades",
+    "All players Patchwerk; fixed declared pairings; opponents use a practical heuristic",
+    "Synthetic turn times; one command/sec plus configured costs and five-second reserve",
+    "One fitted policy-improvement iteration; labels follow practical continuation, full-policy evaluation may shift state distribution",
+    "Conditional supported-trajectory sample; complete rejection counts reported, no policy promoted",
+    "Tier-2 next-turn shops, ordinary triples and unverified contextual effects remain explicit engine frontiers"
+  ],
+  "current_snapshot_verified": false
+}

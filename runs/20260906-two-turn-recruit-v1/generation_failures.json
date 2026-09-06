@@ -1,0 +1,51 @@
+[
+  {
+    "index": 1,
+    "seed": 202610070,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 276
+  },
+  {
+    "index": 9,
+    "seed": 202618142,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 84
+  },
+  {
+    "index": 10,
+    "seed": 202619151,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified",
+    "sampled_combats_before_rejection": 96
+  },
+  {
+    "index": 11,
+    "seed": 202620160,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 268
+  },
+  {
+    "index": 27,
+    "seed": 202636304,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 148
+  },
+  {
+    "index": 29,
+    "seed": 202638322,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 96
+  },
+  {
+    "index": 30,
+    "seed": 202639331,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 20
+  }
+]

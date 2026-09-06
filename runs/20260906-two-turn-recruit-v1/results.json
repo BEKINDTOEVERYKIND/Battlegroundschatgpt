@@ -1,0 +1,121 @@
+{
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "full_game_ready": false,
+  "policy_promoted": false,
+  "training_trajectory_attempts": 40,
+  "accepted_training_trajectories": 33,
+  "trajectory_splits": {
+    "train": 27,
+    "validation": 6
+  },
+  "decision_splits": {
+    "train": 199,
+    "validation": 46
+  },
+  "generation_failures": 7,
+  "generation_failure_reasons": {
+    "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout": 6,
+    "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified": 1
+  },
+  "available_pool": {
+    "minions": 22,
+    "spells": 8
+  },
+  "accepted_own_observation_coverage": {
+    "minions": [
+      "BG20_100",
+      "BG23_000",
+      "BG25_001",
+      "BG25_013",
+      "BG26_135",
+      "BG26_146",
+      "BG28_300",
+      "BG29_611",
+      "BG29_888",
+      "BG31_330",
+      "BG31_803",
+      "BG32_236",
+      "BG32_330",
+      "BG33_140",
+      "BG33_886",
+      "BG35_814",
+      "BG36_200",
+      "BG36_345",
+      "BG36_921",
+      "BGS_004",
+      "BGS_119",
+      "BGS_127"
+    ],
+    "spells": [
+      "BG28_503",
+      "BG28_504",
+      "BG28_512",
+      "BG28_810",
+      "BG28_897",
+      "BG28_966",
+      "BG31_880",
+      "BG33_101"
+    ]
+  },
+  "evaluation_episodes": 14,
+  "evaluation_attempts": 16,
+  "evaluation_failures": [
+    {
+      "seed": 212611079,
+      "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified",
+      "failed_policy": "model",
+      "failed_sample": 0,
+      "completed_policy_names": []
+    },
+    {
+      "seed": 212614106,
+      "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+      "failed_policy": "practical_heuristic",
+      "failed_sample": 0,
+      "completed_policy_names": [
+        "model"
+      ]
+    }
+  ],
+  "objective": "mean of first and second sampled combat scores: win1, tie0.5, loss0",
+  "scores": {
+    "model": 0.36607142857142855,
+    "practical_heuristic": 0.44642857142857145
+  },
+  "paired_model_minus_practical": {
+    "mean_delta": -0.08035714285714286,
+    "ci95": [
+      -0.21428571428571427,
+      0.0625
+    ]
+  },
+  "bootstrap": {
+    "unit": "complete paired episode, averaging samples first",
+    "samples": 10000,
+    "seed": 86028121
+  },
+  "generation_sampled_combats_including_rejections": 15300,
+  "evaluation_sampled_combats_including_rejections": 936,
+  "timing_budget_violations": 0,
+  "model_action_counts": {
+    "buy": 100,
+    "play": 84,
+    "freeze": 1164,
+    "end_turn": 20,
+    "cast_spell": 40,
+    "choose": 40,
+    "activate": 8
+  },
+  "checkpoint_sha256": "7028c293277a528932c18729f294b0510ab9d7bd70e606cb32332279947301a4",
+  "elapsed_seconds": 386.7982747554779,
+  "limitations": [
+    "Small noisy engineering pilot, no measured full-game strength or MMR",
+    "Only two turns; no valuation beyond second combat, including second-turn tier upgrades",
+    "All players Patchwerk; fixed declared pairings; opponents use a practical heuristic",
+    "Synthetic turn times; one command/sec plus configured costs and five-second reserve",
+    "One fitted policy-improvement iteration; labels follow practical continuation, full-policy evaluation may shift state distribution",
+    "Conditional supported-trajectory sample; complete rejection counts reported, no policy promoted",
+    "Tier-2 next-turn shops, ordinary triples and unverified contextual effects remain explicit engine frontiers"
+  ],
+  "current_snapshot_verified": true
+}

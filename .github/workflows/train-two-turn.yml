@@ -1,0 +1,55 @@
+name: Bounded two-turn policy improvement
+on:
+  push:
+    branches: [main]
+    paths: [config/two-turn-training-job.json]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: battlegrounds-two-turn-training
+  cancel-in-progress: false
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      PYTHONPATH: python
+      OPENBLAS_NUM_THREADS: 1
+      OMP_NUM_THREADS: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: npm ci --ignore-scripts
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/prepare_recruit_engine.py
+      - name: Check frozen current data and the transition engine
+        run: |
+          python scripts/sync_ruleset.py --check
+          python -m unittest discover -s tests -p 'test_opening_transition.py'
+          node --test tests/opening-transition-firestone.test.mjs
+      - name: Train on the previous policy's states and independently evaluate
+        timeout-minutes: 112
+        run: >-
+          python scripts/run_two_turn_job.py
+          --engine-root ../research/HSBRSIM
+          --out two-turn-training-output
+      - name: Preserve checkpoints, traces, results and partial failure evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: two-turn-training-${{ github.run_id }}-${{ github.run_attempt }}
+          path: two-turn-training-output/
+          if-no-files-found: warn
+          retention-days: 90
+          compression-level: 6

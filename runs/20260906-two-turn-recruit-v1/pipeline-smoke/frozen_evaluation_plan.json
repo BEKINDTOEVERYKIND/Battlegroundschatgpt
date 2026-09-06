@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "94b1060cd5174f872b3f8cf1313d2bacc8fe64af0adbe4fcfd7cd58600456b6b",
+  "seeds": [
+    9030260906,
+    9030261915
+  ],
+  "samples_per_policy": 1,
+  "policies": [
+    "model",
+    "practical_heuristic"
+  ],
+  "selection_complete_before_test": true
+}

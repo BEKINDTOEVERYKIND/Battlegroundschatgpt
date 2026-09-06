@@ -1,0 +1,18 @@
+[
+  {
+    "seed": 212611079,
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified",
+    "failed_policy": "model",
+    "failed_sample": 0,
+    "completed_policy_names": []
+  },
+  {
+    "seed": 212614106,
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "failed_policy": "practical_heuristic",
+    "failed_sample": 0,
+    "completed_policy_names": [
+      "model"
+    ]
+  }
+]

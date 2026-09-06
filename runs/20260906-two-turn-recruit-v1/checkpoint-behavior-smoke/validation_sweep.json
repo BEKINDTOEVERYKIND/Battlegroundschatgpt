@@ -1,0 +1,8 @@
+[
+  {
+    "epochs": 1,
+    "checkpoint": "model-h16-e1.json",
+    "validation_mean": 0.3034722222222222,
+    "final_epoch_loss": 0.02105327973802194
+  }
+]

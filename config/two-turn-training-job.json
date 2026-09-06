@@ -1,0 +1,14 @@
+{
+  "experiment": "20260906-two-turn-policy-states-v2",
+  "trajectories": 80,
+  "label_samples": 4,
+  "evaluation_episodes": 32,
+  "evaluation_samples": 8,
+  "seed": 202609062,
+  "hidden": 16,
+  "epochs": [5, 15],
+  "timeout_seconds": 6600,
+  "policy_checkpoint": "runs/20260906-two-turn-recruit-v1/selected_model.json",
+  "policy_checkpoint_sha256": "7028c293277a528932c18729f294b0510ab9d7bd70e606cb32332279947301a4",
+  "continuation_policy": "practical"
+}

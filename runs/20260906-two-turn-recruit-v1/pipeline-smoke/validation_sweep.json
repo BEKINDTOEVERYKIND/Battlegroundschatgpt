@@ -1,0 +1,8 @@
+[
+  {
+    "epochs": 2,
+    "checkpoint": "model-h8-e2.json",
+    "validation_mean": 0.4166666666666667,
+    "final_epoch_loss": 0.09633514361185835
+  }
+]

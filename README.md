@@ -6,14 +6,22 @@ representations remain useful after rotations.
 **Current implementation: trained offline positioning and early-recruitment
 components.** Firestone supplies combat simulation; a pinned HSBRSIM/hsrl2 bridge
 executes finite-budget recruit commands against a rebuilt current-card database.
-The recruitment model chooses a first action followed by a fixed heuristic;
-it is not yet a complete eight-player self-play agent. Unsupported transitions
+The new recruitment pilot acts at every decision through two recruit turns and
+two sampled combats; it has not beaten the practical heuristic. Earlier
+first-action models are also preserved. This is not yet a complete eight-player
+self-play agent. Unsupported transitions
 stop the affected rollout instead of becoming silent no-ops.
 
-**Corrected positioning result:** the learned-proposal + simulation-search policy
-gains **1.07 percentage points of combat score** over the strongest tested
-heuristic on 1,000 frozen synthetic scenarios (95% interval: 0.79–1.37 points).
-The neural model alone does not establish an advantage. A Mech alias bug meant
+**New corrected-pool positioning result:** on 800 new test scenarios, the
+learned-proposal + simulation-search policy gains **1.43 percentage points of
+combat score** over the strongest tested heuristic (95% interval: 1.11–1.76).
+That is the warm-start arm; the separately trained scratch arm gains 1.33 points.
+Their direct comparison does not establish an advantage from warm-starting or
+faster adaptation. All 138 eligible minions occur in the new dataset. See
+[the completed experiment and both checkpoints](docs/positioning-transfer-results.md).
+
+The earlier audit found a 1.07-point hybrid gain on 1,000 frozen scenarios.
+The neural model alone did not establish an advantage. A Mech alias bug meant
 the old data covered 123 distinct minions, not all 138 nominally eligible minions.
 Corrected adapter semantics are versioned separately; 3,651,584 fresh combats
 confirmed the restricted hybrid result without retraining or changing choices.
@@ -31,6 +39,15 @@ boards. See
 [recruitment results](docs/recruit-curriculum.md) and
 [transfer results and action-selection limitations](docs/opening-transfer.md).
 
+The new [two-turn recruitment pilot](docs/two-turn-recruit-pilot.md) retained
+33 of 40 complete training trajectories and observed all 22 Tier-1 minions and
+eight Tier-1 spells. Its learned policy scored 36.61% against 44.64% for the
+practical heuristic on 14 supported paired test episodes. The small pilot
+does **not** establish a recruitment advantage. It exposed repeated Freeze
+decisions while confirming zero action-budget violations. The next declared
+experiment collects states reached by that policy and retains practical
+counterfactual continuations to teach complete buy-and-play sequences.
+
 ## Current ruleset
 
 Snapshot: **5 September 2026, patch 36.4.2.251332, Season 14**. Dark Gifts,
@@ -47,6 +64,10 @@ hero-generated exceptions still require separate handlers.
   Tier-1 spells**, filtered to the lobby's five tribes. All have tested play paths;
   explicit contextual and later-turn limits still apply. The completed v2
   recruitment model was trained on a smaller pool, with five minions observed.
+- The [two-turn bridge](docs/opening-transition.md) now preserves actual frozen
+  shops, hands, buffs, deferred income and remaining action budgets through
+  sampled combat. Tier-2 next-turn shops and other recorded frontiers still
+  prevent full-game training.
 - Source data and engine correctness have separate gates. An unresolved Trinket
   source discrepancy and incomplete recruitment mechanics block full-game training.
 - Tokens, goldens, and other reference definitions are retained for correct
@@ -175,10 +196,12 @@ upstream baseline; the extension documents describe the subsequent repairs:
 - [Triple rules](docs/core-recruit-rules.md) and [Battlecries](docs/battlecry-migration.md)
 - [Current effects](docs/current-effect-extensions.md), [hero powers](docs/hero-power-extensions.md), and [Trinkets](docs/trinket-integration.md)
 
-The [bounded GitHub training workflow](docs/training-job.md) declares a corrected
-8,000-scenario positioning experiment comparing scratch and warm starts. It
-saves all outputs as Actions artifacts, checks live sources, and stops within
-a fixed runtime. It does not automatically promote a model.
+The [completed GitHub positioning workflow](docs/training-job.md) trained both
+arms on 8,000 corrected-pool scenarios. All results are now committed. The
+[next bounded two-turn experiment](docs/two-turn-training-job.md) uses the pilot's
+policy to collect new states, checks live sources, preserves partial and complete
+outputs, and stops within a fixed runtime. Neither workflow automatically
+promotes a model or schedules an endless training loop.
 
 The next milestone is a validated current-ruleset recruit bridge with complete
 legal actions and persistent combat effects, followed by masked actor-critic

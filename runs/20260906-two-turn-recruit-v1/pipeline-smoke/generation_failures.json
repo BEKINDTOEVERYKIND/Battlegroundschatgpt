@@ -1,0 +1,23 @@
+[
+  {
+    "index": 2,
+    "seed": 9020262924,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 76
+  },
+  {
+    "index": 5,
+    "seed": 9020265951,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 196
+  },
+  {
+    "index": 6,
+    "seed": 9020266960,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 20
+  }
+]

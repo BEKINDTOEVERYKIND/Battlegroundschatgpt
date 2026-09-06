@@ -1,0 +1,99 @@
+{
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "full_game_ready": false,
+  "policy_promoted": false,
+  "training_trajectory_attempts": 10,
+  "accepted_training_trajectories": 4,
+  "trajectory_splits": {
+    "validation": 2,
+    "train": 2
+  },
+  "decision_splits": {
+    "validation": 69,
+    "train": 50
+  },
+  "generation_failures": 6,
+  "generation_failure_reasons": {
+    "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout": 6
+  },
+  "available_pool": {
+    "minions": 22,
+    "spells": 8
+  },
+  "accepted_own_observation_coverage": {
+    "minions": [
+      "BG23_000",
+      "BG25_013",
+      "BG26_135",
+      "BG26_146",
+      "BG29_611",
+      "BG29_888",
+      "BG31_330",
+      "BG31_803",
+      "BG32_236",
+      "BG32_330",
+      "BG36_200",
+      "BG36_345",
+      "BGS_004",
+      "BGS_127"
+    ],
+    "spells": [
+      "BG28_503",
+      "BG28_504",
+      "BG28_512",
+      "BG28_810",
+      "BG28_966",
+      "BG33_101"
+    ]
+  },
+  "evaluation_episodes": 1,
+  "evaluation_attempts": 2,
+  "evaluation_failures": [
+    {
+      "seed": 9030260907,
+      "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+      "failed_policy": "model",
+      "failed_sample": 0,
+      "completed_policy_names": []
+    }
+  ],
+  "objective": "mean of first and second sampled combat scores: win1, tie0.5, loss0",
+  "scores": {
+    "model": 0.25,
+    "practical_heuristic": 0.5
+  },
+  "paired_model_minus_practical": {
+    "mean_delta": -0.25,
+    "ci95": [
+      -0.25,
+      -0.25
+    ]
+  },
+  "bootstrap": {
+    "unit": "complete paired episode, averaging samples first",
+    "samples": 10000,
+    "seed": 86028121
+  },
+  "generation_sampled_combats_including_rejections": 6280,
+  "evaluation_sampled_combats_including_rejections": 20,
+  "timing_budget_violations": 0,
+  "model_action_counts": {
+    "buy": 2,
+    "play": 2,
+    "end_turn": 1,
+    "freeze": 12
+  },
+  "checkpoint_sha256": "cf8471a085791019c4b9c2bc611512a9e33ecc22f7a8b1123be82c99d6e5c83f",
+  "elapsed_seconds": 93.95599579811096,
+  "limitations": [
+    "Small noisy engineering pilot, no measured full-game strength or MMR",
+    "Only two turns; no valuation beyond second combat, including second-turn tier upgrades",
+    "All players Patchwerk; fixed declared pairings; opponents use a practical heuristic",
+    "Synthetic turn times; one command/sec plus configured costs and five-second reserve",
+    "One fitted iteration with declared practical continuation; full-policy evaluation may shift state distribution",
+    "Visible temporary enchantment duration flags are not encoded; equal current stats can alias different next-turn persistence",
+    "Conditional supported-trajectory sample; complete rejection counts reported, no policy promoted",
+    "Tier-2 next-turn shops, ordinary triples and unverified contextual effects remain explicit engine frontiers"
+  ],
+  "current_snapshot_verified": false
+}
