@@ -1,0 +1,132 @@
+{
+  "config": {
+    "experiment": "20260905-corrected-positioning-transfer-v1",
+    "adapter_version": "firestone-combat-v2-tribes",
+    "scenarios": 8000,
+    "candidates": 12,
+    "label_trials": 128,
+    "evaluation_trials": 1024,
+    "epochs": 40,
+    "hidden": 32,
+    "seed": 202609057,
+    "model_seed": 17,
+    "workers": 4,
+    "warm_start": "runs/20260905-positioning-v2/selected_positioning.json",
+    "warm_start_sha256": "0132751247476b07b9f9d779d04e3e9773bac6fdf39303d94c2f3fb2bf4cf3f7"
+  },
+  "config_sha256": "1181a207e5d26aa7902e992ea2827795c4216cfb2478f2c83beca3616924b35d",
+  "source_commit": "e8a05aa3ab467304fa8901b430a184937e43aab6",
+  "github_run_id": "33969375049",
+  "commands": [
+    [
+      "generate",
+      [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "scripts/train_positioning.py",
+        "--adapter-version",
+        "firestone-combat-v2-tribes",
+        "--count",
+        "8000",
+        "--candidates",
+        "12",
+        "--trials",
+        "128",
+        "--eval-trials",
+        "1024",
+        "--epochs",
+        "40",
+        "--hidden",
+        "32",
+        "--workers",
+        "4",
+        "--seed",
+        "202609057",
+        "--model-seed",
+        "17",
+        "--out",
+        "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/generation",
+        "--only-generate"
+      ]
+    ],
+    [
+      "scratch",
+      [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "scripts/train_positioning.py",
+        "--adapter-version",
+        "firestone-combat-v2-tribes",
+        "--count",
+        "8000",
+        "--candidates",
+        "12",
+        "--trials",
+        "128",
+        "--eval-trials",
+        "1024",
+        "--epochs",
+        "40",
+        "--hidden",
+        "32",
+        "--workers",
+        "4",
+        "--seed",
+        "202609057",
+        "--model-seed",
+        "17",
+        "--out",
+        "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch",
+        "--data",
+        "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/generation/positions.jsonl"
+      ]
+    ],
+    [
+      "warm",
+      [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "scripts/train_positioning.py",
+        "--adapter-version",
+        "firestone-combat-v2-tribes",
+        "--count",
+        "8000",
+        "--candidates",
+        "12",
+        "--trials",
+        "128",
+        "--eval-trials",
+        "1024",
+        "--epochs",
+        "40",
+        "--hidden",
+        "32",
+        "--workers",
+        "4",
+        "--seed",
+        "202609057",
+        "--model-seed",
+        "17",
+        "--out",
+        "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/warm",
+        "--data",
+        "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/generation/positions.jsonl",
+        "--warm-start",
+        "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/runs/20260905-positioning-v2/selected_positioning.json"
+      ]
+    ]
+  ],
+  "status": "completed",
+  "completed_stages": [
+    {
+      "stage": "generate",
+      "seconds": 1351.0502940430001
+    },
+    {
+      "stage": "scratch",
+      "seconds": 687.2447469870001
+    },
+    {
+      "stage": "warm",
+      "seconds": 676.7469405450001
+    }
+  ],
+  "elapsed_seconds": 2715.130022374
+}

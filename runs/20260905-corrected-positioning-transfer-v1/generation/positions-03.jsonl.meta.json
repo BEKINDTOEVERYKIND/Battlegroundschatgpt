@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "adapterVersion": "firestone-combat-v2-tribes",
+  "datasetSchemaVersion": 2,
+  "attempted": 2000,
+  "written": 2000,
+  "rejected": 0,
+  "combats": 3072000,
+  "trials": 128,
+  "candidates": 12,
+  "seed": 202609057,
+  "start": 6000,
+  "split": "auto",
+  "engine": "1.1.750",
+  "referencePackage": "3.0.196",
+  "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "datasetSha256": "9edd533884350527ade5871b2fc02dba88486213face95d65d412a533337b2d9",
+  "elapsedSeconds": 1327.458,
+  "source": "synthetic_current_pool_combat",
+  "failures": []
+}

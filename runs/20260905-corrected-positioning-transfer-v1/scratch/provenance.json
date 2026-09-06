@@ -1,0 +1,433 @@
+{
+  "schema_version": 1,
+  "scope": "positioning",
+  "ruleset_id": "battlegrounds-solo-36.4.2.251332-20260905",
+  "ruleset_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "dataset_sha256": "7219a45fd849ef9c8e1013ea62c879b487d6d188c17509258eebaeb3a18b556a",
+  "patch": "36.4.2",
+  "build": 251332,
+  "source_verified_at": "2026-09-05T00:00:00Z",
+  "reference_checksums": {
+    "dark_gift_offering_rules.json": "10faf454300a2f834f1462c4f0f7bffcfd71854104648a0a9a25ce0d7ac1241b",
+    "reference_cards.json": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+    "source/CardDefs.Bacon.xml.gz": "eaffc679c8bcde8c9b009f4d286f462dd2e089b798807ce4b9588266bec1a7c3",
+    "source/firestone_enums.json": "f79f1e1096061bedb6bf3668c97fd71fb8dd6b352abb1b60801e505dfaedf14e",
+    "source/gallery_darkGift.json": "d780bd2cd48ae56a0ccf41ed6f57ef54912de651fdb671244f51c06d3a988916",
+    "source/gallery_hero.json": "0ce093a866b0c67886ed544adaf3d74637774dfefd2625732a19606283b4960e",
+    "source/gallery_minion.json": "5b8d0a8eefd4c96785e19ae42759013ed0d7d29f5c07ec72de65ac8c70b915a7",
+    "source/gallery_spell.json": "df777ecc1a34492a267dfdc95eb4a689bf52fff3d5299ac4c60523ce72013499",
+    "source/gallery_trinket.json": "85e82fa6406a7af7d7c7a8ed96ab241e7fe1c2d426ca370fea8812627bfcec0c",
+    "source_discrepancies.json": "d2152db532e7ba762f419b420905ecbd2528d7fc70e549e7d695eb660be3de0a"
+  },
+  "limitations": [
+    "Positioning on the generated state distribution, not full-game self-play",
+    "No human MMR or real-world win-rate claim"
+  ],
+  "generation": {
+    "schemaVersion": 2,
+    "adapterVersion": "firestone-combat-v2-tribes",
+    "datasetSchemaVersion": 2,
+    "attempted": 8000,
+    "written": 8000,
+    "rejected": 0,
+    "combats": 12288000,
+    "trials": 128,
+    "candidates": 12,
+    "seed": 202609057,
+    "start": 0,
+    "split": "auto",
+    "engine": "1.1.750",
+    "referencePackage": "3.0.196",
+    "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+    "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+    "datasetSha256": "7219a45fd849ef9c8e1013ea62c879b487d6d188c17509258eebaeb3a18b556a",
+    "elapsedSeconds": 1342.5751421451569,
+    "source": "synthetic_current_pool_combat",
+    "failures": [],
+    "workers": 4,
+    "shards": [
+      {
+        "schemaVersion": 2,
+        "adapterVersion": "firestone-combat-v2-tribes",
+        "datasetSchemaVersion": 2,
+        "attempted": 2000,
+        "written": 2000,
+        "rejected": 0,
+        "combats": 3072000,
+        "trials": 128,
+        "candidates": 12,
+        "seed": 202609057,
+        "start": 0,
+        "split": "auto",
+        "engine": "1.1.750",
+        "referencePackage": "3.0.196",
+        "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+        "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+        "datasetSha256": "dbed9bc7d32549b720de49e40a34e42b11fc2065330595dfcca8880da577672b",
+        "elapsedSeconds": 1334.362,
+        "source": "synthetic_current_pool_combat",
+        "failures": []
+      },
+      {
+        "schemaVersion": 2,
+        "adapterVersion": "firestone-combat-v2-tribes",
+        "datasetSchemaVersion": 2,
+        "attempted": 2000,
+        "written": 2000,
+        "rejected": 0,
+        "combats": 3072000,
+        "trials": 128,
+        "candidates": 12,
+        "seed": 202609057,
+        "start": 2000,
+        "split": "auto",
+        "engine": "1.1.750",
+        "referencePackage": "3.0.196",
+        "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+        "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+        "datasetSha256": "2d415a14beb7f8947e9badba2fb6437d0a9e41879808978cd11a5015d81d5352",
+        "elapsedSeconds": 1338.289,
+        "source": "synthetic_current_pool_combat",
+        "failures": []
+      },
+      {
+        "schemaVersion": 2,
+        "adapterVersion": "firestone-combat-v2-tribes",
+        "datasetSchemaVersion": 2,
+        "attempted": 2000,
+        "written": 2000,
+        "rejected": 0,
+        "combats": 3072000,
+        "trials": 128,
+        "candidates": 12,
+        "seed": 202609057,
+        "start": 4000,
+        "split": "auto",
+        "engine": "1.1.750",
+        "referencePackage": "3.0.196",
+        "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+        "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+        "datasetSha256": "5f67eb73c6e16aadd64b673426ad0cf9a7f84179f4f796900e92ef68a72e74c2",
+        "elapsedSeconds": 1341.439,
+        "source": "synthetic_current_pool_combat",
+        "failures": []
+      },
+      {
+        "schemaVersion": 2,
+        "adapterVersion": "firestone-combat-v2-tribes",
+        "datasetSchemaVersion": 2,
+        "attempted": 2000,
+        "written": 2000,
+        "rejected": 0,
+        "combats": 3072000,
+        "trials": 128,
+        "candidates": 12,
+        "seed": 202609057,
+        "start": 6000,
+        "split": "auto",
+        "engine": "1.1.750",
+        "referencePackage": "3.0.196",
+        "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+        "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+        "datasetSha256": "9edd533884350527ade5871b2fc02dba88486213face95d65d412a533337b2d9",
+        "elapsedSeconds": 1327.458,
+        "source": "synthetic_current_pool_combat",
+        "failures": []
+      }
+    ]
+  },
+  "adapter_version": "firestone-combat-v2-tribes",
+  "model_seed": 17,
+  "checkpoint_sha256": "166374d07f2cb996e6d3c5bf2c93dbaa84624ca598ef7b789b7331016d1d2fdc",
+  "warm_start_sha256": null,
+  "elapsed_seconds": 680.9792416095734,
+  "commands": [
+    [
+      "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+      "-m",
+      "bg_ai.learning",
+      "train",
+      "--data",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/generation/positions.jsonl",
+      "--checkpoint",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/positioning.json",
+      "--epochs",
+      "40",
+      "--hidden",
+      "32",
+      "--seed",
+      "17",
+      "--objective",
+      "gap-weighted",
+      "--tie-tolerance",
+      "0.02",
+      "--report",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/training.json"
+    ],
+    [
+      "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+      "scripts/select_positions.py",
+      "--data",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/generation/positions.jsonl",
+      "--checkpoint",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/positioning.json",
+      "--split",
+      "test",
+      "--out",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/neural_selections.jsonl"
+    ],
+    [
+      "node",
+      "scripts/refine_positions.mjs",
+      "--input",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/generation/positions.jsonl",
+      "--proposals",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/neural_selections.jsonl",
+      "--adapter-version",
+      "firestone-combat-v2-tribes",
+      "--out",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/frozen_selections.jsonl"
+    ],
+    [
+      "node",
+      "scripts/evaluate_positions.mjs",
+      "--input",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/generation/positions.jsonl",
+      "--selections",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/frozen_selections.jsonl",
+      "--trials",
+      "1024",
+      "--seed",
+      "982451653",
+      "--adapter-version",
+      "firestone-combat-v2-tribes",
+      "--out",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/fresh_evaluation.jsonl"
+    ],
+    [
+      "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+      "scripts/report_fresh_evaluation.py",
+      "--input",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/fresh_evaluation.jsonl",
+      "--selections",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/frozen_selections.jsonl",
+      "--out",
+      "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/training-output/scratch/evaluation.json"
+    ]
+  ],
+  "fresh_evaluation_sha256": "97e93a4f432bc8ad15e2dc321221db1218050731de90194f2ea63ba098c0c136",
+  "evaluation_report_sha256": "7a3eda9235a1996726233ef88f9f9afc8468ced38cd02398e77de45c521da176",
+  "dataset_archive": {
+    "format": "gzip-jsonl",
+    "compressed_file": "positions.jsonl.gz",
+    "compressed_sha256": "e162427cf05e765cf09c16f2f7d1397977f8d9ed43e2a7432c6d7b94ad84ba56",
+    "uncompressed_file": "positions.jsonl",
+    "uncompressed_sha256": "7219a45fd849ef9c8e1013ea62c879b487d6d188c17509258eebaeb3a18b556a",
+    "uncompressed_bytes": 250611967,
+    "compressed_bytes": 9292702
+  },
+  "live_preflight": {
+    "schema_version": 1,
+    "status": "current_sources_match",
+    "current": true,
+    "checked_at": "2026-09-05T13:59:09.186148+00:00",
+    "network_checked": true,
+    "sources": {
+      "client_version": {
+        "url": "https://raw.githubusercontent.com/HearthSim/hsdata/master/README.md",
+        "expected": {
+          "version": "36.4.2.251332"
+        },
+        "observed": {
+          "version": "36.4.2.251332"
+        },
+        "status": "matched"
+      },
+      "known_issues": {
+        "url": "https://us.forums.blizzard.com/en/hearthstone/t/153567.json",
+        "expected": {
+          "cooked_sha256": "a693f330d4d7673b76aa97aae89c31b654a4366dab72085dea044240e4f6c580",
+          "post_id": 1194899,
+          "post_number": 1,
+          "topic_id": 153567,
+          "topic_title": ":fire: 36.4 - Highlights & Known Issues",
+          "updated_at": "2026-09-03T19:40:34.220Z",
+          "username": "Vyraneer"
+        },
+        "observed": {
+          "topic_id": 153567,
+          "topic_title": ":fire: 36.4 - Highlights & Known Issues",
+          "post_id": 1194899,
+          "post_number": 1,
+          "username": "Vyraneer",
+          "updated_at": "2026-09-03T19:40:34.220Z",
+          "cooked_sha256": "a693f330d4d7673b76aa97aae89c31b654a4366dab72085dea044240e4f6c580"
+        },
+        "status": "matched"
+      },
+      "gallery_darkGift": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=darkGift&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 43,
+          "semantic_sha256": "186a0bd9892a0b614ccb810c2056639dbf7cfc3fec1481544c7732d258ae751b",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 43,
+          "semantic_sha256": "186a0bd9892a0b614ccb810c2056639dbf7cfc3fec1481544c7732d258ae751b",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      },
+      "gallery_hero": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=hero&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 116,
+          "semantic_sha256": "cc41d724ce446a7b2b7b3146babe6725f10262affaf4e1b8c3ec40956f510a5c",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 116,
+          "semantic_sha256": "cc41d724ce446a7b2b7b3146babe6725f10262affaf4e1b8c3ec40956f510a5c",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      },
+      "gallery_spell": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=spell&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 71,
+          "semantic_sha256": "dfeeb99377c43a1b3ea390fc5360573aab1f70389b29fb2275fd2324b03cd9a3",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 71,
+          "semantic_sha256": "dfeeb99377c43a1b3ea390fc5360573aab1f70389b29fb2275fd2324b03cd9a3",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      },
+      "gallery_minion": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=minion&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 246,
+          "semantic_sha256": "52f31a689210461c3ac29c7b25cf1fc835dc0d80f049e344b694f87454417ce6",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 246,
+          "semantic_sha256": "52f31a689210461c3ac29c7b25cf1fc835dc0d80f049e344b694f87454417ce6",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      }
+    },
+    "failures": [],
+    "guard_sha256": "c8f1dc98a1fe8874311a08883c7ceb55fbb9318bd9d87709e0cf8e89793bcedf",
+    "baseline_reviewed_at": "2026-09-05T09:09:56.250618+00:00",
+    "ruleset_id": "battlegrounds-solo-36.4.2.251332-20260905",
+    "elapsed_seconds": 1.212
+  },
+  "live_postflight": {
+    "schema_version": 1,
+    "status": "current_sources_match",
+    "current": true,
+    "checked_at": "2026-09-05T14:10:34.709381+00:00",
+    "network_checked": true,
+    "sources": {
+      "client_version": {
+        "url": "https://raw.githubusercontent.com/HearthSim/hsdata/master/README.md",
+        "expected": {
+          "version": "36.4.2.251332"
+        },
+        "observed": {
+          "version": "36.4.2.251332"
+        },
+        "status": "matched"
+      },
+      "known_issues": {
+        "url": "https://us.forums.blizzard.com/en/hearthstone/t/153567.json",
+        "expected": {
+          "cooked_sha256": "a693f330d4d7673b76aa97aae89c31b654a4366dab72085dea044240e4f6c580",
+          "post_id": 1194899,
+          "post_number": 1,
+          "topic_id": 153567,
+          "topic_title": ":fire: 36.4 - Highlights & Known Issues",
+          "updated_at": "2026-09-03T19:40:34.220Z",
+          "username": "Vyraneer"
+        },
+        "observed": {
+          "topic_id": 153567,
+          "topic_title": ":fire: 36.4 - Highlights & Known Issues",
+          "post_id": 1194899,
+          "post_number": 1,
+          "username": "Vyraneer",
+          "updated_at": "2026-09-03T19:40:34.220Z",
+          "cooked_sha256": "a693f330d4d7673b76aa97aae89c31b654a4366dab72085dea044240e4f6c580"
+        },
+        "status": "matched"
+      },
+      "gallery_darkGift": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=darkGift&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 43,
+          "semantic_sha256": "186a0bd9892a0b614ccb810c2056639dbf7cfc3fec1481544c7732d258ae751b",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 43,
+          "semantic_sha256": "186a0bd9892a0b614ccb810c2056639dbf7cfc3fec1481544c7732d258ae751b",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      },
+      "gallery_spell": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=spell&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 71,
+          "semantic_sha256": "dfeeb99377c43a1b3ea390fc5360573aab1f70389b29fb2275fd2324b03cd9a3",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 71,
+          "semantic_sha256": "dfeeb99377c43a1b3ea390fc5360573aab1f70389b29fb2275fd2324b03cd9a3",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      },
+      "gallery_hero": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=hero&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 116,
+          "semantic_sha256": "cc41d724ce446a7b2b7b3146babe6725f10262affaf4e1b8c3ec40956f510a5c",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 116,
+          "semantic_sha256": "cc41d724ce446a7b2b7b3146babe6725f10262affaf4e1b8c3ec40956f510a5c",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      },
+      "gallery_minion": {
+        "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=minion&pageSize=450&page=1&locale=en_US",
+        "expected": {
+          "card_count": 246,
+          "semantic_sha256": "52f31a689210461c3ac29c7b25cf1fc835dc0d80f049e344b694f87454417ce6",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "observed": {
+          "card_count": 246,
+          "semantic_sha256": "52f31a689210461c3ac29c7b25cf1fc835dc0d80f049e344b694f87454417ce6",
+          "semantic_version": "gallery-semantic-v1"
+        },
+        "status": "matched"
+      }
+    },
+    "failures": [],
+    "guard_sha256": "c8f1dc98a1fe8874311a08883c7ceb55fbb9318bd9d87709e0cf8e89793bcedf",
+    "baseline_reviewed_at": "2026-09-05T09:09:56.250618+00:00",
+    "ruleset_id": "battlegrounds-solo-36.4.2.251332-20260905",
+    "elapsed_seconds": 1.627
+  }
+}

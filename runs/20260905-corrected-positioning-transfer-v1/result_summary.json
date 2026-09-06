@@ -1,0 +1,150 @@
+{
+  "comparison": {
+    "interpretation": "No automatic model promotion; equal epoch counts do not establish faster adaptation.",
+    "mean_scores": {
+      "scratch": 0.5302593994140625,
+      "warm": 0.5312811279296875
+    },
+    "policies": "both use learned proposals plus identical finite simulation search",
+    "scenarios": 800,
+    "scope": "corrected-pool positioning transfer; not a subsequent rotation or full-game test",
+    "warm_minus_scratch": {
+      "ci95": [
+        -0.00125738525390625,
+        0.003266006469726562
+      ],
+      "mean": 0.001021728515625,
+      "scenarios": 800
+    }
+  },
+  "completed_stages": [
+    {
+      "seconds": 1351.0502940430001,
+      "stage": "generate"
+    },
+    {
+      "seconds": 687.2447469870001,
+      "stage": "scratch"
+    },
+    {
+      "seconds": 676.7469405450001,
+      "stage": "warm"
+    }
+  ],
+  "elapsed_seconds": 2715.130022374,
+  "evaluation": {
+    "scratch": {
+      "evaluated_policy": "neural_proposals_plus_simulation_search",
+      "results": {
+        "test": {
+          "mean_scores": {
+            "attack": 0.516971435546875,
+            "health": 0.5105255126953125,
+            "model": 0.5302593994140625,
+            "random": 0.4887713623046875,
+            "taunt_last": 0.5165899658203125
+          },
+          "paired_model_minus_baseline": {
+            "attack": {
+              "ci95": [
+                0.010052444458007811,
+                0.016754867553710934
+              ],
+              "mean": 0.0132879638671875,
+              "scenarios": 800
+            },
+            "health": {
+              "ci95": [
+                0.016232284545898437,
+                0.023374191284179682
+              ],
+              "mean": 0.01973388671875,
+              "scenarios": 800
+            },
+            "random": {
+              "ci95": [
+                0.03619563293457031,
+                0.04699711608886719
+              ],
+              "mean": 0.041488037109375,
+              "scenarios": 800
+            },
+            "taunt_last": {
+              "ci95": [
+                0.010335678100585938,
+                0.0172723388671875
+              ],
+              "mean": 0.01366943359375,
+              "scenarios": 800
+            }
+          },
+          "positioning_benchmark_gate": {
+            "eligible_final_test": true,
+            "passes": true,
+            "rule": "At least 30 final test scenarios and positive lower 95% paired CI against every predeclared baseline",
+            "status": "benchmark_advantage"
+          },
+          "scenario_count": 800
+        }
+      },
+      "scope": "combat positioning on generated legal-pool boards; not full-game playing strength"
+    },
+    "warm": {
+      "evaluated_policy": "neural_proposals_plus_simulation_search",
+      "results": {
+        "test": {
+          "mean_scores": {
+            "attack": 0.516971435546875,
+            "health": 0.5105255126953125,
+            "model": 0.5312811279296875,
+            "random": 0.4887713623046875,
+            "taunt_last": 0.5165899658203125
+          },
+          "paired_model_minus_baseline": {
+            "attack": {
+              "ci95": [
+                0.011132156372070311,
+                0.01763681030273437
+              ],
+              "mean": 0.0143096923828125,
+              "scenarios": 800
+            },
+            "health": {
+              "ci95": [
+                0.0171575927734375,
+                0.024482452392578125
+              ],
+              "mean": 0.020755615234375,
+              "scenarios": 800
+            },
+            "random": {
+              "ci95": [
+                0.03724609375,
+                0.0479864501953125
+              ],
+              "mean": 0.042509765625,
+              "scenarios": 800
+            },
+            "taunt_last": {
+              "ci95": [
+                0.011391525268554687,
+                0.018178131103515623
+              ],
+              "mean": 0.014691162109375,
+              "scenarios": 800
+            }
+          },
+          "positioning_benchmark_gate": {
+            "eligible_final_test": true,
+            "passes": true,
+            "rule": "At least 30 final test scenarios and positive lower 95% paired CI against every predeclared baseline",
+            "status": "benchmark_advantage"
+          },
+          "scenario_count": 800
+        }
+      },
+      "scope": "combat positioning on generated legal-pool boards; not full-game playing strength"
+    }
+  },
+  "interpretation": "Completed positioning experiment only; no automatic model promotion or full-game strength claim."
+}

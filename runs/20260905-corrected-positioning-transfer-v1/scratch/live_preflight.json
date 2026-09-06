@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "status": "current_sources_match",
+  "current": true,
+  "checked_at": "2026-09-05T13:59:09.186148+00:00",
+  "network_checked": true,
+  "sources": {
+    "client_version": {
+      "url": "https://raw.githubusercontent.com/HearthSim/hsdata/master/README.md",
+      "expected": {
+        "version": "36.4.2.251332"
+      },
+      "observed": {
+        "version": "36.4.2.251332"
+      },
+      "status": "matched"
+    },
+    "known_issues": {
+      "url": "https://us.forums.blizzard.com/en/hearthstone/t/153567.json",
+      "expected": {
+        "cooked_sha256": "a693f330d4d7673b76aa97aae89c31b654a4366dab72085dea044240e4f6c580",
+        "post_id": 1194899,
+        "post_number": 1,
+        "topic_id": 153567,
+        "topic_title": ":fire: 36.4 - Highlights & Known Issues",
+        "updated_at": "2026-09-03T19:40:34.220Z",
+        "username": "Vyraneer"
+      },
+      "observed": {
+        "topic_id": 153567,
+        "topic_title": ":fire: 36.4 - Highlights & Known Issues",
+        "post_id": 1194899,
+        "post_number": 1,
+        "username": "Vyraneer",
+        "updated_at": "2026-09-03T19:40:34.220Z",
+        "cooked_sha256": "a693f330d4d7673b76aa97aae89c31b654a4366dab72085dea044240e4f6c580"
+      },
+      "status": "matched"
+    },
+    "gallery_darkGift": {
+      "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=darkGift&pageSize=450&page=1&locale=en_US",
+      "expected": {
+        "card_count": 43,
+        "semantic_sha256": "186a0bd9892a0b614ccb810c2056639dbf7cfc3fec1481544c7732d258ae751b",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "observed": {
+        "card_count": 43,
+        "semantic_sha256": "186a0bd9892a0b614ccb810c2056639dbf7cfc3fec1481544c7732d258ae751b",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "status": "matched"
+    },
+    "gallery_hero": {
+      "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=hero&pageSize=450&page=1&locale=en_US",
+      "expected": {
+        "card_count": 116,
+        "semantic_sha256": "cc41d724ce446a7b2b7b3146babe6725f10262affaf4e1b8c3ec40956f510a5c",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "observed": {
+        "card_count": 116,
+        "semantic_sha256": "cc41d724ce446a7b2b7b3146babe6725f10262affaf4e1b8c3ec40956f510a5c",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "status": "matched"
+    },
+    "gallery_spell": {
+      "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=spell&pageSize=450&page=1&locale=en_US",
+      "expected": {
+        "card_count": 71,
+        "semantic_sha256": "dfeeb99377c43a1b3ea390fc5360573aab1f70389b29fb2275fd2324b03cd9a3",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "observed": {
+        "card_count": 71,
+        "semantic_sha256": "dfeeb99377c43a1b3ea390fc5360573aab1f70389b29fb2275fd2324b03cd9a3",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "status": "matched"
+    },
+    "gallery_minion": {
+      "url": "https://hearthstone.blizzard.com/en-us/api/cards?gameMode=battlegrounds&bgGameMode=solos&bgCardType=minion&pageSize=450&page=1&locale=en_US",
+      "expected": {
+        "card_count": 246,
+        "semantic_sha256": "52f31a689210461c3ac29c7b25cf1fc835dc0d80f049e344b694f87454417ce6",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "observed": {
+        "card_count": 246,
+        "semantic_sha256": "52f31a689210461c3ac29c7b25cf1fc835dc0d80f049e344b694f87454417ce6",
+        "semantic_version": "gallery-semantic-v1"
+      },
+      "status": "matched"
+    }
+  },
+  "failures": [],
+  "guard_sha256": "c8f1dc98a1fe8874311a08883c7ceb55fbb9318bd9d87709e0cf8e89793bcedf",
+  "baseline_reviewed_at": "2026-09-05T09:09:56.250618+00:00",
+  "ruleset_id": "battlegrounds-solo-36.4.2.251332-20260905",
+  "elapsed_seconds": 1.212
+}

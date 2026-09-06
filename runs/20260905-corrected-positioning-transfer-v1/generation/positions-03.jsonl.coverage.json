@@ -1,0 +1,3022 @@
+{
+  "adapterVersion": "firestone-combat-v2-tribes",
+  "datasetSchemaVersion": 2,
+  "engine": "1.1.750",
+  "referencePackage": "3.0.196",
+  "cardsSha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "rulesetSha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "activeMinions": 246,
+  "note": "A mapped handler is evidence of implementation, not a guarantee of correct behavior. Recruit-only effects may need no combat handler.",
+  "rows": [
+    {
+      "id": "BG20_100",
+      "name": "Razorfen Geomancer",
+      "techLevel": 1,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG20_101",
+      "name": "Roadboar",
+      "techLevel": 2,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG20_104",
+      "name": "Bonker",
+      "techLevel": 4,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY",
+        "WINDFURY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG21_004",
+      "name": "Insatiable Ur'zul",
+      "techLevel": 5,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "TAUNT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG21_015",
+      "name": "Tarecgosa",
+      "techLevel": 2,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG22_202",
+      "name": "Tad",
+      "techLevel": 2,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG23_000",
+      "name": "Mini-Myrmidon",
+      "techLevel": 1,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG23_002",
+      "name": "Shell Collector",
+      "techLevel": 2,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG23_004",
+      "name": "Deep-Sea Angler",
+      "techLevel": 3,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG23_007",
+      "name": "Waverider",
+      "techLevel": 3,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG23_008",
+      "name": "Glowscale",
+      "techLevel": 5,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "TAUNT"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG23_009",
+      "name": "Lava Lurker",
+      "techLevel": 2,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG23_017",
+      "name": "Sanguine Champion",
+      "techLevel": 6,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG23_318",
+      "name": "Leeroy the Reckless",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG23_357",
+      "name": "Mind Muck",
+      "techLevel": 2,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG24_004",
+      "name": "Warpwing",
+      "techLevel": 6,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "IMMUNE_WHILE_ATTACKING"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG24_018",
+      "name": "Tortollan Blue Shell",
+      "techLevel": 4,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG24_500",
+      "name": "Amber Guardian",
+      "techLevel": 3,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "TAUNT"
+      ],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG24_715",
+      "name": "Patient Scout",
+      "techLevel": 2,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG25_001",
+      "name": "Risen Rider",
+      "techLevel": 1,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "REBORN",
+        "TAUNT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG25_008",
+      "name": "Eternal Knight",
+      "techLevel": 2,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG25_009",
+      "name": "Eternal Summoner",
+      "techLevel": 6,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DEATHRATTLE",
+        "REBORN"
+      ],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG25_010",
+      "name": "Handless Forsaken",
+      "techLevel": 3,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG25_011",
+      "name": "Nerubian Deathswarmer",
+      "techLevel": 2,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG25_013",
+      "name": "Rot Hide Gnoll",
+      "techLevel": 1,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG25_016",
+      "name": "Sin'dorei Straight Shot",
+      "techLevel": 4,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY",
+        "DIVINE_SHIELD",
+        "WINDFURY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG25_022",
+      "name": "Scarlet Skull",
+      "techLevel": 2,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE",
+        "REBORN"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG25_034",
+      "name": "Captain Sanders",
+      "techLevel": 7,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG25_354",
+      "name": "Titus Rivendare",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG25_806",
+      "name": "Sly Raptor",
+      "techLevel": 3,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "random summon support closure has not been audited"
+    },
+    {
+      "id": "BG26_135",
+      "name": "Southsea Busker",
+      "techLevel": 1,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_137",
+      "name": "Bream Counter",
+      "techLevel": 4,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG26_146",
+      "name": "Lullabot",
+      "techLevel": 1,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "MAGNETIC"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_147",
+      "name": "Accord-o-Tron",
+      "techLevel": 3,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "MAGNETIC"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_148",
+      "name": "Scrap Scraper",
+      "techLevel": 5,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_149",
+      "name": "Polarizing Beatboxer",
+      "techLevel": 7,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG26_152",
+      "name": "Utility Drone",
+      "techLevel": 6,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_162",
+      "name": "Dancing Barnstormer",
+      "techLevel": 5,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG26_174",
+      "name": "Soul Rewinder",
+      "techLevel": 2,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_175",
+      "name": "Elemental of Surprise",
+      "techLevel": 6,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_354",
+      "name": "Choral Mrrrglr",
+      "techLevel": 6,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG26_505",
+      "name": "Zesty Shaker",
+      "techLevel": 4,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG26_523",
+      "name": "Tichondrius",
+      "techLevel": 5,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_524",
+      "name": "Malchezaar, Prince of Dance",
+      "techLevel": 3,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_525",
+      "name": "Imposing Percussionist",
+      "techLevel": 4,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "random summon support closure has not been audited"
+    },
+    {
+      "id": "BG26_802",
+      "name": "Banana Slamma",
+      "techLevel": 4,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_805",
+      "name": "Humming Bird",
+      "techLevel": 2,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_810",
+      "name": "Gunpowder Courier",
+      "techLevel": 4,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG26_814",
+      "name": "Lovesick Balladist",
+      "techLevel": 4,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG26_817",
+      "name": "Blade Collector",
+      "techLevel": 4,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG26_963",
+      "name": "Electric Synthesizer",
+      "techLevel": 2,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG26_ICC_901",
+      "name": "Drakkari Enchanter",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG27_002",
+      "name": "Oozeling Gladiator",
+      "techLevel": 2,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG27_005",
+      "name": "Timecap'n Hooktail",
+      "techLevel": 3,
+      "races": [
+        "DRAGON",
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG27_016",
+      "name": "Champion of Sargeras",
+      "techLevel": 7,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG27_017",
+      "name": "Obsidian Ravager",
+      "techLevel": 7,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG27_080",
+      "name": "Motley Phalanx",
+      "techLevel": 4,
+      "races": [
+        "ALL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE",
+        "TAUNT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG27_084",
+      "name": "Sprightly Scarab",
+      "techLevel": 3,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "CHOOSE_ONE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG27_514",
+      "name": "Sea Witch Zar'jira",
+      "techLevel": 7,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG27_556",
+      "name": "Diremuck Forager",
+      "techLevel": 3,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG28_300",
+      "name": "Harmless Bonehead",
+      "techLevel": 1,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG28_303",
+      "name": "Disguised Graverobber",
+      "techLevel": 3,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG28_309",
+      "name": "Mummifier",
+      "techLevel": 3,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG28_550",
+      "name": "Rodeo Performer",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG28_595",
+      "name": "Ignition Specialist",
+      "techLevel": 6,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG28_633",
+      "name": "Felboar",
+      "techLevel": 5,
+      "races": [
+        "DEMON",
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG28_741",
+      "name": "Charging Czarina",
+      "techLevel": 5,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG29_300",
+      "name": "Very Hungry Winterfinner",
+      "techLevel": 2,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "TAUNT"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG29_503",
+      "name": "Clunker Junker",
+      "techLevel": 4,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG29_611",
+      "name": "Cord Puller",
+      "techLevel": 1,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DEATHRATTLE",
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG29_810",
+      "name": "Thousandth Paper Drake",
+      "techLevel": 2,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG29_813",
+      "name": "Persistent Poet",
+      "techLevel": 4,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG29_816",
+      "name": "Roaring Recruiter",
+      "techLevel": 3,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG29_888",
+      "name": "Glim Guardian",
+      "techLevel": 1,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG30_123",
+      "name": "Fearless Foodie",
+      "techLevel": 3,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "CHOOSE_ONE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG30_125",
+      "name": "Cadaver Caretaker",
+      "techLevel": 3,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_035",
+      "name": "Groundbreaker",
+      "techLevel": 6,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_177",
+      "name": "Mechagnome Interpreter",
+      "techLevel": 2,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_320",
+      "name": "Crater Miner",
+      "techLevel": 2,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "CHOOSE_ONE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_323",
+      "name": "Turbo Hogrider",
+      "techLevel": 6,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_326",
+      "name": "Gem Rat",
+      "techLevel": 3,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_327",
+      "name": "Thorned Trailblazer",
+      "techLevel": 4,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_330",
+      "name": "Ominous Seer",
+      "techLevel": 1,
+      "races": [
+        "DEMON",
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_801",
+      "name": "Forest Rover",
+      "techLevel": 2,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_803",
+      "name": "Buzzing Vermin",
+      "techLevel": 1,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE",
+        "TAUNT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_809",
+      "name": "Turquoise Skitterer",
+      "techLevel": 5,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_816",
+      "name": "Fire Baller",
+      "techLevel": 2,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_818",
+      "name": "Snow Baller",
+      "techLevel": 2,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_824",
+      "name": "Dual-Wield Corsair",
+      "techLevel": 5,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG31_835",
+      "name": "Deathly Striker",
+      "techLevel": 6,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "AVENGE",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_843",
+      "name": "Meteorite Crasher",
+      "techLevel": 3,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG31_920",
+      "name": "Darkcrest Strategist",
+      "techLevel": 5,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_924",
+      "name": "Thaumaturgist",
+      "techLevel": 2,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_925",
+      "name": "Showy Cyclist",
+      "techLevel": 5,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG31_999",
+      "name": "Stitched Salvager",
+      "techLevel": 7,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG32_111",
+      "name": "Nightmare Par-tea Guest",
+      "techLevel": 5,
+      "races": [
+        "ALL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_170",
+      "name": "Metallic Hunter",
+      "techLevel": 2,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_172",
+      "name": "Auto Assembler",
+      "techLevel": 4,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE",
+        "MAGNETIC"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_235",
+      "name": "Surfing Sylvar",
+      "techLevel": 2,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_236",
+      "name": "Aureate Laureate",
+      "techLevel": 1,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_237",
+      "name": "Intrepid Botanist",
+      "techLevel": 2,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "CHOOSE_ONE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG32_324",
+      "name": "Drustfallen Butcher",
+      "techLevel": 5,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "AVENGE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_330",
+      "name": "Flighty Scout",
+      "techLevel": 1,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG32_340",
+      "name": "Maw Caster",
+      "techLevel": 4,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "random summon support closure has not been audited"
+    },
+    {
+      "id": "BG32_341",
+      "name": "Humon'gozz",
+      "techLevel": 4,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "AURA",
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG32_820",
+      "name": "Firescale Hoarder",
+      "techLevel": 5,
+      "races": [
+        "DRAGON",
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_821",
+      "name": "Felfire Conjurer",
+      "techLevel": 5,
+      "races": [
+        "DEMON",
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG32_822",
+      "name": "Fire-forged Evoker",
+      "techLevel": 6,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG32_835",
+      "name": "Tranquil Meditative",
+      "techLevel": 5,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG32_837",
+      "name": "Fauna Whisperer",
+      "techLevel": 6,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_841",
+      "name": "Sand Swirler",
+      "techLevel": 3,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG32_842",
+      "name": "Glowing Cinder",
+      "techLevel": 4,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG32_846",
+      "name": "Unleashed Mana Surge",
+      "techLevel": 6,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_873",
+      "name": "Ashen Corruptor",
+      "techLevel": 4,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG32_880",
+      "name": "Friendly Geist",
+      "techLevel": 4,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_140",
+      "name": "River Skipper",
+      "techLevel": 1,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_155",
+      "name": "Devout Hellcaller",
+      "techLevel": 3,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_318",
+      "name": "Bile Spitter",
+      "techLevel": 5,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY",
+        "VENOMOUS"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_319",
+      "name": "Rimescale Priestess",
+      "techLevel": 4,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_323",
+      "name": "Dustbone Devastator",
+      "techLevel": 3,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_430",
+      "name": "Prodigious Tusker",
+      "techLevel": 2,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_821",
+      "name": "Shipwrecked Rascal",
+      "techLevel": 5,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_822",
+      "name": "Bigwig Bandit",
+      "techLevel": 4,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_823",
+      "name": "Sky Admiral Rogers",
+      "techLevel": 6,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_825",
+      "name": "Proud Privateer",
+      "techLevel": 5,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_830",
+      "name": "Azsharan Cutlassier",
+      "techLevel": 3,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_883",
+      "name": "Razorfen Vineweaver",
+      "techLevel": 5,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_885",
+      "name": "Sanguine Refiner",
+      "techLevel": 5,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_886",
+      "name": "Tusked Camper",
+      "techLevel": 1,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG33_891",
+      "name": "Magicfin Mycologist",
+      "techLevel": 6,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_893",
+      "name": "Primitive Painter",
+      "techLevel": 6,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG33_924",
+      "name": "Blue Whelp",
+      "techLevel": 3,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_140",
+      "name": "Expert Aviator",
+      "techLevel": 2,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG34_142",
+      "name": "Costume Enthusiast",
+      "techLevel": 5,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_145",
+      "name": "Futurefin",
+      "techLevel": 7,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG34_319",
+      "name": "Highkeeper Ra",
+      "techLevel": 7,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY",
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG34_320",
+      "name": "The Last One Standing",
+      "techLevel": 7,
+      "races": [
+        "ALL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG34_322",
+      "name": "Stalwart Kodo",
+      "techLevel": 7,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG34_500",
+      "name": "Flaming Enforcer",
+      "techLevel": 4,
+      "races": [
+        "DEMON",
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG34_604",
+      "name": "Heroic Underdog",
+      "techLevel": 4,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY",
+        "STEALTH"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG34_633",
+      "name": "Draconic Warden",
+      "techLevel": 5,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG34_682",
+      "name": "Razorfen Flapper",
+      "techLevel": 4,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_683",
+      "name": "Briarback Drummer",
+      "techLevel": 3,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_684",
+      "name": "Trench Fighter",
+      "techLevel": 3,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG34_690",
+      "name": "Plaguerunner",
+      "techLevel": 4,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_692",
+      "name": "Forsaken Weaver",
+      "techLevel": 6,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_856",
+      "name": "Waveling",
+      "techLevel": 3,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_858",
+      "name": "Air Revenant",
+      "techLevel": 5,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG34_865",
+      "name": "En-Djinn Blazer",
+      "techLevel": 4,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG34_925",
+      "name": "Seafloor Recruiter",
+      "techLevel": 4,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG34_950",
+      "name": "Stone Age Slab",
+      "techLevel": 7,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG35_123",
+      "name": "Cataclysmic Harbinger",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG35_140",
+      "name": "Mama Mrrglton",
+      "techLevel": 3,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG35_141",
+      "name": "Papa Mrrglton",
+      "techLevel": 3,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG35_142",
+      "name": "Cousin Errgl",
+      "techLevel": 5,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG35_143",
+      "name": "Deepwater Chieftain",
+      "techLevel": 4,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG35_150",
+      "name": "Laboratory Assistant",
+      "techLevel": 2,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG35_152",
+      "name": "Void Pup Trainer",
+      "techLevel": 5,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG35_155",
+      "name": "Twisted Wrathguard",
+      "techLevel": 6,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG35_341",
+      "name": "Enchanted Sentinel",
+      "techLevel": 4,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "AURA",
+        "MAGNETIC"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG35_342",
+      "name": "Falling Sky Golem",
+      "techLevel": 6,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "AURA",
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG35_602",
+      "name": "Lurking Leviathan",
+      "techLevel": 5,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG35_604",
+      "name": "Sewer Lord",
+      "techLevel": 5,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG35_814",
+      "name": "Scarlet Survivor",
+      "techLevel": 1,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires initial threshold or stat-history reconstruction"
+    },
+    {
+      "id": "BG35_883",
+      "name": "Balinda Stonehearth",
+      "techLevel": 6,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG35_921",
+      "name": "Abyssal Bruiser",
+      "techLevel": 4,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "AURA",
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_180",
+      "name": "Living Prison",
+      "techLevel": 4,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_181",
+      "name": "Air Baller",
+      "techLevel": 4,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_200",
+      "name": "Flittering Bat",
+      "techLevel": 1,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_201",
+      "name": "Lurking Lionfish",
+      "techLevel": 2,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_202",
+      "name": "Tasty Lobster",
+      "techLevel": 3,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG36_204",
+      "name": "Headhunter Gryphon",
+      "techLevel": 4,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "random summon support closure has not been audited"
+    },
+    {
+      "id": "BG36_206",
+      "name": "Snarky Shark",
+      "techLevel": 4,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG36_207",
+      "name": "Wolf Pup",
+      "techLevel": 3,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_208",
+      "name": "Deathstrider",
+      "techLevel": 6,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_209",
+      "name": "Ravaging Scorpid",
+      "techLevel": 6,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_210",
+      "name": "Hoarding Hyena",
+      "techLevel": 4,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_211",
+      "name": "Cage Gnawer",
+      "techLevel": 4,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_240",
+      "name": "Hired Mount",
+      "techLevel": 3,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_241",
+      "name": "Crimson Vindicator",
+      "techLevel": 6,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY",
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_242",
+      "name": "Bronze Timewalker",
+      "techLevel": 4,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_243",
+      "name": "Sky-hatch Runaway",
+      "techLevel": 4,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG36_245",
+      "name": "Runic Arcanist",
+      "techLevel": 4,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_330",
+      "name": "Sly Infiltrator",
+      "techLevel": 3,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "CHOOSE_ONE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_331",
+      "name": "Bramble Tunneler",
+      "techLevel": 4,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_332",
+      "name": "Snare Trapper",
+      "techLevel": 4,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "CHOOSE_ONE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_333",
+      "name": "Jailbird Juggernaut",
+      "techLevel": 7,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "outside normal Solo shop pool"
+    },
+    {
+      "id": "BG36_341",
+      "name": "Veteran Brigand",
+      "techLevel": 6,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "CHOOSE_ONE"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_342",
+      "name": "Clever Castaway",
+      "techLevel": 2,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_343",
+      "name": "Silent Deliverer",
+      "techLevel": 6,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_344",
+      "name": "Hooktusk, Master Marauder",
+      "techLevel": 6,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_345",
+      "name": "Suspicious Prisonguard",
+      "techLevel": 1,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_346",
+      "name": "Fruit Vendor",
+      "techLevel": 3,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_351",
+      "name": "Moat Custodian",
+      "techLevel": 6,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BACON_RALLY"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_352",
+      "name": "Unbound Tempest",
+      "techLevel": 6,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_354",
+      "name": "Decoy Conjurer",
+      "techLevel": 2,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_356",
+      "name": "Tyrael",
+      "techLevel": 6,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_503",
+      "name": "Soulkeeping Jailer",
+      "techLevel": 4,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_506",
+      "name": "Drone Duplicator",
+      "techLevel": 4,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DIVINE_SHIELD",
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_507",
+      "name": "Breakout Mastermind",
+      "techLevel": 3,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_508",
+      "name": "Cagey Conjurer",
+      "techLevel": 4,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_509",
+      "name": "Private Investigator",
+      "techLevel": 3,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_510",
+      "name": "Vigilant Bristlemane",
+      "techLevel": 5,
+      "races": [
+        "QUILBOAR"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_511",
+      "name": "Dead Bellringer",
+      "techLevel": 4,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_514",
+      "name": "Barrier Banshee",
+      "techLevel": 5,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_515",
+      "name": "Snazzy Phantom",
+      "techLevel": 6,
+      "races": [
+        "UNDEAD"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_520",
+      "name": "Bilgewater Breakout",
+      "techLevel": 2,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG36_521",
+      "name": "Locked-up Mutineer",
+      "techLevel": 3,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG36_523",
+      "name": "Enterprising Escapee",
+      "techLevel": 5,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_524",
+      "name": "Maritime Extortionist",
+      "techLevel": 4,
+      "races": [
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_620",
+      "name": "Boom-in-a-Box",
+      "techLevel": 4,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "TAUNT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_621",
+      "name": "Deft Deserter",
+      "techLevel": 5,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_622",
+      "name": "Torrential Ruiner",
+      "techLevel": 6,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_640",
+      "name": "Gatekeeper Amalgam",
+      "techLevel": 6,
+      "races": [
+        "ALL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_701",
+      "name": "Kelp Keeper",
+      "techLevel": 4,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "INTERACTABLE_OBJECT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_703",
+      "name": "Twilight Tidehunter",
+      "techLevel": 4,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_704",
+      "name": "Shamanic Tidecaller",
+      "techLevel": 5,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_730",
+      "name": "Trapped Clapper",
+      "techLevel": 3,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG36_731",
+      "name": "Imp-lusionist",
+      "techLevel": 4,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_733",
+      "name": "Eredar Escapist",
+      "techLevel": 6,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG36_760",
+      "name": "Captain Cookie",
+      "techLevel": 4,
+      "races": [
+        "MURLOC",
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_762",
+      "name": "Devilish Distractor",
+      "techLevel": 5,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BG36_763",
+      "name": "Treasure Parrot",
+      "techLevel": 3,
+      "races": [
+        "BEAST",
+        "PIRATE"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": "handler requires excluded persistent context"
+    },
+    {
+      "id": "BG36_764",
+      "name": "Gearfin",
+      "techLevel": 4,
+      "races": [
+        "MECH",
+        "MURLOC"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_851",
+      "name": "Spark Snapper",
+      "techLevel": 5,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "combat text lacks a registered per-card handler"
+    },
+    {
+      "id": "BG36_853",
+      "name": "Glambot",
+      "techLevel": 4,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_854",
+      "name": "Rescue Bot",
+      "techLevel": 3,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE",
+        "TAUNT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG36_921",
+      "name": "Fleeing Fugitive",
+      "techLevel": 1,
+      "races": [
+        "NAGA"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_004",
+      "name": "Wrath Weaver",
+      "techLevel": 1,
+      "races": [
+        "DEMON"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_012",
+      "name": "Kangor's Apprentice",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_018",
+      "name": "Goldrinn, the Great Wolf",
+      "techLevel": 5,
+      "races": [
+        "BEAST"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DEATHRATTLE"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_020",
+      "name": "Primalfin Lookout",
+      "techLevel": 5,
+      "races": [
+        "MURLOC"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "BATTLECRY",
+        "DISCOVER"
+      ],
+      "positioningExclusion": "random summon support closure has not been audited"
+    },
+    {
+      "id": "BGS_041",
+      "name": "Kalecgos, Arcane Aspect",
+      "techLevel": 5,
+      "races": [
+        "DRAGON"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_071",
+      "name": "Deflect-o-Bot",
+      "techLevel": 3,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": true,
+      "mechanics": [
+        "DIVINE_SHIELD"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_104",
+      "name": "Nomi, Kitchen Nightmare",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    },
+    {
+      "id": "BGS_115",
+      "name": "Sellemental",
+      "techLevel": 2,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_116",
+      "name": "Refreshing Anomaly",
+      "techLevel": 4,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_119",
+      "name": "Crackling Cyclone",
+      "techLevel": 1,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DIVINE_SHIELD",
+        "WINDFURY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_123",
+      "name": "Tavern Tempest",
+      "techLevel": 4,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "BATTLECRY"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_126",
+      "name": "Wildfire Elemental",
+      "techLevel": 3,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": true,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_127",
+      "name": "Molten Rock",
+      "techLevel": 1,
+      "races": [
+        "ELEMENTAL"
+      ],
+      "mappedHandler": false,
+      "mechanics": [],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BGS_131",
+      "name": "Deadly Spore",
+      "techLevel": 3,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "VENOMOUS"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG_BOT_911",
+      "name": "Annoy-o-Module",
+      "techLevel": 3,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "DIVINE_SHIELD",
+        "MAGNETIC",
+        "TAUNT"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG_DEEP_015",
+      "name": "Prosthetic Hand",
+      "techLevel": 3,
+      "races": [
+        "MECH",
+        "UNDEAD"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "MAGNETIC",
+        "REBORN"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG_LOE_077",
+      "name": "Brann Bronzebeard",
+      "techLevel": 5,
+      "races": [],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": null
+    },
+    {
+      "id": "BG_TTN_401",
+      "name": "Ancestral Automaton",
+      "techLevel": 2,
+      "races": [
+        "MECH"
+      ],
+      "mappedHandler": false,
+      "mechanics": [
+        "AURA"
+      ],
+      "positioningExclusion": "requires excluded hand, history, or seasonal context"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "format": "gzip-jsonl",
+  "compressed_file": "positions.jsonl.gz",
+  "compressed_sha256": "e162427cf05e765cf09c16f2f7d1397977f8d9ed43e2a7432c6d7b94ad84ba56",
+  "uncompressed_file": "positions.jsonl",
+  "uncompressed_sha256": "7219a45fd849ef9c8e1013ea62c879b487d6d188c17509258eebaeb3a18b556a",
+  "uncompressed_bytes": 250611967,
+  "compressed_bytes": 9292702
+}
