@@ -1,0 +1,26 @@
+{
+  "version": "complete-opening-expert-preferred-action-sets-v1",
+  "feature_schema_sha256": "51d2841cd4206a776365c054c9b30d5ec12d2e03d583547da301e378b4381b2b",
+  "ruleset_file_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "timing_profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+  "choice_timing_version": "visible-opening-choice-reservation-v1",
+  "seed": 202609075,
+  "attempted_seeds": [
+    202609075,
+    202610084,
+    202611093,
+    202612102,
+    202613111,
+    202614120,
+    202615129,
+    202616138,
+    202617147,
+    202618156
+  ],
+  "accepted_trajectories": 10,
+  "decisions": 74,
+  "failures": [],
+  "failure_reasons": {},
+  "archive_sha256": "b9fa39d7cde7c6aa443f21b02cbe85771d2e40e2dd22ea1a6c1c1436d672cfa7"
+}

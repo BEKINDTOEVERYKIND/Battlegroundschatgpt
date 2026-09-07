@@ -6,8 +6,8 @@ representations remain useful after rotations.
 **Current implementation: trained offline positioning and early-recruitment
 components.** Firestone supplies combat simulation; a pinned HSBRSIM/hsrl2 bridge
 executes finite-budget recruit commands against a rebuilt current-card database.
-The new recruitment pilot acts at every decision through two recruit turns and
-two sampled combats; it has not beaten the practical heuristic. Earlier
+The recruitment pilots act at every decision through two recruit turns and
+two sampled combats; they have not beaten the practical heuristic. Earlier
 first-action models are also preserved. This is not yet a complete eight-player
 self-play agent. Unsupported transitions
 stop the affected rollout instead of becoming silent no-ops.
@@ -44,9 +44,19 @@ The new [two-turn recruitment pilot](docs/two-turn-recruit-pilot.md) retained
 eight Tier-1 spells. Its learned policy scored 36.61% against 44.64% for the
 practical heuristic on 14 supported paired test episodes. The small pilot
 does **not** establish a recruitment advantage. It exposed repeated Freeze
-decisions while confirming zero action-budget violations. The next declared
-experiment collects states reached by that policy and retains practical
-counterfactual continuations to teach complete buy-and-play sequences.
+decisions while confirming zero action-budget violations. The completed
+[follow-up](docs/two-turn-v2-results.md) made that problem worse: 13.91% versus
+56.15% on 31 supported paired test episodes, with 7,632 Freeze commands.
+Neither learned recruitment policy is promoted.
+
+The [objective audit](docs/policy-collapse-audit-sept7.md) explains the failure:
+one-action labels assumed that the practical heuristic would finish the turn,
+so their validation ranking did not reflect complete learned-policy play.
+The new [policy trainer](docs/recruit-policy-training.md) learns preferred
+expert action sets, selects using complete two-turn games and reserves an
+independent test for one frozen candidate. It includes
+[temporary versus permanent buff features](docs/two-turn-feature-lifetimes.md)
+and [time reservations for required target choices](docs/choice-timing.md).
 
 ## Current ruleset
 
@@ -198,10 +208,15 @@ upstream baseline; the extension documents describe the subsequent repairs:
 
 The [completed GitHub positioning workflow](docs/training-job.md) trained both
 arms on 8,000 corrected-pool scenarios. All results are now committed. The
-[next bounded two-turn experiment](docs/two-turn-training-job.md) uses the pilot's
-policy to collect new states, checks live sources, preserves partial and complete
-outputs, and stops within a fixed runtime. Neither workflow automatically
-promotes a model or schedules an endless training loop.
+[completed bounded two-turn experiment](docs/two-turn-training-job.md) also has
+its original artifact independently verified and preserved. Its poor result
+motivates the revised policy objective above. Neither workflow schedules an
+endless training loop.
+
+The [current Tier-2 inventory](docs/tier2-frontier.md) accounts for all 34 minions
+and seven spells. A separate tested repair fixes Forest Rover incorrectly
+buffing all Beasts in the upstream engine. Persistent combat changes and
+generated-card pools still block enabling that whole shop in training.
 
 The next milestone is a validated current-ruleset recruit bridge with complete
 legal actions and persistent combat effects, followed by masked actor-critic

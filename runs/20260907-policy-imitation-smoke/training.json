@@ -1,0 +1,9 @@
+[
+  {
+    "candidate": "policy-h16-e2",
+    "checkpoint_sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb",
+    "epochs": 2,
+    "last_loss": 1.1284151655472663,
+    "optimizer_step": 6
+  }
+]

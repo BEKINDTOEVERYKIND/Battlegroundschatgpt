@@ -1,0 +1,124 @@
+{
+  "full_game_ready": false,
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "selection": {
+    "deployment_policy": "practical",
+    "experimental_learner": "policy-h16-e2",
+    "learner_promoted_within_fixture": false,
+    "full_game_ready": false,
+    "eligible_learners": [],
+    "reason": "Practical retained: the frozen learner did not pass every independent-test superiority/currentness gate",
+    "experimental_checkpoint_sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb",
+    "deployment_checkpoint": null,
+    "independent_test_gate_passed": false
+  },
+  "training": {
+    "attempted_trajectories": 10,
+    "accepted_trajectories": 10,
+    "decisions": 74,
+    "failure_reasons": {}
+  },
+  "validation": {
+    "practical": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "policy-h16-e2": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.0,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      }
+    }
+  },
+  "test": {
+    "practical": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.5,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "policy-h16-e2": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.0,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.5,
+        "ci95": [
+          -0.75,
+          -0.25
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": -0.5,
+        "ci95": [
+          -0.75,
+          -0.25
+        ]
+      }
+    }
+  },
+  "current_snapshot_verified": false,
+  "sampled_combats_including_rejections": 144,
+  "elapsed_seconds": 47.77580738067627,
+  "limitations": [
+    "Imitates a fixed practical teacher; combat improvement is measured separately, not assumed",
+    "Only two-turn current Tier1 fixture; no full-game MMR or seasonal coverage",
+    "Synthetic 15/20/30 second own timers, 60 second opponents; one command/sec plus costs and 5 second reserve",
+    "Shortlist excludes most board positioning choices; legal upgrades remain possible but unsupported next-tier draws abort",
+    "Small validation samples and repeated model comparisons do not establish a population guarantee",
+    "Failed episodes are penalized, while supported-intersection estimates remain conditional"
+  ]
+}
