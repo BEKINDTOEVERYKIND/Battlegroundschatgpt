@@ -1,0 +1,26 @@
+{
+  "scope": "Warm performance only; one fixed independent performance seed, no current main outcomes or policy tuning",
+  "rows": [
+    {
+      "kind": "expert",
+      "play_seconds": 0.11722529699909501,
+      "archive_seconds": 0.030720340997504536,
+      "compressed_bytes": 41439,
+      "commands": 62
+    },
+    {
+      "kind": "practical_eval",
+      "play_seconds": 0.06473421600094298,
+      "archive_seconds": 0.014593088002584409,
+      "compressed_bytes": 24532,
+      "commands": 62
+    },
+    {
+      "kind": "random_actor_eval",
+      "play_seconds": 0.10848158199951285,
+      "archive_seconds": 0.015578642996842973,
+      "compressed_bytes": 26416,
+      "commands": 83
+    }
+  ]
+}

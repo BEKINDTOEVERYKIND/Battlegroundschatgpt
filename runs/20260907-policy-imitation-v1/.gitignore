@@ -1,0 +1,6 @@
+# Exact originals are preserved in verified parts; restore with package_training_evidence.py unpack.
+/expert_trajectories.jsonl.gz
+/recovered_expert_data/expert_trajectories.jsonl.gz
+/recovered_expert_data/original_complete_prefix.jsonl.gz
+/test_trajectories.jsonl.gz
+/validation_trajectories.jsonl.gz

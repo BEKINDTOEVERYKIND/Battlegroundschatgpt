@@ -1,0 +1,10 @@
+{
+  "source_archive": "runs/20260907-policy-imitation-smoke/expert_trajectories.jsonl.gz",
+  "episode_seed": 202609075,
+  "decision_id": "expert-202609075-0",
+  "split": "train",
+  "historical_smoke": true,
+  "source_archive_sha256": "b9fa39d7cde7c6aa443f21b02cbe85771d2e40e2dd22ea1a6c1c1436d672cfa7",
+  "observation_sha256": "12636a80d77763f764ec0dc3a1623dc733c955068eccf5660bef9fe3b6c2b652",
+  "run_dir": "runs/20260907-policy-imitation-smoke"
+}

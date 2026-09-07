@@ -1,0 +1,929 @@
+{
+  "scope": "current-tier2-permanent-family-prototype-v1",
+  "full_tier2_ready": false,
+  "source_sha256": {
+    "simulator/permanent-combat-prototype.mjs": "56974b2225c1e2b2347f04cb922120f6c22be5358bfc78f52bca817700efd68d",
+    "tests/permanent-combat-prototype.test.mjs": "1d579d873b868a451e21bb3fa82f1a00133c32d7a2dc026745fda37bfe7aa33b",
+    "data/reference_cards.json": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+    "data/ruleset.json": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348"
+  },
+  "cases": [
+    {
+      "name": "golden_tarecgosa_dies",
+      "input": {
+        "scope": "current-tier2-permanent-family-prototype-v1",
+        "receipt_version": "firestone-exact-permanent-events-v1",
+        "seed": 12345,
+        "players_alive": 8,
+        "player": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 0,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG21_015_G",
+              "entity_id": "golden-tarecgosa",
+              "attack": 8,
+              "health": 8,
+              "max_health": 8,
+              "golden": true,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            },
+            {
+              "card_id": "BG26_963_G",
+              "entity_id": "golden-synth",
+              "attack": 6,
+              "health": 8,
+              "max_health": 8,
+              "golden": true,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            },
+            {
+              "card_id": "BG29_810",
+              "entity_id": "paper",
+              "attack": 2,
+              "health": 3,
+              "max_health": 3,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "opponent": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 1,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG36_345",
+              "entity_id": "enemy-giant",
+              "attack": 100,
+              "health": 100,
+              "max_health": 100,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        }
+      },
+      "receipt": {
+        "scope": "current-tier2-permanent-family-prototype-v1",
+        "receipt_version": "firestone-exact-permanent-events-v1",
+        "request_sha256": "d35b6c86101d04890085eb2cdeffdfdc2e6acb9e8e82c9bea852cd697935a863",
+        "seed": 12345,
+        "samples": 1,
+        "full_tier2_ready": false,
+        "combat_engine": "@firestone-hs/simulate-bgs-battle@1.1.750",
+        "dependency_source_sha256": {
+          "simulate-bgs-battle": "c29a6c61cc14e0dcf7a426221c24a8e5d123cd3d547fe60262ccd58c72e81120",
+          "simulation/stats": "03de1f3ef6cf40e0fdf57e3e98db06ddb844922cc9a0b872087e5c54869d66d4",
+          "keywords/windfury": "b990cf743f041ed5c747dfa268e70b4c70ca7c542a692a96a3bda390ed193a5d",
+          "simulation/attack": "ea7959fef20388d2681e9985c8a93cd0af2d30706f83e0824d9cc745591a3833",
+          "simulation/simulator": "1aa51e2e726c457b093be6f8adc9cfbe48681256bcdf3f02d2fc2f890adbca79",
+          "simulation/deathrattle-spawns": "2f12e102c7fae4dcdf5be1d3519b11c3c3882704e1a1961675a76d0bb0b6f77f",
+          "simulation/reborn": "22be9fa67320c00ff6e1dc601adc409092907cf9b09caebff62abf75df118ab7",
+          "utils": "31b7ca9e7c028b8bd143a20773d8503909f692fa6f0093e9fed0387718a36aab"
+        },
+        "outcome": {
+          "winner_id": 1,
+          "uncapped_damage": 3,
+          "damage_to_player": 3,
+          "damage_to_opponent": 0
+        },
+        "permanent_events": [
+          {
+            "player_id": 0,
+            "entity_id": "golden-tarecgosa",
+            "combat_entity_id": 100,
+            "card_id": "BG21_015_G",
+            "kind": "stat_gain",
+            "attack": 4,
+            "health": 4,
+            "source_card_id": "BG26_963_G",
+            "source_combat_entity_id": 101
+          },
+          {
+            "player_id": 0,
+            "entity_id": "golden-tarecgosa",
+            "combat_entity_id": 100,
+            "card_id": "BG21_015_G",
+            "kind": "stat_gain",
+            "attack": 2,
+            "health": 4,
+            "source_card_id": "BG29_810",
+            "source_combat_entity_id": 102
+          },
+          {
+            "player_id": 0,
+            "entity_id": "golden-tarecgosa",
+            "combat_entity_id": 100,
+            "card_id": "BG21_015_G",
+            "kind": "keyword_gain",
+            "keyword": "windfury"
+          }
+        ],
+        "writeback": [
+          {
+            "player_id": 0,
+            "global_updates": [
+              {
+                "name": "EternalKnightsDeadThisGame",
+                "before": 0,
+                "after": 0,
+                "delta": 0
+              }
+            ],
+            "exact_hero_entity_id": 99,
+            "upstream_public_global_counter_present": false,
+            "entity_updates": [
+              {
+                "entity_id": "golden-tarecgosa",
+                "combat_entity_id": 100,
+                "card_id": "BG21_015_G",
+                "zone": "board",
+                "attack_gain": 6,
+                "health_gain": 8,
+                "keyword_gains": [
+                  "windfury"
+                ],
+                "source": "exact_original_entity_grant_events"
+              },
+              {
+                "entity_id": "golden-synth",
+                "combat_entity_id": 101,
+                "card_id": "BG26_963_G",
+                "zone": "board",
+                "attack_gain": 0,
+                "health_gain": 0,
+                "keyword_gains": [],
+                "source": "exact_original_entity_grant_events"
+              },
+              {
+                "entity_id": "paper",
+                "combat_entity_id": 102,
+                "card_id": "BG29_810",
+                "zone": "board",
+                "attack_gain": 0,
+                "health_gain": 0,
+                "keyword_gains": [],
+                "source": "exact_original_entity_grant_events"
+              }
+            ],
+            "surviving_original_entity_ids": [],
+            "combat_only_survivors": []
+          },
+          {
+            "player_id": 1,
+            "global_updates": [
+              {
+                "name": "EternalKnightsDeadThisGame",
+                "before": 0,
+                "after": 0,
+                "delta": 0
+              }
+            ],
+            "exact_hero_entity_id": 199,
+            "upstream_public_global_counter_present": true,
+            "entity_updates": [
+              {
+                "entity_id": "enemy-giant",
+                "combat_entity_id": 200,
+                "card_id": "BG36_345",
+                "zone": "board",
+                "attack_gain": 0,
+                "health_gain": 0,
+                "keyword_gains": [],
+                "source": "exact_original_entity_grant_events"
+              }
+            ],
+            "surviving_original_entity_ids": [
+              "enemy-giant"
+            ],
+            "combat_only_survivors": []
+          }
+        ]
+      },
+      "applied": {
+        "player": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 0,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG21_015_G",
+              "entity_id": "golden-tarecgosa",
+              "attack": 14,
+              "health": 16,
+              "max_health": 16,
+              "golden": true,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": true,
+              "reborn": false,
+              "enchantments": []
+            },
+            {
+              "card_id": "BG26_963_G",
+              "entity_id": "golden-synth",
+              "attack": 6,
+              "health": 8,
+              "max_health": 8,
+              "golden": true,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            },
+            {
+              "card_id": "BG29_810",
+              "entity_id": "paper",
+              "attack": 2,
+              "health": 3,
+              "max_health": 3,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "opponent": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 1,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG36_345",
+              "entity_id": "enemy-giant",
+              "attack": 100,
+              "health": 100,
+              "max_health": 100,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "permanent_changes_only": true,
+        "next_recruit_transition_implemented": false,
+        "full_tier2_ready": false
+      }
+    },
+    {
+      "name": "reborn_knight_and_actual_hand",
+      "input": {
+        "scope": "current-tier2-permanent-family-prototype-v1",
+        "receipt_version": "firestone-exact-permanent-events-v1",
+        "seed": 12345,
+        "players_alive": 8,
+        "player": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 0,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "knight",
+              "attack": 4,
+              "health": 2,
+              "max_health": 2,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": true,
+              "enchantments": []
+            }
+          ],
+          "hand": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "hand-knight",
+              "attack": 4,
+              "health": 2,
+              "max_health": 2,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            },
+            {
+              "card_id": "BG25_008_G",
+              "entity_id": "golden-hand-knight",
+              "attack": 8,
+              "health": 4,
+              "max_health": 4,
+              "golden": true,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "opponent": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 1,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG36_345",
+              "entity_id": "enemy-giant",
+              "attack": 100,
+              "health": 100,
+              "max_health": 100,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        }
+      },
+      "receipt": {
+        "scope": "current-tier2-permanent-family-prototype-v1",
+        "receipt_version": "firestone-exact-permanent-events-v1",
+        "request_sha256": "8b726ff9d9231d0dcfa594294fd6fa1eb881867d59708e75258c530a0830a164",
+        "seed": 12345,
+        "samples": 1,
+        "full_tier2_ready": false,
+        "combat_engine": "@firestone-hs/simulate-bgs-battle@1.1.750",
+        "dependency_source_sha256": {
+          "simulate-bgs-battle": "c29a6c61cc14e0dcf7a426221c24a8e5d123cd3d547fe60262ccd58c72e81120",
+          "simulation/stats": "03de1f3ef6cf40e0fdf57e3e98db06ddb844922cc9a0b872087e5c54869d66d4",
+          "keywords/windfury": "b990cf743f041ed5c747dfa268e70b4c70ca7c542a692a96a3bda390ed193a5d",
+          "simulation/attack": "ea7959fef20388d2681e9985c8a93cd0af2d30706f83e0824d9cc745591a3833",
+          "simulation/simulator": "1aa51e2e726c457b093be6f8adc9cfbe48681256bcdf3f02d2fc2f890adbca79",
+          "simulation/deathrattle-spawns": "2f12e102c7fae4dcdf5be1d3519b11c3c3882704e1a1961675a76d0bb0b6f77f",
+          "simulation/reborn": "22be9fa67320c00ff6e1dc601adc409092907cf9b09caebff62abf75df118ab7",
+          "utils": "31b7ca9e7c028b8bd143a20773d8503909f692fa6f0093e9fed0387718a36aab"
+        },
+        "outcome": {
+          "winner_id": 1,
+          "uncapped_damage": 3,
+          "damage_to_player": 3,
+          "damage_to_opponent": 0
+        },
+        "permanent_events": [],
+        "writeback": [
+          {
+            "player_id": 0,
+            "global_updates": [
+              {
+                "name": "EternalKnightsDeadThisGame",
+                "before": 0,
+                "after": 2,
+                "delta": 2
+              }
+            ],
+            "exact_hero_entity_id": 99,
+            "upstream_public_global_counter_present": false,
+            "entity_updates": [
+              {
+                "entity_id": "knight",
+                "combat_entity_id": 100,
+                "card_id": "BG25_008",
+                "zone": "board",
+                "attack_gain": 8,
+                "health_gain": 4,
+                "keyword_gains": [],
+                "source": "exact_single_combat_global_counter_and_current_aura"
+              },
+              {
+                "entity_id": "hand-knight",
+                "combat_entity_id": 120,
+                "card_id": "BG25_008",
+                "zone": "hand",
+                "attack_gain": 8,
+                "health_gain": 4,
+                "keyword_gains": [],
+                "source": "exact_single_combat_global_counter_and_current_aura"
+              },
+              {
+                "entity_id": "golden-hand-knight",
+                "combat_entity_id": 121,
+                "card_id": "BG25_008_G",
+                "zone": "hand",
+                "attack_gain": 16,
+                "health_gain": 8,
+                "keyword_gains": [],
+                "source": "exact_single_combat_global_counter_and_current_aura"
+              }
+            ],
+            "surviving_original_entity_ids": [],
+            "combat_only_survivors": []
+          },
+          {
+            "player_id": 1,
+            "global_updates": [
+              {
+                "name": "EternalKnightsDeadThisGame",
+                "before": 0,
+                "after": 0,
+                "delta": 0
+              }
+            ],
+            "exact_hero_entity_id": 199,
+            "upstream_public_global_counter_present": true,
+            "entity_updates": [
+              {
+                "entity_id": "enemy-giant",
+                "combat_entity_id": 200,
+                "card_id": "BG36_345",
+                "zone": "board",
+                "attack_gain": 0,
+                "health_gain": 0,
+                "keyword_gains": [],
+                "source": "exact_original_entity_grant_events"
+              }
+            ],
+            "surviving_original_entity_ids": [
+              "enemy-giant"
+            ],
+            "combat_only_survivors": []
+          }
+        ]
+      },
+      "applied": {
+        "player": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 0,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "knight",
+              "attack": 12,
+              "health": 6,
+              "max_health": 6,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": true,
+              "enchantments": []
+            }
+          ],
+          "hand": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "hand-knight",
+              "attack": 12,
+              "health": 6,
+              "max_health": 6,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            },
+            {
+              "card_id": "BG25_008_G",
+              "entity_id": "golden-hand-knight",
+              "attack": 24,
+              "health": 12,
+              "max_health": 12,
+              "golden": true,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 2
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "opponent": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 1,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG36_345",
+              "entity_id": "enemy-giant",
+              "attack": 100,
+              "health": 100,
+              "max_health": 100,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "permanent_changes_only": true,
+        "next_recruit_transition_implemented": false,
+        "full_tier2_ready": false
+      }
+    },
+    {
+      "name": "both_sides_defeated",
+      "input": {
+        "scope": "current-tier2-permanent-family-prototype-v1",
+        "receipt_version": "firestone-exact-permanent-events-v1",
+        "seed": 12345,
+        "players_alive": 8,
+        "player": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 0,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "own-knight",
+              "attack": 4,
+              "health": 2,
+              "max_health": 2,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "opponent": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 1,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "opponent-knight",
+              "attack": 4,
+              "health": 2,
+              "max_health": 2,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 0
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        }
+      },
+      "receipt": {
+        "scope": "current-tier2-permanent-family-prototype-v1",
+        "receipt_version": "firestone-exact-permanent-events-v1",
+        "request_sha256": "1551f69117d583f74e4764bca6c1fe59f542db3e9e4948fa1a9d583abe783424",
+        "seed": 12345,
+        "samples": 1,
+        "full_tier2_ready": false,
+        "combat_engine": "@firestone-hs/simulate-bgs-battle@1.1.750",
+        "dependency_source_sha256": {
+          "simulate-bgs-battle": "c29a6c61cc14e0dcf7a426221c24a8e5d123cd3d547fe60262ccd58c72e81120",
+          "simulation/stats": "03de1f3ef6cf40e0fdf57e3e98db06ddb844922cc9a0b872087e5c54869d66d4",
+          "keywords/windfury": "b990cf743f041ed5c747dfa268e70b4c70ca7c542a692a96a3bda390ed193a5d",
+          "simulation/attack": "ea7959fef20388d2681e9985c8a93cd0af2d30706f83e0824d9cc745591a3833",
+          "simulation/simulator": "1aa51e2e726c457b093be6f8adc9cfbe48681256bcdf3f02d2fc2f890adbca79",
+          "simulation/deathrattle-spawns": "2f12e102c7fae4dcdf5be1d3519b11c3c3882704e1a1961675a76d0bb0b6f77f",
+          "simulation/reborn": "22be9fa67320c00ff6e1dc601adc409092907cf9b09caebff62abf75df118ab7",
+          "utils": "31b7ca9e7c028b8bd143a20773d8503909f692fa6f0093e9fed0387718a36aab"
+        },
+        "outcome": {
+          "winner_id": null,
+          "uncapped_damage": 0,
+          "damage_to_player": 0,
+          "damage_to_opponent": 0
+        },
+        "permanent_events": [],
+        "writeback": [
+          {
+            "player_id": 0,
+            "global_updates": [
+              {
+                "name": "EternalKnightsDeadThisGame",
+                "before": 0,
+                "after": 1,
+                "delta": 1
+              }
+            ],
+            "exact_hero_entity_id": 99,
+            "upstream_public_global_counter_present": false,
+            "entity_updates": [
+              {
+                "entity_id": "own-knight",
+                "combat_entity_id": 100,
+                "card_id": "BG25_008",
+                "zone": "board",
+                "attack_gain": 4,
+                "health_gain": 2,
+                "keyword_gains": [],
+                "source": "exact_single_combat_global_counter_and_current_aura"
+              }
+            ],
+            "surviving_original_entity_ids": [],
+            "combat_only_survivors": []
+          },
+          {
+            "player_id": 1,
+            "global_updates": [
+              {
+                "name": "EternalKnightsDeadThisGame",
+                "before": 0,
+                "after": 1,
+                "delta": 1
+              }
+            ],
+            "exact_hero_entity_id": 199,
+            "upstream_public_global_counter_present": false,
+            "entity_updates": [
+              {
+                "entity_id": "opponent-knight",
+                "combat_entity_id": 200,
+                "card_id": "BG25_008",
+                "zone": "board",
+                "attack_gain": 4,
+                "health_gain": 2,
+                "keyword_gains": [],
+                "source": "exact_single_combat_global_counter_and_current_aura"
+              }
+            ],
+            "surviving_original_entity_ids": [],
+            "combat_only_survivors": []
+          }
+        ]
+      },
+      "applied": {
+        "player": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 0,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "own-knight",
+              "attack": 8,
+              "health": 4,
+              "max_health": 4,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 1
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "opponent": {
+          "scope": "current-tier2-permanent-family-prototype-v1",
+          "turn": 2,
+          "player_id": 1,
+          "heroId": "TB_BaconShop_HERO_34",
+          "health": 60,
+          "armor": 0,
+          "tavernTier": 2,
+          "validTribes": [
+            "DRAGON",
+            "UNDEAD",
+            "BEAST",
+            "DEMON",
+            "NAGA"
+          ],
+          "board": [
+            {
+              "card_id": "BG25_008",
+              "entity_id": "opponent-knight",
+              "attack": 8,
+              "health": 4,
+              "max_health": 4,
+              "golden": false,
+              "taunt": false,
+              "divine_shield": false,
+              "windfury": false,
+              "reborn": false,
+              "enchantments": []
+            }
+          ],
+          "hand": [],
+          "global_info": {
+            "EternalKnightsDeadThisGame": 1
+          },
+          "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+          "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14"
+        },
+        "permanent_changes_only": true,
+        "next_recruit_transition_implemented": false,
+        "full_tier2_ready": false
+      }
+    }
+  ],
+  "reborn_tarecgosa_supported": false,
+  "original_numeric_id_and_object_identity_verified": true
+}

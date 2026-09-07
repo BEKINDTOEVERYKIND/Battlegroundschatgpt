@@ -1,0 +1,58 @@
+[
+  {
+    "iteration": 1,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 5.0,
+        "reference_kl_per_decision": 1.6430764612059158e-17,
+        "clipped_fraction": 0.0,
+        "decisions": 78,
+        "episodes": 8,
+        "mean_episode_advantage": -0.46875,
+        "max_probability_ratio": 1.0000000000000018,
+        "min_probability_ratio": 0.999999999999999,
+        "epoch": 1,
+        "gradient_norm": 5.791899897823736,
+        "gradient_clipped": true,
+        "optimizer_step": 1,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 4.980147155106298,
+        "reference_kl_per_decision": 2.6350374855726653e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 78,
+        "episodes": 8,
+        "mean_episode_advantage": -0.46875,
+        "max_probability_ratio": 1.0178134398669465,
+        "min_probability_ratio": 0.9740722078093108,
+        "epoch": 2,
+        "gradient_norm": 5.7729263106474855,
+        "gradient_clipped": true,
+        "optimizer_step": 2,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.46875
+  },
+  {
+    "iteration": 2,
+    "attempted_episodes": 8,
+    "complete_pairs": 7,
+    "rejected_batch": true,
+    "failures": [
+      {
+        "seed": 60918202,
+        "errors": {
+          "actor": "Tavern Fugitive spell-trigger conformance is unverified"
+        }
+      }
+    ],
+    "updates": [],
+    "mean_complete_pair_advantage": -0.6428571428571429
+  }
+]

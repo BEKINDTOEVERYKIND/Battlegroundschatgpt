@@ -57,6 +57,19 @@ expert action sets, selects using complete two-turn games and reserves an
 independent test for one frozen candidate. It includes
 [temporary versus permanent buff features](docs/two-turn-feature-lifetimes.md)
 and [time reservations for required target choices](docs/choice-timing.md).
+The separate [conservative policy-gradient trainer](docs/recruit-policy-gradient.md)
+then learns from its own complete combat returns, with a frozen cloned policy
+as a reference. It can replace that policy only after beating both it and the
+practical control in an independent test.
+
+The [completed 7 September experiments](docs/recruit-policy-results-sept7.md)
+trained on 512 complete expert trajectories and then made 32 conservative
+policy-gradient updates, with **50,176 sampled combats** across both runs.
+Both fresh tests had zero Freeze commands and timing violations. The cloned
+policy scored 49.63% versus 49.17% for practical in its first test; the uncertainty
+interval includes zero. Gradient validation retained the unchanged clone.
+Practical remains the default. The original training archive required a separately
+preserved recovery that reproduced all four model files byte for byte.
 
 ## Current ruleset
 
@@ -64,6 +77,7 @@ Snapshot: **5 September 2026, patch 36.4.2.251332, Season 14**. Dark Gifts,
 Trinkets, Activate, Lockbox, and Fishbait are current. Ordinary Quests, Buddies,
 Anomalies, and the Timewarped Tavern are not active seasonal systems; specific
 hero-generated exceptions still require separate handlers.
+Both new runs rechecked these live sources on **7 September 2026**.
 
 - Official Solo pool: 246 minions, of which 234 are ordinary shop candidates and
   12 require special Tier 7 acquisition; 116 heroes; 71 Tavern spells; 43 Dark Gifts.
@@ -168,6 +182,21 @@ It checks the exact feature schema and current fixture scope. It does not execut
 actions or provide a complete turn plan. See [recruitment training](docs/recruit-curriculum.md)
 for the training command and archived comparisons.
 
+The newer actor's [offline adviser](docs/recruit-policy-recommendations.md)
+honors each completed run's tested deployment decision:
+
+```bash
+PYTHONPATH=python python scripts/recommend_recruit_policy.py \
+  --observation examples/recruit-policy-observation.json \
+  --run-dir runs/20260907-policy-imitation-v1
+```
+
+It returns one legal command and its remaining execution budget. Use
+`--experimental` explicitly to inspect an unpromoted learner. The default keeps
+the practical policy when the learner has not passed its independent test.
+The example is a saved training observation, and a real timer must be checked
+again before acting.
+
 ## Transfer after a rotation
 
 The 1,251-feature representation shares stats, tribes, keywords, effect text,
@@ -217,6 +246,16 @@ The [current Tier-2 inventory](docs/tier2-frontier.md) accounts for all 34 minio
 and seven spells. A separate tested repair fixes Forest Rover incorrectly
 buffing all Beasts in the upstream engine. Persistent combat changes and
 generated-card pools still block enabling that whole shop in training.
+The [permanent-combat prototype](docs/permanent-combat-prototype.md) now preserves
+exact original Tarecgosa gains and Eternal Knight death counters, including a
+defeated side. A separate [Scarlet handbuff repair](docs/offboard-scarlet.md)
+uses Blizzard's documented correction; unverified Tavern triggers remain closed.
+These opt-in effect fixtures are separate from the current training adapter.
+
+The [verified database cache](docs/opening-database-cache.md) speeds construction
+while keeping independent mutable card definitions and at most 16 retained tribe
+views. Full seeded trajectories match the original factory, including after
+eviction and rebuild.
 
 The next milestone is a validated current-ruleset recruit bridge with complete
 legal actions and persistent combat effects, followed by masked actor-critic

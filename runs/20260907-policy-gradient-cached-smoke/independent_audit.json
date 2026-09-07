@@ -1,0 +1,232 @@
+{
+  "audit_version": "recruit-policy-evidence-audit-v1",
+  "checks": [
+    "Archived source contents match declared SHA256 without importing them",
+    "Exact planned policy/seed/sample grid including every failed sample",
+    "Actual complete scores recomputed from both sampled combat receipts",
+    "Failure-penalized episode scores separated from complete sampled combat scores",
+    "Own action counts and own/all-player timing counts, with failed partial traces separate",
+    "Both evaluation summaries and paired bootstrap intervals independently recomputed",
+    "Frozen experimental checkpoint identity and disjoint seed families"
+  ],
+  "consumed_files": {
+    "deployment_policy.json": {
+      "bytes": 546,
+      "sha256": "5ab92089e776fd6381185a4d4d808846d86e9d46d0267f252d4a04aa234ce605"
+    },
+    "executed_train_recruit_policy_gradient.py": {
+      "bytes": 19794,
+      "sha256": "8fe75803e67085bcdd80abbc4bd291747598f2fb54157befa48114f3b1c98dac"
+    },
+    "execution_sources.json.gz": {
+      "bytes": 131088,
+      "sha256": "d47dde461c3a620cb07e8d40562aab5e9d7d4e57417d9685525d7a8af23037aa"
+    },
+    "experimental_model.json": {
+      "bytes": 1562918,
+      "sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb"
+    },
+    "frozen_bc_reference.json": {
+      "bytes": 1562918,
+      "sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb"
+    },
+    "frozen_evaluation_plan.json": {
+      "bytes": 849,
+      "sha256": "36c10bb32eb34f5c7facb984464457822dc5f1966780ef95926b6a13798e5ed3"
+    },
+    "pg-iteration-001.json": {
+      "bytes": 1154663,
+      "sha256": "fcd6d6c0bce94fbbbd3b9c8674168c5a90936134bb3f2bf8ea1f0bbb5f45e569"
+    },
+    "pg-iteration-002.json": {
+      "bytes": 1154663,
+      "sha256": "fcd6d6c0bce94fbbbd3b9c8674168c5a90936134bb3f2bf8ea1f0bbb5f45e569"
+    },
+    "preregistration.json": {
+      "bytes": 6687,
+      "sha256": "709faa5b10efeec183649dfb115da27a6253393a860749f5b5345db9e98332cb"
+    },
+    "results.json": {
+      "bytes": 4855,
+      "sha256": "c466df2717f6f1331612623252ae0c8b1e56b661b97c0b52d3c0b5a918bd38db"
+    },
+    "test_results.json": {
+      "bytes": 2660,
+      "sha256": "d2110d5176b9904ebe7136be4276557acd883abe7aa02884b9affe8a503fcdd9"
+    },
+    "test_trajectories.jsonl.gz": {
+      "bytes": 94388,
+      "sha256": "15d233e7f3f9a0ab8d468970558d93d586f2b3ad1bb1a8c94c21cb4000c5d654"
+    },
+    "training.json": {
+      "bytes": 1559,
+      "sha256": "d9d5832fe1af7afc904c5dfa4bd4a70f7bf510b3ddcc81d3ff04abf11587e12d"
+    },
+    "training_trajectories.jsonl.gz": {
+      "bytes": 879364,
+      "sha256": "7b6120d30f9fc824baa4fcdb2679cc8c033274ff727571441cf079b344000dd1"
+    },
+    "validation_results.json": {
+      "bytes": 5366,
+      "sha256": "ac32855df92bd3b7d1e0e4abfb96cd922ae3fd13ff057dfe5d3d41d92a78d10d"
+    },
+    "validation_trajectories.jsonl.gz": {
+      "bytes": 196288,
+      "sha256": "fe382edc9fd143463278ab72baa8942eb8e696a2b9dc5695699bc8cc0c79e5b3"
+    }
+  },
+  "experimental_checkpoint_sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb",
+  "full_game_ready": false,
+  "independent_seed_families": {
+    "test": 2,
+    "train": 16,
+    "validation": 2
+  },
+  "kind": "policy_gradient",
+  "limitations": [
+    "Evidence integrity audit; no simulator reexecution or proof of simulator correctness",
+    "Archives declare chronology; hashes alone cannot prove historical write timestamps",
+    "Original run currentness is preserved; no claim of currentness on the audit date"
+  ],
+  "reported_bootstrap_recomputed": true,
+  "run": "20260907-policy-gradient-cached-smoke",
+  "status": "passed",
+  "test": {
+    "bc_reference": {
+      "actual_complete_sample_mean": 0.0,
+      "completed_sample_action_counts": {
+        "buy": 7,
+        "cast_spell": 4,
+        "choose": 2,
+        "end_turn": 4,
+        "play": 5,
+        "sell": 5
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.0
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.375,
+      "completed_sample_action_counts": {
+        "buy": 5,
+        "cast_spell": 2,
+        "choose": 1,
+        "end_turn": 4,
+        "play": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.375
+    }
+  },
+  "training": {
+    "accepted_update_batches": 1,
+    "attempted_training_pairs": 16,
+    "completed_update_batches": 1,
+    "failed_training_pairs": 1,
+    "failure_reasons": {
+      "Tavern Fugitive spell-trigger conformance is unverified": 1
+    },
+    "optimizer_updates": 2,
+    "rejected_update_batches": 1,
+    "skipped_zero_signal_updates": 0
+  },
+  "validation": {
+    "bc_reference": {
+      "actual_complete_sample_mean": 0.0,
+      "completed_sample_action_counts": {
+        "activate": 1,
+        "buy": 6,
+        "cast_spell": 4,
+        "choose": 6,
+        "end_turn": 3,
+        "play": 4,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.0
+    },
+    "pg-iteration-001": {
+      "actual_complete_sample_mean": 0.0,
+      "completed_sample_action_counts": {
+        "activate": 1,
+        "buy": 6,
+        "cast_spell": 4,
+        "choose": 6,
+        "end_turn": 3,
+        "play": 4,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.0
+    },
+    "pg-iteration-002": {
+      "actual_complete_sample_mean": 0.0,
+      "completed_sample_action_counts": {
+        "activate": 1,
+        "buy": 6,
+        "cast_spell": 4,
+        "choose": 6,
+        "end_turn": 3,
+        "play": 4,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.0
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.375,
+      "completed_sample_action_counts": {
+        "activate": 1,
+        "buy": 5,
+        "cast_spell": 1,
+        "choose": 2,
+        "end_turn": 4,
+        "play": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.375
+    }
+  }
+}

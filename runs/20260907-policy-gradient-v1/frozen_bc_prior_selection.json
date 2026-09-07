@@ -1,0 +1,16 @@
+{
+  "deployment_policy": "practical",
+  "experimental_learner": "policy-h32-e30",
+  "learner_promoted_within_fixture": false,
+  "full_game_ready": false,
+  "eligible_learners": [
+    "policy-h32-e10",
+    "policy-h32-e30",
+    "policy-h64-e10",
+    "policy-h64-e30"
+  ],
+  "reason": "Practical retained: the frozen learner did not pass every independent-test superiority/currentness gate",
+  "experimental_checkpoint_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+  "deployment_checkpoint": null,
+  "independent_test_gate_passed": false
+}

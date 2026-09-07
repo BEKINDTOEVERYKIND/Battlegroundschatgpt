@@ -1,0 +1,247 @@
+{
+  "audit_version": "recruit-policy-evidence-audit-v1",
+  "checks": [
+    "Archived source contents match declared SHA256 without importing them",
+    "Exact planned policy/seed/sample grid including every failed sample",
+    "Actual complete scores recomputed from both sampled combat receipts",
+    "Failure-penalized episode scores separated from complete sampled combat scores",
+    "Own action counts and own/all-player timing counts, with failed partial traces separate",
+    "Both evaluation summaries and paired bootstrap intervals independently recomputed",
+    "Frozen experimental checkpoint identity and disjoint seed families"
+  ],
+  "consumed_files": {
+    "deployment_policy.json": {
+      "bytes": 569,
+      "sha256": "9a588638d38022ec1a4542dee8eaeab8eca9ae33f499fc4b71d27af614e32058"
+    },
+    "execution_sources.json.gz": {
+      "bytes": 121878,
+      "sha256": "e05b27a130488878040956d35e33cf2d48210c5332c0f52dfb6c0ef60966bbde"
+    },
+    "experimental_model.json": {
+      "bytes": 3281736,
+      "sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d"
+    },
+    "frozen_evaluation_plan.json": {
+      "bytes": 2682,
+      "sha256": "c593657a5e36ba97ff0506f8c1f07d9f83efa3c1ae6f0e0243ade3f55d8548d7"
+    },
+    "live_postflight.json": {
+      "bytes": 3992,
+      "sha256": "68476dfe99f387beac7e4a808b0602adbb4e2919472c81ac5564be09ad84833b"
+    },
+    "live_preflight.json": {
+      "bytes": 3992,
+      "sha256": "756d11a7e489ea07489d0050d396328f1c094119d847911a2663efea3f3ba646"
+    },
+    "policy-h32-e10.json": {
+      "bytes": 3293998,
+      "sha256": "db2c4746e80958558d4ea2f9a6aaf0a15458bf191ea8b94b50765af5218cdb8a"
+    },
+    "policy-h32-e30.json": {
+      "bytes": 3281736,
+      "sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d"
+    },
+    "policy-h64-e10.json": {
+      "bytes": 6247764,
+      "sha256": "58e72d5410f4a16d72424c3233bdc214adfe63e9a834c509031130896d0a5794"
+    },
+    "policy-h64-e30.json": {
+      "bytes": 6233130,
+      "sha256": "c3c55965073e0627d90650199e18bf55b5e7d20dc2c7e5f861029a106f749853"
+    },
+    "preregistration.json": {
+      "bytes": 86399,
+      "sha256": "d6b3268e8531627956917befbfd32d480ee9033d62aa8bf3640427a1cd13aa11"
+    },
+    "results.json": {
+      "bytes": 5395,
+      "sha256": "dfb3314f9833c3229c1e5af86d163daf11a547d6515967fa7e802cc016300c86"
+    },
+    "test_results.json": {
+      "bytes": 101036,
+      "sha256": "34d20a610f642758c712ce1f0d339049fc01426144f0b57ad91f9cdfb410ef5c"
+    },
+    "test_trajectories.jsonl.gz": {
+      "bytes": 50850386,
+      "sha256": "eecdd6317b22865ed8a257743cbcc3f96dfddbc1b5d5e3a65f64710ee6f6cfbb"
+    },
+    "training.json": {
+      "bytes": 887,
+      "sha256": "a5033c3cee75a6fe6abca11b11901db4c7b6e780c35eae773c499a3b899903e0"
+    },
+    "validation_results.json": {
+      "bytes": 61685,
+      "sha256": "35539d310c79ab16fdfa3baa36f13cf9c49ecba9c691f1c255c9acff48afcf1b"
+    },
+    "validation_trajectories.jsonl.gz": {
+      "bytes": 15755958,
+      "sha256": "d1c9d310a290319731c35c51c662a5faddc5626c8542faa12ab3927709f6b66d"
+    }
+  },
+  "experimental_checkpoint_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+  "full_game_ready": false,
+  "independent_seed_families": {
+    "test": 128,
+    "train": 512,
+    "validation": 32
+  },
+  "kind": "behavior_cloning",
+  "limitations": [
+    "Evidence integrity audit; no simulator reexecution or proof of simulator correctness",
+    "Archives declare chronology; hashes alone cannot prove historical write timestamps",
+    "Original run currentness is preserved; no claim of currentness on the audit date"
+  ],
+  "reported_bootstrap_recomputed": true,
+  "run": "20260907-policy-imitation-v1",
+  "status": "passed_evaluation_only",
+  "test": {
+    "policy-h32-e30": {
+      "actual_complete_sample_mean": 0.496337890625,
+      "completed_sample_action_counts": {
+        "activate": 278,
+        "buy": 2426,
+        "cast_spell": 578,
+        "choose": 894,
+        "end_turn": 2016,
+        "play": 2032,
+        "sell": 8
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 1024,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.496337890625
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.49169921875,
+      "completed_sample_action_counts": {
+        "activate": 264,
+        "buy": 2456,
+        "cast_spell": 560,
+        "choose": 856,
+        "end_turn": 2008,
+        "play": 2064
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 1024,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.49169921875
+    }
+  },
+  "training": {
+    "reason": "Explicit evaluation-only mode",
+    "status": "not_audited"
+  },
+  "validation": {
+    "policy-h32-e10": {
+      "actual_complete_sample_mean": 0.51953125,
+      "completed_sample_action_counts": {
+        "activate": 48,
+        "buy": 304,
+        "cast_spell": 56,
+        "choose": 100,
+        "end_turn": 252,
+        "play": 256
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.51953125
+    },
+    "policy-h32-e30": {
+      "actual_complete_sample_mean": 0.53515625,
+      "completed_sample_action_counts": {
+        "activate": 44,
+        "buy": 308,
+        "cast_spell": 76,
+        "choose": 116,
+        "end_turn": 252,
+        "play": 256
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.53515625
+    },
+    "policy-h64-e10": {
+      "actual_complete_sample_mean": 0.50390625,
+      "completed_sample_action_counts": {
+        "activate": 48,
+        "buy": 304,
+        "cast_spell": 56,
+        "choose": 100,
+        "end_turn": 252,
+        "play": 256
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.50390625
+    },
+    "policy-h64-e30": {
+      "actual_complete_sample_mean": 0.5,
+      "completed_sample_action_counts": {
+        "activate": 48,
+        "buy": 304,
+        "cast_spell": 56,
+        "choose": 100,
+        "end_turn": 252,
+        "play": 256
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.5
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.50390625,
+      "completed_sample_action_counts": {
+        "activate": 48,
+        "buy": 304,
+        "cast_spell": 56,
+        "choose": 100,
+        "end_turn": 252,
+        "play": 256
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.50390625
+    }
+  }
+}

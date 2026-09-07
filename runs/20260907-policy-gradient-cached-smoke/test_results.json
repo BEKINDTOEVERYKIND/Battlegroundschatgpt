@@ -1,0 +1,117 @@
+{
+  "policies": {
+    "practical": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bc_reference": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.0,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      }
+    }
+  },
+  "episodes": [
+    {
+      "seed": 90907103,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 2,
+            "play": 2,
+            "end_turn": 2,
+            "cast_spell": 1,
+            "choose": 1
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.0,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 3,
+            "play": 3,
+            "sell": 3,
+            "end_turn": 2,
+            "cast_spell": 2,
+            "choose": 1
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 90908112,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 3,
+            "play": 2,
+            "end_turn": 2,
+            "cast_spell": 1
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.0,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 4,
+            "play": 2,
+            "sell": 2,
+            "cast_spell": 2,
+            "choose": 1,
+            "end_turn": 2
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    }
+  ]
+}

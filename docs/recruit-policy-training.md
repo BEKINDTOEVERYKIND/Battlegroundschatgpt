@@ -87,3 +87,17 @@ compressed expert/validation/test traces, model checkpoints, manifests,
 failures, selection and result summaries. `--allow-historical` supports local
 engineering smoke tests and explicitly prevents promotion by the live-snapshot
 gate. It is not current-patch validation.
+
+Future runs now generate expert data through `VerifiedTrajectoryWriter` and may
+fit only after its final-path gzip/footer, ordered-seed and record-count checks
+succeed. `expert_archive_integrity.json` records that verification. Reused data
+also requires the exact accepted seed plan, trajectory/decision counts, and a
+strict checksum/footer check of the copied destination before fitting. This
+fix was integrated after deterministic recovery of the original run; its
+original corrupt archive and execution snapshots remain unchanged.
+
+Source capture includes loaded local Python modules, including indirect script
+imports such as `archive_recruit_runs.py`, as well as the existing package and
+simulator scans. `execution_source_manifest.json` records capture/writer versions
+and the source-archive hash. The compressed path-to-source-text map keeps its
+existing format for compatibility.

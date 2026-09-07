@@ -1,0 +1,28 @@
+{
+  "checkpoints": [
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h32-e10.json",
+      "original_sha256": "db2c4746e80958558d4ea2f9a6aaf0a15458bf191ea8b94b50765af5218cdb8a",
+      "recovered_sha256": "db2c4746e80958558d4ea2f9a6aaf0a15458bf191ea8b94b50765af5218cdb8a"
+    },
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h32-e30.json",
+      "original_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+      "recovered_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d"
+    },
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h64-e10.json",
+      "original_sha256": "58e72d5410f4a16d72424c3233bdc214adfe63e9a834c509031130896d0a5794",
+      "recovered_sha256": "58e72d5410f4a16d72424c3233bdc214adfe63e9a834c509031130896d0a5794"
+    },
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h64-e30.json",
+      "original_sha256": "c3c55965073e0627d90650199e18bf55b5e7d20dc2c7e5f861029a106f749853",
+      "recovered_sha256": "c3c55965073e0627d90650199e18bf55b5e7d20dc2c7e5f861029a106f749853"
+    }
+  ]
+}

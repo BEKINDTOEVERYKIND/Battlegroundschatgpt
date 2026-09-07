@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "format": "raw-archive-chunks-v1",
+  "chunk_size_bytes": 8388608,
+  "archives": [
+    {
+      "file": "expert_trajectories.jsonl.gz",
+      "size_bytes": 18654238,
+      "sha256": "47f7c5257caee302dccb723be5be9b1876ccca888d5493a20792167ede14d040",
+      "parts": [
+        {
+          "file": "evidence_parts/expert_trajectories.jsonl.gz.part-000000",
+          "size_bytes": 8388608,
+          "sha256": "52d9b3cb30acb3b9c85df5e232e59c4ea8555a9d19ad9117de37b4c6abb7b64c"
+        },
+        {
+          "file": "evidence_parts/expert_trajectories.jsonl.gz.part-000001",
+          "size_bytes": 8388608,
+          "sha256": "3bf7fc379960bd1fc0495f0be614942058b1b38c454d46f953e6c3e49e85dc7e"
+        },
+        {
+          "file": "evidence_parts/expert_trajectories.jsonl.gz.part-000002",
+          "size_bytes": 1877022,
+          "sha256": "527b823fff0311f76a67dc3f988cfc45c6647ea1b1a39038faa345d3eda48483"
+        }
+      ]
+    },
+    {
+      "file": "recovered_expert_data/expert_trajectories.jsonl.gz",
+      "size_bytes": 19043617,
+      "sha256": "1da5de0ab814652b873e1c44f21f696a479bd81370c2ab8a247bbedc2884e72e",
+      "parts": [
+        {
+          "file": "evidence_parts/recovered_expert_data/expert_trajectories.jsonl.gz.part-000000",
+          "size_bytes": 8388608,
+          "sha256": "e104590bcd63eaa9ba8629a8bb890d10733a172f0407ebbe3716035a23baf4aa"
+        },
+        {
+          "file": "evidence_parts/recovered_expert_data/expert_trajectories.jsonl.gz.part-000001",
+          "size_bytes": 8388608,
+          "sha256": "09e895ba63fa034fe67ee929ae93b178d87e0ab48f9eae6d6544389d164816ab"
+        },
+        {
+          "file": "evidence_parts/recovered_expert_data/expert_trajectories.jsonl.gz.part-000002",
+          "size_bytes": 2266401,
+          "sha256": "2f6b0d92b2e2e78915345c659677be2904a16ed9578c301ac90d9d18b4832a66"
+        }
+      ]
+    },
+    {
+      "file": "recovered_expert_data/original_complete_prefix.jsonl.gz",
+      "size_bytes": 18673647,
+      "sha256": "4e1e8c883416ac0a78ec48b48d476aca1eefd68cb68b0f348f963ed43f360bb8",
+      "parts": [
+        {
+          "file": "evidence_parts/recovered_expert_data/original_complete_prefix.jsonl.gz.part-000000",
+          "size_bytes": 8388608,
+          "sha256": "21df0305e3ae894f98ede5a80d137e6148ea372f3d7246320b310bf6d9c594cf"
+        },
+        {
+          "file": "evidence_parts/recovered_expert_data/original_complete_prefix.jsonl.gz.part-000001",
+          "size_bytes": 8388608,
+          "sha256": "cbc9e6027d7bd38c8efc45ce0b5ab8ced052b389ccb06062982cfcd6f850e70b"
+        },
+        {
+          "file": "evidence_parts/recovered_expert_data/original_complete_prefix.jsonl.gz.part-000002",
+          "size_bytes": 1896431,
+          "sha256": "7cf43e3c269fb2c1753abacea3446ed1759035d420c915c9d7dd25adecdd75fe"
+        }
+      ]
+    },
+    {
+      "file": "test_trajectories.jsonl.gz",
+      "size_bytes": 50850386,
+      "sha256": "eecdd6317b22865ed8a257743cbcc3f96dfddbc1b5d5e3a65f64710ee6f6cfbb",
+      "parts": [
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000000",
+          "size_bytes": 8388608,
+          "sha256": "ff4ee3e825d889c10d0ad20aa5b5a4274783fe10aed57af17164dde124ff1bae"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000001",
+          "size_bytes": 8388608,
+          "sha256": "71307104ce99f461943de59a04d944a8a7e4cf9abfe5764ab0faad26883edfdb"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000002",
+          "size_bytes": 8388608,
+          "sha256": "bc9b1c032972aa2d67e14d093ae183ef3c53f9c31aab1bac64ceb8d4a49eab1f"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000003",
+          "size_bytes": 8388608,
+          "sha256": "c72c5bbc06eae7cbb40e715638515eb8fa7367996e66ddef49f6d653e9c88aa2"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000004",
+          "size_bytes": 8388608,
+          "sha256": "a781d58383b3a9716b49028d0cbc66a20d71541fa22f1d2c8e77c0cc8b2232b9"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000005",
+          "size_bytes": 8388608,
+          "sha256": "9929a6682405ec3cd443a89988a6500815863a9993b0922f9cedfc8c4232114b"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000006",
+          "size_bytes": 518738,
+          "sha256": "bce7a61e3799b0dc498c5323e3d6d647b2a71cc8a2df517ada8973b0baf02fc5"
+        }
+      ]
+    },
+    {
+      "file": "validation_trajectories.jsonl.gz",
+      "size_bytes": 15755958,
+      "sha256": "d1c9d310a290319731c35c51c662a5faddc5626c8542faa12ab3927709f6b66d",
+      "parts": [
+        {
+          "file": "evidence_parts/validation_trajectories.jsonl.gz.part-000000",
+          "size_bytes": 8388608,
+          "sha256": "02cdfd6221e5d687e58fb02e31cee1cec4782bebdf3a499580148cb5f80e1578"
+        },
+        {
+          "file": "evidence_parts/validation_trajectories.jsonl.gz.part-000001",
+          "size_bytes": 7367350,
+          "sha256": "02cda6df335145d4584aa4921b628fe6de94f4c56ebb34605f8fbce88bdedd79"
+        }
+      ]
+    }
+  ]
+}

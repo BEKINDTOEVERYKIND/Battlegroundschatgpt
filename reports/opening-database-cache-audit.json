@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "scope": "setup performance and deterministic equality; no policy selection",
+  "prototype": "verified export cached; independently decoded CardDefs/raw dictionaries per view",
+  "executing_training_sources_modified": false,
+  "main_test_outcomes_read": false,
+  "profile": [
+    {
+      "function": "_read_xml",
+      "calls": 2,
+      "cumulative_seconds": 1.384170056
+    },
+    {
+      "function": "export_current_definitions",
+      "calls": 2,
+      "cumulative_seconds": 2.8012499990000004
+    },
+    {
+      "function": "build_current_database",
+      "calls": 1,
+      "cumulative_seconds": 1.651622917
+    },
+    {
+      "function": "build_opening_database",
+      "calls": 1,
+      "cumulative_seconds": 3.13754612
+    }
+  ],
+  "cache_initialization_seconds": 1.0390246210008627,
+  "builds": [
+    {
+      "tribes": [
+        "DEMON",
+        "MURLOC",
+        "NAGA",
+        "PIRATE",
+        "UNDEAD"
+      ],
+      "uncached_seconds": 2.441545358997246,
+      "cached_seconds": 0.27602828000090085,
+      "all_definitions_and_provenance_equal": true,
+      "ordered_pool_ids_equal": true,
+      "constructed_definitions_sha256": "8258c53d48ffa2d5b14f892b29a13854eeb3f80a8e6a540254ebaa2813c7047e"
+    },
+    {
+      "tribes": [
+        "BEAST",
+        "ELEMENTAL",
+        "MURLOC",
+        "PIRATE",
+        "QUILBOAR"
+      ],
+      "uncached_seconds": 2.7816764200033504,
+      "cached_seconds": 0.2832839359980426,
+      "all_definitions_and_provenance_equal": true,
+      "ordered_pool_ids_equal": true,
+      "constructed_definitions_sha256": "2b86ba8a3b43754ae7e96a19aa8e83d2ec08a9c4651a9d988561f6e58b5030e0"
+    },
+    {
+      "tribes": [
+        "BEAST",
+        "DEMON",
+        "MECH",
+        "NAGA",
+        "QUILBOAR"
+      ],
+      "uncached_seconds": 2.7159538229971076,
+      "cached_seconds": 0.38521826500073075,
+      "all_definitions_and_provenance_equal": true,
+      "ordered_pool_ids_equal": true,
+      "constructed_definitions_sha256": "863ee6ea287c80e1107502e2c5947a184cb4bcd5794e72c5de1e02a18e187136"
+    }
+  ],
+  "means": {
+    "uncached_build_seconds": 2.646391867332568,
+    "cached_build_seconds": 0.31484349366655806
+  },
+  "cold_build_speedup_excluding_one_time_export": 8.405420218514307,
+  "nested_mutation_isolation_passed": true,
+  "episodes": [
+    {
+      "seed": 710041,
+      "uncached_cold_seconds": 3.352995335997548,
+      "cached_cold_seconds": 0.3739272040038486,
+      "existing_tuple_warm_seconds": 0.07496041100239381,
+      "commands": 62,
+      "complete_trajectory_equal": true,
+      "repeat_equal": true,
+      "trajectory_sha256": "2ca6a296290ec8e5f9a5fb991b6c23e705d15349d06297bf3846c4c905cc045a"
+    },
+    {
+      "seed": 710042,
+      "uncached_cold_seconds": 3.115281039994443,
+      "cached_cold_seconds": 0.5341323330067098,
+      "existing_tuple_warm_seconds": 0.07688070500444155,
+      "commands": 64,
+      "complete_trajectory_equal": true,
+      "repeat_equal": true,
+      "trajectory_sha256": "857bd4b08b04c0d0f9b10c52bb1e9d64b02ae2574db9120540c4bde9877fa7ec"
+    },
+    {
+      "seed": 710043,
+      "uncached_cold_seconds": 3.4851570620012353,
+      "cached_cold_seconds": 0.6490618250027183,
+      "existing_tuple_warm_seconds": 0.09315589600009844,
+      "commands": 76,
+      "complete_trajectory_equal": true,
+      "repeat_equal": true,
+      "trajectory_sha256": "3cd3004e0422ce73d43c48044e0d202a41f0438e1bcced71f50b4688379294f1"
+    }
+  ],
+  "main_progress_only": {
+    "stage": "expert_generation",
+    "completed": 85,
+    "total": 512,
+    "sampled_combats": 680,
+    "elapsed_seconds": 351.39196491241455
+  },
+  "limitations": [
+    "Timing overlaps a live training process and is hardware/load dependent",
+    "Prototype is not wired into an executing or frozen experiment",
+    "Fresh scoped CardDefs retain existing memory use; sharing raw objects needs a read-only contract",
+    "Only three performance seeds and current two-turn supported practical trajectories compared"
+  ]
+}

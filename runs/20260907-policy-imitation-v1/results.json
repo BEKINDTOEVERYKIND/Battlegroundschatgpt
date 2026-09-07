@@ -1,0 +1,195 @@
+{
+  "full_game_ready": false,
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "selection": {
+    "deployment_policy": "practical",
+    "experimental_learner": "policy-h32-e30",
+    "learner_promoted_within_fixture": false,
+    "full_game_ready": false,
+    "eligible_learners": [
+      "policy-h32-e10",
+      "policy-h32-e30",
+      "policy-h64-e10",
+      "policy-h64-e30"
+    ],
+    "reason": "Practical retained: the frozen learner did not pass every independent-test superiority/currentness gate",
+    "experimental_checkpoint_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+    "deployment_checkpoint": null,
+    "independent_test_gate_passed": false
+  },
+  "training": {
+    "attempted_trajectories": 512,
+    "accepted_trajectories": 512,
+    "decisions": 3999,
+    "failure_reasons": {}
+  },
+  "validation": {
+    "practical": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.50390625,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "policy-h32-e10": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.51953125,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.015625,
+        "ci95": [
+          -0.001953125,
+          0.0390625
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.015625,
+        "ci95": [
+          -0.001953125,
+          0.0390625
+        ]
+      }
+    },
+    "policy-h32-e30": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.53515625,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.03125,
+        "ci95": [
+          -0.013671875,
+          0.083984375
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.03125,
+        "ci95": [
+          -0.013671875,
+          0.083984375
+        ]
+      }
+    },
+    "policy-h64-e10": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.50390625,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "policy-h64-e30": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.5,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.00390625,
+        "ci95": [
+          -0.01171875,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": -0.00390625,
+        "ci95": [
+          -0.01171875,
+          0.0
+        ]
+      }
+    }
+  },
+  "test": {
+    "practical": {
+      "attempted_episodes": 128,
+      "complete_episodes": 128,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.49169921875,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 128,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "policy-h32-e30": {
+      "attempted_episodes": 128,
+      "complete_episodes": 128,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.496337890625,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.004638671875,
+        "ci95": [
+          -0.011474609375,
+          0.0205078125
+        ]
+      },
+      "support_intersection_episodes": 128,
+      "paired_supported_intersection": {
+        "mean_delta": 0.004638671875,
+        "ci95": [
+          -0.011474609375,
+          0.0205078125
+        ]
+      }
+    }
+  },
+  "current_snapshot_verified": true,
+  "sampled_combats_including_rejections": 25600,
+  "elapsed_seconds": 1647.8272840976715,
+  "limitations": [
+    "Imitates a fixed practical teacher; combat improvement is measured separately, not assumed",
+    "Only two-turn current Tier1 fixture; no full-game MMR or seasonal coverage",
+    "Synthetic 15/20/30 second own timers, 60 second opponents; one command/sec plus costs and 5 second reserve",
+    "Shortlist excludes most board positioning choices; legal upgrades remain possible but unsupported next-tier draws abort",
+    "Small validation samples and repeated model comparisons do not establish a population guarantee",
+    "Failed episodes are penalized, while supported-intersection estimates remain conditional"
+  ]
+}

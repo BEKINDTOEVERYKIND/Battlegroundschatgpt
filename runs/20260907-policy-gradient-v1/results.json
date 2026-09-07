@@ -1,0 +1,227 @@
+{
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "full_game_ready": false,
+  "selection": {
+    "deployment_policy": "practical",
+    "experimental_learner": "bc_reference",
+    "learner_promoted_within_fixture": false,
+    "full_game_ready": false,
+    "eligible_learners": [
+      "bc_reference",
+      "pg-iteration-004",
+      "pg-iteration-008",
+      "pg-iteration-012",
+      "pg-iteration-016"
+    ],
+    "reason": "Existing baseline retained: no frozen gradient actor passed every independent-test superiority/currentness gate versus both controls",
+    "experimental_checkpoint_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+    "independent_test_gate_passed": false,
+    "existing_baseline": "practical",
+    "policy_gradient_promoted": false
+  },
+  "completed_update_batches": 16,
+  "accepted_update_batches": 16,
+  "optimizer_updates": 32,
+  "skipped_zero_signal_updates": 0,
+  "rejected_update_batches": 0,
+  "attempted_training_pairs": 128,
+  "failed_training_pairs": 0,
+  "failure_reasons": {},
+  "validation": {
+    "practical": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.49609375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bc_reference": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-004": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-008": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-012": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-016": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    }
+  },
+  "test": {
+    "practical": {
+      "attempted_episodes": 128,
+      "complete_episodes": 128,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.508056640625,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 128,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bc_reference": {
+      "attempted_episodes": 128,
+      "complete_episodes": 128,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.500732421875,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.00732421875,
+        "ci95": [
+          -0.02294921875,
+          0.0068359375
+        ]
+      },
+      "support_intersection_episodes": 128,
+      "paired_supported_intersection": {
+        "mean_delta": -0.00732421875,
+        "ci95": [
+          -0.02294921875,
+          0.0068359375
+        ]
+      }
+    }
+  },
+  "frozen_experimental_vs_bc_reference": {
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "current_snapshot_verified": true,
+  "sampled_combats_including_rejections": 24576,
+  "elapsed_seconds": 501.7265532016754,
+  "limitations": [
+    "Only audited current Tier1 two-turn fixture with synthetic 15/20/30 second own timers",
+    "BC reference and practical opponents remain fixed; no claim of full-game strength",
+    "Unsupported batches provide no gradient; supported-batch learning remains conditional on engine scope",
+    "Stochastic training optimizes complete returns; deterministic argmax actors are separately evaluated",
+    "Monte Carlo returns are noisy; single preregistered test gate only, no test tuning or alternate model selection"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "selection": {
+    "deployment_policy": "practical",
+    "experimental_learner": "policy-h8-e1",
+    "learner_promoted_within_fixture": false,
+    "full_game_ready": false,
+    "eligible_learners": [],
+    "reason": "Experimental learner frozen from full-policy validation; practical retained pending the single independent test",
+    "experimental_checkpoint_sha256": "ba66be508a9e79e155ee02bdb30602e2b9e59e4353340f9e4b9f33648aa6a128",
+    "deployment_checkpoint": null
+  },
+  "seeds": [
+    202639071919,
+    202639072928
+  ],
+  "samples": 1,
+  "experimental_checkpoint_sha256": "ba66be508a9e79e155ee02bdb30602e2b9e59e4353340f9e4b9f33648aa6a128",
+  "selection_complete_before_test": true
+}

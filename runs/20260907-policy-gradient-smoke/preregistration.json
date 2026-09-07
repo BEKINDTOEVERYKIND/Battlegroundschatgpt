@@ -1,0 +1,82 @@
+{
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "full_game_ready": false,
+  "config": {
+    "temperature": 0.5,
+    "clip_epsilon": 0.15,
+    "reference_kl": 0.1,
+    "learning_rate": 0.0001,
+    "epochs": 2,
+    "batch_episodes": 1,
+    "max_gradient_norm": 1.0
+  },
+  "iterations": 2,
+  "episodes_per_iteration": 1,
+  "checkpoint_every": 1,
+  "seed_plan": {
+    "train": [
+      60907101,
+      60908110
+    ],
+    "validation": [
+      80907101,
+      80908110
+    ],
+    "test": [
+      90907101,
+      90908110
+    ]
+  },
+  "reference_sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb",
+  "feature_version": "recruit-two-turn-visible-action-v2-lifetimes",
+  "feature_schema_sha256": "51d2841cd4206a776365c054c9b30d5ec12d2e03d583547da301e378b4381b2b",
+  "feature_count": 1311,
+  "ruleset_file_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "timing_profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+  "choice_timing_version": "visible-opening-choice-reservation-v1",
+  "objective": "Sum clipped action-ratio times complete two-combat score minus paired practical score; average episodes; add KL(frozen BC || actor)",
+  "sampling": "softmax over unchanged canonical max16 legal candidates; RNG separate from fixture/combat RNG",
+  "baseline": "independent practical-action rollout of same fixture and combat seeds; no actor observations of its outcomes",
+  "unsupported": "archive every attempt; reject entire update batch if any actor or practical rollout fails; no replacement seeds or partial return targets",
+  "validation_samples": 1,
+  "test_samples": 1,
+  "selection": "complete deterministic actors on fixed fresh validation fixtures; practical fallback and BC candidate retained; select_validation gates unchanged",
+  "independent_test_promotion": "single frozen learner only: paired lower95 > 0 versus practical, zero learner/control failures and timing violations, live snapshot verified; fixture only",
+  "historical_mode": true,
+  "source_sha256": {
+    "python/bg_ai/__init__.py": "d5eede8b3faca1c7683eceaa5b168fc14d00fa2527e86ecab3473ecf9ef7cc4e",
+    "python/bg_ai/choice_timing.py": "efe2eaaaa932266451db9ef2990cd6368c57d9b86e3874ff1db057a071d579be",
+    "python/bg_ai/features.py": "454c92dbf855d534ea880462df8a9d27f82a10cc147429cd2ea1a0d9016de146",
+    "python/bg_ai/hsbrsim_adapter.py": "28a09a77a08d4c06e363a12108d60389c47502a8e25ff83a059c79ffe109b9d5",
+    "python/bg_ai/hsbrsim_battlecries.py": "38c41bc2e852ad3891d5fa97c3da401630230d6f5a1f5b823213aa79c4c4f155",
+    "python/bg_ai/hsbrsim_data.py": "782f0a1817d5e02ec1a1148f9f1f816cfa76c564fba82e84213ba1fb4d39d46e",
+    "python/bg_ai/hsbrsim_effects.py": "bca31f5d75e3f1a3a7b373568f7e4c1327a6d45a052b95754a8a575271262383",
+    "python/bg_ai/hsbrsim_heroes.py": "6483754aff96b0d2bc3aed425a579443da16815bdd6271bdde53d1fe850f1cba",
+    "python/bg_ai/hsbrsim_opening.py": "74488b2c3a69b501f4f0d3b939e82b304acea5fbb2bf99c4b52be0b7b19e4327",
+    "python/bg_ai/hsbrsim_rules.py": "ea4a1f95c98a54e626362ef7948a4c8a0e7faa45829506d5479e505ed04a9045",
+    "python/bg_ai/learning.py": "039833dddcce6ce6ad84b4e9d9f16971eeb96a2f1aa927a08a0225c5f0f765a6",
+    "python/bg_ai/opening_transition.py": "3ad29bc74cb33d4a30f5ebffe12cae8de4fb8edb6939c3cfe684476bfbde6db8",
+    "python/bg_ai/policy_gradient.py": "9cd36a25ba1910646fb9e5da7572f551240470a5950d030159d9c9077cc3cff5",
+    "python/bg_ai/policy_learning.py": "566447ec89a1bdcc2febf06c282514798d1f41b94eec443723e386c2af6ffc2d",
+    "python/bg_ai/position_actions.py": "0641237c23b968407099c28aafcfe18b133524a92b3799012e8bf18b7a4cebd9",
+    "python/bg_ai/positioning_versions.py": "0198bd6630fb45c1e7179145473ac3dfa35c8038877d1c78431c8cdd92d631ef",
+    "python/bg_ai/provenance.py": "1d3b501bc9a9f634f924bd46ab166fec76c6c6f28dd6751c660230e5c6327cb9",
+    "python/bg_ai/recruit_features.py": "ee6b9754f41e97a1a69e74da3af29202c122a0744e9510212ddf0f7bf2f54224",
+    "python/bg_ai/recruiting.py": "4be06f4b5e7d7a81a4dcdfa9efb90f5a372d63d2d5c8e5a8ebbb7101bd7a72ae",
+    "python/bg_ai/tier2_opening.py": "e72e24966389b4f361d7630d20c6ccdeb5cfd1513ce292bdf1ceef9fbaccabbc",
+    "python/bg_ai/timed_recruiting.py": "41fb3a102f4f0a1636c600af655b6d41dfc8a332e0b0de1b6e00b6fe53ab9159",
+    "python/bg_ai/trinkets.py": "7743b1139efc4cb5a0be2c437bb3c91e377bc5c04c5d0c550abe423bac81c25d",
+    "python/bg_ai/turn_budget.py": "76dbc940b43c8b3c5c8e97c30d5b3afa03e3657dd20b19477bdda5d2d5b4dc37",
+    "python/bg_ai/two_turn_features.py": "b48aa51aa6d21d0bbabdac15a0b115a9595c2a2dacb0dc5cd2ee7776e5b60b56",
+    "python/bg_ai/two_turn_features_v2.py": "eed3e5cb4e05df134c9d17975c193120133db6189ec2fb193cce6e07ef2949c9",
+    "scripts/check_live_ruleset.py": "8ded7d94acd2f2b47dd3a9766bc170d8399abbbf076fa35a99de8c3640ecc7c0",
+    "scripts/train_recruit_curriculum.py": "cbca493d4f612bb475fbcb74952cc91b53df6142e55abee979db9dace8958e34",
+    "scripts/train_recruit_policy.py": "8b1b36bfb61244abf19297b96d4bd704924c6ed94165ea2f2d53e2f28e3c0e90",
+    "scripts/train_two_turn_recruit.py": "0430ec2ab21e9012afc9744b688fa006a89998df100667ca0a8988d4aeff65f0",
+    "simulator/firestone.mjs": "b9a1ec0c56bbcc2f957a654ee41ae5cd5acc2342558d5a254702deba34dc580d",
+    "simulator/opening-firestone.mjs": "cfe32c78c1e389046bfc536b2e91057fd6196b1b1ab54a700c76dc3863be6907",
+    "simulator/opening-transition-firestone.mjs": "3aed1ad196253201e7e941f05bbea0388ada8ecef0b46796e4100a2cce33af02"
+  },
+  "executed_script_sha256": "3e0b5c81ed8a824e022d6177c236e9293b370cc4ee9eda987db0510bbefbc48a"
+}

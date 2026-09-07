@@ -1,8 +1,11 @@
 """Actor-training labels, whole-trajectory support and frozen-test selection."""
 from copy import deepcopy
+import gzip
 import importlib.util
+import json
 from pathlib import Path
 import sys
+import tempfile
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
@@ -10,6 +13,8 @@ from unittest.mock import patch
 import numpy as np
 
 from bg_ai.recruiting import RecruitAction
+from bg_ai.learning import Scenario
+from bg_ai.verified_trajectory_archive import ArchiveIntegrityError
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -118,6 +123,68 @@ class RecruitPolicyTrainingTests(unittest.TestCase):
         self.assertEqual(calls, [(0, 1, model), (1, 1, None), (0, 2, model)])
         self.assertEqual(result["score"], 1.)
         self.assertEqual(len(result["commands"]), 3)
+
+    def test_expert_archive_finalization_failure_blocks_fitting(self):
+        trajectory = {"seed": 13, "complete": True,
+            "combats": [{"receipt": {"turn": 1}}, {"receipt": {"turn": 2}}],
+            "decisions": [{"decision_id": "expert-13-0", "split": "train", "observation": {"turn": 1},
+                "candidates": [{"features": [1., 0.], "preferred": 1.},
+                               {"features": [0., 1.], "preferred": 0.}]}]}
+        bridge = SimpleNamespace(requests=0, close=lambda: None)
+        with tempfile.TemporaryDirectory() as directory, \
+             patch.object(trainer, "PolicyFactory"), \
+             patch.object(trainer, "CombatBridge", return_value=bridge), \
+             patch.object(trainer, "play_episode", return_value=trajectory), \
+             patch.object(trainer.VerifiedTrajectoryWriter, "finish", side_effect=ArchiveIntegrityError("incomplete archive")), \
+             patch.object(trainer, "fit_policy") as fit:
+            out = Path(directory) / "run"
+            with self.assertRaisesRegex(ArchiveIntegrityError, "incomplete archive"):
+                trainer.main(["--engine-root", directory, "--out", str(out), "--trajectories", "1",
+                    "--validation-episodes", "2", "--test-episodes", "2", "--hidden", "2", "--epochs", "1",
+                    "--seed", "13", "--allow-historical"])
+            fit.assert_not_called()
+            self.assertFalse((out / "expert_trajectories.jsonl.gz").exists())
+            self.assertTrue((out / "failure.json").exists())
+
+    def test_source_snapshot_captures_indirect_local_script_imports(self):
+        with tempfile.TemporaryDirectory() as directory:
+            out = Path(directory)
+            hashes = trainer.source_snapshot(out)
+            with gzip.open(out / "execution_sources.json.gz", "rt") as stream:
+                payload = json.load(stream)
+            relative = "scripts/archive_recruit_runs.py"
+            self.assertEqual(hashes[relative], trainer.sha(ROOT / relative))
+            self.assertEqual(payload[relative]["content"], (ROOT / relative).read_text())
+            manifest = json.loads((out / "execution_source_manifest.json").read_text())
+            self.assertEqual(manifest["capture_version"], trainer.SOURCE_CAPTURE_VERSION)
+            self.assertIn(relative, manifest["loaded_local_python_modules"])
+            self.assertEqual(manifest["source_archive_sha256"], trainer.sha(out / "execution_sources.json.gz"))
+
+    def test_reuse_validates_destination_footer_and_manifest_decision_count(self):
+        trajectory = {"seed": 9, "complete": True,
+            "combats": [{"receipt": {"turn": 1}}, {"receipt": {"turn": 2}}]}
+        scenario = Scenario("expert-9-0", "train", np.zeros((2, 2)), np.array([1., 0.]), {})
+        with tempfile.TemporaryDirectory() as directory:
+            source, destination = Path(directory) / "source", Path(directory) / "copy"
+            source.mkdir(); destination.mkdir()
+            archive = source / "expert_trajectories.jsonl.gz"
+            with gzip.open(archive, "wt") as stream:
+                stream.write(json.dumps(trajectory) + "\n")
+            expected = {"attempted_seeds": [9]}
+            manifest = dict(expected, accepted_trajectories=1, decisions=1, failures=[], archive_sha256=trainer.sha(archive))
+            trainer.write_json(source / "expert_data_manifest.json", manifest)
+            def truncated_copy(origin, target):
+                Path(target).write_bytes(Path(origin).read_bytes()[:-8])
+            with patch.object(trainer, "trajectory_scenarios", return_value=[scenario]), \
+                 patch.object(trainer.shutil, "copyfile", side_effect=truncated_copy):
+                with self.assertRaisesRegex(ArchiveIntegrityError, "Strict trajectory"):
+                    trainer.reuse_expert_data(source, expected, destination)
+            self.assertFalse((destination / "expert_data_manifest.json").exists())
+            manifest["decisions"] = 2
+            trainer.write_json(source / "expert_data_manifest.json", manifest)
+            with patch.object(trainer, "trajectory_scenarios", return_value=[scenario]):
+                with self.assertRaisesRegex(ValueError, "count mismatch"):
+                    trainer.reuse_expert_data(source, expected, destination)
 
 
 if __name__ == "__main__":

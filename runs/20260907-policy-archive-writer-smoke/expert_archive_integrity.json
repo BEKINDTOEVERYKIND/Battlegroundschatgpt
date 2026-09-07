@@ -1,0 +1,16 @@
+{
+  "records": 5,
+  "seeds": [
+    202609071919,
+    202609072928,
+    202609073937,
+    202609074946,
+    202609075955
+  ],
+  "gzip_footer_verified": true,
+  "archive_bytes": 196375,
+  "archive_sha256": "8587246519a5928852e4e6b0246018c34205ed6226dfed214b2c4f70c263c0fa",
+  "decoded_sha256": "9c027dbdc7f1f9844a07f52fb53c94a0bc2990d643d8af5e1ec61b85ec8b0989",
+  "publication": "verified-atomic-no-overwrite",
+  "path": "runs/20260907-policy-archive-writer-smoke/expert_trajectories.jsonl.gz"
+}

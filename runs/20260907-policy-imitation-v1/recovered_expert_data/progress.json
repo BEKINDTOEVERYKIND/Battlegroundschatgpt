@@ -1,0 +1,8 @@
+{
+  "completed": 512,
+  "decisions": 3999,
+  "elapsed_seconds": 305.2604062579994,
+  "original_rows_matched": 493,
+  "stage": "regenerate_expert",
+  "total": 512
+}

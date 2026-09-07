@@ -1,0 +1,18 @@
+{
+  "deployment_policy": "practical",
+  "experimental_learner": "bc_reference",
+  "learner_promoted_within_fixture": false,
+  "full_game_ready": false,
+  "eligible_learners": [
+    "bc_reference",
+    "pg-iteration-004",
+    "pg-iteration-008",
+    "pg-iteration-012",
+    "pg-iteration-016"
+  ],
+  "reason": "Existing baseline retained: no frozen gradient actor passed every independent-test superiority/currentness gate versus both controls",
+  "experimental_checkpoint_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+  "independent_test_gate_passed": false,
+  "existing_baseline": "practical",
+  "policy_gradient_promoted": false
+}

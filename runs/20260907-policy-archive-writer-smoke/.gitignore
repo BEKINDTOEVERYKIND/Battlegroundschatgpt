@@ -1,0 +1,2 @@
+# Unpublished temporary writer streams are scratch intermediates.
+/.*.pending

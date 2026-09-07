@@ -1,0 +1,82 @@
+{
+  "checkpoint_reproduction": [
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h32-e10.json",
+      "original_sha256": "db2c4746e80958558d4ea2f9a6aaf0a15458bf191ea8b94b50765af5218cdb8a",
+      "recovered_sha256": "db2c4746e80958558d4ea2f9a6aaf0a15458bf191ea8b94b50765af5218cdb8a"
+    },
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h32-e30.json",
+      "original_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+      "recovered_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d"
+    },
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h64-e10.json",
+      "original_sha256": "58e72d5410f4a16d72424c3233bdc214adfe63e9a834c509031130896d0a5794",
+      "recovered_sha256": "58e72d5410f4a16d72424c3233bdc214adfe63e9a834c509031130896d0a5794"
+    },
+    {
+      "byte_identical": true,
+      "checkpoint": "policy-h64-e30.json",
+      "original_sha256": "c3c55965073e0627d90650199e18bf55b5e7d20dc2c7e5f861029a106f749853",
+      "recovered_sha256": "c3c55965073e0627d90650199e18bf55b5e7d20dc2c7e5f861029a106f749853"
+    }
+  ],
+  "elapsed_seconds": 328.92625764800323,
+  "execution_sources_sha256": "e05b27a130488878040956d35e33cf2d48210c5332c0f52dfb6c0ef60966bbde",
+  "holdout_trajectories_read": false,
+  "interpretation": "Original truncated bytes preserved; separate deterministic recovery matches every available original row and all original checkpoint bytes. No holdout trajectories used.",
+  "numeric_threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "original_archive_sha256": "47f7c5257caee302dccb723be5be9b1876ccca888d5493a20792167ede14d040",
+  "original_manifest_sha256": "1f357cb926304a2104f628906cc46902c4218bbd8c0a662f442e91f1221b8df9",
+  "original_preregistration_sha256": "d6b3268e8531627956917befbfd32d480ee9033d62aa8bf3640427a1cd13aa11",
+  "original_rows_byte_identical": 0,
+  "original_rows_json_identical": 493,
+  "prefix": {
+    "complete_original_rows": 493,
+    "decoded_prefix_bytes": 453140174,
+    "decoded_prefix_sha256": "c531fa41ca52b7366dd94fc070e1e3e3d4711d08c40c48523c07d4e317691ec5",
+    "original_stream_complete": false,
+    "strict_prefix_archive_sha256": "4e1e8c883416ac0a78ec48b48d476aca1eefd68cb68b0f348f963ed43f360bb8"
+  },
+  "recovered_archive_sha256": "1da5de0ab814652b873e1c44f21f696a479bd81370c2ab8a247bbedc2884e72e",
+  "recovery_script_sha256": "06473db9a6a71e83ef7634c7474e49edc097119efd68f40154b3c8a5e085558a",
+  "regenerated_decisions": 3999,
+  "regenerated_trajectories": 512,
+  "source_dependencies": {
+    "additional_recovery_dependencies": {
+      "python/bg_ai/policy_factory_cached.py": "142cf473b99b03e41b0b6ccc91b003180f4cace3116fc9c5e9b1cb8c18cc8e7a",
+      "scripts/archive_recruit_runs.py": "d3c864d335cd09dca5d3690607b7a0b2cd3b5667ff53df98722c38402f2ab8b6"
+    },
+    "verified_original_dependencies": {
+      "python/bg_ai/__init__.py": "d5eede8b3faca1c7683eceaa5b168fc14d00fa2527e86ecab3473ecf9ef7cc4e",
+      "python/bg_ai/choice_timing.py": "efe2eaaaa932266451db9ef2990cd6368c57d9b86e3874ff1db057a071d579be",
+      "python/bg_ai/features.py": "454c92dbf855d534ea880462df8a9d27f82a10cc147429cd2ea1a0d9016de146",
+      "python/bg_ai/hsbrsim_adapter.py": "28a09a77a08d4c06e363a12108d60389c47502a8e25ff83a059c79ffe109b9d5",
+      "python/bg_ai/hsbrsim_data.py": "782f0a1817d5e02ec1a1148f9f1f816cfa76c564fba82e84213ba1fb4d39d46e",
+      "python/bg_ai/hsbrsim_opening.py": "74488b2c3a69b501f4f0d3b939e82b304acea5fbb2bf99c4b52be0b7b19e4327",
+      "python/bg_ai/learning.py": "039833dddcce6ce6ad84b4e9d9f16971eeb96a2f1aa927a08a0225c5f0f765a6",
+      "python/bg_ai/opening_transition.py": "3ad29bc74cb33d4a30f5ebffe12cae8de4fb8edb6939c3cfe684476bfbde6db8",
+      "python/bg_ai/policy_learning.py": "566447ec89a1bdcc2febf06c282514798d1f41b94eec443723e386c2af6ffc2d",
+      "python/bg_ai/recruit_features.py": "ee6b9754f41e97a1a69e74da3af29202c122a0744e9510212ddf0f7bf2f54224",
+      "python/bg_ai/recruiting.py": "4be06f4b5e7d7a81a4dcdfa9efb90f5a372d63d2d5c8e5a8ebbb7101bd7a72ae",
+      "python/bg_ai/timed_recruiting.py": "41fb3a102f4f0a1636c600af655b6d41dfc8a332e0b0de1b6e00b6fe53ab9159",
+      "python/bg_ai/turn_budget.py": "76dbc940b43c8b3c5c8e97c30d5b3afa03e3657dd20b19477bdda5d2d5b4dc37",
+      "python/bg_ai/two_turn_features.py": "b48aa51aa6d21d0bbabdac15a0b115a9595c2a2dacb0dc5cd2ee7776e5b60b56",
+      "python/bg_ai/two_turn_features_v2.py": "eed3e5cb4e05df134c9d17975c193120133db6189ec2fb193cce6e07ef2949c9",
+      "scripts/train_recruit_curriculum.py": "cbca493d4f612bb475fbcb74952cc91b53df6142e55abee979db9dace8958e34",
+      "scripts/train_recruit_policy.py": "8b1b36bfb61244abf19297b96d4bd704924c6ed94165ea2f2d53e2f28e3c0e90",
+      "scripts/train_two_turn_recruit.py": "0430ec2ab21e9012afc9744b688fa006a89998df100667ca0a8988d4aeff65f0",
+      "simulator/firestone.mjs": "b9a1ec0c56bbcc2f957a654ee41ae5cd5acc2342558d5a254702deba34dc580d",
+      "simulator/opening-firestone.mjs": "cfe32c78c1e389046bfc536b2e91057fd6196b1b1ab54a700c76dc3863be6907",
+      "simulator/opening-transition-firestone.mjs": "3aed1ad196253201e7e941f05bbea0388ada8ecef0b46796e4100a2cce33af02"
+    }
+  },
+  "status": "verified_recovery"
+}

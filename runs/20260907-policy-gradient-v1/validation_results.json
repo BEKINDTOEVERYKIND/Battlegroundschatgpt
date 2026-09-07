@@ -1,0 +1,2815 @@
+{
+  "policies": {
+    "practical": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.49609375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bc_reference": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-004": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-008": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-012": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    },
+    "pg-iteration-016": {
+      "attempted_episodes": 32,
+      "complete_episodes": 32,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.505859375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      },
+      "support_intersection_episodes": 32,
+      "paired_supported_intersection": {
+        "mean_delta": 0.009765625,
+        "ci95": [
+          -0.0234375,
+          0.048828125
+        ]
+      }
+    }
+  },
+  "episodes": [
+    {
+      "seed": 2046090717,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046091726,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046092735,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.0,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046093744,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046094753,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046095762,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046096771,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046097780,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046098789,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 12,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 12,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "sell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 12,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "sell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 12,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "sell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 12,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "sell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.5,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 12,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "sell": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046099798,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046100807,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046101816,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046102825,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.4375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046103834,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046104843,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 8,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 8,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 8,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 8,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 8,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 8,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046105852,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046106861,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046107870,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.75,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046108879,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.125,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.125,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.125,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.125,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.125,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.125,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046109888,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046110897,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046111906,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.375,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046112915,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046113924,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8,
+            "activate": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046114933,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046115942,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.6875,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046116951,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046117960,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046118969,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046119978,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "cast_spell": 8,
+            "choose": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "cast_spell": 8,
+            "choose": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "cast_spell": 8,
+            "choose": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "cast_spell": 8,
+            "choose": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "cast_spell": 8,
+            "choose": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.5625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "cast_spell": 8,
+            "choose": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046120987,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.25,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 8,
+            "play": 8,
+            "end_turn": 8
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    },
+    {
+      "seed": 2046121996,
+      "policies": {
+        "practical": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "bc_reference": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-004": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-008": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-012": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        },
+        "pg-iteration-016": {
+          "complete": true,
+          "penalized_score": 0.625,
+          "failed_samples": 0,
+          "failure_reasons": {},
+          "action_counts": {
+            "buy": 12,
+            "play": 8,
+            "end_turn": 8,
+            "cast_spell": 4,
+            "choose": 4
+          },
+          "timing_budget_violations": 0
+        }
+      }
+    }
+  ]
+}

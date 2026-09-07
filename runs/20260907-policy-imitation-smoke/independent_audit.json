@@ -1,0 +1,228 @@
+{
+  "audit_version": "recruit-policy-evidence-audit-v1",
+  "checks": [
+    "Archived source contents match declared SHA256 without importing them",
+    "Exact planned policy/seed/sample grid including every failed sample",
+    "Actual complete scores recomputed from both sampled combat receipts",
+    "Failure-penalized episode scores separated from complete sampled combat scores",
+    "Own action counts and own/all-player timing counts, with failed partial traces separate",
+    "Both evaluation summaries and paired bootstrap intervals independently recomputed",
+    "Frozen experimental checkpoint identity and disjoint seed families"
+  ],
+  "consumed_files": {
+    "deployment_policy.json": {
+      "bytes": 478,
+      "sha256": "4300541878c0833769c073ad94eb8c3d48fcefef3547fb1fd6fe95ef4650a0a5"
+    },
+    "execution_sources.json.gz": {
+      "bytes": 118803,
+      "sha256": "59a6cbe93d6f265e0bf70bfdf5051dcce9930c0acb06956887b8bfa67687df82"
+    },
+    "experimental_model.json": {
+      "bytes": 1562918,
+      "sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb"
+    },
+    "expert_data_manifest.json": {
+      "bytes": 894,
+      "sha256": "67e2f1fd363499454898ac34a88b0c0afe22536d5b992a11365f949766764424"
+    },
+    "expert_rejected_trajectories.jsonl.gz": {
+      "bytes": 60,
+      "sha256": "913fc61fdb7ee98491c397090e798501abb6f968a2f4ab5bcc3e9dcf7d574c85"
+    },
+    "expert_trajectories.jsonl.gz": {
+      "bytes": 362239,
+      "sha256": "b9fa39d7cde7c6aa443f21b02cbe85771d2e40e2dd22ea1a6c1c1436d672cfa7"
+    },
+    "frozen_evaluation_plan.json": {
+      "bytes": 691,
+      "sha256": "730ca87314acbb479fe34a13499331d21be2bb808cacb3651020650ee0dc3228"
+    },
+    "policy-h16-e2.json": {
+      "bytes": 1562918,
+      "sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb"
+    },
+    "preregistration.json": {
+      "bytes": 66550,
+      "sha256": "5517bf13dbe828effd585da33047b5c362d65305fb64d23282dc18127eb32101"
+    },
+    "results.json": {
+      "bytes": 3577,
+      "sha256": "929c91e90ec613ef3d5e00c7c94851442d0d37d2481a1422df12d5b1cf2b15be"
+    },
+    "test_results.json": {
+      "bytes": 2631,
+      "sha256": "39840adee29d870285a8d7786d8841fa2e171aef457d2527da2159ddfa6c1604"
+    },
+    "test_trajectories.jsonl.gz": {
+      "bytes": 102884,
+      "sha256": "bfe94b899c4171a013eee1ef70bc7fa8fb7ef0d79f99ca00e34fad8fbad1d898"
+    },
+    "training.json": {
+      "bytes": 217,
+      "sha256": "b55620a618c0eba92516599a3a401d15ee8d6c25a58b4ceb6f2d61a752811cdf"
+    },
+    "validation_results.json": {
+      "bytes": 2688,
+      "sha256": "b8b9927c3ed6f026ec4bc863aa9a135b59b9a996794bbd975b752cb602506abe"
+    },
+    "validation_trajectories.jsonl.gz": {
+      "bytes": 101524,
+      "sha256": "70bd22ab96909b9effb2cd3e276134b039302c09f363bf9b7527841dd0b95c72"
+    }
+  },
+  "experimental_checkpoint_sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb",
+  "full_game_ready": false,
+  "independent_seed_families": {
+    "test": 2,
+    "train": 10,
+    "validation": 2
+  },
+  "kind": "behavior_cloning",
+  "limitations": [
+    "Evidence integrity audit; no simulator reexecution or proof of simulator correctness",
+    "Archives declare chronology; hashes alone cannot prove historical write timestamps",
+    "Original run currentness is preserved; no claim of currentness on the audit date"
+  ],
+  "reported_bootstrap_recomputed": true,
+  "run": "20260907-policy-imitation-smoke",
+  "status": "passed",
+  "test": {
+    "policy-h16-e2": {
+      "actual_complete_sample_mean": 0.0,
+      "completed_sample_action_counts": {
+        "buy": 6,
+        "cast_spell": 2,
+        "choose": 2,
+        "end_turn": 3,
+        "play": 6,
+        "sell": 6
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.0
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.5,
+      "completed_sample_action_counts": {
+        "activate": 1,
+        "buy": 4,
+        "choose": 1,
+        "end_turn": 4,
+        "play": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.5
+    }
+  },
+  "training": {
+    "accepted_trajectories": 10,
+    "accepted_visible_training_coverage": {
+      "minions": {
+        "active_pool_count": 22,
+        "missing_ids": [
+          "BG23_000",
+          "BG26_135",
+          "BG32_236",
+          "BG35_814"
+        ],
+        "observed_count": 18,
+        "observed_ids": [
+          "BG20_100",
+          "BG25_001",
+          "BG25_013",
+          "BG26_146",
+          "BG28_300",
+          "BG29_611",
+          "BG29_888",
+          "BG31_330",
+          "BG31_803",
+          "BG32_330",
+          "BG33_140",
+          "BG33_886",
+          "BG36_200",
+          "BG36_345",
+          "BG36_921",
+          "BGS_004",
+          "BGS_119",
+          "BGS_127"
+        ]
+      },
+      "spells": {
+        "active_pool_count": 8,
+        "missing_ids": [
+          "BG28_512"
+        ],
+        "observed_count": 7,
+        "observed_ids": [
+          "BG28_503",
+          "BG28_504",
+          "BG28_810",
+          "BG28_897",
+          "BG28_966",
+          "BG31_880",
+          "BG33_101"
+        ]
+      }
+    },
+    "attempted_trajectories": 10,
+    "coverage_scope": "Player-zero board/hand/shop in accepted expert training decisions; frozen active Tier1 declarations",
+    "decisions": 74,
+    "failure_reasons": {}
+  },
+  "validation": {
+    "policy-h16-e2": {
+      "actual_complete_sample_mean": 0.0,
+      "completed_sample_action_counts": {
+        "buy": 8,
+        "cast_spell": 7,
+        "choose": 5,
+        "end_turn": 4,
+        "play": 5,
+        "sell": 5
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.0
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.375,
+      "completed_sample_action_counts": {
+        "activate": 1,
+        "buy": 5,
+        "cast_spell": 2,
+        "choose": 2,
+        "end_turn": 4,
+        "play": 5
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 2,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.375
+    }
+  }
+}

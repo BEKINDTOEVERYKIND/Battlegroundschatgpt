@@ -1,0 +1,642 @@
+[
+  {
+    "iteration": 1,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.1875,
+        "reference_kl_per_decision": 0.0,
+        "clipped_fraction": 0.0,
+        "decisions": 64,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.0000000000000018,
+        "min_probability_ratio": 0.9999999999999964,
+        "epoch": 1,
+        "gradient_norm": 0.4004894044196712,
+        "gradient_clipped": false,
+        "optimizer_step": 1,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 0.18637306289714128,
+        "reference_kl_per_decision": 4.3106566524588726e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 64,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.003750487550532,
+        "min_probability_ratio": 0.9628340258413242,
+        "epoch": 2,
+        "gradient_norm": 0.4230988014171208,
+        "gradient_clipped": false,
+        "optimizer_step": 2,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.03125
+  },
+  {
+    "iteration": 2,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.0001579349735178906,
+        "reference_kl_per_decision": 0.00021057996469054854,
+        "clipped_fraction": 0.0,
+        "decisions": 60,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000018,
+        "min_probability_ratio": 0.9999999999999845,
+        "epoch": 1,
+        "gradient_norm": 0.8391404541064738,
+        "gradient_clipped": false,
+        "optimizer_step": 3,
+        "optimizer_updated": true
+      },
+      {
+        "loss": -0.0012727027249804885,
+        "reference_kl_per_decision": 0.000347432333952829,
+        "clipped_fraction": 0.0,
+        "decisions": 60,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0743325987338477,
+        "min_probability_ratio": 0.9618237406953548,
+        "epoch": 2,
+        "gradient_norm": 0.8221041850317458,
+        "gradient_clipped": false,
+        "optimizer_step": 4,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  },
+  {
+    "iteration": 3,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 9.897236799757272e-07,
+        "reference_kl_per_decision": 1.3890858666325995e-06,
+        "clipped_fraction": 0.0,
+        "decisions": 57,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000033,
+        "min_probability_ratio": 0.9999999999999998,
+        "epoch": 1,
+        "gradient_norm": 0.0016578971274951193,
+        "gradient_clipped": false,
+        "optimizer_step": 5,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 4.21467188810443e-07,
+        "reference_kl_per_decision": 5.915328965760603e-07,
+        "clipped_fraction": 0.0,
+        "decisions": 57,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0028150765208097,
+        "min_probability_ratio": 0.999905697097648,
+        "epoch": 2,
+        "gradient_norm": 0.0006210757466259766,
+        "gradient_clipped": false,
+        "optimizer_step": 6,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  },
+  {
+    "iteration": 4,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.25022640221440884,
+        "reference_kl_per_decision": 0.0003018696192117664,
+        "clipped_fraction": 0.0,
+        "decisions": 60,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.000000000000006,
+        "min_probability_ratio": 0.9999999999999972,
+        "epoch": 1,
+        "gradient_norm": 0.12192181823141975,
+        "gradient_clipped": false,
+        "optimizer_step": 7,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 0.25010955610505453,
+        "reference_kl_per_decision": 0.0001460742490501532,
+        "clipped_fraction": 0.0,
+        "decisions": 60,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.0567686897420958,
+        "min_probability_ratio": 0.9973083364068451,
+        "epoch": 2,
+        "gradient_norm": 0.0837558885307354,
+        "gradient_clipped": false,
+        "optimizer_step": 8,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.03125
+  },
+  {
+    "iteration": 5,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 9.655234920530922e-05,
+        "reference_kl_per_decision": 0.0001266260317446678,
+        "clipped_fraction": 0.0,
+        "decisions": 61,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000009,
+        "min_probability_ratio": 0.9999999999999979,
+        "epoch": 1,
+        "gradient_norm": 0.04267411941288991,
+        "gradient_clipped": false,
+        "optimizer_step": 9,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 7.759844433143825e-05,
+        "reference_kl_per_decision": 0.00010176845158221409,
+        "clipped_fraction": 0.0,
+        "decisions": 61,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0044778818103206,
+        "min_probability_ratio": 0.9909013463931476,
+        "epoch": 2,
+        "gradient_norm": 0.03729139931519202,
+        "gradient_clipped": false,
+        "optimizer_step": 10,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  },
+  {
+    "iteration": 6,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.00010918004066157612,
+        "reference_kl_per_decision": 0.00013647505082697015,
+        "clipped_fraction": 0.0,
+        "decisions": 64,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.000000000000004,
+        "min_probability_ratio": 0.9999999999999987,
+        "epoch": 1,
+        "gradient_norm": 0.05925200280371027,
+        "gradient_clipped": false,
+        "optimizer_step": 11,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 6.528330244014093e-05,
+        "reference_kl_per_decision": 8.160412805017616e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 64,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.060662185585958,
+        "min_probability_ratio": 0.992084935974024,
+        "epoch": 2,
+        "gradient_norm": 0.045306781651482796,
+        "gradient_clipped": false,
+        "optimizer_step": 12,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  },
+  {
+    "iteration": 7,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": -0.24999315151502108,
+        "reference_kl_per_decision": 8.696488862132954e-06,
+        "clipped_fraction": 0.0,
+        "decisions": 63,
+        "episodes": 8,
+        "mean_episode_advantage": 0.03125,
+        "max_probability_ratio": 1.0000000000000016,
+        "min_probability_ratio": 0.9999999999999978,
+        "epoch": 1,
+        "gradient_norm": 0.02371037681554078,
+        "gradient_clipped": false,
+        "optimizer_step": 13,
+        "optimizer_updated": true
+      },
+      {
+        "loss": -0.2500198821851016,
+        "reference_kl_per_decision": 9.442611930664705e-06,
+        "clipped_fraction": 0.0,
+        "decisions": 63,
+        "episodes": 8,
+        "mean_episode_advantage": 0.03125,
+        "max_probability_ratio": 1.0008742123126226,
+        "min_probability_ratio": 0.9999689525273247,
+        "epoch": 2,
+        "gradient_norm": 0.021849036756147105,
+        "gradient_clipped": false,
+        "optimizer_step": 14,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.03125
+  },
+  {
+    "iteration": 8,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.37506512323061075,
+        "reference_kl_per_decision": 8.269616585496462e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 63,
+        "episodes": 8,
+        "mean_episode_advantage": -0.0625,
+        "max_probability_ratio": 1.0000000000000036,
+        "min_probability_ratio": 0.9999999999999898,
+        "epoch": 1,
+        "gradient_norm": 0.14361368602478608,
+        "gradient_clipped": false,
+        "optimizer_step": 15,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 0.3748228698232533,
+        "reference_kl_per_decision": 6.255131194190922e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 63,
+        "episodes": 8,
+        "mean_episode_advantage": -0.0625,
+        "max_probability_ratio": 1.0566922535756242,
+        "min_probability_ratio": 0.9905034028199383,
+        "epoch": 2,
+        "gradient_norm": 0.14843694603295202,
+        "gradient_clipped": false,
+        "optimizer_step": 16,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.0625
+  },
+  {
+    "iteration": 9,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.2812761262606717,
+        "reference_kl_per_decision": 3.3711304092539e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 62,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.0000000000000029,
+        "min_probability_ratio": 0.9999999999999972,
+        "epoch": 1,
+        "gradient_norm": 0.11405765762526453,
+        "gradient_clipped": false,
+        "optimizer_step": 17,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 0.2811498881281258,
+        "reference_kl_per_decision": 4.228413087166126e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 62,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.0061646266073299,
+        "min_probability_ratio": 0.9868701950586811,
+        "epoch": 2,
+        "gradient_norm": 0.11468900028459507,
+        "gradient_clipped": false,
+        "optimizer_step": 18,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.03125
+  },
+  {
+    "iteration": 10,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 9.292596358507438e-05,
+        "reference_kl_per_decision": 0.00012817374287596466,
+        "clipped_fraction": 0.0,
+        "decisions": 58,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000013,
+        "min_probability_ratio": 0.9999999999999938,
+        "epoch": 1,
+        "gradient_norm": 0.0416665189723271,
+        "gradient_clipped": false,
+        "optimizer_step": 19,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 6.725398737360558e-05,
+        "reference_kl_per_decision": 9.276412051531804e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 58,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.016198239942116,
+        "min_probability_ratio": 0.9933951525348639,
+        "epoch": 2,
+        "gradient_norm": 0.035219915618197185,
+        "gradient_clipped": false,
+        "optimizer_step": 20,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  },
+  {
+    "iteration": 11,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.6252077393473671,
+        "reference_kl_per_decision": 0.00027244504572715303,
+        "clipped_fraction": 0.0,
+        "decisions": 61,
+        "episodes": 8,
+        "mean_episode_advantage": -0.0625,
+        "max_probability_ratio": 1.0000000000000018,
+        "min_probability_ratio": 0.9999999999999998,
+        "epoch": 1,
+        "gradient_norm": 0.5857120548066947,
+        "gradient_clipped": false,
+        "optimizer_step": 21,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 0.6247299352997042,
+        "reference_kl_per_decision": 0.0002499771910145106,
+        "clipped_fraction": 0.0,
+        "decisions": 61,
+        "episodes": 8,
+        "mean_episode_advantage": -0.0625,
+        "max_probability_ratio": 1.0004477326786747,
+        "min_probability_ratio": 0.9926288208270362,
+        "epoch": 2,
+        "gradient_norm": 0.5858038848881814,
+        "gradient_clipped": false,
+        "optimizer_step": 22,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.0625
+  },
+  {
+    "iteration": 12,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": -0.7187040021440692,
+        "reference_kl_per_decision": 5.333084745605183e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 69,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0625,
+        "max_probability_ratio": 1.0000000000000009,
+        "min_probability_ratio": 0.9999999999999969,
+        "epoch": 1,
+        "gradient_norm": 1.6884806472544776,
+        "gradient_clipped": true,
+        "optimizer_step": 23,
+        "optimizer_updated": true
+      },
+      {
+        "loss": -0.7220118728693221,
+        "reference_kl_per_decision": 4.336530556201213e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 69,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0625,
+        "max_probability_ratio": 1.1006854818693228,
+        "min_probability_ratio": 0.998930397310034,
+        "epoch": 2,
+        "gradient_norm": 1.822836908808535,
+        "gradient_clipped": true,
+        "optimizer_step": 24,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0625
+  },
+  {
+    "iteration": 13,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 1.2000322620198443e-05,
+        "reference_kl_per_decision": 1.6552169131308195e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 58,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000016,
+        "min_probability_ratio": 0.999999999999998,
+        "epoch": 1,
+        "gradient_norm": 0.004877852534674967,
+        "gradient_clipped": false,
+        "optimizer_step": 25,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 1.5111136013361743e-05,
+        "reference_kl_per_decision": 2.084294622532654e-05,
+        "clipped_fraction": 0.0,
+        "decisions": 58,
+        "episodes": 8,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.002611068954403,
+        "min_probability_ratio": 0.9999748743429627,
+        "epoch": 2,
+        "gradient_norm": 0.005137543905584868,
+        "gradient_clipped": false,
+        "optimizer_step": 26,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  },
+  {
+    "iteration": 14,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.37555769890917934,
+        "reference_kl_per_decision": 0.0007081890910213907,
+        "clipped_fraction": 0.0,
+        "decisions": 63,
+        "episodes": 8,
+        "mean_episode_advantage": -0.0625,
+        "max_probability_ratio": 1.0000000000000033,
+        "min_probability_ratio": 0.9999999999999968,
+        "epoch": 1,
+        "gradient_norm": 0.5298574822935639,
+        "gradient_clipped": false,
+        "optimizer_step": 27,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 0.3749716851352947,
+        "reference_kl_per_decision": 0.0006631227473331305,
+        "clipped_fraction": 0.0,
+        "decisions": 63,
+        "episodes": 8,
+        "mean_episode_advantage": -0.0625,
+        "max_probability_ratio": 1.000920809824458,
+        "min_probability_ratio": 0.9830322295063547,
+        "epoch": 2,
+        "gradient_norm": 0.5294382747059622,
+        "gradient_clipped": false,
+        "optimizer_step": 28,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.0625
+  },
+  {
+    "iteration": 15,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": -0.874839729111858,
+        "reference_kl_per_decision": 0.00020680114598941625,
+        "clipped_fraction": 0.0,
+        "decisions": 62,
+        "episodes": 8,
+        "mean_episode_advantage": 0.09375,
+        "max_probability_ratio": 1.0000000000000004,
+        "min_probability_ratio": 0.999999999999994,
+        "epoch": 1,
+        "gradient_norm": 1.1617679031670702,
+        "gradient_clipped": true,
+        "optimizer_step": 29,
+        "optimizer_updated": true
+      },
+      {
+        "loss": -0.8773741422095954,
+        "reference_kl_per_decision": 0.00036324366775618077,
+        "clipped_fraction": 0.0,
+        "decisions": 62,
+        "episodes": 8,
+        "mean_episode_advantage": 0.09375,
+        "max_probability_ratio": 1.0792895113014043,
+        "min_probability_ratio": 0.999742153455729,
+        "epoch": 2,
+        "gradient_norm": 1.0988565789403328,
+        "gradient_clipped": true,
+        "optimizer_step": 30,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": 0.09375
+  },
+  {
+    "iteration": 16,
+    "attempted_episodes": 8,
+    "complete_pairs": 8,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 0.18775965787550153,
+        "reference_kl_per_decision": 0.00038467833407637627,
+        "clipped_fraction": 0.0,
+        "decisions": 54,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.0000000000000002,
+        "min_probability_ratio": 0.9999999999999982,
+        "epoch": 1,
+        "gradient_norm": 0.4697968291202163,
+        "gradient_clipped": false,
+        "optimizer_step": 31,
+        "optimizer_updated": true
+      },
+      {
+        "loss": 0.18719116908877592,
+        "reference_kl_per_decision": 0.00035131969730715196,
+        "clipped_fraction": 0.0,
+        "decisions": 54,
+        "episodes": 8,
+        "mean_episode_advantage": -0.03125,
+        "max_probability_ratio": 1.0072298959277886,
+        "min_probability_ratio": 0.9879559798260645,
+        "epoch": 2,
+        "gradient_norm": 0.47484125447639636,
+        "gradient_clipped": false,
+        "optimizer_step": 32,
+        "optimizer_updated": true
+      }
+    ],
+    "mean_complete_pair_advantage": -0.03125
+  }
+]

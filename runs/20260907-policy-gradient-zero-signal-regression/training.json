@@ -1,0 +1,86 @@
+[
+  {
+    "iteration": 1,
+    "attempted_episodes": 1,
+    "complete_pairs": 1,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": 1.6863738245025242e-17,
+        "reference_kl_per_decision": 1.124249216335016e-17,
+        "clipped_fraction": 0.0,
+        "decisions": 15,
+        "episodes": 1,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000004,
+        "min_probability_ratio": 0.9999999999999994,
+        "epoch": 1,
+        "gradient_norm": 1.689376382864882e-15,
+        "gradient_clipped": false,
+        "optimizer_step": 0,
+        "optimizer_updated": false,
+        "reason": "numerically zero policy/KL gradient"
+      },
+      {
+        "loss": 1.6863738245025242e-17,
+        "reference_kl_per_decision": 1.124249216335016e-17,
+        "clipped_fraction": 0.0,
+        "decisions": 15,
+        "episodes": 1,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000004,
+        "min_probability_ratio": 0.9999999999999994,
+        "epoch": 2,
+        "gradient_norm": 1.689376382864882e-15,
+        "gradient_clipped": false,
+        "optimizer_step": 0,
+        "optimizer_updated": false,
+        "reason": "numerically zero policy/KL gradient"
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  },
+  {
+    "iteration": 2,
+    "attempted_episodes": 1,
+    "complete_pairs": 1,
+    "rejected_batch": false,
+    "failures": [],
+    "updates": [
+      {
+        "loss": -4.250960405650512e-17,
+        "reference_kl_per_decision": 0.0,
+        "clipped_fraction": 0.0,
+        "decisions": 13,
+        "episodes": 1,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000007,
+        "min_probability_ratio": 0.9999999999999998,
+        "epoch": 1,
+        "gradient_norm": 1.1175039068549423e-15,
+        "gradient_clipped": false,
+        "optimizer_step": 0,
+        "optimizer_updated": false,
+        "reason": "numerically zero policy/KL gradient"
+      },
+      {
+        "loss": -4.250960405650512e-17,
+        "reference_kl_per_decision": 0.0,
+        "clipped_fraction": 0.0,
+        "decisions": 13,
+        "episodes": 1,
+        "mean_episode_advantage": 0.0,
+        "max_probability_ratio": 1.0000000000000007,
+        "min_probability_ratio": 0.9999999999999998,
+        "epoch": 2,
+        "gradient_norm": 1.1175039068549423e-15,
+        "gradient_clipped": false,
+        "optimizer_step": 0,
+        "optimizer_updated": false,
+        "reason": "numerically zero policy/KL gradient"
+      }
+    ],
+    "mean_complete_pair_advantage": 0.0
+  }
+]

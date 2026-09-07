@@ -35,12 +35,15 @@ from bg_ai.two_turn_features_v2 import (
     TWO_TURN_FEATURE_NAMES, TWO_TURN_FEATURE_VERSION, encode_two_turn_actions,
     enrich_two_turn_observation, two_turn_schema_id,
 )
+from bg_ai.verified_trajectory_archive import VerifiedTrajectoryWriter, verify_trajectory_archive
 from train_recruit_curriculum import (
     candidates_for, heuristic_action, heuristic_value, paired_summary, sha, write_json,
 )
 from train_two_turn_recruit import CombatBridge, PAIRINGS, SCOPE, apply_combat, episode_score, write_line
 
 EXPERT_DATA_VERSION = "complete-opening-expert-preferred-action-sets-v1"
+EXPERT_ARCHIVE_WRITER_VERSION = "verified-temporary-fsync-seedorder-v1"
+SOURCE_CAPTURE_VERSION = "local-import-closure-v2"
 NONINFERIORITY_MARGIN = .025
 
 
@@ -245,10 +248,29 @@ def source_snapshot(out):
     files.update(ROOT / "scripts" / name for name in (
         "train_recruit_policy.py", "train_two_turn_recruit.py", "train_recruit_curriculum.py",
         "check_live_ruleset.py"))
+    # Include the actual loaded local import closure, including indirect script
+    # helpers such as archive_recruit_runs.py. Lazy bg_ai imports remain covered
+    # by the existing package scan; external dependencies stay separately pinned.
+    imported = set()
+    for module in list(sys.modules.values()):
+        filename = getattr(module, "__file__", None)
+        if filename:
+            path = Path(filename).resolve()
+            if path.is_relative_to(ROOT) and path.suffix == ".py":
+                imported.add(path)
+    files.update(imported)
     payload = {str(path.relative_to(ROOT)): {"sha256": sha(path), "content": path.read_bytes().decode("utf8")}
                for path in sorted(files)}
     with gzip.open(out / "execution_sources.json.gz", "wt", encoding="utf8") as stream:
         json.dump(payload, stream, separators=(",", ":"))
+    write_json(out / "execution_source_manifest.json", {
+        "capture_version": SOURCE_CAPTURE_VERSION,
+        "expert_archive_writer_version": EXPERT_ARCHIVE_WRITER_VERSION,
+        "source_archive": "execution_sources.json.gz",
+        "source_archive_sha256": sha(out / "execution_sources.json.gz"),
+        "payload_format": "unchanged path-to-exact-source-text-and-sha256 mapping",
+        "loaded_local_python_modules": sorted(str(path.relative_to(ROOT)) for path in imported),
+        "source_sha256": {path: record["sha256"] for path, record in payload.items()}})
     return {path: record["sha256"] for path, record in payload.items()}
 
 
@@ -274,9 +296,20 @@ def reuse_expert_data(source, expected, destination):
                     raise ValueError("Reused expert decision IDs must be unique")
                 identifiers.add(scenario.scenario_id)
             scenarios.extend(current)
-    if len(seeds) != manifest["accepted_trajectories"]:
+    if len(seeds) != manifest["accepted_trajectories"] or len(scenarios) != manifest["decisions"]:
         raise ValueError("Reused expert accepted-trajectory count mismatch")
+    failed_seeds = [failure["seed"] for failure in manifest["failures"]]
+    if (len(failed_seeds) != len(set(failed_seeds))
+            or any(seed not in expected["attempted_seeds"] for seed in failed_seeds)
+            or seeds != [seed for seed in expected["attempted_seeds"] if seed not in set(failed_seeds)]):
+        raise ValueError("Reused expert archive does not cover the exact accepted generation seed plan")
     shutil.copyfile(archive, destination / "expert_trajectories.jsonl.gz")
+    # A source checksum and successful in-memory decoding do not prove the
+    # copied path contains all rows. Reopen and strictly verify before fitting.
+    integrity = verify_trajectory_archive(destination / "expert_trajectories.jsonl.gz", seeds)
+    if integrity["archive_sha256"] != manifest["archive_sha256"]:
+        raise ValueError("Copied expert archive differs from its verified source")
+    write_json(destination / "expert_archive_integrity.json", dict(integrity, data_reuse=True))
     write_json(destination / "expert_data_manifest.json", manifest)
     return scenarios, manifest
 
@@ -313,6 +346,8 @@ def main(argv=None):
         "timing_profile_sha256": profile.fingerprint, "choice_timing_version": CHOICE_TIMING_VERSION,
         "seed": args.seed, "attempted_seeds": plan["train"]}
     prereg = {"scope": SCOPE, "full_game_ready": False, "expert_data": expected,
+        "expert_archive_writer_version": EXPERT_ARCHIVE_WRITER_VERSION,
+        "source_capture_version": SOURCE_CAPTURE_VERSION,
         "feature_version": TWO_TURN_FEATURE_VERSION, "feature_names": TWO_TURN_FEATURE_NAMES,
         "seed_plan": plan, "training_target": "binary set of all maximal frozen heuristic values among candidates_for",
         "training_objective": POLICY_OBJECTIVE, "training_interpretation": "behavior cloning only; labels are not combat values",
@@ -345,24 +380,28 @@ def main(argv=None):
         if args.data:
             scenarios, manifest = reuse_expert_data(args.data, expected, args.out)
         else:
-            scenarios, failures, accepted = [], [], 0
-            with gzip.open(args.out / "expert_trajectories.jsonl.gz", "wt", encoding="utf8") as archive, \
+            scenarios, failures, accepted_seeds = [], [], []
+            with VerifiedTrajectoryWriter(args.out / "expert_trajectories.jsonl.gz") as archive, \
                  gzip.open(args.out / "expert_rejected_trajectories.jsonl.gz", "wt", encoding="utf8") as rejected:
                 for index, seed in enumerate(plan["train"]):
                     partial = {}
                     try:
                         trajectory = play_episode(factory, bridge, seed, collect=True, partial=partial)
                         current = trajectory_scenarios(trajectory)
-                        write_line(archive, trajectory)
+                        archive.write(trajectory)
                         scenarios.extend(current)
-                        accepted += 1
+                        accepted_seeds.append(seed)
                     except UnsupportedRecruitTransition as error:
                         failures.append({"seed": seed, "error": str(error)})
                         write_line(rejected, {"seed": seed, "error": str(error), "partial": partial})
                     progress("expert_generation", index + 1, len(plan["train"]))
-            manifest = {**expected, "accepted_trajectories": accepted, "decisions": len(scenarios),
+                integrity = archive.finish(accepted_seeds)
+            write_json(args.out / "expert_archive_integrity.json", integrity)
+            manifest = {**expected, "accepted_trajectories": len(accepted_seeds), "decisions": len(scenarios),
                 "failures": failures, "failure_reasons": dict(Counter(f["error"] for f in failures)),
-                "archive_sha256": sha(args.out / "expert_trajectories.jsonl.gz")}
+                "archive_sha256": integrity["archive_sha256"],
+                "archive_writer_version": EXPERT_ARCHIVE_WRITER_VERSION,
+                "archive_integrity_file": "expert_archive_integrity.json"}
             write_json(args.out / "expert_data_manifest.json", manifest)
         if not scenarios:
             raise RuntimeError("No complete expert trajectories produced training decisions")

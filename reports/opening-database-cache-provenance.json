@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "scope": "Setup cache implementation and performance evidence; not policy strength",
+  "files_sha256": {
+    "python/bg_ai/policy_factory_cached.py": "142cf473b99b03e41b0b6ccc91b003180f4cace3116fc9c5e9b1cb8c18cc8e7a",
+    "scripts/audit_opening_database_cache.py": "e50844f06cdcaa8db54d97995196a65c1ee7a7112d81bec152c603b5e49b5e86",
+    "reports/opening-database-cache-audit.json": "6f1bfd51781347ab0b24b3aa14fc7fec6dc97a7646e7d759b8804f48201ca80e",
+    "reports/opening-archive-performance-audit.json": "cda3f60113c6606fbe6e47e0b15808f382577990792b972a2d610ea8aaa14c77",
+    "tests/test_policy_factory_cached.py": "df3c376dc43307c455a16149d8df507f302b0fd2fd33cdf4edc1688896e491e0"
+  },
+  "current_ruleset_file_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "current_reference_file_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "engine_revision": "4e0525a198352557ef816bd3a53566d6ffd4c164",
+  "cache_strategy": "Immutable verified JSON bytes, fresh independent CardDefs/raw data, LRU16 scoped databases",
+  "prototype_note": "Measured prototype precedes production expected-hash strengthening and boundedLRU; complete trajectory tests separately validate production package",
+  "executing_BC_modified": false,
+  "validation": {
+    "focused_tests_passed": 10,
+    "actual_execution": "Nine-test suite passed in 26.2 seconds; added warm LRU order test passed separately in 2.7 seconds.",
+    "performance_seeds": [
+      710041,
+      710042,
+      710043
+    ],
+    "full_seeded_trajectory_equalities": 3,
+    "repeat_after_eviction_equal": true,
+    "nested_mutation_isolation": true,
+    "original_BC_factory_unchanged": true,
+    "reproduction_command": "PYTHONPATH=python python -m unittest discover -s tests -p test_policy_factory_cached.py -v"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "observed_date": "2026-09-07",
+  "scope": "current-hand-scarlet-opening-v1",
+  "patch": "36.4.2",
+  "build": 251332,
+  "ruleset_file_sha256": "8e78f9d01a90e301bd21e095764560b0b85b9be0918d01d8c134340d2edfc348",
+  "reference_cards_sha256": "88dd032aa56ddb8a176ace6d5bafa48b2d78b4049fd2b97c0e6a00e663f1ad14",
+  "client_xml_sha256": "eaffc679c8bcde8c9b009f4d286f462dd2e089b798807ce4b9588266bec1a7c3",
+  "production_training_enabled": false,
+  "full_game_ready": false,
+  "resolved": {
+    "owned_hand_scarlet_threshold": true,
+    "scarlet_once_marker_observation_and_firestone_transport": true
+  },
+  "unresolved": {
+    "tavern_scarlet_threshold": "Tag1724 suggests wherever scope but does not independently settle unowned Tavern controller/zone semantics; guard retained.",
+    "tavern_fugitive_spell_trigger": "Card text, current balance notes and absence of an upstream pre-summon listener do not establish live unowned Tavern trigger semantics; guard retained."
+  },
+  "evidence": [
+    {
+      "url": "https://hearthstone.blizzard.com/en-us/news/24276665",
+      "source_type": "official_patch_notes",
+      "published_date": "2026-06-02",
+      "supports": "Directly identifies Scarlet failing to gain Divine Shield from handbuffs as a fixed bug; owned hand path supported."
+    },
+    {
+      "url": "https://news.blizzard.com/en-gb/article/24293284/36-2-2-patch-notes",
+      "source_type": "official_patch_notes",
+      "supports": "Fleeing Fugitive current 5/2 base stats; does not resolve the Tavern target trigger."
+    },
+    {
+      "url": "https://registry.npmjs.org/@firestone-hs%2fsimulate-bgs-battle/1.1.750",
+      "source_type": "pinned_published_simulator",
+      "supports": "Exact effect transport fields and independently executed Scarlet stat-change handler; no claim of live Tavern conformance."
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "BG35_814",
+      "dbf_id": 129749,
+      "text": "Once this reaches {0} Attack, gain <b>Divine Shield</b>.@Once this reaches {0} Attack, gain <b>Divine Shield</b>. <i>(Done!)</i>",
+      "raw_tags": {
+        "1429": 129750,
+        "1440": 1,
+        "1456": 1,
+        "1591": 1,
+        "1724": 1,
+        "183": 1453,
+        "199": 10,
+        "2": 6,
+        "200": 24,
+        "202": 4,
+        "32": 1,
+        "45": 3,
+        "4607": 1,
+        "47": 3
+      },
+      "named_tags": {
+        "ATK": 3,
+        "BACON_ONLY_IN_DRAGON_LOBBY": 1,
+        "BACON_SUBSET_DRAGON": 1,
+        "BACON_TRIPLE_UPGRADE_MINION_ID": 129750,
+        "BATTLEGROUNDS_PREMIUM_DBF_ID": 129750,
+        "CARDRACE": 24,
+        "CARDTYPE": 4,
+        "CARD_SET": 1453,
+        "CLASS": 10,
+        "HEALTH": 3,
+        "IS_BACON_POOL_MINION": 1,
+        "TAG_SCRIPT_DATA_NUM_1": 6,
+        "TECH_LEVEL": 1,
+        "TRIGGER_VISUAL": 1,
+        "TRIGGER_WHEREVER_THIS_IS": 1,
+        "UNMAPPED_4607": 1
+      },
+      "active_shop_minion": true
+    },
+    {
+      "card_id": "BG35_814_G",
+      "dbf_id": 129750,
+      "text": "Once this reaches {0} Attack, gain <b>Divine Shield</b>.@Once this reaches {0} Attack, gain <b>Divine Shield</b>. <i>(Done!)</i>",
+      "raw_tags": {
+        "12": 1,
+        "1440": 1,
+        "1471": 129749,
+        "1724": 1,
+        "183": 1453,
+        "199": 10,
+        "2": 6,
+        "200": 24,
+        "202": 4,
+        "3083": 1,
+        "32": 1,
+        "45": 6,
+        "4607": 1,
+        "47": 6
+      },
+      "named_tags": {
+        "ATK": 6,
+        "BACON_TRIPLED_BASE_MINION_ID": 129749,
+        "CARDRACE": 24,
+        "CARDTYPE": 4,
+        "CARD_SET": 1453,
+        "CLASS": 10,
+        "HEALTH": 6,
+        "PREMIUM": 1,
+        "TAG_SCRIPT_DATA_NUM_1": 6,
+        "TECH_LEVEL": 1,
+        "TRIGGER_VISUAL": 1,
+        "TRIGGER_WHEREVER_THIS_IS": 1,
+        "UNMAPPED_3083": 1,
+        "UNMAPPED_4607": 1
+      },
+      "active_shop_minion": false
+    },
+    {
+      "card_id": "BG36_921",
+      "dbf_id": 133451,
+      "text": "Whenever you cast a spell on this, gain +{0} Health.",
+      "raw_tags": {
+        "1429": 133452,
+        "1440": 1,
+        "1456": 1,
+        "183": 1453,
+        "199": 14,
+        "2": 1,
+        "200": 92,
+        "202": 4,
+        "2272": 1,
+        "32": 1,
+        "45": 2,
+        "47": 5
+      },
+      "named_tags": {
+        "ATK": 5,
+        "BACON_ONLY_IN_NAGA_LOBBY": 1,
+        "BACON_SUBSET_NAGA": 1,
+        "BACON_TRIPLE_UPGRADE_MINION_ID": 133452,
+        "BATTLEGROUNDS_PREMIUM_DBF_ID": 133452,
+        "CARDRACE": 92,
+        "CARDTYPE": 4,
+        "CARD_SET": 1453,
+        "CLASS": 14,
+        "HEALTH": 2,
+        "IS_BACON_POOL_MINION": 1,
+        "TAG_SCRIPT_DATA_NUM_1": 1,
+        "TECH_LEVEL": 1,
+        "TRIGGER_VISUAL": 1
+      },
+      "active_shop_minion": true
+    },
+    {
+      "card_id": "BG36_921_G",
+      "dbf_id": 133452,
+      "text": "Whenever you cast a spell on this, gain +{0} Health.",
+      "raw_tags": {
+        "12": 1,
+        "1440": 1,
+        "1471": 133451,
+        "183": 1453,
+        "199": 14,
+        "2": 2,
+        "200": 92,
+        "202": 4,
+        "3083": 1,
+        "32": 1,
+        "45": 4,
+        "47": 10
+      },
+      "named_tags": {
+        "ATK": 10,
+        "BACON_TRIPLED_BASE_MINION_ID": 133451,
+        "CARDRACE": 92,
+        "CARDTYPE": 4,
+        "CARD_SET": 1453,
+        "CLASS": 14,
+        "HEALTH": 4,
+        "PREMIUM": 1,
+        "TAG_SCRIPT_DATA_NUM_1": 2,
+        "TECH_LEVEL": 1,
+        "TRIGGER_VISUAL": 1,
+        "UNMAPPED_3083": 1
+      },
+      "active_shop_minion": false
+    }
+  ],
+  "implementation_sha256": {
+    "python/bg_ai/offboard_scarlet.py": "3607ca0cb48125a877a2c3129de545ef1dadb9e62d7bbf06b2c9aa084dd701eb",
+    "simulator/offboard-scarlet-firestone.mjs": "f4ece3bdd776aba3aff64fe08974bfd92eff855dd04c9c89154df4013ac29aa1"
+  },
+  "pinned_effect_sha256": {
+    "node_modules/@firestone-hs/simulate-bgs-battle/dist/cards/impl/minion/scarlet-survivor.js": "53849828e6ce312a60a1c6f821fcb68427cc9974b6f82f03607e9172db3df5df",
+    "node_modules/@firestone-hs/simulate-bgs-battle/dist/cards/impl/minion/fleeing-fugitive.js": "4d0e2439f1318eac801a76543331aa6015ed238706e4efad4a5c89d0d96c1584"
+  },
+  "validation": {
+    "python_test_file": "tests/test_offboard_scarlet.py",
+    "python_tests": 8,
+    "node_test_file": "tests/offboard-scarlet-firestone.test.mjs",
+    "node_tests": 4,
+    "no_strength_claim": true
+  },
+  "initial_state_assumptions": "Optional fixture handbuffs are synthetic visible state inputs, not evidence of a newly reachable Tier1 training action sequence."
+}

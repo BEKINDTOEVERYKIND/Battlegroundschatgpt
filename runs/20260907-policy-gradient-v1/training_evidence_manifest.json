@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "format": "raw-archive-chunks-v1",
+  "chunk_size_bytes": 8388608,
+  "archives": [
+    {
+      "file": "test_trajectories.jsonl.gz",
+      "size_bytes": 49389722,
+      "sha256": "553e273c93d7b41d6fcfcae11a1336c2280c95793100c8247d5744a58c7b7a88",
+      "parts": [
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000000",
+          "size_bytes": 8388608,
+          "sha256": "5cfd86dbe1aac64d190b68b4af471556a181ea071dd94bc23db32338f3e188ef"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000001",
+          "size_bytes": 8388608,
+          "sha256": "184d0d4155f5cb8c573fea7e457a5f9b31afe0d6de22519708bd5768cdcdf169"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000002",
+          "size_bytes": 8388608,
+          "sha256": "cde6b67e4890ac57748121f699c501e87ec42dad2d219261327a7ecaac98bfc2"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000003",
+          "size_bytes": 8388608,
+          "sha256": "9f64dd047ba567a5b80f3bb5de90c2d602bbc69809dd946e71f4c0ccd7bd2992"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000004",
+          "size_bytes": 8388608,
+          "sha256": "3f2a9f53ed8cb744e9ee949c02b9b043afb15607880e5463cb8d873b5cf34015"
+        },
+        {
+          "file": "evidence_parts/test_trajectories.jsonl.gz.part-000005",
+          "size_bytes": 7446682,
+          "sha256": "11dde40b1a8e8e1ea2b2214747a2eda2446d386c9af9dc9e96bacae6ce256b7a"
+        }
+      ]
+    },
+    {
+      "file": "validation_trajectories.jsonl.gz",
+      "size_bytes": 18655467,
+      "sha256": "9a676812d37ecd916841b9c1ceb630e3189954fb2cb6153d97464d1d5d10d86b",
+      "parts": [
+        {
+          "file": "evidence_parts/validation_trajectories.jsonl.gz.part-000000",
+          "size_bytes": 8388608,
+          "sha256": "f05f5af4d88899f0fb70f84d5388e61c4b1ff95f9d4be16fe4065d1fd5528f51"
+        },
+        {
+          "file": "evidence_parts/validation_trajectories.jsonl.gz.part-000001",
+          "size_bytes": 8388608,
+          "sha256": "4e2f54961564472edf4c119a52247a0708e9668013845f03b3339e419c84e6af"
+        },
+        {
+          "file": "evidence_parts/validation_trajectories.jsonl.gz.part-000002",
+          "size_bytes": 1878251,
+          "sha256": "4239c9f90c41ab6075e29c633029c43edcbfd7cdeaf252560656b9e8f98fea52"
+        }
+      ]
+    }
+  ]
+}

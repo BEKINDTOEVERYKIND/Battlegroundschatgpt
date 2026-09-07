@@ -1,0 +1,179 @@
+{
+  "scope": "current complete Tier-1 pool, two recruit turns and sampled combats, eight Patchwerk players",
+  "full_game_ready": false,
+  "selection": {
+    "deployment_policy": "practical",
+    "experimental_learner": "bc_reference",
+    "learner_promoted_within_fixture": false,
+    "full_game_ready": false,
+    "eligible_learners": [],
+    "reason": "Existing baseline retained: no frozen gradient actor passed every independent-test superiority/currentness gate versus both controls",
+    "experimental_checkpoint_sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb",
+    "independent_test_gate_passed": false,
+    "existing_baseline": "practical",
+    "policy_gradient_promoted": false
+  },
+  "completed_update_batches": 1,
+  "accepted_update_batches": 1,
+  "optimizer_updates": 2,
+  "skipped_zero_signal_updates": 0,
+  "rejected_update_batches": 1,
+  "attempted_training_pairs": 16,
+  "failed_training_pairs": 1,
+  "failure_reasons": {
+    "Tavern Fugitive spell-trigger conformance is unverified": 1
+  },
+  "validation": {
+    "practical": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bc_reference": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.0,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      }
+    },
+    "pg-iteration-001": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.0,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      }
+    },
+    "pg-iteration-002": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.0,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      }
+    }
+  },
+  "test": {
+    "practical": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.375,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bc_reference": {
+      "attempted_episodes": 2,
+      "complete_episodes": 2,
+      "failed_episodes": 0,
+      "failure_penalized_mean": 0.0,
+      "timing_budget_violations": 0,
+      "paired_all_attempts": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      },
+      "support_intersection_episodes": 2,
+      "paired_supported_intersection": {
+        "mean_delta": -0.375,
+        "ci95": [
+          -0.5,
+          -0.25
+        ]
+      }
+    }
+  },
+  "frozen_experimental_vs_bc_reference": {
+    "mean_delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "current_snapshot_verified": false,
+  "sampled_combats_including_rejections": 348,
+  "elapsed_seconds": 13.853761672973633,
+  "limitations": [
+    "Only audited current Tier1 two-turn fixture with synthetic 15/20/30 second own timers",
+    "BC reference and practical opponents remain fixed; no claim of full-game strength",
+    "Unsupported batches provide no gradient; supported-batch learning remains conditional on engine scope",
+    "Stochastic training optimizes complete returns; deterministic argmax actors are separately evaluated",
+    "Monte Carlo returns are noisy; single preregistered test gate only, no test tuning or alternate model selection"
+  ]
+}

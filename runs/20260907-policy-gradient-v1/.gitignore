@@ -1,0 +1,3 @@
+# Exact originals are preserved in verified parts; restore with package_training_evidence.py unpack.
+/test_trajectories.jsonl.gz
+/validation_trajectories.jsonl.gz

@@ -1,0 +1,30 @@
+[
+  {
+    "candidate": "policy-h32-e10",
+    "checkpoint_sha256": "db2c4746e80958558d4ea2f9a6aaf0a15458bf191ea8b94b50765af5218cdb8a",
+    "epochs": 10,
+    "last_loss": 0.005031483930534378,
+    "optimizer_step": 1250
+  },
+  {
+    "candidate": "policy-h32-e30",
+    "checkpoint_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+    "epochs": 30,
+    "last_loss": 0.05951406326148275,
+    "optimizer_step": 3750
+  },
+  {
+    "candidate": "policy-h64-e10",
+    "checkpoint_sha256": "58e72d5410f4a16d72424c3233bdc214adfe63e9a834c509031130896d0a5794",
+    "epochs": 10,
+    "last_loss": 0.002146847770063025,
+    "optimizer_step": 1250
+  },
+  {
+    "candidate": "policy-h64-e30",
+    "checkpoint_sha256": "c3c55965073e0627d90650199e18bf55b5e7d20dc2c7e5f861029a106f749853",
+    "epochs": 30,
+    "last_loss": 0.0028744088988235045,
+    "optimizer_step": 3750
+  }
+]

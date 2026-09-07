@@ -1,0 +1,289 @@
+{
+  "audit_version": "recruit-policy-evidence-audit-v1",
+  "checks": [
+    "Archived source contents match declared SHA256 without importing them",
+    "Exact planned policy/seed/sample grid including every failed sample",
+    "Actual complete scores recomputed from both sampled combat receipts",
+    "Failure-penalized episode scores separated from complete sampled combat scores",
+    "Own action counts and own/all-player timing counts, with failed partial traces separate",
+    "Both evaluation summaries and paired bootstrap intervals independently recomputed",
+    "Frozen experimental checkpoint identity and disjoint seed families"
+  ],
+  "consumed_files": {
+    "deployment_policy.json": {
+      "bytes": 664,
+      "sha256": "0f841fbf2a950c60d85305b9bc201c1defb2fb2236819a13d5aa496bae95c789"
+    },
+    "executed_train_recruit_policy_gradient.py": {
+      "bytes": 19794,
+      "sha256": "8fe75803e67085bcdd80abbc4bd291747598f2fb54157befa48114f3b1c98dac"
+    },
+    "execution_sources.json.gz": {
+      "bytes": 131428,
+      "sha256": "c5597725ead46aa771345bee961a8b8d422c3e351035ca6907bc8dda857c5a45"
+    },
+    "experimental_model.json": {
+      "bytes": 3281736,
+      "sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d"
+    },
+    "frozen_bc_reference.json": {
+      "bytes": 3281736,
+      "sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d"
+    },
+    "frozen_evaluation_plan.json": {
+      "bytes": 3183,
+      "sha256": "6d564aac19b0aa6b169635f473226bf6823b90d7dc5465b47298d7bc3b298e26"
+    },
+    "live_postflight.json": {
+      "bytes": 3992,
+      "sha256": "a9d4cccf3121e812ce171e59638601fd62dde2f2c66233843dc109695e146f12"
+    },
+    "live_preflight.json": {
+      "bytes": 3992,
+      "sha256": "926cc33a17d1152e6f97e0185b866e4eca33e8481975fe65e3cfb610d42e3546"
+    },
+    "pg-iteration-004.json": {
+      "bytes": 2569218,
+      "sha256": "2728f6acc34a5d7d9de095b2eede01e3bd0fbc691115410fe0ff284e6d6fd498"
+    },
+    "pg-iteration-008.json": {
+      "bytes": 2572178,
+      "sha256": "baef762b40b49655317d0f9ca2a514de80324c5de1cfc5e7fc039646898dc3cd"
+    },
+    "pg-iteration-012.json": {
+      "bytes": 2569731,
+      "sha256": "3dd3c385ab52a7855ffaaa9b7762c7d5dad9188c427e2ffc1afec0c0a7dbbcec"
+    },
+    "pg-iteration-016.json": {
+      "bytes": 2568724,
+      "sha256": "2affc00860d59258aa042f291847cb235783aedc452aff6ec3e2cf5c2ca27e2f"
+    },
+    "preregistration.json": {
+      "bytes": 11553,
+      "sha256": "5e6b32846dc737e75cef65d9b71ff2daac8efbeb569a0637c63ea068ccf0b56f"
+    },
+    "results.json": {
+      "bytes": 6250,
+      "sha256": "5e5726a53536840307baa0db24e79d2a8a64834f6f5ec93933ec779776d8f3ff"
+    },
+    "test_results.json": {
+      "bytes": 101356,
+      "sha256": "a65a7dc3f71c3f2c092063b8621440223d1b0617ddf2eba95f1cc7e3ec3da9e9"
+    },
+    "test_trajectories.jsonl.gz": {
+      "bytes": 49389722,
+      "sha256": "553e273c93d7b41d6fcfcae11a1336c2280c95793100c8247d5744a58c7b7a88"
+    },
+    "training.json": {
+      "bytes": 19385,
+      "sha256": "45c6bfd33aafc13bfe56ca2f39852c54b9c21455dbf11a56901b3c1d20117cd2"
+    },
+    "training_trajectories.jsonl.gz": {
+      "bytes": 6980712,
+      "sha256": "68666181ea1cd296008695eef156fc06c5debcc47c6a925ab77de6eae6428cdd"
+    },
+    "validation_results.json": {
+      "bytes": 72593,
+      "sha256": "230b31f4ceb93feaf41318b5efaaa148a434d7f30613fa1837eb113316ad7e83"
+    },
+    "validation_trajectories.jsonl.gz": {
+      "bytes": 18655467,
+      "sha256": "9a676812d37ecd916841b9c1ceb630e3189954fb2cb6153d97464d1d5d10d86b"
+    }
+  },
+  "experimental_checkpoint_sha256": "d4dc1102cc10b6c3f7803559ee9a5241940ebe28e23e0d769bd645fa63b7807d",
+  "full_game_ready": false,
+  "independent_seed_families": {
+    "test": 128,
+    "train": 128,
+    "validation": 32
+  },
+  "kind": "policy_gradient",
+  "limitations": [
+    "Evidence integrity audit; no simulator reexecution or proof of simulator correctness",
+    "Archives declare chronology; hashes alone cannot prove historical write timestamps",
+    "Original run currentness is preserved; no claim of currentness on the audit date"
+  ],
+  "reported_bootstrap_recomputed": true,
+  "run": "20260907-policy-gradient-v1",
+  "status": "passed",
+  "test": {
+    "bc_reference": {
+      "actual_complete_sample_mean": 0.500732421875,
+      "completed_sample_action_counts": {
+        "activate": 304,
+        "buy": 2472,
+        "cast_spell": 544,
+        "choose": 856,
+        "end_turn": 2024,
+        "play": 2048
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 1024,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.500732421875
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.508056640625,
+      "completed_sample_action_counts": {
+        "activate": 296,
+        "buy": 2504,
+        "cast_spell": 568,
+        "choose": 864,
+        "end_turn": 2024,
+        "play": 2048
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 1024,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.508056640625
+    }
+  },
+  "training": {
+    "accepted_update_batches": 16,
+    "attempted_training_pairs": 128,
+    "completed_update_batches": 16,
+    "failed_training_pairs": 0,
+    "failure_reasons": {},
+    "optimizer_updates": 32,
+    "rejected_update_batches": 0,
+    "skipped_zero_signal_updates": 0
+  },
+  "validation": {
+    "bc_reference": {
+      "actual_complete_sample_mean": 0.505859375,
+      "completed_sample_action_counts": {
+        "activate": 24,
+        "buy": 304,
+        "cast_spell": 60,
+        "choose": 76,
+        "end_turn": 256,
+        "play": 260,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.505859375
+    },
+    "pg-iteration-004": {
+      "actual_complete_sample_mean": 0.505859375,
+      "completed_sample_action_counts": {
+        "activate": 24,
+        "buy": 304,
+        "cast_spell": 60,
+        "choose": 76,
+        "end_turn": 256,
+        "play": 260,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.505859375
+    },
+    "pg-iteration-008": {
+      "actual_complete_sample_mean": 0.505859375,
+      "completed_sample_action_counts": {
+        "activate": 24,
+        "buy": 304,
+        "cast_spell": 60,
+        "choose": 76,
+        "end_turn": 256,
+        "play": 260,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.505859375
+    },
+    "pg-iteration-012": {
+      "actual_complete_sample_mean": 0.505859375,
+      "completed_sample_action_counts": {
+        "activate": 24,
+        "buy": 304,
+        "cast_spell": 60,
+        "choose": 76,
+        "end_turn": 256,
+        "play": 260,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.505859375
+    },
+    "pg-iteration-016": {
+      "actual_complete_sample_mean": 0.505859375,
+      "completed_sample_action_counts": {
+        "activate": 24,
+        "buy": 304,
+        "cast_spell": 60,
+        "choose": 76,
+        "end_turn": 256,
+        "play": 260,
+        "sell": 4
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.505859375
+    },
+    "practical": {
+      "actual_complete_sample_mean": 0.49609375,
+      "completed_sample_action_counts": {
+        "activate": 20,
+        "buy": 304,
+        "cast_spell": 60,
+        "choose": 72,
+        "end_turn": 256,
+        "play": 260
+      },
+      "completed_sample_timing_violations": {
+        "all_players": 0,
+        "player_zero": 0
+      },
+      "completed_samples": 128,
+      "failed_partial_action_counts": {},
+      "failed_partial_timing_violations": {},
+      "failed_samples": 0,
+      "failure_penalized_episode_mean": 0.49609375
+    }
+  }
+}

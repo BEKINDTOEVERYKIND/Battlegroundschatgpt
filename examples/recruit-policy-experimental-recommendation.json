@@ -1,0 +1,164 @@
+{
+  "scope": "offline current Tier1 two-turn action advice",
+  "full_game_ready": false,
+  "action_executed": false,
+  "policy_used": "policy-h16-e2",
+  "declared_deployment_policy": "practical",
+  "experimental_override": true,
+  "checkpoint_sha256": "4c583f169adc019dfafa19823c252501d0ea4c6d41c201bb97339d477c52ffbb",
+  "feature_version": "recruit-two-turn-visible-action-v2-lifetimes",
+  "chosen_action": {
+    "kind": "buy",
+    "entity_id": "entity-2",
+    "target_id": null,
+    "position": null,
+    "choice_index": null,
+    "card_name": "Glim Guardian"
+  },
+  "chosen_action_cost_ms": 1250,
+  "forced_choice_commands_after_action": 0,
+  "reserved_choice_cost_ms_after_action": 0,
+  "minimum_complete_sequence_cost_ms": 1250,
+  "remaining_budget_before_action": {
+    "profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+    "actions_per_second": 1.0,
+    "action_cost_ms": {
+      "buy": 1250,
+      "play": 1500,
+      "sell": 1250,
+      "refresh": 1500,
+      "freeze": 1000,
+      "upgrade": 1500,
+      "hero_power": 1500,
+      "cast_spell": 1500,
+      "choose": 2000,
+      "buy_trinket": 2000,
+      "activate": 1500,
+      "move": 1000
+    },
+    "initial_available_ms": 15000,
+    "reserve_ms": 5000,
+    "action_limit": 10,
+    "actions_used": 0,
+    "remaining_actions": 10,
+    "remaining_ms": 10000,
+    "charged_ms": 0,
+    "choice_timing_version": "visible-opening-choice-reservation-v1",
+    "reserved_choice_commands": 0,
+    "reserved_choice_ms": 0
+  },
+  "remaining_budget_after_command": {
+    "profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+    "actions_per_second": 1.0,
+    "action_cost_ms": {
+      "buy": 1250,
+      "play": 1500,
+      "sell": 1250,
+      "refresh": 1500,
+      "freeze": 1000,
+      "upgrade": 1500,
+      "hero_power": 1500,
+      "cast_spell": 1500,
+      "choose": 2000,
+      "buy_trinket": 2000,
+      "activate": 1500,
+      "move": 1000
+    },
+    "initial_available_ms": 15000,
+    "reserve_ms": 5000,
+    "action_limit": 10,
+    "actions_used": 1,
+    "remaining_actions": 8,
+    "remaining_ms": 8750,
+    "charged_ms": 1250,
+    "choice_timing_version": "visible-opening-choice-reservation-v1",
+    "reserved_choice_commands": 0,
+    "reserved_choice_ms": 0
+  },
+  "turn_closed_by_action": false,
+  "candidate_count": 7,
+  "candidate_policy_logits": [
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-2",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Glim Guardian"
+      },
+      "logit": 1.270787454384412
+    },
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-0",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Glim Guardian"
+      },
+      "logit": 1.2707874543844118
+    },
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-3",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Fortify"
+      },
+      "logit": 0.85047843294441
+    },
+    {
+      "action": {
+        "kind": "buy",
+        "entity_id": "entity-1",
+        "target_id": null,
+        "position": null,
+        "choice_index": null,
+        "card_name": "Wrath Weaver"
+      },
+      "logit": 0.8128111669365887
+    },
+    {
+      "action": {
+        "kind": "end_turn",
+        "entity_id": null,
+        "target_id": null,
+        "position": null,
+        "choice_index": null
+      },
+      "logit": 0.01999093726282429
+    },
+    {
+      "action": {
+        "kind": "freeze",
+        "entity_id": null,
+        "target_id": null,
+        "position": null,
+        "choice_index": null
+      },
+      "logit": -0.05805786688456947
+    },
+    {
+      "action": {
+        "kind": "refresh",
+        "entity_id": null,
+        "target_id": null,
+        "position": null,
+        "choice_index": null
+      },
+      "logit": -0.250428857977162
+    }
+  ],
+  "score_definition": "Uncalibrated action-policy logits, not combat probabilities or full-game EV",
+  "limitations": [
+    "Saved fixture observations only; no live client integration or full-game MMR claim",
+    "Recheck the actual timer and legal state immediately before any manual action",
+    "Only the chosen command is advised; mandatory choices need fresh explicit decisions and separate charges",
+    "A practical fallback remains active unless the run records a passing independent-test decision or --experimental is explicit"
+  ],
+  "current_sources_checked": false
+}

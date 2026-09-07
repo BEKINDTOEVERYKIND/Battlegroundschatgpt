@@ -1,0 +1,343 @@
+{
+  "player_id": 0,
+  "turn": 1,
+  "public_state": {
+    "scope": "current-two-turn-tier1-opening-v1",
+    "players": [
+      {
+        "player_id": 0,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      },
+      {
+        "player_id": 1,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      },
+      {
+        "player_id": 2,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      },
+      {
+        "player_id": 3,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      },
+      {
+        "player_id": 4,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      },
+      {
+        "player_id": 5,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      },
+      {
+        "player_id": 6,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      },
+      {
+        "player_id": 7,
+        "hero_id": "TB_BaconShop_HERO_34",
+        "health": 60,
+        "armor": 0,
+        "tavern_tier": 1,
+        "alive": true
+      }
+    ],
+    "valid_tribes": [
+      "DEMON",
+      "DRAGON",
+      "ELEMENTAL",
+      "MURLOC",
+      "UNDEAD"
+    ]
+  },
+  "private_state": {
+    "gold": 3,
+    "health": 60,
+    "armor": 0,
+    "tavern_tier": 1,
+    "upgrade_cost": 5,
+    "frozen": false,
+    "board": [],
+    "hand": [],
+    "shop": [
+      {
+        "entity_id": "entity-0",
+        "card_id": "BG29_888",
+        "name": "Glim Guardian",
+        "text": "<b>Rally:</b> Gain +2 Attack.",
+        "tier": 1,
+        "script_data_numbers": [
+          2,
+          null,
+          null,
+          null
+        ],
+        "card_type": "minion",
+        "cost": 3,
+        "keywords": [
+          "rally"
+        ],
+        "attack": 1,
+        "health": 4,
+        "max_health": 4,
+        "race": "DRAGON",
+        "divine_shield": false,
+        "taunt": false,
+        "windfury": false,
+        "reborn": false,
+        "golden": false,
+        "activate_used": false,
+        "races": [
+          "DRAGON"
+        ],
+        "temporary_spellcraft": false,
+        "magnetic_attachments": [],
+        "enchantments": [],
+        "two_turn_lifetime": {
+          "version": "opening-visible-enchantment-lifetimes-v1",
+          "temporary_attack": 0,
+          "temporary_health": 0,
+          "permanent_attack": 0,
+          "permanent_health": 0,
+          "expires_next_recruit": false,
+          "discard_at_recruit_end": false,
+          "temporary_keywords": []
+        }
+      },
+      {
+        "entity_id": "entity-1",
+        "card_id": "BGS_004",
+        "name": "Wrath Weaver",
+        "text": "After you play a Demon, deal 1 damage to your hero and gain +2/+2.",
+        "tier": 1,
+        "script_data_numbers": [
+          2,
+          2,
+          null,
+          null
+        ],
+        "card_type": "minion",
+        "cost": 3,
+        "keywords": [],
+        "attack": 1,
+        "health": 3,
+        "max_health": 3,
+        "race": "DEMON",
+        "divine_shield": false,
+        "taunt": false,
+        "windfury": false,
+        "reborn": false,
+        "golden": false,
+        "activate_used": false,
+        "races": [
+          "DEMON"
+        ],
+        "temporary_spellcraft": false,
+        "magnetic_attachments": [],
+        "enchantments": [],
+        "two_turn_lifetime": {
+          "version": "opening-visible-enchantment-lifetimes-v1",
+          "temporary_attack": 0,
+          "temporary_health": 0,
+          "permanent_attack": 0,
+          "permanent_health": 0,
+          "expires_next_recruit": false,
+          "discard_at_recruit_end": false,
+          "temporary_keywords": []
+        }
+      },
+      {
+        "entity_id": "entity-2",
+        "card_id": "BG29_888",
+        "name": "Glim Guardian",
+        "text": "<b>Rally:</b> Gain +2 Attack.",
+        "tier": 1,
+        "script_data_numbers": [
+          2,
+          null,
+          null,
+          null
+        ],
+        "card_type": "minion",
+        "cost": 3,
+        "keywords": [
+          "rally"
+        ],
+        "attack": 1,
+        "health": 4,
+        "max_health": 4,
+        "race": "DRAGON",
+        "divine_shield": false,
+        "taunt": false,
+        "windfury": false,
+        "reborn": false,
+        "golden": false,
+        "activate_used": false,
+        "races": [
+          "DRAGON"
+        ],
+        "temporary_spellcraft": false,
+        "magnetic_attachments": [],
+        "enchantments": [],
+        "two_turn_lifetime": {
+          "version": "opening-visible-enchantment-lifetimes-v1",
+          "temporary_attack": 0,
+          "temporary_health": 0,
+          "permanent_attack": 0,
+          "permanent_health": 0,
+          "expires_next_recruit": false,
+          "discard_at_recruit_end": false,
+          "temporary_keywords": []
+        }
+      },
+      {
+        "entity_id": "entity-3",
+        "card_id": "BG28_503",
+        "name": "Fortify",
+        "text": "Give a minion\n+3 Health and <b>Taunt</b>.@[x]Give a minion\n+{0}/+3 and <b>Taunt</b>.",
+        "tier": 1,
+        "script_data_numbers": [
+          null,
+          3,
+          null,
+          null
+        ],
+        "card_type": "spell",
+        "cost": 1,
+        "keywords": [],
+        "races": [],
+        "temporary_spellcraft": false,
+        "magnetic_attachments": [],
+        "enchantments": [],
+        "two_turn_lifetime": {
+          "version": "opening-visible-enchantment-lifetimes-v1",
+          "temporary_attack": 0,
+          "temporary_health": 0,
+          "permanent_attack": 0,
+          "permanent_health": 0,
+          "expires_next_recruit": false,
+          "discard_at_recruit_end": false,
+          "temporary_keywords": []
+        }
+      }
+    ],
+    "counters": {
+      "GOLD_SPENT_THIS_TURN": 0,
+      "CARDS_PLAYED_THIS_TURN": 0,
+      "TAVERN_SPELLS_CAST_THIS_GAME": 0,
+      "TAVERN_SPELL_EXTRA_ATK": 0,
+      "TAVERN_SPELL_EXTRA_HEALTH": 0,
+      "HERO_POWER_USED_THIS_TURN": 0
+    },
+    "deferred_next_turn_gold": 0,
+    "two_turn_lifetime_schema": "opening-visible-enchantment-lifetimes-v1"
+  },
+  "legal_actions": [
+    {
+      "kind": "buy",
+      "entity_id": "entity-0",
+      "target_id": null,
+      "position": null,
+      "choice_index": null
+    },
+    {
+      "kind": "buy",
+      "entity_id": "entity-1",
+      "target_id": null,
+      "position": null,
+      "choice_index": null
+    },
+    {
+      "kind": "buy",
+      "entity_id": "entity-2",
+      "target_id": null,
+      "position": null,
+      "choice_index": null
+    },
+    {
+      "kind": "buy",
+      "entity_id": "entity-3",
+      "target_id": null,
+      "position": null,
+      "choice_index": null
+    },
+    {
+      "kind": "refresh",
+      "entity_id": null,
+      "target_id": null,
+      "position": null,
+      "choice_index": null
+    },
+    {
+      "kind": "freeze",
+      "entity_id": null,
+      "target_id": null,
+      "position": null,
+      "choice_index": null
+    },
+    {
+      "kind": "end_turn",
+      "entity_id": null,
+      "target_id": null,
+      "position": null,
+      "choice_index": null
+    }
+  ],
+  "ruleset_sha256": "b53d811765f1027133fc7f71dbce1737635b56ca01fce498f6af232fa531a390",
+  "time_remaining_ms": 15000,
+  "action_budget": {
+    "profile_sha256": "2767e6c7133936f89711bd061c3e3dfab1a0e7cfe0c316ecbed1e86286c9b0d4",
+    "actions_per_second": 1.0,
+    "action_cost_ms": {
+      "buy": 1250,
+      "play": 1500,
+      "sell": 1250,
+      "refresh": 1500,
+      "freeze": 1000,
+      "upgrade": 1500,
+      "hero_power": 1500,
+      "cast_spell": 1500,
+      "choose": 2000,
+      "buy_trinket": 2000,
+      "activate": 1500,
+      "move": 1000
+    },
+    "initial_available_ms": 15000,
+    "reserve_ms": 5000,
+    "action_limit": 10,
+    "actions_used": 0,
+    "remaining_actions": 10,
+    "remaining_ms": 10000,
+    "charged_ms": 0,
+    "choice_timing_version": "visible-opening-choice-reservation-v1",
+    "reserved_choice_commands": 0,
+    "reserved_choice_ms": 0
+  }
+}
