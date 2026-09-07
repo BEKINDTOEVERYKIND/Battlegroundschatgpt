@@ -44,6 +44,10 @@ jobs:
           path: ${{ runner.temp }}/training-ingest-download
           skip-decompress: true
           digest-mismatch: error
+      - name: Fetch the exact verified source commit for provenance checks
+        env:
+          INGEST_SOURCE_COMMIT: ${{ steps.source.outputs.source_commit }}
+        run: git fetch --no-tags --depth=1 origin "$INGEST_SOURCE_COMMIT"
       - name: Verify checksums and preserve all experiment evidence
         run: >-
           python scripts/ingest_training_artifact.py ingest
@@ -58,5 +62,5 @@ jobs:
             echo "Identical completed results are already preserved."
             exit 0
           fi
-          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Preserve verified positioning scratch and warm-start results'
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Preserve verified completed training results and original evidence'
           git push origin HEAD:main

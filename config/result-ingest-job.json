@@ -1,13 +1,13 @@
 {
   "repository": "BEKINDTOEVERYKIND/Battlegroundschatgpt",
-  "run_id": 33969375049,
-  "source_commit": "e8a05aa3ab467304fa8901b430a184937e43aab6",
+  "run_id": 34039468068,
+  "source_commit": "a1b013f18b133e4b97197c8a8aac79fa0f555e0e",
   "source_branch": "main",
-  "source_workflow": ".github/workflows/train.yml",
-  "artifact_id": 9971076392,
-  "artifact_name": "training-33969375049-1",
-  "artifact_sha256": "b30e74f5378355d18aae5975ab1f8fd2c6d80c84f43f7f5e22bd2707161908b6",
-  "artifact_bytes": 22094637,
-  "artifact_files": 48,
-  "destination": "runs/20260905-corrected-positioning-transfer-v1"
+  "source_workflow": ".github/workflows/train-two-turn.yml",
+  "artifact_id": 9991942763,
+  "artifact_name": "two-turn-training-34039468068-1",
+  "artifact_sha256": "00b14a654be739e3c66aa872bef9f8df1ebb664111e89d4042e70515f86c1fd7",
+  "artifact_bytes": 61091608,
+  "artifact_files": 16,
+  "destination": "runs/20260906-two-turn-policy-states-v2"
 }

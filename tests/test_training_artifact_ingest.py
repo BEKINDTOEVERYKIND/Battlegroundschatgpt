@@ -5,6 +5,7 @@ import importlib.util
 import io
 import json
 from pathlib import Path
+from unittest.mock import patch
 import stat
 import tempfile
 import unittest
@@ -18,7 +19,7 @@ spec.loader.exec_module(ingest)
 
 class TrainingArtifactIngestTests(unittest.TestCase):
     def setUp(self):
-        self.config = json.loads((ROOT / "config/result-ingest-job.json").read_text())
+        self.config = json.loads((ROOT / "runs/20260905-corrected-positioning-transfer-v1/artifact_ingest.json").read_text())["source"]
 
     def metadata(self, config=None):
         config = config or self.config
@@ -193,6 +194,143 @@ class TrainingArtifactIngestTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Symlink"):
                 ingest.ingest(config, state, download, root=root)
             self.assertEqual(list((root / "elsewhere").iterdir()), [])
+
+
+class TwoTurnArtifactIngestTests(unittest.TestCase):
+    def fixture(self, root):
+        source = root / "original"
+        source.mkdir()
+        config = json.loads((ROOT / "config/result-ingest-job.json").read_text())
+        job = {"experiment": Path(config["destination"]).name, "seed": 1000,
+               "trajectories": 5, "evaluation_episodes": 2, "evaluation_samples": 1,
+               "label_samples": 1, "epochs": [5, 15], "hidden": 16,
+               "policy_checkpoint": "runs/fixture/selected_model.json", "continuation_policy": "practical"}
+        objects = {path: (path + " exact source\n").encode() for path in (
+            "scripts/train_two_turn_recruit.py", "scripts/run_two_turn_job.py",
+            "python/bg_ai/opening_transition.py", "python/bg_ai/two_turn_features.py",
+            "simulator/opening-transition-firestone.mjs", "data/ruleset.json",
+            "data/reference_cards.json", job["policy_checkpoint"])}
+        job["policy_checkpoint_sha256"] = hashlib.sha256(objects[job["policy_checkpoint"]]).hexdigest()
+        objects["config/two-turn-training-job.json"] = json.dumps(job).encode()
+        source_hashes = {p: hashlib.sha256(raw).hexdigest() for p, raw in objects.items() if p.startswith(("scripts/", "python/", "simulator/"))}
+        runner = {"status": "completed", "source_commit": config["source_commit"],
+                  "github_run_id": str(config["run_id"]), "policy_promoted": False, "config": job,
+                  "config_sha256": hashlib.sha256(objects["config/two-turn-training-job.json"]).hexdigest(),
+                  "source_sha256": source_hashes}
+        registration = {"source_sha256": {p: h for p, h in source_hashes.items() if p != "scripts/run_two_turn_job.py"},
+            "policy_checkpoint_sha256": job["policy_checkpoint_sha256"], "seed": job["seed"],
+            "trajectory_attempts": job["trajectories"], "evaluation_episodes": job["evaluation_episodes"],
+            "evaluation_samples_per_policy": job["evaluation_samples"], "label_samples_per_candidate": 1,
+            "continuation_policy": "practical", "full_game_ready": False,
+            "ruleset_file_sha256": hashlib.sha256(objects["data/ruleset.json"]).hexdigest(),
+            "reference_cards_sha256": hashlib.sha256(objects["data/reference_cards.json"]).hexdigest()}
+        ingest.write_json(source / "preregistration.json", registration)
+        for phase in ("preflight", "postflight"):
+            ingest.write_json(source / f"live_{phase}.json", {"current": True, "network_checked": True, "failures": []})
+        for name, weights in (("selected_model.json", [2]), ("model-h16-e5.json", [1]), ("model-h16-e15.json", [2])):
+            ingest.write_json(source / name, {"weights": weights})
+        (source / "validation_sweep.json").write_text(json.dumps([
+            {"epochs": 5, "checkpoint": "model-h16-e5.json", "validation_mean": .2},
+            {"epochs": 15, "checkpoint": "model-h16-e15.json", "validation_mean": .3}]))
+        checkpoint_hash = ingest.digest(source / "selected_model.json")
+        seeds = [10001000, 10002009]
+        ingest.write_json(source / "frozen_evaluation_plan.json", {"seeds": seeds, "samples_per_policy": 1,
+            "policies": ["model", "practical_heuristic"], "selection_complete_before_test": True,
+            "checkpoint_sha256": checkpoint_hash})
+        evaluations = []
+        for seed in seeds:
+            row = {"seed": seed, "episode_id": f"two-turn-test-{seed}", "policies": {}}
+            for policy, score, winner in (("model", .25, 1), ("practical_heuristic", .75, 0)):
+                rollout = {"score": score, "receipts": [
+                    {"turn": turn, "outcomes": [{"player_a": 0, "player_b": 1, "winner_id": value}]}
+                    for turn, value in ((1, winner), (2, None))],
+                    "commands": [{"player_id": 0, "action": {"kind": "freeze"}}],
+                    "timing_trace": [{"player_id": 0, "event": "action",
+                                      "after": {"remaining_ms": 1000, "remaining_actions": 1}}]}
+                row["policies"][policy] = {"score": score, "rollouts": [rollout]}
+            evaluations.append(row)
+        self.write_rows(source / "evaluation_trajectories.jsonl.gz", evaluations)
+        training = []
+        for index, split in ((0, "train"), (4, "validation")):
+            identifier = f"two-turn-{job['seed'] + index * 1009}"
+            training.append({"index": index, "split": split, "episode_id": identifier,
+                "decisions": [{"split": split, "episode_id": identifier, "state_fingerprint": str(index), "candidates": [{}, {}]}]})
+        self.write_rows(source / "training_trajectories.jsonl.gz", training)
+        (source / "generation_failures.json").write_text(json.dumps([{"index": i, "error": "unsupported"} for i in (1, 2, 3)]))
+        (source / "evaluation_failures.json").write_text("[]")
+        (source / "firestone-worker.log").write_bytes(b"exact worker log\n")
+        results = {"full_game_ready": False, "policy_promoted": False, "current_snapshot_verified": True,
+            "checkpoint_sha256": checkpoint_hash, "evaluation_failures": [], "evaluation_episodes": 2,
+            "evaluation_attempts": 2, "scores": {"model": .25, "practical_heuristic": .75},
+            "paired_model_minus_practical": {"mean_delta": -.5}, "model_action_counts": {"freeze": 2},
+            "timing_budget_violations": 0, "accepted_training_trajectories": 2, "training_trajectory_attempts": 5,
+            "trajectory_splits": {"train": 1, "validation": 1}, "decision_splits": {"train": 1, "validation": 1},
+            "generation_failures": 3, "generation_failure_reasons": {"unsupported": 3}}
+        ingest.write_json(source / "results.json", results)
+        runner["results_sha256"] = ingest.digest(source / "results.json")
+        ingest.write_json(source / "runner.json", runner)
+        return source, config, objects
+
+    @staticmethod
+    def write_rows(path, rows):
+        path.write_bytes(gzip.compress(b"".join((json.dumps(row) + "\n").encode() for row in rows), mtime=0))
+
+    def test_two_turn_source_and_all_raw_results_are_verified(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, config, objects = self.fixture(root)
+            with patch.object(ingest, "source_bytes", side_effect=lambda root, commit, path: objects[path]):
+                result = ingest.validate_payload(source, config, root)
+            self.assertEqual(result["raw_verified"]["evaluation_episodes"], 2)
+            self.assertEqual(result["results"]["scores"]["model"], .25)
+            staged = root / "preserved"
+            staged.mkdir()
+            inventory = {p.name: {"bytes": p.stat().st_size, "sha256": ingest.digest(p)} for p in source.iterdir()}
+            preserved = ingest.preserve(source, staged, inventory)
+            for name, representation in preserved.items():
+                saved = (staged / representation["stored_path"]).read_bytes()
+                self.assertEqual(gzip.decompress(saved) if representation["encoding"] == "gzip" else saved, (source / name).read_bytes())
+
+    def test_two_turn_corrupt_receipt_cannot_keep_an_invented_score(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source, config, objects = self.fixture(root)
+            rows = list(ingest.trace_rows(source / "evaluation_trajectories.jsonl.gz"))
+            rows[0]["policies"]["model"]["rollouts"][0]["receipts"][0]["outcomes"][0]["winner_id"] = 0
+            self.write_rows(source / "evaluation_trajectories.jsonl.gz", rows)
+            with patch.object(ingest, "source_bytes", side_effect=lambda root, commit, path: objects[path]):
+                with self.assertRaisesRegex(ValueError, "sampled rollout score"):
+                    ingest.validate_payload(source, config, root)
+
+    def test_two_turn_exact_source_checkpoint_and_timing_are_checked(self):
+        for corruption in ("checkpoint", "timing", "split", "duplicate_evaluation"):
+            with self.subTest(corruption=corruption), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                source, config, objects = self.fixture(root)
+                if corruption == "checkpoint":
+                    objects["runs/fixture/selected_model.json"] = b"different model"
+                elif corruption in ("timing", "duplicate_evaluation"):
+                    rows = list(ingest.trace_rows(source / "evaluation_trajectories.jsonl.gz"))
+                    if corruption == "timing":
+                        rows[0]["policies"]["model"]["rollouts"][0]["timing_trace"][0]["after"]["remaining_ms"] = -1
+                    else:
+                        rows[1] = rows[0]
+                    self.write_rows(source / "evaluation_trajectories.jsonl.gz", rows)
+                else:
+                    rows = list(ingest.trace_rows(source / "training_trajectories.jsonl.gz"))
+                    rows[1]["decisions"][0]["state_fingerprint"] = rows[0]["decisions"][0]["state_fingerprint"]
+                    self.write_rows(source / "training_trajectories.jsonl.gz", rows)
+                with patch.object(ingest, "source_bytes", side_effect=lambda root, commit, path: objects[path]), self.assertRaises(ValueError):
+                    ingest.validate_payload(source, config, root)
+
+    def test_artifact_workflows_have_separate_filename_allowlists(self):
+        config = json.loads((ROOT / "config/result-ingest-job.json").read_text())
+        self.assertEqual(ingest.validate_config(config), config)
+        with self.assertRaises(ValueError):
+            ingest.validate_config(dict(config, source_workflow=".github/workflows/train.yml"))
+        self.assertTrue(ingest.allowed_file("evaluation_trajectories.jsonl.gz", ingest.TWO_TURN_WORKFLOW))
+        self.assertFalse(ingest.allowed_file("evaluation_trajectories.jsonl.gz"))
+        self.assertFalse(ingest.allowed_file("scratch/positioning.json", ingest.TWO_TURN_WORKFLOW))
 
 
 if __name__ == "__main__":

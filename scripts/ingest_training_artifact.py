@@ -9,6 +9,7 @@ The resulting manifest accounts for every original byte and representation.
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import gzip
 import hashlib
 import json
@@ -18,6 +19,7 @@ from pathlib import Path, PurePosixPath
 import re
 import shutil
 import stat
+import subprocess
 import tempfile
 import urllib.request
 import zipfile
@@ -30,6 +32,9 @@ MAX_TOTAL_BYTES = 600 * 1024 * 1024
 MAX_SAVED_FILE_BYTES = 95 * 1024 * 1024
 MAX_JSON_BYTES = 32 * 1024 * 1024
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
+TWO_TURN_WORKFLOW = ".github/workflows/train-two-turn.yml"
+MAX_TRACE_LINE_BYTES = 256 * 1024 * 1024
+MAX_TRACE_TOTAL_BYTES = 8 * 1024 * 1024 * 1024
 
 
 def digest(path: Path) -> str:
@@ -60,7 +65,7 @@ def validate_config(config: dict) -> dict:
         raise ValueError("Ingest configuration has missing or unknown fields")
     if config["repository"] != REPOSITORY or config["source_branch"] != "main":
         raise ValueError("Only this repository's main-branch training is eligible")
-    if config["source_workflow"] != ".github/workflows/train.yml":
+    if config["source_workflow"] not in (".github/workflows/train.yml", TWO_TURN_WORKFLOW):
         raise ValueError("Unexpected source workflow")
     if not isinstance(config["source_commit"], str) or not re.fullmatch(r"[0-9a-f]{40}", config["source_commit"]):
         raise ValueError("Invalid source commit")
@@ -70,8 +75,9 @@ def validate_config(config: dict) -> dict:
             raise ValueError(f"Invalid {key}")
     if not isinstance(config["artifact_sha256"], str) or not HEX64.fullmatch(config["artifact_sha256"]):
         raise ValueError("Invalid artifact SHA256")
+    prefix = "two-turn-training" if config["source_workflow"] == TWO_TURN_WORKFLOW else "training"
     if not isinstance(config["artifact_name"], str) or not re.fullmatch(
-            rf"training-{config['run_id']}-[1-9][0-9]*", config["artifact_name"]):
+            rf"{prefix}-{config['run_id']}-[1-9][0-9]*", config["artifact_name"]):
         raise ValueError("Artifact name does not identify the declared run")
     if not isinstance(config["destination"], str) or not re.fullmatch(
             r"runs/[0-9]{8}-[a-z0-9][a-z0-9-]{0,79}", config["destination"]):
@@ -126,13 +132,20 @@ def prepare(config: dict, state_dir: Path) -> None:
     state_dir.mkdir(parents=True, exist_ok=False)
     write_json(state_dir / "source.json", {"config": config, "run": run, "artifact": artifact})
     with Path(os.environ["GITHUB_OUTPUT"]).open("a") as stream:
-        for key in ("run_id", "artifact_id", "destination"):
+        for key in ("run_id", "artifact_id", "destination", "source_commit"):
             stream.write(f"{key}={config[key]}\n")
     print(json.dumps({"validated_source_run": config["run_id"], "artifact": config["artifact_id"],
                       "status": "completed", "conclusion": "success"}))
 
 
-def allowed_file(name: str) -> bool:
+def allowed_file(name: str, workflow: str = ".github/workflows/train.yml") -> bool:
+    if workflow == TWO_TURN_WORKFLOW:
+        return name in {"runner.json", "preregistration.json", "results.json", "progress.json",
+                        "live_preflight.json", "live_postflight.json", "validation_sweep.json",
+                        "frozen_evaluation_plan.json", "generation_failures.json", "evaluation_failures.json",
+                        "selected_model.json", "training_trajectories.jsonl.gz",
+                        "evaluation_trajectories.jsonl.gz", "firestone-worker.log"} or bool(
+                            re.fullmatch(r"model-h(?:[8-9]|[1-5][0-9]|6[0-4])-e(?:[1-9]|[1-7][0-9]|80)\.json", name))
     if name in {"job.json", "comparison.json"}:
         return True
     if re.fullmatch(r"generation/(?:live_preflight|live_postflight|generation_commands|dataset_archive)\.json", name):
@@ -149,7 +162,7 @@ def allowed_file(name: str) -> bool:
         r"(?:train|freeze|search|evaluate|report)\.log)", name))
 
 
-def safe_member(info: zipfile.ZipInfo) -> str:
+def safe_member(info: zipfile.ZipInfo, workflow: str = ".github/workflows/train.yml") -> str:
     name = info.filename
     path = PurePosixPath(name)
     if (not name or "\\" in name or "\x00" in name or path.is_absolute()
@@ -161,7 +174,7 @@ def safe_member(info: zipfile.ZipInfo) -> str:
         raise ValueError("Archive must contain only regular files, never symlinks")
     if info.flag_bits & 1 or not 0 <= info.file_size <= MAX_FILE_BYTES:
         raise ValueError("Encrypted or oversized artifact member")
-    if not allowed_file(name):
+    if not allowed_file(name, workflow):
         raise ValueError(f"Unexpected artifact path: {name}")
     return name
 
@@ -178,7 +191,7 @@ def extract_verified(archive: Path, config: dict, target: Path) -> dict:
             raise ValueError("Original artifact file count differs from declaration")
         if sum(info.file_size for info in members) > MAX_TOTAL_BYTES:
             raise ValueError("Artifact exceeds bounded total uncompressed size")
-        names = [safe_member(info) for info in members]
+        names = [safe_member(info, config["source_workflow"]) for info in members]
         if len(set(names)) != len(names):
             raise ValueError("Duplicate archive member")
         # Validate every member before creating any extracted file.
@@ -205,7 +218,201 @@ def assert_hash(path: Path, expected: str, context: str) -> None:
         raise ValueError(f"Checksum mismatch: {context}")
 
 
-def validate_payload(source: Path, config: dict) -> dict:
+def source_bytes(root: Path, commit: str, path: str) -> bytes:
+    if not re.fullmatch(r"[0-9a-f]{40}", commit) or not re.fullmatch(r"[A-Za-z0-9_.\-/]+", path):
+        raise ValueError("Invalid declared source object")
+    if PurePosixPath(path).is_absolute() or ".." in PurePosixPath(path).parts:
+        raise ValueError("Unsafe declared source path")
+    return subprocess.check_output(["git", "show", f"{commit}:{path}"], cwd=root)
+
+
+def read_list(path: Path) -> list:
+    if path.stat().st_size > MAX_JSON_BYTES:
+        raise ValueError("JSON list exceeds size bound")
+    result = json.loads(path.read_text())
+    if not isinstance(result, list):
+        raise ValueError("Expected a JSON list")
+    return result
+
+
+def trace_rows(path: Path):
+    """Read one bounded episode at a time without materializing the dataset."""
+    total = 0
+    with gzip.open(path, "rb") as stream:
+        while line := stream.readline(MAX_TRACE_LINE_BYTES + 1):
+            total += len(line)
+            if len(line) > MAX_TRACE_LINE_BYTES or total > MAX_TRACE_TOTAL_BYTES:
+                raise ValueError("Trace expansion exceeds declared resource bounds")
+            row = json.loads(line)
+            if not isinstance(row, dict):
+                raise ValueError("Expected a complete episode object")
+            yield row
+
+
+def equal_number(actual, expected, context: str) -> None:
+    if (type(actual) not in (int, float) or type(expected) not in (int, float)
+            or not math.isfinite(actual) or not math.isfinite(expected) or abs(actual - expected) > 1e-12):
+        raise ValueError(f"Raw evidence differs from {context}")
+
+
+def validate_two_turn_payload(source: Path, config: dict, root: Path) -> dict:
+    runner = read_json(source / "runner.json")
+    results = read_json(source / "results.json")
+    registration = read_json(source / "preregistration.json")
+    plan = read_json(source / "frozen_evaluation_plan.json")
+    commit = config["source_commit"]
+    original_config_bytes = source_bytes(root, commit, "config/two-turn-training-job.json")
+    original_config = json.loads(original_config_bytes)
+    if (runner.get("status") != "completed" or runner.get("source_commit") != commit
+            or str(runner.get("github_run_id")) != str(config["run_id"])
+            or runner.get("config") != original_config
+            or runner.get("config_sha256") != hashlib.sha256(original_config_bytes).hexdigest()
+            or original_config.get("experiment") != PurePosixPath(config["destination"]).name
+            or runner.get("policy_promoted") is not False):
+        raise ValueError("Runner differs from the exact completed source configuration")
+    assert_hash(source / "results.json", runner.get("results_sha256"), "runner result")
+    expected_paths = {"scripts/train_two_turn_recruit.py", "scripts/run_two_turn_job.py",
+                      "python/bg_ai/opening_transition.py", "python/bg_ai/two_turn_features.py",
+                      "simulator/opening-transition-firestone.mjs"}
+    for record, paths in ((runner, expected_paths), (registration, expected_paths - {"scripts/run_two_turn_job.py"})):
+        if set(record.get("source_sha256", {})) != paths:
+            raise ValueError("Source provenance is incomplete")
+        for path in paths:
+            if hashlib.sha256(source_bytes(root, commit, path)).hexdigest() != record["source_sha256"][path]:
+                raise ValueError("Recorded source differs from exact training commit")
+    checkpoint_hash = hashlib.sha256(source_bytes(root, commit, original_config["policy_checkpoint"])).hexdigest()
+    if (checkpoint_hash != original_config["policy_checkpoint_sha256"]
+            or registration.get("policy_checkpoint_sha256") != checkpoint_hash):
+        raise ValueError("Behavior checkpoint differs from exact source checkpoint")
+    for field, path in (("ruleset_file_sha256", "data/ruleset.json"),
+                        ("reference_cards_sha256", "data/reference_cards.json")):
+        if registration.get(field) != hashlib.sha256(source_bytes(root, commit, path)).hexdigest():
+            raise ValueError("Training snapshot differs from the source commit")
+    for registered, configured in (("seed", "seed"), ("trajectory_attempts", "trajectories"),
+                                   ("evaluation_episodes", "evaluation_episodes"),
+                                   ("evaluation_samples_per_policy", "evaluation_samples"),
+                                   ("label_samples_per_candidate", "label_samples"),
+                                   ("continuation_policy", "continuation_policy")):
+        if registration.get(registered) != original_config[configured]:
+            raise ValueError("Preregistration differs from source configuration")
+    if (registration.get("full_game_ready") is not False or results.get("full_game_ready") is not False
+            or results.get("policy_promoted") is not False or results.get("current_snapshot_verified") is not True):
+        raise ValueError("Unexpected readiness, promotion or snapshot claim")
+    for phase in ("preflight", "postflight"):
+        live = read_json(source / f"live_{phase}.json")
+        if live.get("current") is not True or live.get("network_checked") is not True or live.get("failures") != []:
+            raise ValueError("Original live ruleset check did not pass")
+    assert_hash(source / "selected_model.json", plan.get("checkpoint_sha256"), "selected checkpoint")
+    if results.get("checkpoint_sha256") != plan["checkpoint_sha256"]:
+        raise ValueError("Result refers to another checkpoint")
+    sweep = read_list(source / "validation_sweep.json")
+    if [item.get("epochs") for item in sweep] != original_config["epochs"]:
+        raise ValueError("Checkpoint sweep differs from the preregistered epochs")
+    for item in sweep:
+        if item.get("checkpoint") != f"model-h{original_config['hidden']}-e{item['epochs']}.json":
+            raise ValueError("Unexpected candidate checkpoint path")
+        equal_number(item.get("validation_mean"), item.get("validation_mean"), "validation score")
+    best = max(sweep, key=lambda item: item["validation_mean"])
+    # Loading and saving the selected candidate may reorder JSON keys but cannot
+    # alter its weights, optimizer, provenance or reserved evaluation seeds.
+    if read_json(source / best["checkpoint"]) != read_json(source / "selected_model.json"):
+        raise ValueError("Selected checkpoint differs from validation selection")
+    policies = ("model", "practical_heuristic")
+    expected_seeds = [original_config["seed"] + 10000000 + i * 1009
+                      for i in range(original_config["evaluation_episodes"])]
+    if (plan.get("seeds") != expected_seeds or plan.get("samples_per_policy") != original_config["evaluation_samples"]
+            or plan.get("policies") != list(policies) or plan.get("selection_complete_before_test") is not True):
+        raise ValueError("Frozen evaluation plan differs from the declared test")
+    eval_failures = read_list(source / "evaluation_failures.json")
+    if results.get("evaluation_failures") != eval_failures:
+        raise ValueError("Evaluation rejection report differs from preserved failures")
+    episode_scores, action_counts, violations, accepted = [], Counter(), 0, set()
+    for row in trace_rows(source / "evaluation_trajectories.jsonl.gz"):
+        seed = row["seed"]
+        if seed not in expected_seeds or seed in accepted or row.get("episode_id") != f"two-turn-test-{seed}":
+            raise ValueError("Evaluation contains repeated or undeclared held-out episodes")
+        accepted.add(seed)
+        if set(row["policies"]) != set(policies):
+            raise ValueError("Evaluation episode is not a complete paired comparison")
+        scores = {}
+        for policy in policies:
+            record = row["policies"][policy]
+            if len(record["rollouts"]) != plan["samples_per_policy"]:
+                raise ValueError("Evaluation sample count differs from frozen plan")
+            sampled = []
+            for rollout in record["rollouts"]:
+                receipts = rollout["receipts"]
+                if [receipt["turn"] for receipt in receipts] != [1, 2]:
+                    raise ValueError("Evaluation omitted a sampled combat")
+                combat_scores = []
+                for receipt in receipts:
+                    own = [outcome for outcome in receipt["outcomes"]
+                           if 0 in (outcome["player_a"], outcome["player_b"])]
+                    if len(own) != 1 or own[0]["winner_id"] not in (None, own[0]["player_a"], own[0]["player_b"]):
+                        raise ValueError("Invalid player-zero sampled combat outcome")
+                    combat_scores.append(.5 if own[0]["winner_id"] is None else float(own[0]["winner_id"] == 0))
+                score = math.fsum(combat_scores) / 2
+                equal_number(rollout["score"], score, "sampled rollout score")
+                sampled.append(score)
+                for trace in rollout["timing_trace"]:
+                    if trace["player_id"] == 0 and trace["event"] == "action":
+                        violations += int(trace["after"]["remaining_ms"] < 0 or trace["after"]["remaining_actions"] < 0)
+                if policy == "model":
+                    action_counts.update(command["action"]["kind"] for command in rollout["commands"] if command["player_id"] == 0)
+            scores[policy] = math.fsum(sampled) / len(sampled)
+            equal_number(record["score"], scores[policy], "episode policy mean")
+        episode_scores.append(scores)
+    failed_seeds = [failure["seed"] for failure in eval_failures]
+    if (not accepted or len(failed_seeds) != len(set(failed_seeds)) or accepted & set(failed_seeds)
+            or accepted | set(failed_seeds) != set(expected_seeds)
+            or results.get("evaluation_episodes") != len(accepted)
+            or results.get("evaluation_attempts") != len(expected_seeds)):
+        raise ValueError("Evaluation attempts are not completely accounted for")
+    for policy in policies:
+        equal_number(results["scores"][policy], math.fsum(row[policy] for row in episode_scores) / len(episode_scores), "reported policy mean")
+    differences = [row["model"] - row["practical_heuristic"] for row in episode_scores]
+    equal_number(results["paired_model_minus_practical"]["mean_delta"], math.fsum(differences) / len(differences), "paired mean delta")
+    if results.get("model_action_counts") != dict(action_counts) or results.get("timing_budget_violations") != violations:
+        raise ValueError("Action counts or timing violations differ from raw trajectories")
+    trajectories, decisions, indices, seen_states = Counter(), Counter(), set(), {}
+    for row in trace_rows(source / "training_trajectories.jsonl.gz"):
+        index = row["index"]
+        split = "validation" if index % 5 == 4 else "train"
+        if (type(index) is not int or not 0 <= index < original_config["trajectories"] or index in indices
+                or row["episode_id"] != f"two-turn-{original_config['seed'] + index * 1009}" or row["split"] != split):
+            raise ValueError("Training trajectory identity or split differs from source plan")
+        indices.add(index)
+        trajectories[split] += 1
+        for decision in row["decisions"]:
+            if decision["split"] != split or decision["episode_id"] != row["episode_id"]:
+                raise ValueError("Related decisions crossed episode splits")
+            fingerprint = decision["state_fingerprint"]
+            if fingerprint in seen_states and seen_states[fingerprint] != split:
+                raise ValueError("An equivalent visible state crossed dataset splits")
+            seen_states[fingerprint] = split
+            if len(decision["candidates"]) >= 2:
+                decisions[split] += 1
+    failures = read_list(source / "generation_failures.json")
+    failed_indices = [failure["index"] for failure in failures]
+    if (len(set(failed_indices)) != len(failed_indices) or indices & set(failed_indices)
+            or indices | set(failed_indices) != set(range(original_config["trajectories"]))
+            or results.get("accepted_training_trajectories") != len(indices)
+            or results.get("training_trajectory_attempts") != original_config["trajectories"]
+            or results.get("trajectory_splits") != dict(trajectories) or results.get("decision_splits") != dict(decisions)
+            or results.get("generation_failures") != len(failures)
+            or results.get("generation_failure_reasons") != dict(Counter(failure["error"] for failure in failures))):
+        raise ValueError("Training counts or rejections differ from raw trajectories")
+    return {"experiment_kind": "two_turn_recruitment", "results": results,
+            "elapsed_seconds": runner.get("elapsed_seconds"),
+            "raw_verified": {"evaluation_episodes": len(accepted), "training_trajectories": len(indices),
+                             "sampled_combat_scores": True, "model_action_counts": dict(action_counts),
+                             "timing_budget_violations": violations, "exact_source_commit": commit},
+            "interpretation": "Completed two-turn experiment only; the poor checkpoint is preserved as evidence and is not promoted."}
+
+
+def validate_payload(source: Path, config: dict, root: Path = ROOT) -> dict:
+    if config["source_workflow"] == TWO_TURN_WORKFLOW:
+        return validate_two_turn_payload(source, config, root)
     job = read_json(source / "job.json")
     if (job.get("status") != "completed" or job.get("source_commit") != config["source_commit"]
             or str(job.get("github_run_id")) != str(config["run_id"])
@@ -344,7 +551,7 @@ def ingest(config: dict, state_dir: Path, download_dir: Path, root: Path = ROOT)
     with tempfile.TemporaryDirectory(prefix="training-artifact-source-") as scratch:
         source = Path(scratch)
         inventory = extract_verified(downloaded[0], config, source)
-        summary = validate_payload(source, config)
+        summary = validate_payload(source, config, root)
         with tempfile.TemporaryDirectory(prefix=".ingest-stage-", dir=destination.parent) as staging:
             staged = Path(staging) / "experiment"
             staged.mkdir()
