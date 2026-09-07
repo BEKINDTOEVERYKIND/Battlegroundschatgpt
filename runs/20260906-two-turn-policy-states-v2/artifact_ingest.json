@@ -1,0 +1,195 @@
+{
+  "checks": [
+    "authenticated successful run identity",
+    "original ZIP SHA256 and size",
+    "strict regular-file path allowlist and size bounds",
+    "dataset gzip round trip",
+    "checkpoint and evaluation provenance checksums",
+    "paired raw evaluation means and identities"
+  ],
+  "notes": [
+    "Original dataset gzip is preserved byte-for-byte; raw JSONL restores exactly.",
+    "Every original log is retained as deterministic gzip.",
+    "No training rerun, current-patch relabeling, or model promotion occurred."
+  ],
+  "original_files": {
+    "evaluation_failures.json": {
+      "bytes": 253,
+      "encoding": "identity",
+      "sha256": "f353dd8ee457f769b08ac1cd17e16acace1381519bafd1dd203a0392932ca286",
+      "stored_path": "evaluation_failures.json"
+    },
+    "evaluation_trajectories.jsonl.gz": {
+      "bytes": 2352250,
+      "encoding": "identity",
+      "sha256": "283d90586d5c7e21b2edd8370099520a7486f25b7daf9296d5c58ac1e15781d7",
+      "stored_path": "evaluation_trajectories.jsonl.gz"
+    },
+    "firestone-worker.log": {
+      "bytes": 0,
+      "encoding": "gzip",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_path": "firestone-worker.log.gz"
+    },
+    "frozen_evaluation_plan.json": {
+      "bytes": 720,
+      "encoding": "identity",
+      "sha256": "930f4492000f3ce007d825f9e6ab2f15fbe8a5ca8051c864ba9ec643787cd3b2",
+      "stored_path": "frozen_evaluation_plan.json"
+    },
+    "generation_failures.json": {
+      "bytes": 7963,
+      "encoding": "identity",
+      "sha256": "7e8134faff1ee89d20f8bdc6de250a7e0b9318e74a274d5a93c77dc26b74a47b",
+      "stored_path": "generation_failures.json"
+    },
+    "live_postflight.json": {
+      "bytes": 3991,
+      "encoding": "identity",
+      "sha256": "c700e9449668100c92e93a2e9365e60e63040cc13a51d74b42b451eebd6f4023",
+      "stored_path": "live_postflight.json"
+    },
+    "live_preflight.json": {
+      "bytes": 3991,
+      "encoding": "identity",
+      "sha256": "8032b881ad929fd72c2fa8a7e1893f7198792b7768a9d10904669cb4f6a0f786",
+      "stored_path": "live_preflight.json"
+    },
+    "model-h16-e15.json": {
+      "bytes": 1435251,
+      "encoding": "identity",
+      "sha256": "d3270215cf2a96abc25a7a25c9ab4b848395028d90c29f843de7442d9388bcb6",
+      "stored_path": "model-h16-e15.json"
+    },
+    "model-h16-e5.json": {
+      "bytes": 1435156,
+      "encoding": "identity",
+      "sha256": "f8d28333d865dc0a90fc7ad5583ce1b4ecabd5656a611a9235c08f7b18e9c0ac",
+      "stored_path": "model-h16-e5.json"
+    },
+    "preregistration.json": {
+      "bytes": 52069,
+      "encoding": "identity",
+      "sha256": "12e6bb6dd1bbd8d437773c8d8089e4a3e29d213c52f3e9ac37e8d4c23102c93f",
+      "stored_path": "preregistration.json"
+    },
+    "progress.json": {
+      "bytes": 66,
+      "encoding": "identity",
+      "sha256": "a34ceb1b604a4130f95f5729521707c89338a60633a4abe7aedea2a91f0c3d17",
+      "stored_path": "progress.json"
+    },
+    "results.json": {
+      "bytes": 3569,
+      "encoding": "identity",
+      "sha256": "567f9fbc9c9025fccc2e4ba2b6bc6960b83779878b7727e9ed3b0e3ae2766e31",
+      "stored_path": "results.json"
+    },
+    "runner.json": {
+      "bytes": 2186,
+      "encoding": "identity",
+      "sha256": "69fe49de35ad88b4d946a5696c9afed416e2b1a53868d7f9b7305ca74004180c",
+      "stored_path": "runner.json"
+    },
+    "selected_model.json": {
+      "bytes": 1435251,
+      "encoding": "identity",
+      "sha256": "d3270215cf2a96abc25a7a25c9ab4b848395028d90c29f843de7442d9388bcb6",
+      "stored_path": "selected_model.json"
+    },
+    "training_trajectories.jsonl.gz": {
+      "bytes": 74639436,
+      "encoding": "identity",
+      "sha256": "dfa2bbc5cc7daf13c589ac2ab85b452a8c57ff2eb8d077ccef80a1ea325e5776",
+      "stored_path": "training_trajectories.jsonl.gz"
+    },
+    "validation_sweep.json": {
+      "bytes": 311,
+      "encoding": "identity",
+      "sha256": "6d14a1fdc17c04ad4a02ca2abb463a457d234ae002b8e8b49e6eb3b7afa0ec7a",
+      "stored_path": "validation_sweep.json"
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "artifact_bytes": 61091608,
+    "artifact_files": 16,
+    "artifact_id": 9991942763,
+    "artifact_name": "two-turn-training-34039468068-1",
+    "artifact_sha256": "00b14a654be739e3c66aa872bef9f8df1ebb664111e89d4042e70515f86c1fd7",
+    "destination": "runs/20260906-two-turn-policy-states-v2",
+    "repository": "BEKINDTOEVERYKIND/Battlegroundschatgpt",
+    "run_id": 34039468068,
+    "source_branch": "main",
+    "source_commit": "a1b013f18b133e4b97197c8a8aac79fa0f555e0e",
+    "source_workflow": ".github/workflows/train-two-turn.yml"
+  },
+  "source_run_completed_at": "2026-09-06T15:20:17Z",
+  "source_run_url": "https://github.com/BEKINDTOEVERYKIND/Battlegroundschatgpt/actions/runs/34039468068",
+  "stored_files": {
+    "evaluation_failures.json": {
+      "bytes": 253,
+      "sha256": "f353dd8ee457f769b08ac1cd17e16acace1381519bafd1dd203a0392932ca286"
+    },
+    "evaluation_trajectories.jsonl.gz": {
+      "bytes": 2352250,
+      "sha256": "283d90586d5c7e21b2edd8370099520a7486f25b7daf9296d5c58ac1e15781d7"
+    },
+    "firestone-worker.log.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "frozen_evaluation_plan.json": {
+      "bytes": 720,
+      "sha256": "930f4492000f3ce007d825f9e6ab2f15fbe8a5ca8051c864ba9ec643787cd3b2"
+    },
+    "generation_failures.json": {
+      "bytes": 7963,
+      "sha256": "7e8134faff1ee89d20f8bdc6de250a7e0b9318e74a274d5a93c77dc26b74a47b"
+    },
+    "live_postflight.json": {
+      "bytes": 3991,
+      "sha256": "c700e9449668100c92e93a2e9365e60e63040cc13a51d74b42b451eebd6f4023"
+    },
+    "live_preflight.json": {
+      "bytes": 3991,
+      "sha256": "8032b881ad929fd72c2fa8a7e1893f7198792b7768a9d10904669cb4f6a0f786"
+    },
+    "model-h16-e15.json": {
+      "bytes": 1435251,
+      "sha256": "d3270215cf2a96abc25a7a25c9ab4b848395028d90c29f843de7442d9388bcb6"
+    },
+    "model-h16-e5.json": {
+      "bytes": 1435156,
+      "sha256": "f8d28333d865dc0a90fc7ad5583ce1b4ecabd5656a611a9235c08f7b18e9c0ac"
+    },
+    "preregistration.json": {
+      "bytes": 52069,
+      "sha256": "12e6bb6dd1bbd8d437773c8d8089e4a3e29d213c52f3e9ac37e8d4c23102c93f"
+    },
+    "progress.json": {
+      "bytes": 66,
+      "sha256": "a34ceb1b604a4130f95f5729521707c89338a60633a4abe7aedea2a91f0c3d17"
+    },
+    "results.json": {
+      "bytes": 3569,
+      "sha256": "567f9fbc9c9025fccc2e4ba2b6bc6960b83779878b7727e9ed3b0e3ae2766e31"
+    },
+    "runner.json": {
+      "bytes": 2186,
+      "sha256": "69fe49de35ad88b4d946a5696c9afed416e2b1a53868d7f9b7305ca74004180c"
+    },
+    "selected_model.json": {
+      "bytes": 1435251,
+      "sha256": "d3270215cf2a96abc25a7a25c9ab4b848395028d90c29f843de7442d9388bcb6"
+    },
+    "training_trajectories.jsonl.gz": {
+      "bytes": 74639436,
+      "sha256": "dfa2bbc5cc7daf13c589ac2ab85b452a8c57ff2eb8d077ccef80a1ea325e5776"
+    },
+    "validation_sweep.json": {
+      "bytes": 311,
+      "sha256": "6d14a1fdc17c04ad4a02ca2abb463a457d234ae002b8e8b49e6eb3b7afa0ec7a"
+    }
+  }
+}

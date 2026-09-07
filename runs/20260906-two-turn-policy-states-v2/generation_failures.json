@@ -1,0 +1,261 @@
+[
+  {
+    "index": 1,
+    "seed": 202610071,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1088
+  },
+  {
+    "index": 4,
+    "seed": 202613098,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1108
+  },
+  {
+    "index": 5,
+    "seed": 202614107,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 4164
+  },
+  {
+    "index": 6,
+    "seed": 202615116,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2932
+  },
+  {
+    "index": 9,
+    "seed": 202618143,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1028
+  },
+  {
+    "index": 15,
+    "seed": 202624197,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Off-board Scarlet threshold conformance is unverified",
+    "sampled_combats_before_rejection": 192
+  },
+  {
+    "index": 16,
+    "seed": 202625206,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1460
+  },
+  {
+    "index": 20,
+    "seed": 202629242,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 3476
+  },
+  {
+    "index": 23,
+    "seed": 202632269,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2564
+  },
+  {
+    "index": 24,
+    "seed": 202633278,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1156
+  },
+  {
+    "index": 26,
+    "seed": 202635296,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2996
+  },
+  {
+    "index": 28,
+    "seed": 202637314,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2660
+  },
+  {
+    "index": 29,
+    "seed": 202638323,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2180
+  },
+  {
+    "index": 31,
+    "seed": 202640341,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 4420
+  },
+  {
+    "index": 32,
+    "seed": 202641350,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 292
+  },
+  {
+    "index": 33,
+    "seed": 202642359,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 256
+  },
+  {
+    "index": 34,
+    "seed": 202643368,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified",
+    "sampled_combats_before_rejection": 192
+  },
+  {
+    "index": 36,
+    "seed": 202645386,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 740
+  },
+  {
+    "index": 37,
+    "seed": 202646395,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 3204
+  },
+  {
+    "index": 38,
+    "seed": 202647404,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2068
+  },
+  {
+    "index": 40,
+    "seed": 202649422,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1604
+  },
+  {
+    "index": 44,
+    "seed": 202653458,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1380
+  },
+  {
+    "index": 45,
+    "seed": 202654467,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1024
+  },
+  {
+    "index": 48,
+    "seed": 202657494,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1940
+  },
+  {
+    "index": 51,
+    "seed": 202660521,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified",
+    "sampled_combats_before_rejection": 192
+  },
+  {
+    "index": 53,
+    "seed": 202662539,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified",
+    "sampled_combats_before_rejection": 788
+  },
+  {
+    "index": 54,
+    "seed": 202663548,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2660
+  },
+  {
+    "index": 56,
+    "seed": 202665566,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 352
+  },
+  {
+    "index": 60,
+    "seed": 202669602,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Tavern Fugitive spell-trigger conformance is unverified",
+    "sampled_combats_before_rejection": 192
+  },
+  {
+    "index": 61,
+    "seed": 202670611,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 3204
+  },
+  {
+    "index": 62,
+    "seed": 202671620,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 256
+  },
+  {
+    "index": 63,
+    "seed": 202672629,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 256
+  },
+  {
+    "index": 66,
+    "seed": 202675656,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2916
+  },
+  {
+    "index": 69,
+    "seed": 202678683,
+    "split": "validation",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1172
+  },
+  {
+    "index": 70,
+    "seed": 202679692,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 1748
+  },
+  {
+    "index": 71,
+    "seed": 202680701,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 2916
+  },
+  {
+    "index": 77,
+    "seed": 202686755,
+    "split": "train",
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "sampled_combats_before_rejection": 3524
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "epochs": 5,
+    "checkpoint": "model-h16-e5.json",
+    "validation_mean": 0.47550290854978355,
+    "final_epoch_loss": 0.015769646808523458
+  },
+  {
+    "epochs": 15,
+    "checkpoint": "model-h16-e15.json",
+    "validation_mean": 0.4765743371212121,
+    "final_epoch_loss": 0.01252379573959246
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "seed": 212628233,
+    "error": "UnsupportedRecruitTransition: Pending-choice timeout is unverified; abort rollout",
+    "failed_policy": "practical_heuristic",
+    "failed_sample": 0,
+    "completed_policy_names": [
+      "model"
+    ]
+  }
+]

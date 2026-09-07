@@ -1,0 +1,60 @@
+{
+  "config": {
+    "experiment": "20260906-two-turn-policy-states-v2",
+    "trajectories": 80,
+    "label_samples": 4,
+    "evaluation_episodes": 32,
+    "evaluation_samples": 8,
+    "seed": 202609062,
+    "hidden": 16,
+    "epochs": [
+      5,
+      15
+    ],
+    "timeout_seconds": 6600,
+    "policy_checkpoint": "runs/20260906-two-turn-recruit-v1/selected_model.json",
+    "policy_checkpoint_sha256": "7028c293277a528932c18729f294b0510ab9d7bd70e606cb32332279947301a4",
+    "continuation_policy": "practical"
+  },
+  "config_sha256": "a6026c621c4a6974a83ce6f8f38a469827be0be6fefc0ed3d62b71caa6b83880",
+  "source_commit": "a1b013f18b133e4b97197c8a8aac79fa0f555e0e",
+  "source_sha256": {
+    "scripts/train_two_turn_recruit.py": "0430ec2ab21e9012afc9744b688fa006a89998df100667ca0a8988d4aeff65f0",
+    "scripts/run_two_turn_job.py": "d64c889860b88f60c6c97286dfb4e675dc6614fec97ecca37018a415b6441087",
+    "python/bg_ai/opening_transition.py": "3ad29bc74cb33d4a30f5ebffe12cae8de4fb8edb6939c3cfe684476bfbde6db8",
+    "python/bg_ai/two_turn_features.py": "b48aa51aa6d21d0bbabdac15a0b115a9595c2a2dacb0dc5cd2ee7776e5b60b56",
+    "simulator/opening-transition-firestone.mjs": "3aed1ad196253201e7e941f05bbea0388ada8ecef0b46796e4100a2cce33af02"
+  },
+  "github_run_id": "34039468068",
+  "command": [
+    "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+    "scripts/train_two_turn_recruit.py",
+    "--engine-root",
+    "/home/runner/work/Battlegroundschatgpt/research/HSBRSIM",
+    "--out",
+    "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/two-turn-training-output",
+    "--policy-checkpoint",
+    "/home/runner/work/Battlegroundschatgpt/Battlegroundschatgpt/runs/20260906-two-turn-recruit-v1/selected_model.json",
+    "--continuation-policy",
+    "practical",
+    "--trajectories",
+    "80",
+    "--label-samples",
+    "4",
+    "--evaluation-episodes",
+    "32",
+    "--evaluation-samples",
+    "8",
+    "--seed",
+    "202609062",
+    "--hidden",
+    "16",
+    "--epochs",
+    "5",
+    "15"
+  ],
+  "status": "completed",
+  "policy_promoted": false,
+  "results_sha256": "567f9fbc9c9025fccc2e4ba2b6bc6960b83779878b7727e9ed3b0e3ae2766e31",
+  "elapsed_seconds": 2820.65268628
+}
